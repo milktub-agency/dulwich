@@ -176,9 +176,9 @@
       {
         "type": "range",
         "id": "logo_width",
-        "min": 50,
-        "max": 300,
-        "step": 10,
+        "min": 100,
+        "max": 200,
+        "step": 2,
         "default": 100,
         "unit": "px",
         "label": "t:settings_schema.logo.settings.logo_width.label"
@@ -314,7 +314,7 @@
         "id": "page_width",
         "min": 1000,
         "max": 1600,
-        "step": 100,
+        "step": 20,
         "default": 1200,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.page_width.label"

@@ -1,9 +1,16 @@
 {
   "name": "skeleton",
   "version": "2.0.0",
-  "description": "A starting point for an Online Store 2.0 built on top of DAWN",
+  "description": "A starting point for an Online Store 2.0 built on top of skeleton",
   "scripts": {
-    "start": "shopify theme dev -s https://skeleton-v2.myshopify.com --theme-editor-sync",
+    "start": "shopify theme dev -e dev --live-reload hot-reload",
+    "start-sync": "shopify theme dev --theme-editor-sync --live-reload hot-reload -e dev",
+    "pull": "shopify theme pull",
+    "push": "shopify theme push",
+    "dev-pull": "shopify theme pull -d -e dev",
+    "dev-push": "shopify theme push -d -e dev",
+    "pull-json": "shopify theme pull -d -o *.json -e dev",
+    "share": "shopify theme share -e dev",
     "tw": "npx tailwindcss -i ./_styles/skeleton-base.css -o ./assets/custom.css --minify --watch"
   },
   "keywords": [
@@ -12,6 +19,9 @@
   ],
   "author": "Marmeto",
   "devDependencies": {
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4"
   }
 }

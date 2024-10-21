@@ -82,6 +82,42 @@
         background-color: rgb(var(--color-background));
       }
 
+      @font-face {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("{{'Poppins-Regular.ttf' | asset_url }}");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: medium;
+        font-weight: 500;
+        font-display: swap;
+        src: url("{{'Poppins-Medium.ttf' | asset_url }}");
+      }
+      @font-face {
+        font-family: "Poppins";
+        font-style: semi-bold;
+        font-weight: 600;
+        font-display: swap;
+        src: url("{{'Poppins-SemiBold.ttf' | asset_url }}");
+      }
+      @font-face {
+        font-family: "arial";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("{{'ARIAL.TTF' | asset_url }}");
+      }
+      @font-face {
+        font-family: "arial";
+        font-style: bold;
+        font-weight: 700;
+        font-display: swap;
+        src: url("{{'ARIALBD.TTF' | asset_url }}");
+      }
+
       :root {
         --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
@@ -337,5 +373,6 @@
     {%- endif -%}
 
     <script src="{{ 'product-form.js' | asset_url }}" defer></script>
+    <script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
   </body>
 </html>

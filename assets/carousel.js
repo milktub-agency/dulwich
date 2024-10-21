@@ -4,15 +4,12 @@ if(!customElements.get("carousel-component")) {
       super();
       this.carouselElement = this;
   
-      // Carousel element should have class splide
-      if (!this.carouselElement.classList.contains('splide')) return;
-  
       this.desktopPerPage = this.carouselElement.dataset['desktopperpage'] || 4;
       this.mobilePerPage = this.carouselElement.dataset['mobileperpage'] || 1;
-      this.focus = this.carouselElement.dataset['focus'] || 'center';
-      this.type = this.carouselElement.dataset['type'] || 'slide';
-      this.gap = this.carouselElement.dataset['gapbetweenslides'] || 10;
-      this.gapMobile = this.carouselElement.dataset['gapbetweenslidesonmobile'] || 10;
+      this.focus = this.carouselElement.dataset['focus'];
+      this.type = this.carouselElement.dataset['type'];
+      this.gap = this.carouselElement.dataset['gapbetweenslides'] || 0;
+      this.gapMobile = this.carouselElement.dataset['gapbetweenslidesonmobile'] || 0;
       this.autoplaySpeed = parseInt(this.dataset['autoplaySpeed']) || 3000;
       this.direction = this.carouselElement.dataset['direction'] || 'ltr';
       this.mobilePaddingLeft = this.carouselElement.dataset['mobilepaddingleft'] || '0';
@@ -32,9 +29,12 @@ if(!customElements.get("carousel-component")) {
       this.disableDrag = this.carouselElement.dataset['disabledrag'] === 'true' || false;
       this.destroyOnMobile = this.carouselElement.dataset['enableonmobile'] == 'false' || false;
       this.destroyOnDesktop = this.carouselElement.dataset['enableondesktop'] == 'false' || false;
-  
+      this.omitEnd = this.carouselElement.dataset['omitEnd'] == 'false' || false;
+      this.refresh = this.carouselElement.dataset['refresh'] == 'true' || false;
       this.sync = this.carouselElement.dataset['carouselsyncselector'] || false;
-  
+
+      // Carousel element should have class splide
+      if (!this.carouselElement.classList.contains('splide')) return;
       this.initCarousel();
     }
    
@@ -46,8 +46,8 @@ if(!customElements.get("carousel-component")) {
       // Slider library.
       this.carousel = new Splide(this.carouselElement, {
         perPage: this.desktopPerPage,
-        type: this.type,
-        // focus: this.focus,
+        ...(this.type ? { type: this.type } : {}),
+        ...(this.focus ? { focus: this.focus } : {}),
         autoplay: this.autoplay,
         interval: this.autoplaySpeed,
         gap: this.gap,
@@ -58,6 +58,7 @@ if(!customElements.get("carousel-component")) {
         direction: this.direction,
         destroy: this.destroyOnDesktop,
         padding: { left: this.desktopPaddingLeft, right: this.desktopPaddingRight },
+        omitEnd : this.omitEnd,
         breakpoints: {
           750: {
             padding: { left: this.mobilePaddingLeft, right: this.mobilePaddingRight },
@@ -74,6 +75,8 @@ if(!customElements.get("carousel-component")) {
         this.initCarouselSync()
       } else {
         this.carousel.mount();
+        if (this.refresh)
+          this.carousel.refresh()
       }
     }
   
@@ -133,6 +136,5 @@ if(!customElements.get("carousel-component")) {
 
   // Exposing the Carousel class globally to allow other custom elements, like the product-form, to extend its functionality.
   window.Carousel = Carousel;
-  console.log('carousel is defined')
   customElements.define('carousel-component', Carousel);
 }
