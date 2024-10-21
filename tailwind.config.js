@@ -33,9 +33,9 @@ module.exports = {
       pageMaxWidth: '1440px',
     },
     fontFamily: {
-      'primary': ["Noto Sans", "system-ui"],
-      'secondary': ['Nunito', 'sans-serif'],
-      'tertiary': ['Noto\\ Sans', 'sans-serif']
+      'primary': ["Poppins"],
+      'secondary': ['arial'],
+      'tertiary': ['Poppins']
     },
     fontSize: {
       // Mobile
@@ -61,11 +61,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        'primary': 'rgb(255,0,0)',
-        'fantastic-red': '#ff0000',
-        'fantastic-green': '#8bc34a',
-        'fantastic-blue': '#6461e0',
-        'fantastic-something': '#243c5a'
+        'pale-sky-blue': '#BCE3EE',
+        'bright-red': '#DC1636',
+        'deep-blue': '#E9F6FF',
+        'light-gray': '#F1F1F1',
+        'taupe-gray': '#726969',
+        'medium-gray': '#777777'
       }
     }
   },

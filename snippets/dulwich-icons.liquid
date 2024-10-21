@@ -1,0 +1,19 @@
+{% comment %}
+  Renders dulwich icons.
+  Accepts:
+  - icon_name: {String} Icon Name.
+  - class: {String} Icon Class.
+
+  Usage:
+  {% render 'dulwich-icons', icon_name: icon_name, class: class %}
+
+   Example:
+   {%- render 'dulwich-icons',
+    icon_name: 'quality-icon',
+    class: 'tw-w-[2rem] tw-h-[2rem] md:tw-w-[2.4rem] md:tw-h-[2.4rem]'
+  -%}
+{% endcomment %}
+
+{% case icon_name %}
+
+{% endcase %}
