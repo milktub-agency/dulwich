@@ -2,6 +2,21 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "custom_announcement_bar_KwBRNY": {
+      "type": "custom-announcement-bar",
+      "settings": {
+        "announcement_bar_text": "Call us on +44 (0)20 8670 5883",
+        "announcement_bar_text_link": "",
+        "hide_mobile": true,
+        "show_social_icons": true,
+        "color_scheme": "background-1",
+        "faq_text": "FAQ",
+        "faq_text_link": "",
+        "text_alignment": "tw-justify-between",
+        "padding_top": 6,
+        "padding_bottom": 6
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -24,6 +39,7 @@
         "announcement-bar-0",
         "9a2a08db-5117-4d1a-b73a-cc208a063c19"
       ],
+      "disabled": true,
       "settings": {
         "auto_rotate": true,
         "change_slides_speed": 3,
@@ -188,6 +204,7 @@
     }
   },
   "order": [
+    "custom_announcement_bar_KwBRNY",
     "announcement-bar",
     "header",
     "29597e83-b5df-402e-9c55-1f5773f2d069",

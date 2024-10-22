@@ -25,7 +25,10 @@
         "snapchat": "Snapchat",
         "youtube": "YouTube",
         "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "tiktok": "TikTok",
+        "mail": "Mail",
+        "call": "Call",
+        "linkedin": "LinkedIn"
       }
     },
     "continue_shopping": "Continue shopping",

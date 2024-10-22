@@ -1547,6 +1547,24 @@
         "id": "social_vimeo_link",
         "label": "t:settings_schema.social-media.settings.social_vimeo_link.label",
         "info": "t:settings_schema.social-media.settings.social_vimeo_link.info"
+      },
+      {
+        "type": "text",
+        "id": "social_mail_link",
+        "label": "Mail",
+        "info": "mailto:shopify@gmail.com"
+      },
+      {
+        "type": "text",
+        "id": "social_call_link",
+        "label": "Call",
+        "info": "tel:+6494461709"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin_link",
+        "label": "LinkedIn",
+        "info": "https:\/\/www.linkedin.com\/in\/shopify"
       }
     ]
   },
