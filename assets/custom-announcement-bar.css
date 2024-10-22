@@ -1,0 +1,16 @@
+.custom-announcement-bar .list-social__link {
+    padding: 5px;
+    color: rgb(var(--color-foreground));
+}
+.custom-announcement-bar a {
+    color: rgb(var(--color-foreground));
+}
+.custom-announcement-bar {
+    border-bottom: 1px solid black;
+}
+.custom-announcement-bar .list-social__link svg {
+    height: 18px;
+}
+.custom-announcement-bar .list-social__link svg path {
+    fill: rgb(var(--color-foreground));
+}

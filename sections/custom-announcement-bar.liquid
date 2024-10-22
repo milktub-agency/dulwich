@@ -1,0 +1,145 @@
+{{ 'custom-announcement-bar.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+  @media only screen and (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="custom-announcement-bar padding-{{ section.id }} {% if section.settings.hide_mobile %}tw-hidden{% endif %} md:tw-block color-{{ section.settings.color_scheme }}">
+  <div class="tw-flex {{ section.settings.text_alignment }} md:tw-flex-row tw-gap-[4px] md:tw-gap-[40px] tw-flex-col tw-items-center tw-px-[56px]">
+    {%- if section.settings.announcement_bar_text != blank -%}
+      <div>
+        <a class="tw-font-primary tw-text-[12px] md:tw-text-[15px] tw-font-normal md:tw-font-medium" href="{{  section.settings.announcement_bar_text_link }}">
+          {{ section.settings.announcement_bar_text }}
+        </a>
+      </div>
+    {%- endif -%}
+    <div class="tw-flex tw-items-center">
+      {%- if section.settings.show_social_icons != blank -%}
+        <div>
+          {%- render 'social-icons', class: 'footer__list-social' -%}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.show_social_icons != blank and section.settings.faq_text != blank -%}
+        <span class="tw-mx-[10px]">|</span>
+      {%- endif -%}
+      {%- if section.settings.faq_text != blank -%}
+        <div>
+          <a class="tw-font-primary tw-text-[12px] md:tw-text-[15px] tw-font-normal md:tw-font-medium" href="{{ section.settings.faq_text_link }}">
+            {{ section.settings.faq_text }}
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom announcement bar",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "announcement_bar_text",
+        "label": "Announcement bar text"
+      },
+      {
+        "type": "url",
+        "id": "announcement_bar_text_link",
+        "label": "Announcement bar text"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_mobile",
+        "label": "Hide in mobile",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "t:sections.footer.settings.header__2.content",
+        "info": "t:sections.footer.settings.header__2.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_social_icons",
+        "default": true,
+        "label": "t:sections.footer.settings.show_social.label"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "background-1"
+      },
+      {
+        "type": "text",
+        "id": "faq_text",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "faq_text_link",
+        "label": "Button link"
+      },
+      {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Desktop Content alignment",
+        "options": [
+          {
+            "value": "tw-justify-between",
+            "label": "Space between"
+          },
+          {
+            "value": "tw-justify-center",
+            "label": "Center"
+          }
+        ],
+        "default": "tw-justify-between"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 36
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom announcement bar",
+        "settings": {
+          "announcement_bar_text": "Call us on +44 (0)20 8670 5883",
+          "faq_text": "FAQ"
+        }
+      }
+    ]
+  }
+{% endschema %}
