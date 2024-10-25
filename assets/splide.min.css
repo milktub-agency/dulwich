@@ -16,3 +16,7 @@
 button.splide__arrow {
     background: white;
 }
+
+media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
+    border: 2px solid #000;
+}

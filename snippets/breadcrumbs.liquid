@@ -1,38 +1,49 @@
 <style>
     .breadcrumbs li:not(:last-child):after {
-        content: "›\00a0";
+        content: "/\00a0";
         display: inline-block;
         padding-left: .75ch;
         speak: none;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    @media screen and (max-width: 750px) {
+        .breadcrumbs li:not(:last-child):after {
+            font-size: 13px;
+        }
     }
 </style>
 
 {% unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' %}
     {% assign t = template | split: '.' | first %}
 
-    <nav class="breadcrumbs page-width tw-text-[0.85em] tw-my-3" role="navigation" aria-label="breadcrumbs">
+    <nav class="breadcrumbs page-width tw-translate-x-0 md:tw-translate-x-[-4%] tw-text-[0.85em] tw-my-[20px]" role="navigation" aria-label="breadcrumbs">
         <ol class="tw-list-none tw-m-0 tw-p-0">
             <li class="tw-inline-block">
-                <a class="tw-underline" href="/" title="Home">Home</a>
+                <a class="tw-text-inherit tw-text-[13px] tw-opacity-60 md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-light tw-no-underline hover:tw-underline focus:tw-underline" href="/" title="Home">Home</a>
             </li>
 
         {% case t %}
             {% when 'page' %}
                 <li class="tw-inline-block">
-                    <a class="tw-underline" href="{{ page.url }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page.title }}</a>
+                    <a href="{{ page.url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page.title }}</a>
                 </li>
 
             {% when 'product' %}
 
-                {% if collection.url %}
-                <li class="tw-inline-block">
-                    {{ collection.title | link_to: collection.url }}
-                </li>
+                {% if collection %}
+                    {%- assign current_collection = collection -%}
+                        <li class="tw-inline-block">
+                            <a href="{{ current_collection.url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline">{{ current_collection.title }}</a>
+                        </li>
+                {% else %}
+                    {%- assign collections = product.collections -%}
+                    {% if collections.size > 0 %}
+                        <li class="tw-inline-block">
+                            <a href="{{ collections.first.url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline">{{ collections.first.title }}</a>
+                        </li>
+                    {% endif %}
                 {% endif %}
-
-                <li class="tw-inline-block">
-                    <a class="tw-underline" href="{{ product.url }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ product.title }}</a>
-                </li>
 
             {% when 'collection' and collection.handle %}
 
@@ -40,11 +51,11 @@
                 <li class="tw-inline-block">{{ collection.title | link_to: collection.url }}</li>
                 <li class="tw-inline-block">
                     {% capture tag_url %}{{ collection.url }}/{{ current_tags | join: "+"}}{% endcapture %}
-                    <a class="tw-underline" href="{{ tag_url }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + "}}</a>
+                    <a href="{{ tag_url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + "}}</a>
                 </li>
                 {% else %}
                 <li class="tw-inline-block">
-                    <a class="tw-underline" href="{{ collection.url }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ collection.title }}</a>
+                    <a href="{{ collection.url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ collection.title }}</a>
                 </li>
                 {% endif %}
 
@@ -54,11 +65,11 @@
                 <li class="tw-inline-block">{{ blog.title | link_to: blog.url }}</li>
                 <li class="tw-inline-block">
                     {% capture tag_url %}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{% endcapture %}
-                    <a class="tw-underline" href="{{ tag_url }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + " }}</a>
+                    <a href="{{ tag_url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + " }}</a>
                 </li>
                 {% else %}
                 <li class="tw-inline-block">
-                    <a class="tw-underline" href="{{ blog.url }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ blog.title }}</a>
+                    <a href="{{ blog.url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ blog.title }}</a>
                 </li>
                 {% endif %}
 
@@ -66,13 +77,13 @@
 
                 <li class="tw-inline-block">{{ blog.title | link_to: blog.url }}</li>
                 <li class="tw-inline-block">
-                    <a class="tw-underline" href="{{ article.url }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ article.title }}</a>
+                    <a href="{{ article.url }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ article.title }}</a>
                 </li>
 
             {% else %}
 
                 <li class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >
-                    <a class="tw-underline" href="{{ request.path }}" class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page_title }}</a>
+                    <a href="{{ request.path }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page_title }}</a>
                 </li>
         {% endcase %}
 

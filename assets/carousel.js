@@ -8,6 +8,7 @@ if(!customElements.get("carousel-component")) {
       this.mobilePerPage = this.carouselElement.dataset['mobileperpage'] || 1;
       this.focus = this.carouselElement.dataset['focus'];
       this.type = this.carouselElement.dataset['type'];
+      this.mobileSlideType = this.carouselElement.dataset['mobileslidetype'];
       this.gap = this.carouselElement.dataset['gapbetweenslides'] || 0;
       this.gapMobile = this.carouselElement.dataset['gapbetweenslidesonmobile'] || 0;
       this.autoplaySpeed = parseInt(this.dataset['autoplaySpeed']) || 3000;
@@ -32,6 +33,7 @@ if(!customElements.get("carousel-component")) {
       this.omitEnd = this.carouselElement.dataset['omitEnd'] == 'false' || false;
       this.refresh = this.carouselElement.dataset['refresh'] == 'true' || false;
       this.sync = this.carouselElement.dataset['carouselsyncselector'] || false;
+      this.perMove = this.carouselElement.dataset['permove'];
 
       // Carousel element should have class splide
       if (!this.carouselElement.classList.contains('splide')) return;
@@ -59,6 +61,7 @@ if(!customElements.get("carousel-component")) {
         destroy: this.destroyOnDesktop,
         padding: { left: this.desktopPaddingLeft, right: this.desktopPaddingRight },
         omitEnd : this.omitEnd,
+        perMove: this.perMove,
         breakpoints: {
           750: {
             padding: { left: this.mobilePaddingLeft, right: this.mobilePaddingRight },
@@ -67,6 +70,7 @@ if(!customElements.get("carousel-component")) {
             pagination: this.showdotsonmobile,
             gap: this.gapMobile,
             destroy: this.destroyOnMobile,
+            type: this.mobileSlideType,
           }
         },
       });
