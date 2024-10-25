@@ -1,0 +1,178 @@
+{{ 'pdp-announcement-bar.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+  @media only screen and (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="color-{{ section.settings.color_scheme }} padding-{{ section.id }} {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %} {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}">
+  <carousel-component
+    id="carousel--{{ section.id }}"
+    class="splide"
+    data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
+    data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
+    data-desktopperpage="{{ section.settings.slides_perpage | default: 1 }}"
+    data-mobileperpage="{{ section.settings.slides_perpage_mobile | default: 1 }}"
+    data-type="slide"
+    data-mobileSlideType="loop"
+    data-showArrows="{{ section.settings.show_arrows }}"
+    data-showArrowsOnMobile="{{ section.settings.show_arrows_on_mobile }}"
+    data-perMove="1"
+  >
+    <div class="splide__track md:tw-mx-auto ">
+        <ul class="splide__list tw-items-center">
+            {% for block in section.blocks %}
+                <li class="splide__slide tw-text-center tw-items-center tw-flex pdp-announecment-block tw-flex-col tw-relative tw-gap-[1.77rem] tw-px-[0.5rem] md:tw-px-[2.5rem]">
+                    {% if block.settings.block_value != blank %}
+                        <div class="tw-text-center">
+                          <a href="{{ block.settings.link }}" class="tw-text-[0.85rem] md:tw-text-[1.5rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">{{ block.settings.block_value | strip_html }}</a>
+                        </div>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+  </carousel-component>
+</div>
+
+{% schema %}
+{
+  "name": "PDP Announcement bar",
+  "class": "section",
+  "tag": "section",
+  "settings": [  
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_in_mobile",
+      "label": "Hide in mobile. Show in desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_in_desktop",
+      "label": "Hide in Desktop. Show in Mobile"
+    },
+    {
+      "type": "header",
+      "content": "SLIDER SETTINGS"
+    },
+    {
+      "type": "checkbox",
+      "id":"show_arrows",
+      "label": "Show arrows on desktop",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id":"show_arrows_on_mobile",
+      "label": "Show arrows on mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay interval",
+      "min": 2,
+      "max": 6,
+      "default": 3,
+      "info": "Default 3s"
+    },
+    {
+      "type": "number",
+      "id": "slides_perpage",
+      "label": "Slides perpage",
+      "default": 1
+    },
+    {
+      "type": "number",
+      "id": "slides_perpage_mobile",
+      "label": "Slides perpage Mobile",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "default": 0,
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Block",
+      "type": "block",
+      "settings": [
+       {
+         "type": "richtext",
+         "id": "block_value",
+         "label": "Text"
+       },
+       {
+         "type": "url",
+         "id": "link",
+         "label": "Link"
+       }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PDP Announcement bar",
+      "blocks": [
+        {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>Dulwich Heath Trusted Since 1986</p>"
+          }
+        },
+        {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>With over 30,000 customers</p>"
+          }
+        },
+        {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>30 Day No Quibbles Returns</p>"
+          }
+        },
+        {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>Fast Delivery</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
