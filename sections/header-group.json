@@ -26,6 +26,58 @@
         "padding_bottom": 6
       }
     },
+    "pdp_announcement_bar_wrBmjL": {
+      "type": "pdp-announcement-bar",
+      "blocks": {
+        "block_zGBAMG": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>Dulwich Heath Trusted Since 1986</p>",
+            "link": ""
+          }
+        },
+        "block_A4JBjf": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>With over 30,000 customers</p>",
+            "link": ""
+          }
+        },
+        "block_6C3eTF": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>30 Day No Quibbles Returns</p>",
+            "link": ""
+          }
+        },
+        "block_MP7GNt": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>Fast Delivery</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_zGBAMG",
+        "block_A4JBjf",
+        "block_6C3eTF",
+        "block_MP7GNt"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5d415bee-8962-4d28-bea5-a42f7f862306",
+        "hide_in_mobile": false,
+        "hide_in_desktop": true,
+        "show_arrows": false,
+        "show_arrows_on_mobile": false,
+        "enable_autoplay": true,
+        "autoplay_speed": 3,
+        "slides_perpage": 4,
+        "slides_perpage_mobile": 2,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -70,7 +122,7 @@
         "enable_language_selector": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
-        "wishlist_page_url": "shopify:\/\/pages\/wishlist",
+        "wishlist_page_url": "shopify://pages/wishlist",
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -167,9 +219,9 @@
         "heading": "Main Heading",
         "subheading": "Main Subheading",
         "image_heading": "Heading",
-        "image_subheading": "<p>Subheading<\/p>",
+        "image_subheading": "<p>Subheading</p>",
         "image_button_text": "Click",
-        "image_button_link": "shopify:\/\/collections\/all"
+        "image_button_link": "shopify://collections/all"
       }
     },
     "7a146f3f-997d-4b81-882f-6acfbd99a2c1": {
@@ -211,9 +263,62 @@
         "image_button_link": ""
       }
     },
+    "pdp_announcement_bar_prQhEe": {
+      "type": "pdp-announcement-bar",
+      "blocks": {
+        "block_p7ntLj": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>Dulwich Heath Trusted Since 1986</p>",
+            "link": ""
+          }
+        },
+        "block_NcPLYD": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>With over 30,000 customers</p>",
+            "link": ""
+          }
+        },
+        "block_FGUnCL": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>30 Day No Quibbles Returns</p>",
+            "link": ""
+          }
+        },
+        "block_wbmLQ8": {
+          "type": "block",
+          "settings": {
+            "block_value": "<p>Fast Delivery</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_p7ntLj",
+        "block_NcPLYD",
+        "block_FGUnCL",
+        "block_wbmLQ8"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5d415bee-8962-4d28-bea5-a42f7f862306",
+        "hide_in_mobile": true,
+        "hide_in_desktop": false,
+        "show_arrows": false,
+        "show_arrows_on_mobile": false,
+        "enable_autoplay": true,
+        "autoplay_speed": 3,
+        "slides_perpage": 4,
+        "slides_perpage_mobile": 2,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    }
   },
   "order": [
     "custom_announcement_bar_KwBRNY",
+    "pdp_announcement_bar_wrBmjL",
     "announcement-bar",
     "header",
     "29597e83-b5df-402e-9c55-1f5773f2d069",
@@ -221,5 +326,6 @@
     "7a146f3f-997d-4b81-882f-6acfbd99a2c1",
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd",
     "9f76b2d6-657b-4613-a0e4-a5d25da00bd5",
+    "pdp_announcement_bar_prQhEe"
   ]
 }
