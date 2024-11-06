@@ -9,9 +9,14 @@ class CartDrawer extends HTMLElement {
 
   setHeaderCartIconAccessibility() {
     const cartLink = document.querySelector('#cart-icon-bubble');
+    const cartHeaderPrice = document.querySelector('#header-cart-price');
     cartLink.setAttribute('role', 'button');
     cartLink.setAttribute('aria-haspopup', 'dialog');
     cartLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.open(cartLink);
+    });
+    cartHeaderPrice.addEventListener('click', (event) => {
       event.preventDefault();
       this.open(cartLink);
     });
@@ -130,3 +135,22 @@ class CartDrawerItems extends CartItems {
 }
 
 customElements.define('cart-drawer-items', CartDrawerItems);
+
+
+const targetNode = document.querySelector('cart-drawer');
+const observer = new MutationObserver((mutationsList, observer) => {
+  for (const mutation of mutationsList) {
+    if (mutation.type === 'childList') {
+      let cartTotalPrice = document.querySelector(".cart-total-price");
+      if(cartTotalPrice)
+      {
+        document.getElementById("cart-header-price").innerHTML = "/" + cartTotalPrice.innerHTML;
+      }
+      else {
+        document.getElementById("cart-header-price").innerHTML = "/£0.00";
+      }
+    }
+  }
+});
+const config = { childList: true, attributes: true, subtree: true };
+observer.observe(targetNode, config);

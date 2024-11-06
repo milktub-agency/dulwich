@@ -23,6 +23,7 @@
 
 .predictive-search__results-groups-wrapper {
   display: flex;
+  flex-direction: column;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   padding-bottom: 1rem;
 }

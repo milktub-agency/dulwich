@@ -507,7 +507,7 @@
 
             <div class="totals tw-flex tw-justify-between tw-items-end" role="status">
               <h2>{{ 'sections.cart.estimated_total' | t }}</h2>
-              <p>{{ cart.total_price | money_with_currency }}</p>
+              <p class="cart-total-price">{{ cart.total_price | money }}</p>
             </div>
 
             <small class="tax-note rte">
