@@ -307,7 +307,8 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "copyright": "Copyright"
     },
     "featured_blog": {
       "view_all": "View all",
