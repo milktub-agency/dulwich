@@ -276,6 +276,45 @@
         "padding_bottom": 28
       }
     },
+    "tabbed_content_dBfffX": {
+      "type": "tabbed-content",
+      "blocks": {
+        "tab_yFXWwT": {
+          "type": "tab",
+          "settings": {
+            "id": "DESCRIPTION",
+            "content": "<h2></h2><h2></h2><h2><strong>OxyTech by Dulwich Health – 180 Capsules</strong></h2><h2></h2><h3>OxyTech is a uniquely formulated colon conditioner which is fast acting and is scientifically designed to work gently, safely and effectively without bulky fibre, chalky taste or harsh side-effects.</h3><h4><em><strong>For candida, bloated stomach, irritable bowel, leaky-gut, skin disorder, continuous constipation or diarrhoea and lack of oxygen and energy</strong></em></h4><p>It breaks debris in the colon into very small pieces that can be easily and gently eliminated. A clean and healthy colon can lead to more effective absorption of vitamins, minerals and nutrients.In OxyTech, Ozone (03) and Oxygen (02) are bonded to magnesium. When the OxyTech capsules are ingested with water in the stomach, the bonding between the magnesium and the oxygen molecules is cleaved and the oxygen is absorbed by the blood, lymph and cellular fluids very quickly.</p>"
+          }
+        },
+        "tab_DPrAEU": {
+          "type": "tab",
+          "settings": {
+            "id": "ADDITIONAL INFORMATION",
+            "content": "<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>"
+          }
+        },
+        "tab_xReACT": {
+          "type": "tab",
+          "settings": {
+            "id": "DELIVERY COSTS & RETURNS",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_yFXWwT",
+        "tab_DPrAEU",
+        "tab_xReACT"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "color_scheme": "background-1"
+      }
+    },
     "6384ab31-b366-4e70-9ed4-7a8b7db6a04c": {
       "type": "complementary-products",
       "disabled": true,
@@ -296,6 +335,7 @@
   "order": [
     "main",
     "related-products",
+    "tabbed_content_dBfffX",
     "6384ab31-b366-4e70-9ed4-7a8b7db6a04c"
   ]
 }
