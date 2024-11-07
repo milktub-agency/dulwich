@@ -1,19 +1,10 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "current": {
     "enable_lazy_loading_sections": true,
     "hp_eager_section_count": 2,
-    "logo": "shopify://shop_images/5caf2da7ea28e00001e6a006-198x149-2x_webp.png",
+    "logo": "shopify:\/\/shop_images\/5caf2da7ea28e00001e6a006-198x149-2x_webp.png",
     "logo_width": 156,
-    "favicon": "shopify://shop_images/cropped-Logo-Icon-32x32.png",
+    "favicon": "shopify:\/\/shop_images\/cropped-Logo-Icon-32x32.png",
     "type_header_font": "poppins_n4",
     "heading_scale": 100,
     "type_body_font": "poppins_n4",
@@ -108,18 +99,20 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "social_facebook_link": "/",
-    "social_instagram_link": "/",
+    "brand_headline": "Dulwich Health",
+    "brand_description": "<p>The most unique range of health information & products. Including OxyTech, AlliTech and creators of the RadiTech geopathic stress neutralisers.<\/p>",
+    "social_facebook_link": "\/",
+    "social_instagram_link": "\/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
-    "social_twitter_link": "/",
+    "social_twitter_link": "\/",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
-    "social_mail_link": "/",
-    "social_call_link": "/",
-    "social_linkedin_link": "/",
+    "social_mail_link": "\/",
+    "social_call_link": "\/",
+    "social_linkedin_link": "\/",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
@@ -258,6 +251,17 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#000000",
           "shadow": "#000000"
+        }
+      },
+      "scheme-44ee17d3-4fb2-40b3-a846-c914bc76a73a": {
+        "settings": {
+          "background": "#777777",
+          "background_gradient": "",
+          "text": "#f1f1f1",
+          "button": "#f1f1f1",
+          "button_label": "#777777",
+          "secondary_button_label": "#f1f1f1",
+          "shadow": "#f1f1f1"
         }
       }
     }
