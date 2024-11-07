@@ -15,6 +15,9 @@
   {%- if product.quantity_price_breaks_configured? -%}
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
+  {%- if section.settings.image_enlarge == 'enable'-%}
+    {{ 'fancybox.min.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
 
   {%- style -%}
     .section-{{ section.id }}-padding {
@@ -84,7 +87,7 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} bmd:tw-gap-y-[16px] md:tw-gap-y-0">
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %} tw-relative">
       {% if customer %}  
         {% render 'product-wishlist-checkbox', product: product, removeDeselectedWishlistCard: false %}
@@ -631,6 +634,11 @@
       {{ product.media | where: 'media_type', 'model' | json }}
     </script>
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
+  {%- endif -%}
+
+  {%- if product.media.size > 0 and section.settings.image_enlarge == 'enable' -%}
+    <script src="{{ 'fancybox.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'dulwich-fancybox.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 
   <script>
@@ -2227,6 +2235,22 @@
       "default": "lightbox",
       "label": "t:sections.main-product.settings.image_zoom.label",
       "info": "Click and hover defaults to open lightbox on mobile. Hover and zoom will only work with splide slide and lightbox will only work with the rest"
+    },
+    {
+      "type": "select",
+      "id": "image_enlarge",
+      "options": [
+        {
+          "value": "enable",
+          "label": "Enable image enlarge"
+        },
+        {
+          "value": "hide",
+          "label": "Disable image enlarge"
+        }
+      ],
+      "default": "enable",
+      "label": "Image enlarge"
     },
     {
       "type": "select",

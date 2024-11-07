@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -137,18 +146,19 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "media_size": "large",
+        "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "splide_slider_vertical_thumbnails",
+        "gallery_layout": "splide_slider",
         "media_position": "left",
-        "image_zoom": "hover",
+        "image_zoom": "none",
+        "image_enlarge": "enable",
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
         "show_size_chart": true,
         "size_chart_type": "popup",
-        "padding_top": 36,
+        "padding_top": 4,
         "padding_bottom": 12
       }
     },
@@ -414,7 +424,6 @@
         "template--21525247557954__93f16d13-b9d9-4a5a-a8c7-2a2e23c49222-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/retail-shopping-package.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",

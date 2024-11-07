@@ -2707,3 +2707,6 @@ details-disclosure > details {
     max-width: 445px;
   }
 }
+.list-social {
+  display: flex;
+}

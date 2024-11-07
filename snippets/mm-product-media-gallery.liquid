@@ -2,6 +2,7 @@
   <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
   
 <div class="
+  tw-flex tw-flex-col tw-gap-[18px] md:tw-gap-[28px]
   {%- if section.settings.gallery_layout == 'splide_slider_vertical_thumbnails' -%}
     md:tw-flex md:tw-flex-row-reverse md:tw-gap-x-1
   {%- endif -%}"
@@ -21,16 +22,43 @@
         {{ "accessibility.skip_to_product_info" | t }}
       </a>
       <div class="splide__track">
-        <ul class="{% if section.settings.gallery_layout contains 'slider' %} splide__list{% else %} tw-flex tw-flex-wrap tw-justify-center tw-gap-y-3{% endif %}">
+        <ul class="tw-relative {% if section.settings.gallery_layout contains 'slider' %} splide__list{% else %} tw-flex tw-flex-wrap tw-justify-center tw-gap-y-3{% endif %}">
           {%- for media in product.media -%}
           <li class="{% if media.media_type contains 'video' %} splide--slide-video{% endif %}{% if section.settings.gallery_layout contains 'slider' %} splide__slide{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
             <div class="slot-item group">
-              {% render 'product-media', media: media, loop: section.settings.enable_video_looping, forloop: forloop %}
+              <a    
+                href={{ media | image_url }}
+                data-fancybox="gallery"
+                data-download-src="https://cdn.pixabay.com/photo/2023/10/10/15/20/swimming-pool-8306716_1280.jpg"
+                class="!tw-static tw-w-full tw-h-full bmd:tw-pointer-events-none"
+              >
+               {% render 'product-media', media: media, loop: section.settings.enable_video_looping, forloop: forloop %}
+              </a>
             </div>
           </li>
           {% endfor %}
         </ul>
       </div>
+      {% if section.settings.image_enlarge == 'enable' %}
+      <div class="product-gallery__enlarge tw-mr-[1.5rem] tw-flex tw-items-center tw-justify-end">
+        <button
+          class="product-gallery__enlarge-button tw-absolute tw-flex tw-items-center tw-justify-center tw-bg-white tw-rounded-[8.45rem] tw-bottom-[3.5rem] tw-left-[3.5rem]"
+          aria-describedby="GalleryStatus-{{ section.id }}"
+          aria-controls="ProductGallery-{{ section.id }}"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          data-action="open-product-gallery"
+          data-gallery-id="ProductGallery-{{ section.id }}"
+          data-fancybox-trigger="gallery"
+        > 
+          {%- render 'dulwich-icons',
+            icon_name: 'enlarge-image',
+            class: 'tw-w-[1.6rem] tw-h-[1.6rem] md:tw-w-[2.2rem] md:tw-h-[2.2rem]'
+          -%}
+          <span class="enlarge-button__text tw-font-secondary tw-text-caption-light-m tw-text-black tw-text-h2-m bmd:tw-text-body-small-m tw-font-light bmd:tw-hidden">Click to Zoom</span>
+        </button>
+      </div>
+      {% endif %}
     </product-gallery>
 
     {% comment %}
@@ -51,7 +79,7 @@
       aria-label="Thumbnails Viewer"
       data-type="slide"
       data-focus="0"
-      data-desktopperpage="6"
+      data-desktopperpage="5"
       data-desktopSlideGap="2rem"
       data-isNavigation="true"
       data-showArrows="true"
@@ -62,7 +90,7 @@
       <div class="splide__track">
         <ul class="{% if section.settings.gallery_layout contains 'slider' %} splide__list{% else %} tw-flex tw-flex-wrap tw-justify-center tw-gap-y-3{% endif %}">
           {%- for media in product.media -%}
-          <li class="{% if section.settings.gallery_layout contains 'slider' %} splide__slide{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
+          <li class="{% if section.settings.gallery_layout contains 'slider' %} splide__slide tw-rounded-[17px] tw-overflow-hidden tw-mr-[22px]{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
             <div class="slot-item group">
               {%- if media.media_type == 'model' -%}
                 <span class="thumbnail__badge" aria-hidden="true">
