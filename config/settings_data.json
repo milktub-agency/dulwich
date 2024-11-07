@@ -100,6 +100,8 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
+    "brand_headline": "Dulwich Health",
+    "brand_description": "<p>The most unique range of health information & products. Including OxyTech, AlliTech and creators of the RadiTech geopathic stress neutralisers.<\/p>",
     "social_facebook_link": "\/",
     "social_instagram_link": "\/",
     "social_youtube_link": "",
@@ -250,6 +252,17 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#000000",
           "shadow": "#000000"
+        }
+      },
+      "scheme-44ee17d3-4fb2-40b3-a846-c914bc76a73a": {
+        "settings": {
+          "background": "#777777",
+          "background_gradient": "",
+          "text": "#f1f1f1",
+          "button": "#f1f1f1",
+          "button_label": "#777777",
+          "secondary_button_label": "#f1f1f1",
+          "shadow": "#f1f1f1"
         }
       }
     }
