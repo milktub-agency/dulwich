@@ -39,7 +39,7 @@
       "previous": "Previous page"
     },
     "search": {
-      "search": "Search",
+      "search": "Search...",
       "reset": "Clear search term"
     },
     "cart": {
@@ -243,7 +243,8 @@
       "pages": "Pages"
     },
     "cart": {
-      "cart": "Cart"
+      "cart": "Cart",
+      "Basket": "Basket"
     },
     "contact": {
       "form": {
