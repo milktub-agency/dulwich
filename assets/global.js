@@ -1942,3 +1942,51 @@ class LazySection extends HTMLElement {
 
 customElements.define('lazy-section', LazySection);
 
+class stickyAddToCartButton extends HTMLElement {
+  constructor() {
+    super();
+    this.lastScrollY = window.scrollY;
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        this.handleIntersection(entry);
+      });
+    });
+    this.observer.observe(this);
+    this.initialCheck();
+  }
+  handleIntersection(entry) {
+    const stickyAddToCart = document.querySelector('.sticky-atc-button');
+    const stickyAddToCartDiv = document.getElementById('stickyAddToCart');
+    const stickyAtcImg = document.querySelector('.sticky-atc-img');
+    const currentScrollY = window.scrollY;
+    if (!entry.isIntersecting && currentScrollY > this.lastScrollY) {
+      stickyAddToCart.classList.add('sticky-atc');
+      stickyAddToCartDiv.classList.add('desktop-sticky-add-to-cart-button');
+      stickyAtcImg.classList.remove("hidden");
+    } else if (currentScrollY <= this.lastScrollY) {
+      stickyAddToCart.classList.remove('sticky-atc');
+      stickyAddToCartDiv.classList.remove('desktop-sticky-add-to-cart-button');
+      stickyAtcImg.classList.add("hidden");
+    }
+    this.lastScrollY = currentScrollY;
+  }
+  initialCheck() {
+    const stickyAddToCart = document.querySelector('.sticky-atc-button');
+    const stickyAddToCartDiv = document.getElementById('stickyAddToCart');
+    const stickyAtcImg = document.querySelector('.sticky-atc-img');
+    const rect = this.getBoundingClientRect();
+    if (rect.top < 0) {
+      stickyAddToCart.classList.add('sticky-atc');
+      stickyAddToCartDiv.classList.add('desktop-sticky-add-to-cart-button');
+      stickyAtcImg.classList.remove("hidden");
+    } else {
+      stickyAddToCart.classList.remove('sticky-atc');
+      stickyAddToCartDiv.classList.remove('desktop-sticky-add-to-cart-button');
+      stickyAtcImg.classList.add("hidden");
+    }
+  }
+  disconnectedCallback() {
+    this.observer.disconnect();
+  }
+}
+customElements.define('sticky-add-to-cart-button', stickyAddToCartButton);
