@@ -76,7 +76,7 @@
           <sticky-add-to-cart-button id="stickyAddToCartWrapper">
             <div class="sticky-atc-button">
               <div class="tw-flex tw-gap-[12px] sticky-add-to-cart-button desktop-sticky-add-to-cart-button" id="stickyAddToCart">
-                <div class="tw-w-[43px] md:tw-w-[76px] sticky-atc-img">
+                <div class="bmd:tw-min-w-[34px] md:tw-min-w-[43px] lg:tw-min-w-[76px] sticky-atc-img">
                   <img src="{{ product.featured_media | img_url: '' }}" height="" width="60px" />
                 </div>
                 <div
@@ -116,7 +116,7 @@
                         {% render 'icon-minus' %}
                       </button>
                       <input
-                        class="quantity__input tw-font-primary tw-text-[17px] md:tw-text-[34px] tw-font-medium tw-text-[#DC1636]"
+                        class="quantity__input tw-font-primary blg:tw-text-[17px] lg:tw-text-[34px] tw-font-medium tw-text-[#DC1636]"
                         type="number"
                         name="quantity"
                         id="Quantity-{{ section.id }}"
@@ -266,35 +266,38 @@
                     </volume-pricing>
                   {%- endif -%}
                 </div>
-                <button
-                  id="ProductSubmitButton-{{ section_id }}"
-                  type="submit"
-                  name="add"
-                  class="product-form__submit tw-text-[13px] lg:tw-text-[20px] tw-font-primary tw-font-bold tw-uppercase tw-bg-[#DC1636] tw-text-white tw-border-none tw-py-[14px] button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-                  {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
-                    disabled
-                  {% endif %}
-                >
-                  <span>
-                    {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                      {{ 'products.product.sold_out' | t }}
-                    {%- else -%}
-                      {{ 'products.product.add_to_cart' | t }}
-                    {%- endif -%}
-                  </span>
-                  <div class="loading-overlay__spinner hidden">
-                    <svg
-                      aria-hidden="true"
-                      focusable="false"
-                      class="spinner"
-                      viewBox="0 0 66 66"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </div>
-                </button>
-              </div>
+                <div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-w-full">
+                  <button
+                    id="ProductSubmitButton-{{ section_id }}"
+                    type="submit"
+                    name="add"
+                    class="product-form__submit tw-text-[13px] lg:tw-text-[20px] tw-font-primary tw-font-bold tw-uppercase tw-bg-[#DC1636] tw-text-white tw-border-none tw-py-[14px] button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                    {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
+                      disabled
+                    {% endif %}
+                  >
+                    <span>
+                      {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- else -%}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {%- endif -%}
+                    </span>
+                    <div class="loading-overlay__spinner hidden">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="spinner"
+                        viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      </svg>
+                    </div>
+                  </button>
+                  <span class="atc-down-text tw-pt-[4px] bmd:tw-inline md:tw-hidden tw-text-center tw-font-primary tw-text-[11px] tw-font-normal">{{ 'products.product.atc-text' | t }}</span>
+                </div>
+              </span>
             </div>
           </sticky-add-to-cart-button> 
           <div class="tw-hidden">
