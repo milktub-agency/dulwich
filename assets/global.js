@@ -1956,32 +1956,32 @@ class stickyAddToCartButton extends HTMLElement {
   }
   handleIntersection(entry) {
     const stickyAddToCart = document.querySelector('.sticky-atc-button');
-    const stickyAddToCartDiv = document.getElementById('stickyAddToCart');
+    const stickyAtcWrapper = document.getElementById('stickyAddToCart');
     const stickyAtcImg = document.querySelector('.sticky-atc-img');
     const currentScrollY = window.scrollY;
     if (!entry.isIntersecting && currentScrollY > this.lastScrollY) {
       stickyAddToCart.classList.add('sticky-atc');
-      stickyAddToCartDiv.classList.add('desktop-sticky-add-to-cart-button');
+      stickyAtcWrapper.classList.add('desktop-sticky-add-to-cart-button');
       stickyAtcImg.classList.remove("hidden");
     } else if (currentScrollY <= this.lastScrollY) {
       stickyAddToCart.classList.remove('sticky-atc');
-      stickyAddToCartDiv.classList.remove('desktop-sticky-add-to-cart-button');
+      stickyAtcWrapper.classList.remove('desktop-sticky-add-to-cart-button');
       stickyAtcImg.classList.add("hidden");
     }
     this.lastScrollY = currentScrollY;
   }
   initialCheck() {
     const stickyAddToCart = document.querySelector('.sticky-atc-button');
-    const stickyAddToCartDiv = document.getElementById('stickyAddToCart');
+    const stickyAtcWrapper = document.getElementById('stickyAddToCart');
     const stickyAtcImg = document.querySelector('.sticky-atc-img');
     const rect = this.getBoundingClientRect();
     if (rect.top < 0) {
       stickyAddToCart.classList.add('sticky-atc');
-      stickyAddToCartDiv.classList.add('desktop-sticky-add-to-cart-button');
+      stickyAtcWrapper.classList.add('desktop-sticky-add-to-cart-button');
       stickyAtcImg.classList.remove("hidden");
     } else {
       stickyAddToCart.classList.remove('sticky-atc');
-      stickyAddToCartDiv.classList.remove('desktop-sticky-add-to-cart-button');
+      stickyAtcWrapper.classList.remove('desktop-sticky-add-to-cart-button');
       stickyAtcImg.classList.add("hidden");
     }
   }
