@@ -7,18 +7,17 @@
 }
 
 .footer__content-top {
-  padding-bottom: 5rem;
+  padding-bottom: 28px;
   display: block;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 989px) {
   .footer .grid {
     display: block;
   }
 
   .footer-block.grid__item {
     padding: 0;
-    margin: 4rem 0;
     width: 100%;
   }
 
@@ -27,22 +26,33 @@
   }
 
   .footer__content-top {
-    padding-bottom: 3rem;
-    padding-left: calc(4rem / var(--font-body-scale));
-    padding-right: calc(4rem / var(--font-body-scale));
+    padding-bottom: 0rem;
+    padding-left: calc(2rem / var(--font-body-scale));
+    padding-right: calc(2rem / var(--font-body-scale));
+  }
+  .footer-block__brand-info .footer__list-social.list-social {
+    margin-top: 22px;
+    margin-bottom: 24px;
+  }
+  .footer__content-bottom-wrapper {
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
     row-gap: 6rem;
+    column-gap: 0;
     margin-bottom: 0;
   }
 }
 
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
-  padding-top: 3rem;
+  padding-top: 14px;
+  padding-bottom: 22px;
+  background: #5B5B5B;
+  color: #ffffff80;
 }
 
 .footer__content-bottom:only-child {
@@ -57,10 +67,11 @@
 @media screen and (max-width: 749px) {
   .footer__content-bottom {
     flex-wrap: wrap;
-    padding-top: 0;
     padding-left: 0;
     padding-right: 0;
     row-gap: 1.5rem;
+    padding-top: 11px;
+    padding-bottom: 16px;
   }
 
   .footer__content-bottom-wrapper {
@@ -112,6 +123,8 @@
   .footer-block {
     display: block;
     margin-top: 0;
+    padding-left: 19px;
+    padding-right: 28px;
   }
 }
 
@@ -144,14 +157,21 @@
 }
 
 .footer-block__heading {
-  margin-bottom: 2rem;
+  margin-bottom: 10px;
   margin-top: 0;
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+.footer-block__details-content {
+  margin-bottom: 24px;
 }
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
+  }
+  .footer-block__details-content {
+    margin-bottom: 0;
   }
 }
 
@@ -292,7 +312,6 @@
 
 .footer__copyright {
   text-align: center;
-  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -312,15 +331,7 @@
   }
 }
 
-.footer-block__details-content {
-  margin-bottom: 4rem;
-}
-
 @media screen and (min-width: 750px) {
-  .footer-block__details-content {
-    margin-bottom: 0;
-  }
-
   .footer-block__details-content > p,
   .footer-block__details-content > li {
     padding: 0;
@@ -328,10 +339,6 @@
 
   .footer-block:only-child li {
     display: inline;
-  }
-
-  .footer-block__details-content > li:not(:last-child) {
-    margin-right: 1.5rem;
   }
 }
 
@@ -436,16 +443,11 @@
 
 .footer-block__brand-info .footer__list-social.list-social {
   justify-content: flex-start;
-  margin-left: -1.3rem;
-  margin-right: -1.3rem;
+  margin-top: 26px;
 }
 
 .footer-block__details-content .placeholder-svg {
   max-width: 20rem;
-}
-
-.copyright__content {
-  font-size: 1.1rem;
 }
 
 .copyright__content a {
@@ -506,5 +508,58 @@
     .footer__content-top .grid__item {
       padding-left: 3rem;
     }
+  }
+}
+
+.list-social__link.footer-social-icons {
+  padding: 9px;
+  border: 2px solid rgb(var(--color-foreground), 0.5);
+  margin-right: 3.5px;
+  border-radius: 50%;
+}
+.list-social__link svg path {
+  fill: rgb(var(--color-foreground));
+}
+.footer-block__heading {
+  color: rgb(var(--color-foreground));
+}
+.footer-block:first-child {
+  padding-left: 0;
+}
+.is-divider:empty {
+  background-color: rgb(var(--color-foreground));
+  opacity: 0.3;
+  display: block;
+  height: 3px;
+  margin-bottom: 20px;
+  max-width: 30px;
+  width: 100%;
+}
+.footer-block--menu ul.footer-block__details-content.list-unstyled>li+li {
+  border-top: 1px solid rgb(var(--color-foreground), 0.08);
+}
+.footer-block__details-content .list-menu__item--link {
+  padding: 8px 0;
+}
+.footer-brand-desc p,
+.footer-block__details-content .list-menu__item--link {
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.308px;
+}
+@media screen and (max-width: 750px) {
+  .footer-brand-desc p,
+  .footer-block__details-content .list-menu__item--link {
+    font-size: 15px;
+  }
+  .footer-block__details-content .list-menu__item--link {
+    padding: 6px 0;
+  }
+  .is-divider:empty {
+    margin-bottom: 15px;
+  }
+  .list-social__link.footer-social-icons {
+    padding: 7px;
   }
 }

@@ -39,7 +39,7 @@
       "previous": "Previous page"
     },
     "search": {
-      "search": "Search",
+      "search": "Search...",
       "reset": "Clear search term"
     },
     "cart": {
@@ -244,7 +244,8 @@
       "pages": "Pages"
     },
     "cart": {
-      "cart": "Cart"
+      "cart": "Cart",
+      "Basket": "Basket"
     },
     "contact": {
       "form": {
@@ -308,7 +309,8 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "copyright": "Copyright"
     },
     "featured_blog": {
       "view_all": "View all",

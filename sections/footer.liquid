@@ -75,7 +75,8 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="footer-block__heading tw-text-[15px] md:tw-text-[18px] tw-font-semibold tw-uppercase tw-font-primary inline-richtext">{{- block.settings.heading -}}</h2>
+                  <div class="is-divider"></div>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -122,13 +123,14 @@
                         </div>
                       {%- endif -%}
                       {%- if settings.brand_headline != blank -%}
-                        <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+                        <h2 class="footer-block__heading tw-text-[15px] md:tw-text-[18px] tw-font-semibold tw-uppercase tw-font-primary rte">{{ settings.brand_headline }}</h2>
+                        <div class="is-divider"></div>
                       {%- endif -%}
                       {%- if settings.brand_description != blank -%}
-                        <div class="rte">{{ settings.brand_description }}</div>
+                        <div class="rte footer-brand-desc">{{ settings.brand_description }}</div>
                       {%- endif -%}
                       {%- if block.settings.show_social and has_social_icons -%}
-                        {%- render 'social-icons', class: 'footer__list-social' -%}
+                        {%- render 'social-icons', class: 'footer__list-social', footerStyles: 'footer-social-icons' -%}
                       {%- endif -%}
                     </div>
                   {%- when 'image' -%}
@@ -348,18 +350,17 @@
         {%- endif -%}
       </div>
     </div>
-    <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+    <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--left{% endif %}">
       <div class="footer__copyright caption">
-        <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+        <small class="copyright__content md:tw-text-[16px] tw-text-[14px] tw-font-secondary"
+          >{{ 'sections.footer.copyright' | t }} {{ 'now' | date: '%Y' }} &copy; <span class="tw-font-bold">{{ shop.name | link_to: routes.root_url -}}</span>
         </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
                 <li>
-                  <small class="copyright__content"
+                  <small class="copyright__content md:tw-text-[16px] tw-text-[14px] tw-font-secondary"
                     ><a href="{{ policy.url }}">{{ policy.title }}</a></small
                   >
                 </li>
