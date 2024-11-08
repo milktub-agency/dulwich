@@ -14,9 +14,10 @@
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
     "animations_reveal_on_scroll": false,
-    "buttons_border_thickness": 1,
+    "animations_hover_elements": "default",
+    "buttons_border_thickness": 0,
     "buttons_border_opacity": 100,
-    "buttons_radius": 0,
+    "buttons_radius": 38,
     "buttons_shadow_opacity": 0,
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
@@ -28,9 +29,9 @@
     "variant_pills_shadow_horizontal_offset": 0,
     "variant_pills_shadow_vertical_offset": 4,
     "variant_pills_shadow_blur": 5,
-    "inputs_border_thickness": 0,
+    "inputs_border_thickness": 2,
     "inputs_border_opacity": 55,
-    "inputs_radius": 0,
+    "inputs_radius": 38,
     "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
@@ -116,7 +117,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "cart_type": "drawer",
     "show_vendor": true,
     "show_cart_note": true,
@@ -451,5 +452,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+
+    ]
   }
 }
