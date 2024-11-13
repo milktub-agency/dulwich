@@ -23,8 +23,7 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -114,8 +113,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "inventory_ce6m4Q": {
           "type": "inventory",
@@ -192,8 +190,7 @@
         "description": {
           "type": "description",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -254,20 +251,42 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".splide__pagination li:nth-child(-n + 2) {display: none;}",
+        "@media screen and (max-width: 750px) {.splide__pagination li:nth-child(-n + 3) {display: none; }}"
+      ],
       "settings": {
-        "heading": "Related Products",
-        "heading_size": "h1",
+        "title": "Related Products",
+        "heading_position": "center",
         "products_to_show": 10,
+        "page_width": true,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "color_scheme": "scheme-9da49f90-5b84-4957-b185-c2b04dcfcf9e",
+        "enable_mobile_slider": true,
+        "enable_desktop_slider": true,
+        "show_arrows": true,
+        "show_arrows_on_mobile": true,
+        "show_dots": false,
+        "show_dots_on_mobile": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "desktop_per_page": 4,
+        "mobile_per_page": 2,
+        "desktop_padding_left": 0,
+        "desktop_padding_right": 0,
+        "mobile_padding_left": 0,
+        "mobile_padding_right": 0,
+        "gap_between_slides_on_desktop": 2,
+        "gap_between_slides_on_mobile": 1.5,
+        "hide_button_desktop": false,
+        "hide_button_mobile": false,
+        "button_label": "VIEW ALL",
+        "button_url": "",
+        "desktop_padding_top": 30,
+        "desktop_padding_bottom": 30,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
       }
     },
     "6384ab31-b366-4e70-9ed4-7a8b7db6a04c": {

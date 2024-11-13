@@ -20,3 +20,57 @@ button.splide__arrow {
 media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
     border: 2px solid #000;
 }
+
+.collection .splide__arrow--prev,
+.related-products .splide__arrow--prev {
+    left: -5%;
+}
+.collection .splide__arrow--next,
+.related-products .splide__arrow--next {
+    right: -5%;
+}
+.collection .splide__arrow svg,
+.related-products .splide__arrow svg {
+    fill: #DC1636;
+    height: 44px;
+    width: 44px;
+}
+.collection button.splide__arrow,
+.related-products button.splide__arrow {
+    background: transparent;
+    width: unset;
+}
+.collection .splide__pagination,
+.related-products .splide__pagination {
+    bottom: -18px;
+}
+
+@media screen and (max-width: 990px) {
+    .collection .splide__arrow--prev,
+    .related-products .splide__arrow--prev {
+        left: -3.5%;
+    }
+    .collection .splide__arrow--next,
+    .related-products .splide__arrow--next {
+        right: -3.5%;
+    }
+    .collection .splide__arrow svg,
+    .related-products .splide__arrow svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .collection .splide__arrow--prev,
+    .related-products .splide__arrow--prev {
+        left: -9%;
+    }
+    .collection .splide__arrow--next,
+    .related-products .splide__arrow--next {
+        right: -9%;
+    }
+    .collection .splide__pagination,
+    .related-products .splide__pagination {
+        bottom: -12px;
+    }
+}
