@@ -2797,9 +2797,6 @@ details-disclosure > details {
 .show-pause-icon{
   opacity: 1;
 }
-.hide-play-icon{
+.hide-play-icon, .hide-pause-icon{
   opacity:0;
-}
-.hide-pause-icon{
-  opacity: 0;
 }

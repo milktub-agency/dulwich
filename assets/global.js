@@ -2051,10 +2051,10 @@ class YoutubeBanner extends HTMLElement {
   connectedCallback() {
     const playButton = this.querySelector('.video-play-icon');
     const youtubeVideo = this.querySelector('.js-youtube');
-    playButton.addEventListener('click', function clickHandler() {
-      youtubeVideo.classList.toggle('show-banner-video');
-      youtubeVideo.classList.toggle('hide-banner-video');
-      const youtubeVideoSrc = youtubeVideo.src;
+    playButton?.addEventListener('click', function clickHandler() {
+      youtubeVideo?.classList.toggle('show-banner-video');
+      youtubeVideo?.classList.toggle('hide-banner-video');
+      const youtubeVideoSrc = youtubeVideo?.src;
       if (!youtubeVideoSrc.includes('autoplay=1')) {
         youtubeVideo.src = youtubeVideoSrc + (youtubeVideoSrc.includes('?') ? '&' : '?') + 'autoplay=1';
       }
