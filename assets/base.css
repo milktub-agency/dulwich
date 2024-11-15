@@ -2776,3 +2776,30 @@ details-disclosure > details {
     max-height: 31px;
   }
 }
+
+.show-banner-video{
+  z-index: -1;
+}
+.hide-banner-video{
+  z-index: 1;
+}
+.media--banner-video{
+  padding-bottom:49%;
+}
+.video-play-icon{
+  display:flex;
+  z-index: 1;
+}
+.video-pause-icon{
+  display: flex;
+  z-index: 0;
+}
+.show-pause-icon{
+  opacity: 1;
+}
+.hide-play-icon{
+  opacity:0;
+}
+.hide-pause-icon{
+  opacity: 0;
+}

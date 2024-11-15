@@ -1,0 +1,223 @@
+.red-color {
+  color: #DC1636;
+}
+.red-color-bold {
+  color: #DC1636;
+  font-weight: 600;
+}
+.red-color-bolder {
+  color: #DC1636;
+  font-weight: 700;
+  font-size: 24px;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.black-color-bolder {
+  color: #000000;
+  font-weight: 700;
+}
+.faq-red-medium {
+  color: #DC1636;
+  font-weight: 500;
+}
+.faq-red-bold {
+  color: #DC1636;
+  font-weight: 700;
+  font-size: 23px;
+}
+.faq-black-bold {
+  color: #000;
+  font-weight: 700;
+}
+.faq-red-italic {
+  color: #DC1636;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 19px;
+}
+.review-red-bold {
+  color: #DC1636;
+  font-weight: 700;
+  font-style: italic;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+.instr-black-color-bolder {
+  color: #595959;
+  font-weight: 700;
+  font-style: italic;
+}
+.instr-red-color-bolder {
+  color: #DC1636;
+  font-weight: 700;
+}
+.instr-red-italic-bolder {
+  color: #DC1636;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 26px;
+}
+.instr-red-size-bolder {
+  color: #DC1636;
+  font-weight: 700;
+  font-size: 28px;
+}
+@media screen and (max-width: 990px) {
+  .red-color-bolder {
+    line-height: 26px;
+    padding-bottom: 8px;
+    font-size: 22px;
+  }
+  .faq-red-bold {
+    font-size: 15px;
+    margin-bottom: 6px;
+    display: inline-block;
+  }
+  .faq-red-italic {
+    font-size: 12px;
+  }
+  .instr-red-italic-bolder {
+    font-size: 16px;
+  }
+  .instr-red-size-bolder {
+    font-size: 18px;
+  }
+}
+table.product-information-table tr:nth-child(even) {
+  background-color: #BCE3EE;
+  color: #000;
+}
+table.product-information-table tr th:first-child,
+table.product-information-table tr td:first-child {
+  text-align: left;
+  padding-left: 26px;
+}
+table.product-information-table tr th:not(:first-child),
+table.product-information-table tr td:not(:first-child) {
+  text-align: center;
+}
+table.product-information-table thead {
+  border-bottom: 2px solid #D9D9D9;
+}
+table.product-information-table thead th {
+  padding-bottom: 10px;
+}
+.collapsible-content--details.active {
+  color: #000;
+  background: #BCE3EE;
+  border: 1.5px solid #999;
+  border-bottom: none;
+  font-weight: 500;
+  z-index: 2;
+}
+.tabs-button:not(.active) {
+  color: #FFF;
+  background: #DC1636;
+  border: 2px solid #FFF;
+  border-bottom: none;
+  font-weight: 600;
+  z-index: 1;
+}
+.tabs-button {
+  padding: 21px 49px 9px 49px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  border-radius: 40px 40px 0px 0px;
+  margin-left: -20px;
+  position: relative;
+}
+.tabs-button:first-child {
+  margin-left: 0;
+}
+.tabs-button:last-child {
+  z-index: 0;
+}
+.tab-switch-content {
+  background: #BCE3EE;
+  border: 1.5px solid #999;
+  padding: 0 54px;
+  border-radius: 0px 40px 40px 40px;
+  margin-top: -1px;
+}
+.tabs-buttons {
+  display: flex;
+}
+.list-column {
+  border-right: 1px solid #D9D9D9;
+}
+.list-column:last-child {
+  border-right: none;
+}
+@media screen and (max-width: 990px) {
+  .collapsible-content--details.active {
+    background: #DC1636;
+    color: #FFF;
+    border: 1.5px solid #fff;
+    border-bottom: none;
+  }
+  tab-switch-product details[open] summary {
+    padding: 12px 0 12px 0; 
+  }
+  .tab-switch-content {
+    border: 1.5px solid #fff;
+  }
+  .tabs-buttons {
+    flex-direction: column;
+  }
+  .tabs-button {
+    margin-left: 0;
+    border-radius: 20px 20px 0px 0px;
+    padding: 12px 0 24px 0;
+    font-size: 13px;
+    margin-top: -24px;
+  }
+  .tabs-button:first-child {
+    margin-top: -14px;
+  }
+  .collapsible-content--details.active {
+    z-index: 2;
+  }
+  .collapsible-content--details.active:first-child {
+    z-index: 2;
+  }
+  .tabs-button:not(.active) {
+    z-index: 2;
+    border: none;
+    border-top: 2px solid #FFF;
+  }
+  .tab-switch-content {
+    border-radius: 0 0 20px 20px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+  }
+  .tabs-button:last-child {
+    padding: 12px 0 12px;
+  }
+  table.product-information-table tr th:first-child,
+  table.product-information-table tr td:first-child {
+    padding-left: 10px;
+  }
+  tab-switch-product details[open] svg {
+    transform: rotate(180deg);
+  }
+}
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 55%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media screen and (max-width: 1024px) {
+  .tab-switch-page-width {
+    padding: 0 20px;
+  }
+}
