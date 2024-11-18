@@ -1,0 +1,167 @@
+{%- style -%}
+    .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top_mob }}px;
+        padding-bottom: {{ section.settings.padding_bottom_mob }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+        .section-{{ section.id }}-padding {
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+    }
+{%- endstyle -%}
+
+<div class="icon-with-text page-width tw-flex tw-flex-wrap tw-justify-between color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
+    <div class="tw-text-center tw-font-primary tw-text-[rgb(var(--color-foreground))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full">{{ section.settings.heading }}</div>
+    <div class="tw-flex tw-flex-row tw-flex-wrap tw-justify-center md:tw-justify-evenly tw-gap-y-[34px] tw-gap-x-[35px] tw-w-[75%] md:tw-w-[100%] tw-m-auto">
+        {% if section.blocks.size > 0 %}
+            {% for block in section.blocks %}
+                <div class="usp-block tw-flex tw-flex-col tw-items-center tw-relative tw-px-[8px] md:tw-px-[20px] tw-pb-[9px] md:tw-pb-[32px] tw-pt-[10px] md:tw-pt-[38px] md:tw-w-[100%] tw-min-w-[65px] bmd:tw-max-w-[65px] md:tw-max-w-[198px] tw-rounded-[7px] md:tw-rounded-[20px] color-{{ block.settings.color_scheme_block }}">
+                    <a class="tw-h-full" {% if block.settings.usp_link != blank %} href="{{ block.settings.usp_link }}" {% endif %}>
+                        <div class="tw-flex tw-flex-col tw-items-center tw-gap-[13px] md:tw-gap-[30px] tw-h-full tw-justify-between">
+                            {% if block.settings.usp_image != blank %}
+                                {{ block.settings.usp_image | image_url: width: 48 | image_tag }}
+                            {% elsif block.settings.usp_svg != blank %}
+                                {{ block.settings.usp_svg }}
+                            {% else %}
+                                {{ 'product-6' | placeholder_svg_tag : 'placeholder-icon' }}
+                            {% endif %}
+                            {% if block.settings.usp_title != blank %}
+                                <div class="tw-font-primary tw-text-[8px] md:tw-text-[22px] tw-font-medium tw-text-center tw-text-[rgba(var(--color-foreground))] tw-leading-[8px] md:tw-leading-[26px]">
+                                    {{ block.settings.usp_title }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </a>
+                </div>
+        {% endfor %}
+      {% endif %}  
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Icon with text",
+    "max_blocks": 4,
+    "class": "usp",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "settings"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Heading"
+        },
+        {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "background-1"
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "Desktop padding top",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 4,
+            "unit": "px",
+            "label": "Desktop padding bottom",
+            "default": 52
+        },
+        {
+            "type": "range",
+            "id": "padding_top_mob",
+            "min": 0,
+            "max": 60,
+            "step": 4,
+            "unit": "px",
+            "label": "Mobile padding top",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom_mob",
+            "min": 0,
+            "max": 60,
+            "step": 4,
+            "unit": "px",
+            "label": "Mobile padding bottom",
+            "default": 20
+        }
+    ],
+    "blocks": [
+        {
+            "type": "usp",
+            "name": "usp block",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "usp_image",
+                    "label": "Image",
+                    "info": "Recommended image dimenisions: 154 x 154 pixels"
+                },
+                {
+                    "type": "html",
+                    "id": "usp_svg",
+                    "label": "Svg"
+                },
+                {
+                    "type": "text",
+                    "id": "usp_title",
+                    "label": "Title",
+                    "default":"title"
+                },
+                {
+                    "type": "url",
+                    "id": "usp_link",
+                    "label": "Link"
+                },
+                {
+                    "type": "color_scheme",
+                    "id": "color_scheme_block",
+                    "label": "t:sections.all.colors.label",
+                    "default": "background-1"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Icon with text",
+            "blocks": [
+                {
+                    "type": "usp"
+                },
+                {
+                    "type": "usp"
+                },
+                {
+                    "type": "usp"
+                },
+                {
+                    "type": "usp"
+                }
+            ]
+        }
+    ]
+    }
+{% endschema %}

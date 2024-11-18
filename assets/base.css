@@ -2763,6 +2763,11 @@ details-disclosure > details {
     max-height: 51px;
   }
 }
+.usp-block svg,
+.usp-block img {
+  width: 77px;
+  height: 77px;
+}
 @media screen and (max-width: 750px) {
   .product__info-container .quantity {
     width: calc(7.4rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
@@ -2774,5 +2779,19 @@ details-disclosure > details {
   .product__info-container button.product-form__submit {
     min-height: 31px;
     max-height: 31px;
+  }
+  .usp-block svg,
+  .usp-block img {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .recent-blogs__section .splide__slide {
+    border-right: 3px solid rgb(var(--color-badge-foreground), 0.1);
+  }
+  .recent-blogs__section .splide__slide:last-child {
+    border-right: none;
   }
 }
