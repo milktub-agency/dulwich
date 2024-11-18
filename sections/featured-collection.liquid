@@ -78,7 +78,7 @@
     {%- endstyle -%}
 
     <div class="color-{{ section.settings.color_scheme }} isolate gradient">
-      <div class="collection section-{{ section.id }}-padding {% unless section.settings.full_width %} page-width {% endunless %}">
+      <div class="collection section-{{ section.id }}-padding {% unless section.settings.full_width %} page-width page-width-lg-slider {% endunless %}">
 
         {%- if section.settings.title != blank -%}
           <h2 class="{{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">

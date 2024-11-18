@@ -2777,6 +2777,51 @@ details-disclosure > details {
   }
 }
 
+.product-card-media img {
+  object-fit: contain;
+}
+.product-card__title, .product-card__price {
+  color: rgb(var(--color-foreground));
+}
+.product-vendor {
+  color: rgb(var(--color-foreground),0.5);
+}
+.truncate-product-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  max-width: 174px;
+}
+.product-card .product-card-atc-btn {
+  min-width: 67.4%;
+  max-width: 67.4%;
+}
+@media screen and (max-width: 1024px) {
+  .product-card .product-card-atc-btn {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .product-card .product-card-atc-btn {
+    min-width: 68%;
+    max-width: 68%;
+    min-height: 15px;
+    max-height: 15px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .page-width-lg-slider {
+    padding: 0 3.8rem;
+  }
+}
+.badge-capsule {
+  font-size: calc(7px + (13 - 7) * (100vw - 375px) / (1440 - 375));
+}
+.badge-new {
+  font-size: calc(15px + (31 - 15) * (100vw - 375px) / (1440 - 375));
+}
 .show-banner-video{
   z-index: -1;
 }

@@ -33,7 +33,7 @@
     }
 
     {% for block in section.blocks %}
-      .description-text--{{block.id }} {
+      .product__info-container .description-text--{{block.id }} {
         color: {{ block.settings.text_color }};
         font-weight: {{ block.settings.text_font_weight }};
         font-size: {{ block.settings.text_font_size }}px;
@@ -42,7 +42,7 @@
         margin-bottom: {{ block.settings.text_bottom_spacing }}px;
       }
       @media screen and (max-width: 750px) {
-        .description-text--{{block.id }} {
+        .product__info-container .description-text--{{block.id }} {
           font-weight: {{ block.settings.mobile_text_font_weight }};
           font-size: {{ block.settings.mobile_text_font_size }}px;
           margin-top: {{ block.settings.mobile_text_top_spacing }}px;
