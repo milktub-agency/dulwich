@@ -1990,3 +1990,76 @@ class stickyAddToCartButton extends HTMLElement {
   }
 }
 customElements.define('sticky-add-to-cart-button', stickyAddToCartButton);
+
+class VideoAutoplay extends HTMLElement {
+  constructor() {
+    super();
+    this.video = null;
+    this.observer = null;
+  }
+  connectedCallback() {
+    this.initializeVideo();
+  }
+  initializeVideo() {
+    this.video = this.querySelector('.product-tab-video, .js-youtube');
+    if (!this.video) return;
+    this.initObserver();
+  }
+  initObserver() {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+    this.observer = new IntersectionObserver(this.handleVideoPlayPause.bind(this), observerOptions);
+    this.observer.observe(this.video);
+  }
+  handleVideoPlayPause(entries) {
+    entries.forEach(entry => {
+      const videoElement = entry.target;
+      if (entry.isIntersecting) {
+        this.playVideo(videoElement);
+      } else {
+        this.pauseVideo(videoElement);
+      }
+    });
+  }
+  playVideo(videoElement) {
+    if (videoElement.tagName === 'IFRAME') {
+      videoElement.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    } else if (videoElement.tagName === 'VIDEO') {
+      videoElement.play().catch(error => console.warn('Video play failed:', error));
+    }
+  }
+  pauseVideo(videoElement) {
+    if (videoElement.tagName === 'IFRAME') {
+      videoElement.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    } else if (videoElement.tagName === 'VIDEO') {
+      videoElement.pause();
+    }
+  }
+  disconnectedCallback() {
+    if (this.observer && this.video) {
+      this.observer.unobserve(this.video);
+      this.observer.disconnect();
+    }
+  }
+}
+customElements.define('video-autoplay', VideoAutoplay);
+
+class YoutubeBanner extends HTMLElement {
+  connectedCallback() {
+    const playButton = this.querySelector('.video-play-icon');
+    const youtubeVideo = this.querySelector('.js-youtube');
+    playButton?.addEventListener('click', function clickHandler() {
+      youtubeVideo?.classList.toggle('show-banner-video');
+      youtubeVideo?.classList.toggle('hide-banner-video');
+      const youtubeVideoSrc = youtubeVideo?.src;
+      if (!youtubeVideoSrc.includes('autoplay=1')) {
+        youtubeVideo.src = youtubeVideoSrc + (youtubeVideoSrc.includes('?') ? '&' : '?') + 'autoplay=1';
+      }
+      playButton.removeEventListener('click', clickHandler);
+    });
+  }
+}
+customElements.define('youtube-banner', YoutubeBanner);

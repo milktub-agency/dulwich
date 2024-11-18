@@ -102,7 +102,6 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "none",
@@ -111,7 +110,6 @@
         "menu_color_scheme": "",
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "mobile_logo_position": "center",
         "margin_bottom": 0,
         "wishlist_page_url": "shopify:\/\/pages\/wishlist",
         "padding_top": 20,

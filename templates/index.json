@@ -536,8 +536,7 @@
       "blocks": {
         "d273af40-f9f7-479b-9226-b2a4cee1e618": {
           "type": "carousel_block",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
