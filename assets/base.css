@@ -2822,3 +2822,26 @@ details-disclosure > details {
 .badge-new {
   font-size: calc(15px + (31 - 15) * (100vw - 375px) / (1440 - 375));
 }
+.show-banner-video{
+  z-index: -1;
+}
+.hide-banner-video{
+  z-index: 1;
+}
+.media--banner-video{
+  padding-bottom:49%;
+}
+.video-play-icon{
+  display:flex;
+  z-index: 1;
+}
+.video-pause-icon{
+  display: flex;
+  z-index: 0;
+}
+.show-pause-icon{
+  opacity: 1;
+}
+.hide-play-icon, .hide-pause-icon{
+  opacity:0;
+}
