@@ -2816,3 +2816,9 @@ details-disclosure > details {
     padding: 0 3.8rem;
   }
 }
+.badge-capsule {
+  font-size: calc(7px + (13 - 7) * (100vw - 375px) / (1440 - 375));
+}
+.badge-new {
+  font-size: calc(15px + (31 - 15) * (100vw - 375px) / (1440 - 375));
+}

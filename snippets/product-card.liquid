@@ -58,13 +58,13 @@
     {% endfor %}
 
     {% if badge_text != blank %}
-      <span class="tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] tw-font-primary tw-text-[6px] md:tw-text-[0.9vw] tw-font-semibold tw-border tw-border-solid tw-border-[rgb(var(--color-foreground))] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] tw-max-w-[40.7%]">{{ badge_text }}</span>
+      <span class="badge-capsule tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] tw-font-primary tw-font-semibold tw-border tw-border-solid tw-border-[rgb(var(--color-foreground))] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] lg:tw-max-w-[40.7%]">{{ badge_text }}</span>
     {% endif %}
 
     {% assign badge_text_new = "" %}
     {% if product.tags contains 'new' or product.tags contains 'New' %}
       {% assign badge_text_new = "new!" | capitalize %}
-      <span class="tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-text-[14.6px] md:tw-text-[2vw] tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[21%] tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[7.4%] tw-px-[7.5%] lg:tw-px-[7%]">{{ badge_text_new }}</span>
+      <span class="badge-new tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[21%] lg:tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[7.4%] tw-px-[7.5%] lg:tw-px-[7%]">{{ badge_text_new }}</span>
     {% endif %}
     
     <div class="product-card__badges tw-absolute tw-top-4 tw-left-4">

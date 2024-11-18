@@ -63,11 +63,11 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 @media screen and (max-width: 750px) {
     .collection .splide__arrow--prev,
     .related-products .splide__arrow--prev {
-        left: -9%;
+        left: -25px;
     }
     .collection .splide__arrow--next,
     .related-products .splide__arrow--next {
-        right: -9%;
+        right: -25px;
     }
     .collection .splide__pagination,
     .related-products .splide__pagination {
