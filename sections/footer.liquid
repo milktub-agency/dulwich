@@ -76,7 +76,7 @@
               >
                 {%- if block.settings.heading != blank -%}
                   <h2 class="footer-block__heading tw-text-[15px] md:tw-text-[18px] tw-font-semibold tw-uppercase tw-font-primary inline-richtext">{{- block.settings.heading -}}</h2>
-                  <div class="is-divider"></div>
+                  <div class="is-divider tw-mb-[15px] md:tw-mb-[20px]"></div>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -249,7 +249,7 @@
   {%- endif -%}
 
   <div
-    class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+    class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} {% if template.name == 'product' %} tw-pb-[122px] {% else %} tw-pb-[22px] {% endif %}"
     {% if settings.animations_reveal_on_scroll %}
       data-cascade
     {% endif %}

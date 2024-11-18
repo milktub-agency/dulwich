@@ -1,37 +1,116 @@
 {
   "sections": {
+    "custom_collection_slider_3PGxde": {
+      "type": "custom-collection-slider",
+      "blocks": {
+        "collection_block_VfhgYY": {
+          "type": "collection_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
+            "image_fetch": false,
+            "collection": "allitech",
+            "collection_name": "Allitech"
+          }
+        },
+        "collection_block_rAyD4h": {
+          "type": "collection_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
+            "image_fetch": false,
+            "collection": "animal-health",
+            "collection_name": "Animal health"
+          }
+        },
+        "collection_block_nKjgYJ": {
+          "type": "collection_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-in-white-dress-outside.jpg",
+            "image_fetch": false,
+            "collection": "antiseptic",
+            "collection_name": "Antiseptic"
+          }
+        },
+        "collection_block_eJnNPF": {
+          "type": "collection_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "image_fetch": false,
+            "collection": "digestive-health",
+            "collection_name": "Digestive health"
+          }
+        },
+        "collection_block_rJyLen": {
+          "type": "collection_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ripe-red-strawberries-in-a-white-bowl.jpg",
+            "image_fetch": false,
+            "collection": "losterol",
+            "collection_name": "Losterol"
+          }
+        },
+        "collection_block_DgEnyC": {
+          "type": "collection_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ocean-water-with-swimmers.jpg",
+            "image_fetch": false,
+            "collection": "oxytech",
+            "collection_name": "Oxytech"
+          }
+        },
+        "collection_block_yTWDVr": {
+          "type": "collection_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bare-stony-room-with-two-wooden-benches-and-coffee-tables.jpg",
+            "image_fetch": false,
+            "collection": "supplements",
+            "collection_name": "Supplements"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_VfhgYY",
+        "collection_block_rAyD4h",
+        "collection_block_nKjgYJ",
+        "collection_block_eJnNPF",
+        "collection_block_rJyLen",
+        "collection_block_DgEnyC",
+        "collection_block_yTWDVr"
+      ],
+      "settings": {
+        "show_desktop": true,
+        "section_title": "",
+        "flex_wrap": false,
+        "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
+        "section_padding_top": 64,
+        "section_padding_bottom": 56,
+        "mobile_padding_top": 16,
+        "mobile_padding_bottom": 22
+      }
+    },
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f": {
       "type": "slideshow",
       "blocks": {
         "00eb27cf-4970-4b8b-80a9-caf265729feb": {
           "type": "carousel_block",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Banner_-_desktop.png",
-            "image_mobile": "shopify:\/\/shop_images\/white-bowl-surrounded-by-herbs-chilis-and-lime-slices.jpg"
+            "image_desktop": "shopify:\/\/shop_images\/Slide_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Slide_1_mob.png"
           }
         },
         "26cad0da-0c18-4f04-9211-f8aa7a4a094c": {
           "type": "carousel_block",
-          "disabled": true,
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg"
-          }
-        },
-        "729df925-fa5e-46d7-ba36-3558ab8f4e28": {
-          "type": "carousel_block",
-          "disabled": true,
-          "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg"
+            "image_desktop": "shopify:\/\/shop_images\/Slide_2.png",
+            "image_mobile": "shopify:\/\/shop_images\/Slide_2_mob.png"
           }
         }
       },
       "block_order": [
         "00eb27cf-4970-4b8b-80a9-caf265729feb",
-        "26cad0da-0c18-4f04-9211-f8aa7a4a094c",
-        "729df925-fa5e-46d7-ba36-3558ab8f4e28"
+        "26cad0da-0c18-4f04-9211-f8aa7a4a094c"
       ],
       "settings": {
-        "enable_autoplay": false,
+        "enable_autoplay": true,
         "autoplay_speed": 3,
         "show_arrows": true,
         "show_arrows_on_mobile": true,
@@ -41,50 +120,20 @@
         "section-padding-bottom": 0
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
+    "f8e4c2bf-b0d7-465b-b26a-5f48def4ab61": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Best Sellers",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
-        "collection": "all",
-        "products_to_show": 16,
+        "collection": "best-sellers",
+        "products_to_show": 4,
         "full_width": false,
         "show_view_all": true,
-        "view_all_style": "outline",
-        "color_scheme": "background-1",
-        "enable_quick_view": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "enable_quick_view": false,
         "enable_mobile_slider": true,
         "enable_desktop_slider": true,
         "show_arrows": true,
@@ -99,14 +148,44 @@
         "mobile_padding_right": 20,
         "gap_between_slides_on_desktop": 2,
         "gap_between_slides_on_mobile": 2,
-        "padding_top": 28,
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Delivery to Europe?<\/strong>  We are excited to announce that EU deliveries are once again available.<\/p>",
+            "text_font_size": "18",
+            "text_font_weight": "400",
+            "text_line_height": "28",
+            "text_font_size_mob": "9",
+            "text_font_weight_mob": "400",
+            "text_line_height_mob": "14"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_top_mob": 16,
+        "padding_bottom_mob": 16
       }
     },
     "60c6c5f7-a53f-4f0e-8c7f-ac8a2ffd94ae": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection 1",
+        "title": "All Our Products",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -135,488 +214,159 @@
         "padding_bottom": 36
       }
     },
-    "8e8a1697-d92a-4a2c-ba5d-566f9a300e86": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection 2",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "collection": "boston-red-sox-1",
-        "products_to_show": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "enable_quick_view": false,
-        "enable_mobile_slider": true,
-        "enable_desktop_slider": true,
-        "show_arrows": true,
-        "show_arrows_on_mobile": true,
-        "show_dots": true,
-        "show_dots_on_mobile": true,
-        "enable_autoplay": false,
-        "autoplay_speed": 3,
-        "desktop_per_page": 4,
-        "mobile_per_page": 1,
-        "mobile_padding_left": 0,
-        "mobile_padding_right": 20,
-        "gap_between_slides_on_desktop": 2,
-        "gap_between_slides_on_mobile": 2,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "8797126e-2d65-4707-adf9-645294230ae3": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection 3",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "collection": "frontpage",
-        "products_to_show": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "enable_quick_view": true,
-        "enable_mobile_slider": true,
-        "enable_desktop_slider": true,
-        "show_arrows": true,
-        "show_arrows_on_mobile": true,
-        "show_dots": true,
-        "show_dots_on_mobile": true,
-        "enable_autoplay": false,
-        "autoplay_speed": 3,
-        "desktop_per_page": 4,
-        "mobile_per_page": 1,
-        "mobile_padding_left": 0,
-        "mobile_padding_right": 20,
-        "gap_between_slides_on_desktop": 2,
-        "gap_between_slides_on_mobile": 2,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "9a510a73-b8d3-4825-aef7-5ffe8a9fe572": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection 4",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "collection": "baltimore-orioles",
-        "products_to_show": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "enable_quick_view": false,
-        "enable_mobile_slider": true,
-        "enable_desktop_slider": true,
-        "show_arrows": true,
-        "show_arrows_on_mobile": true,
-        "show_dots": true,
-        "show_dots_on_mobile": true,
-        "enable_autoplay": false,
-        "autoplay_speed": 3,
-        "desktop_per_page": 4,
-        "mobile_per_page": 1,
-        "mobile_padding_left": 0,
-        "mobile_padding_right": 20,
-        "gap_between_slides_on_desktop": 2,
-        "gap_between_slides_on_mobile": 2,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "3dea34de-2697-4373-9288-b29bcc9e12a7": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection 5",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "collection": "atlanta-braves",
-        "products_to_show": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "enable_quick_view": false,
-        "enable_mobile_slider": true,
-        "enable_desktop_slider": true,
-        "show_arrows": true,
-        "show_arrows_on_mobile": true,
-        "show_dots": true,
-        "show_dots_on_mobile": true,
-        "enable_autoplay": false,
-        "autoplay_speed": 3,
-        "desktop_per_page": 4,
-        "mobile_per_page": 1,
-        "mobile_padding_left": 0,
-        "mobile_padding_right": 20,
-        "gap_between_slides_on_desktop": 2,
-        "gap_between_slides_on_mobile": 2,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "f8e4c2bf-b0d7-465b-b26a-5f48def4ab61": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection 6",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "collection": "baltimore-orioles",
-        "products_to_show": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "",
-        "enable_quick_view": false,
-        "enable_mobile_slider": true,
-        "enable_desktop_slider": true,
-        "show_arrows": true,
-        "show_arrows_on_mobile": true,
-        "show_dots": true,
-        "show_dots_on_mobile": true,
-        "enable_autoplay": false,
-        "autoplay_speed": 3,
-        "desktop_per_page": 4,
-        "mobile_per_page": 1,
-        "mobile_padding_left": 0,
-        "mobile_padding_right": 20,
-        "gap_between_slides_on_desktop": 2,
-        "gap_between_slides_on_mobile": 2,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
+    "custom_icon_with_text_qcURre": {
+      "type": "custom-icon-with-text",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "usp_PVCwXA": {
+          "type": "usp",
           "settings": {
-            "collection": "philadephia-phillies"
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"87\" height=\"86\" viewbox=\"0 0 87 86\" fill=\"none\">\n  <path d=\"M39.7195 17.167H14.7695C13.4461 17.167 12.1769 17.6927 11.2411 18.6285C10.3053 19.5643 9.77954 20.8335 9.77954 22.157V67.0669L4.78955 82.0369L24.7495 77.0469H64.6695C65.9928 77.0469 67.2623 76.521 68.1979 75.5853C69.1335 74.6497 69.6594 73.3803 69.6594 72.0569V47.1069\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M57.6838 41.6409L42.7139 44.3355L45.2089 29.1659L68.8117 5.66304C69.2753 5.19533 69.8272 4.82411 70.4355 4.57077C71.0432 4.31744 71.6954 4.18701 72.3546 4.18701C73.0133 4.18701 73.6655 4.31744 74.2733 4.57077C74.8815 4.82411 75.4334 5.19533 75.8975 5.66304L81.1869 10.9524C81.6545 11.4163 82.0257 11.9682 82.2792 12.5763C82.5322 13.1843 82.6629 13.8366 82.6629 14.4953C82.6629 15.154 82.5322 15.8063 82.2792 16.4144C82.0257 17.0224 81.6545 17.5743 81.1869 18.0382L57.6838 41.6409Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_title": "Our Blog",
+            "usp_link": "",
+            "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
           }
         },
-        "product": {
-          "type": "product",
+        "usp_qRqb7J": {
+          "type": "usp",
           "settings": {
-            "product": "antique-drawers",
-            "second_image": false
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"91\" height=\"90\" viewbox=\"0 0 91 90\" fill=\"none\">\n  <path d=\"M32.948 35.8497C41.7761 35.8497 48.9327 28.8776 48.9327 20.2772C48.9327 11.6767 41.7761 4.70459 32.948 4.70459C24.12 4.70459 16.9634 11.6767 16.9634 20.2772C16.9634 28.8776 24.12 35.8497 32.948 35.8497Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M61.1216 45.1899C59.356 45.1899 57.9246 46.5844 57.9246 48.3045V57.0642H48.9333C47.1677 57.0642 45.7363 58.4586 45.7363 60.1787V70.3007C45.7363 72.0212 47.1677 73.4152 48.9333 73.4152H57.9246V82.1751C57.9246 83.8949 59.356 85.2896 61.1216 85.2896H71.5116C73.2769 85.2896 74.7085 83.8949 74.7085 82.1751V73.4152H83.7002C85.4656 73.4152 86.8971 72.0212 86.8971 70.3007V60.1787C86.8971 58.4586 85.4656 57.0642 83.7002 57.0642H74.7085V48.3045C74.7085 46.5844 73.2769 45.1899 71.5116 45.1899H61.1216Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M36.1266 79.4406H4.17578V76.0639C4.22668 71.3161 5.51195 66.6581 7.91152 62.5254C10.3111 58.3927 13.7468 54.92 17.8975 52.4315C22.0482 49.9431 26.7787 48.5201 31.6469 48.2956C33.4032 48.2146 35.1567 48.2905 36.8862 48.5191\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_title": "Health Suggestions",
+            "usp_link": "",
+            "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "usp_FeM89t": {
+          "type": "usp",
           "settings": {
-            "collection": "baltimore-orioles"
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"91\" height=\"92\" viewbox=\"0 0 91 92\" fill=\"none\">\n  <path d=\"M64.449 80.7791C73.2328 80.7791 80.3536 73.659 80.3536 64.8746C80.3536 56.091 73.2328 48.9702 64.449 48.9702C55.6652 48.9702 48.5444 56.091 48.5444 64.8746C48.5444 73.659 55.6652 80.7791 64.449 80.7791Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M86.712 87.1671L75.7061 76.1611\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.3637 13.9822C45.3637 8.71191 41.0912 4.43945 35.8209 4.43945H4.01172V68.0575H35.8209\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.3638 13.9854V42.6136\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.3638 13.9822C45.3638 8.71187 49.6362 4.43945 54.9065 4.43945H86.7157V48.9738\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_title": "Case Histories",
+            "usp_link": "",
+            "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
+          }
+        },
+        "usp_BVefNt": {
+          "type": "usp",
+          "settings": {
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"86\" height=\"86\" viewbox=\"0 0 86 86\" fill=\"none\">\n  <path d=\"M43.3364 81.8408C64.7369 81.8408 82.0849 64.4928 82.0849 43.0923C82.0849 21.6921 64.7369 4.34375 43.3364 4.34375C21.9362 4.34375 4.58789 21.6921 4.58789 43.0923C4.58789 64.4928 21.9362 81.8408 43.3364 81.8408Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M32.9883 63.7871H53.6854\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M43.3361 63.7897V39.6431H36.437\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M43.3371 24.1229C42.3845 24.1229 41.6123 23.3507 41.6123 22.3981C41.6123 21.4455 42.3845 20.6733 43.3371 20.6733\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M43.3369 24.1229C44.2895 24.1229 45.0617 23.3507 45.0617 22.3981C45.0617 21.4455 44.2895 20.6733 43.3369 20.6733\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_title": "About Us",
+            "usp_link": "",
+            "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "usp_PVCwXA",
+        "usp_qRqb7J",
+        "usp_FeM89t",
+        "usp_BVefNt"
       ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
       "settings": {
         "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-trees-hillside.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "scheme-8d942259-5869-4986-ba33-9fdad85d8a72",
+        "padding_top": 148,
+        "padding_bottom": 136,
+        "padding_top_mob": 52,
+        "padding_bottom_mob": 52
       }
     },
     "6aa12a9d-c825-4264-ba7b-3b0978633bbf": {
       "type": "rich-text",
       "blocks": {
-        "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
         "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>Remember that supplements are not meant to replace a varied diet and otherwise healthy lifestyle.<\/p>",
+            "text_font_size": "23",
+            "text_font_weight": "500",
+            "text_line_height": "32",
+            "text_font_size_mob": "9",
+            "text_font_weight_mob": "500",
+            "text_line_height_mob": "14"
           }
         }
       },
       "block_order": [
-        "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-heading-1",
-        "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-text-1",
-        "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-button-1"
+        "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-text-1"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "accent-1",
+        "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "padding_top_mob": 16,
+        "padding_bottom_mob": 16
       }
     },
-    "34ea2b2c-ed1d-40f4-8210-12a60720a2dc": {
-      "type": "image-with-text",
+    "custom_blogs_section_EpLWcY": {
+      "type": "custom-blogs-section",
+      "settings": {
+        "blog_heading": "Latest Articles",
+        "Section_heading_alignment": "center",
+        "blog": "news",
+        "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
+        "show_image": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_read_more": true,
+        "enable_splider": true,
+        "show_arrows": false,
+        "show_dots": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "desktop_per_page": 4,
+        "mobile_per_page": 1,
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "mobile_padding_top": 54,
+        "mobile_padding_bottom": 48
+      }
+    },
+    "newsletter_XQHXTC": {
+      "type": "newsletter",
       "blocks": {
-        "template--21525248213314__34ea2b2c-ed1d-40f4-8210-12a60720a2dc-heading-1": {
+        "heading_MH4NFy": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Subscribe To Our Newsletter",
             "heading_size": "h1"
           }
         },
-        "template--21525248213314__34ea2b2c-ed1d-40f4-8210-12a60720a2dc-text-1": {
-          "type": "text",
+        "paragraph_KTNGjJ": {
+          "type": "paragraph",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "text": "<p><strong>Enter your name as well as your email to receive our newsletter with lots of health information and news about Dulwich Health.<\/strong><\/p><p><\/p><p>We use MailChimp to handle our subscribers and you can update your preferences or unsubscribe from receiving our newsletters at any time.<\/p>"
           }
         },
-        "template--21525248213314__34ea2b2c-ed1d-40f4-8210-12a60720a2dc-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21525248213314__34ea2b2c-ed1d-40f4-8210-12a60720a2dc-heading-1",
-        "template--21525248213314__34ea2b2c-ed1d-40f4-8210-12a60720a2dc-text-1",
-        "template--21525248213314__34ea2b2c-ed1d-40f4-8210-12a60720a2dc-button-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/a-hand-removes-a-sweater-from-a-clothing-rack.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "948c5634-f98c-484b-9691-1f97e1afcdd2": {
-      "type": "collage",
-      "blocks": {
-        "template--21525248213314__948c5634-f98c-484b-9691-1f97e1afcdd2-image-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/close-up-of-a-bao-bun-on-a-wooden-table.jpg"
-          }
-        },
-        "template--21525248213314__948c5634-f98c-484b-9691-1f97e1afcdd2-product-1": {
-          "type": "product",
-          "settings": {
-            "product": "copper-light",
-            "second_image": false
-          }
-        },
-        "template--21525248213314__948c5634-f98c-484b-9691-1f97e1afcdd2-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "boston-red-sox-1"
-          }
-        }
-      },
-      "block_order": [
-        "template--21525248213314__948c5634-f98c-484b-9691-1f97e1afcdd2-image-1",
-        "template--21525248213314__948c5634-f98c-484b-9691-1f97e1afcdd2-product-1",
-        "template--21525248213314__948c5634-f98c-484b-9691-1f97e1afcdd2-collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "178231f4-27ca-4261-a23f-069798cd84fb": {
-      "type": "carousel",
-      "blocks": {
-        "d273af40-f9f7-479b-9226-b2a4cee1e618": {
-          "type": "carousel_block",
+        "email_form_zFTA3L": {
+          "type": "email_form",
           "settings": {}
         }
       },
       "block_order": [
-        "d273af40-f9f7-479b-9226-b2a4cee1e618"
+        "heading_MH4NFy",
+        "paragraph_KTNGjJ",
+        "email_form_zFTA3L"
       ],
       "settings": {
-        "section_heading": "Heading",
-        "heading_align": "tw-text-center",
-        "enable_pagination": false,
-        "enable_autoplay": false,
-        "autoplay_speed": 3,
-        "slides_perpage": 3,
-        "section-padding-top": 0,
-        "section-padding-bottom": 0
-      }
-    },
-    "fda8cf5f-dbce-4072-a912-499c1f5f511f": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--21525248213314__fda8cf5f-dbce-4072-a912-499c1f5f511f-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "template--21525248213314__fda8cf5f-dbce-4072-a912-499c1f5f511f-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--21525248213314__fda8cf5f-dbce-4072-a912-499c1f5f511f-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--21525248213314__fda8cf5f-dbce-4072-a912-499c1f5f511f-heading-1",
-        "template--21525248213314__fda8cf5f-dbce-4072-a912-499c1f5f511f-text-1",
-        "template--21525248213314__fda8cf5f-dbce-4072-a912-499c1f5f511f-button-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/fashionable-man-in-hat.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "color_scheme": "scheme-3d692c69-740b-4645-aac6-78638e3b8dd6",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
+    "custom_collection_slider_3PGxde",
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f",
-    "rich_text",
-    "featured_collection",
-    "60c6c5f7-a53f-4f0e-8c7f-ac8a2ffd94ae",
-    "8e8a1697-d92a-4a2c-ba5d-566f9a300e86",
-    "8797126e-2d65-4707-adf9-645294230ae3",
-    "9a510a73-b8d3-4825-aef7-5ffe8a9fe572",
-    "3dea34de-2697-4373-9288-b29bcc9e12a7",
     "f8e4c2bf-b0d7-465b-b26a-5f48def4ab61",
-    "collage",
-    "video",
-    "multicolumn",
+    "rich_text",
+    "60c6c5f7-a53f-4f0e-8c7f-ac8a2ffd94ae",
+    "custom_icon_with_text_qcURre",
     "6aa12a9d-c825-4264-ba7b-3b0978633bbf",
-    "34ea2b2c-ed1d-40f4-8210-12a60720a2dc",
-    "948c5634-f98c-484b-9691-1f97e1afcdd2",
-    "178231f4-27ca-4261-a23f-069798cd84fb",
-    "fda8cf5f-dbce-4072-a912-499c1f5f511f"
+    "custom_blogs_section_EpLWcY",
+    "newsletter_XQHXTC"
   ]
 }

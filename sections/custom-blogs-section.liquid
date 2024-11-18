@@ -1,0 +1,298 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+    .padding-{{ section.id }} {
+        padding-top: {{ section.settings.mobile_padding_top | append: 'px' }};
+        padding-bottom: {{ section.settings.mobile_padding_bottom | append: 'px' }};
+    }
+    @media screen and (min-width: 750px) {
+        .padding-{{ section.id }} {
+            padding-top: {{ section.settings.section_padding_top | append: 'px' }};
+            padding-bottom: {{ section.settings.section_padding_bottom | append: 'px' }};
+        }
+    }
+    {% if section.settings.show_image == false %}
+        .recent-blogs .card__inner.ratio:before {
+            padding-bottom: 0;
+        }
+    {% endif %}
+{% endstyle %}
+
+<div class="recent-blogs padding-{{ section.id }} color-{{ section.settings.color_scheme }}">
+    <div class="page-width">
+        <div class="recent-blogs__section">
+            {% if section.settings.blog_heading != blank %}
+                <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full tw-text-{{ section.settings.Section_heading_alignment }} tw-text-[rgb(var(--color-button))]">
+                    {{ section.settings.blog_heading }}
+                </div>
+            {% endif %}
+            <div class="hero--banner--container">
+              {% if section.settings.blog != blank %}
+                <carousel-component
+                    id="slideshow--{{ section.id }}"
+                    class="splide"
+                    data-autoplay="{{ section.settings.enable_autoplay }}"
+                    data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
+                    data-desktopPerPage="{{ section.settings.desktop_per_page }}"
+                    data-mobilePerPage="{{ section.settings.mobile_per_page }}"
+                    data-showArrows="{{ section.settings.show_arrows }}"
+                    data-showDots="{{ section.settings.show_dots }}"
+                    data-showdotsonmobile="{{ section.settings.show_dots }}"
+                    data-gapBetweenSlides="1rem"
+                    data-focus="left" 
+                    data-enableonmobile="{{ section.settings.enable_splider}}"
+                    {% if section.settings.enable_carousel_looping %}
+                        data-type="loop"
+                        data-refresh="true"
+                    {% endif %}
+                >
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+                                {%- for article in section.settings.blog.articles -%}
+                                    <li class="splide__slide md:tw-min-w-[30rem] tw-min-w-[none]">
+                                        {% render 'article-card',
+                                            blog: section.settings.blog,
+                                            article: article,
+                                            media_aspect_ratio: 1.66,
+                                            show_image: section.settings.show_image,
+                                            show_date: section.settings.show_date,
+                                            show_author: section.settings.show_author,
+                                            show_excerpt: section.settings.show_excerpt,
+                                            show_read_more: section.settings.show_read_more
+                                        %}
+                                    </li>
+                                {% endfor %}
+                            {%- endif -%}
+                        </ul>
+                    </div>
+                </carousel-component>
+              {% else %}
+                <ul class="tw-flex tw-gap-[2rem]">
+                  {% for i in (1..4) -%} 
+                    <li
+                      id="Slide-{{ section.id }}-{{ forloop.index }}"
+                      class="blog__post grid__item article slider__slide slider__slide--full-width" 
+                    >
+                      <div class="article-card-wrapper card-wrapper">
+                        <div class="card article-card card--{{ settings.blog_card_style }}
+                          {% if settings.blog_card_style == 'card' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %}
+                          {% if section.settings.show_image %} card--media{% else %} card--text{% endif %}"
+                        >
+                          <div class="card__inner{% if settings.blog_card_style == 'standard' %} color-{{ settings.blog_card_color_scheme }} gradient{% endif %} ratio tw-min-h-[30rem]">
+                            {%- if section.settings.show_image == true -%}
+                              <div class="article-card__image-wrapper card__media">
+                                <div class="article-card__image media">
+                                  {{"collection-1"| placeholder_svg_tag }}
+                                </div>
+                              </div>
+                            {%- endif -%}
+                             <div class="card__content">
+                               <div class="card__information">
+                                  <h3 class="card__heading h2">
+                                    {{ 'sections.featured_blog.onboarding_title' | t }}
+                                  </h3>
+                                  <p class="article-card__excerpt rte-width">
+                                    {{ 'sections.featured_blog.onboarding_content' | t }}
+                                  </p>
+                                </div> 
+                              </div>
+                            </div>
+                            <div class="card__content">
+                              <div class="card__information">
+                                <h3 class="card__heading h2">
+                                  {{ 'sections.featured_blog.onboarding_title' | t }}
+                                </h3>
+                                <p class="article-card__excerpt rte-width">
+                                  {{ 'sections.featured_blog.onboarding_content' | t }}
+                                </p>
+                              </div> 
+                            </div>
+                          </div> 
+                        </div>
+                      </li>
+                  {%- endfor -%}
+                </ul>
+              {% endif %}    
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Custom artice blogs",
+        "settings": [
+            {
+                "type": "text",
+                "label": "Blog heading",
+                "id": "blog_heading",
+                "default": "Blogs"
+            },
+            {
+                "type": "select",
+                "id": "Section_heading_alignment",
+                "label": "Section heading alignment",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "Left"
+                    },
+                    {
+                        "value": "center",
+                        "label": "Middle"
+                    },
+                    {
+                        "value": "right",
+                        "label": "Right"
+                    }
+                ],
+                "default": "center"
+            },
+            {
+                "type": "blog",
+                "id": "blog",
+                "label": "Blog"
+            },
+            {
+                "type": "color_scheme",
+                "id": "color_scheme",
+                "default": "scheme_1",
+                "label": "Color Scheme"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_image",
+                "default": true,
+                "label": "Show Image"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_date",
+                "default": true,
+                "label": "Show date"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_author",
+                "default": false,
+                "label": "Show author"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_excerpt",
+                "label": "Show excerpt",
+                "default": true,
+            },
+            {
+                "type": "checkbox",
+                "id": "show_read_more",
+                "label": "Show read more",
+                "default": true,
+            },
+            {
+                "type": "checkbox",
+                "id": "enable_splider",
+                "label": "Enable splider on mobile",
+                "default": true
+            },
+            {
+                "type": "header",
+                "content": "Carousel Settings"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_arrows",
+                "label": "Show arrows",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "show_dots",
+                "label": "Show dots",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "enable_autoplay",
+                "label": "Autoplay",
+                "default": false
+            },
+            {
+                "type": "range",
+                "id": "autoplay_speed",
+                "label": "Autoplay interval",
+                "min": 2,
+                "max": 6,
+                "default": 3,
+                "info": "Default 3s"
+            },
+            {
+                "type": "range",
+                "id": "desktop_per_page",
+                "min": 1,
+                "max": 5,
+                "step": 1,
+                "unit": "itm",
+                "label": "Carousal items on desktop",
+                "default": 4
+            },
+            {
+                "type": "range",
+                "id": "mobile_per_page",
+                "min": 1,
+                "max": 2,
+                "step": 0.5,
+                "unit": "itm",
+                "label": "Carousal items on mobile",
+                "default": 2
+            },
+            {
+                "type": "header",
+                "content": "Section padding settings"
+            },
+            {
+                "type": "range",
+                "id": "section_padding_top",
+                "label": "Padding top (Desktop)",
+                "default": 80,
+                "min": 0,
+                "max": 100,
+                "step": 2
+            },
+            {
+                "type": "range",
+                "id": "section_padding_bottom",
+                "label": "Padding bottom (Desktop)",
+                "default": 80,
+                "min": 0,
+                "max": 100,
+                "step": 2
+            },
+            {
+                "type": "range",
+                "id": "mobile_padding_top",
+                "label": "Padding top (Mobile)",
+                "default": 32,
+                "min": 0,
+                "max": 100,
+                "step": 2
+            },
+            {
+                "type": "range",
+                "id": "mobile_padding_bottom",
+                "label": "Padding bottom (Mobile)",
+                "default": 32,
+                "min": 0,
+                "max": 100,
+                "step": 2
+            }
+        ],
+        "presets": [
+            {
+                "name": "Custom artice blogs"
+            }
+        ]
+    }
+{% endschema %}

@@ -50,7 +50,6 @@
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
   padding-top: 14px;
-  padding-bottom: 22px;
   background: #5B5B5B;
   color: #ffffff80;
 }
@@ -531,7 +530,6 @@
   opacity: 0.3;
   display: block;
   height: 3px;
-  margin-bottom: 20px;
   max-width: 30px;
   width: 100%;
 }
@@ -555,9 +553,6 @@
   }
   .footer-block__details-content .list-menu__item--link {
     padding: 6px 0;
-  }
-  .is-divider:empty {
-    margin-bottom: 15px;
   }
   .list-social__link.footer-social-icons {
     padding: 7px;
