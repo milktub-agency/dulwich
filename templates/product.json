@@ -246,25 +246,240 @@
         "size_chart_type": "popup",
         "payment_enable": true,
         "padding_top": 4,
-        "padding_bottom": 12
+        "padding_bottom": 16
+      }
+    },
+    "tab_switch_header_MQEeye": {
+      "type": "tab-switch-header",
+      "blocks": {
+        "text_eanV6W": {
+          "type": "text",
+          "settings": {
+            "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_1.value }}"
+          }
+        },
+        "text_6HRxnV": {
+          "type": "text",
+          "settings": {
+            "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_2.value }}"
+          }
+        },
+        "text_AdWaU3": {
+          "type": "text",
+          "settings": {
+            "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_3.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_eanV6W",
+        "text_6HRxnV",
+        "text_AdWaU3"
+      ],
+      "settings": {
+        "heading": "",
+        "padding_top": 60
+      }
+    },
+    "product_details_tab_switching_nwjfxh": {
+      "type": "product-details-tab-switching",
+      "blocks": {
+        "text_HK7pjR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ product.metafields.custom.product_details_heading | metafield_tag }}<\/p>"
+          }
+        },
+        "ingredients_9PNbVR": {
+          "type": "ingredients",
+          "source": "{{ product.metafields.custom.ingredients_block.value }}",
+          "settings": {
+            "multiline_text": "<p>{{ product.metafields.custom.ingredients_block.value.multiline_text | metafield_tag }}<\/p>",
+            "ingredients_blocks_swap": false,
+            "ingredients_heading": "{{ product.metafields.custom.ingredients_block.value.ingredients_heading.value }}",
+            "ingredients_para": "<p>{{ product.metafields.custom.ingredients_block.value.ingredients_details | metafield_tag }}<\/p>",
+            "ingredients_order": "1",
+            "informations_heading": "{{ product.metafields.custom.ingredients_block.value.product_information_heading.value }}",
+            "informations_table": "<p>{{ product.metafields.custom.ingredients_block.value.product_information_table | metafield_tag }}<\/p>",
+            "table_desc": "<p>{{ product.metafields.custom.ingredients_block.value.table_description | metafield_tag }}<\/p>",
+            "information_order": "2",
+            "button_text": "{{ product.metafields.custom.ingredients_block.value.button_text.value }}",
+            "button_link": "{{ product.metafields.custom.ingredients_block.value.button_link.value }}",
+            "button_order": "3"
+          }
+        },
+        "banner_text_YXN9gg": {
+          "type": "banner_text",
+          "settings": {
+            "banner_text": "<p>{{ product.metafields.custom.product_description_banner_text | metafield_tag }}<\/p>"
+          }
+        },
+        "faq_block_TTMx7t": {
+          "type": "faq_block",
+          "source": "{{ product.metafields.custom.faq_block.value }}",
+          "settings": {
+            "faq_heading": "{{ product.metafields.custom.faq_block.value.heading.value }}",
+            "faq_left_box": "<p>{{ product.metafields.custom.faq_block.value.left_container_text | metafield_tag }}<\/p>",
+            "faq_right_box": "<p>{{ product.metafields.custom.faq_block.value.right_container_text | metafield_tag }}<\/p>"
+          }
+        },
+        "reviews_block_qNfQ89": {
+          "type": "reviews_block",
+          "source": "{{ product.metafields.custom.reviews_block.value }}",
+          "settings": {
+            "review_1": "{{ product.metafields.custom.reviews_block.value.review_1 | metafield_tag }}",
+            "review_2": "{{ product.metafields.custom.reviews_block.value.review_2 | metafield_tag }}",
+            "review_3": "{{ product.metafields.custom.reviews_block.value.review_3 | metafield_tag }}",
+            "review_4": "{{ product.metafields.custom.reviews_block.value.review_4 | metafield_tag }}"
+          }
+        },
+        "instructions_disclaimer_WWBR3y": {
+          "type": "instructions_disclaimer",
+          "source": "{{ product.metafields.custom.disclaimer_and_instructions_block.value }}",
+          "settings": {
+            "disclaimer_blocks_swap": false,
+            "importance_text": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.importance_content | metafield_tag }}<\/p>",
+            "importance_order": "1",
+            "disclaimer": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.disclaimer | metafield_tag }}<\/p>",
+            "disclaimer_order": "2",
+            "news_logo": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_logo.value }}",
+            "news_heading": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_heading.value }}",
+            "news_date_author": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_author_and_date | metafield_tag }}<\/p>",
+            "news_title": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_title.value }}",
+            "news_content": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.news_content | metafield_tag }}<\/p>",
+            "news_order": "3",
+            "instructions_heading": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_heading.value }}",
+            "instructions_desc": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.instructions_content | metafield_tag }}<\/p>",
+            "instructions_order": "1",
+            "usp_img": "{{ product.metafields.custom.disclaimer_and_instructions_block.value.usp_image.value }}",
+            "usp_img_order": "2",
+            "footer_text": "<p>{{ product.metafields.custom.disclaimer_and_instructions_block.value.footer_text | metafield_tag }}<\/p>",
+            "footer_text_order": "3"
+          }
+        },
+        "list_block_PAbnmx": {
+          "type": "list_block",
+          "source": "{{ product.metafields.custom.list_block.value }}",
+          "settings": {
+            "list_heading": "{{ product.metafields.custom.list_block.value.list_heading.value }}",
+            "list_content_1": "<p>{{ product.metafields.custom.list_block.value.list_content | metafield_tag }}<\/p>",
+            "list_content_2": "<p>{{ product.metafields.custom.list_block.value.list_content_2 | metafield_tag }}<\/p>",
+            "list_content_3": "<p>{{ product.metafields.custom.list_block.value.list_content_3 | metafield_tag }}<\/p>"
+          }
+        },
+        "media_wwNhkf": {
+          "type": "media",
+          "source": "{{ product.metafields.custom.media_block.value }}",
+          "settings": {
+            "video": "{{ product.metafields.custom.media_block.value.video.value }}",
+            "video_link": "{{ product.metafields.custom.media_block.value.youtube_url.value }}",
+            "cover_desktop_image": "{{ product.metafields.custom.media_block.value.desktop_image.value }}",
+            "cover_mobile_image": "{{ product.metafields.custom.media_block.value.mobile_image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_HK7pjR",
+        "ingredients_9PNbVR",
+        "banner_text_YXN9gg",
+        "faq_block_TTMx7t",
+        "reviews_block_qNfQ89",
+        "instructions_disclaimer_WWBR3y",
+        "list_block_PAbnmx",
+        "media_wwNhkf"
+      ],
+      "settings": {
+        "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_1.value }}",
+        "desktop_padding_top": 30,
+        "desktop_padding_bottom": 30,
+        "mobile_padding_top": 30,
+        "mobile_padding_bottom": 30
+      }
+    },
+    "product_details_tab_switching_yyNcFh": {
+      "type": "product-details-tab-switching",
+      "blocks": {
+        "faq_block_6PTgrQ": {
+          "type": "faq_block",
+          "settings": {
+            "faq_heading": "",
+            "faq_left_box": "<p>{{ product.metafields.custom.additional_information | metafield_tag }}<\/p>",
+            "faq_right_box": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_block_6PTgrQ"
+      ],
+      "settings": {
+        "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_2.value }}",
+        "desktop_padding_top": 30,
+        "desktop_padding_bottom": 30,
+        "mobile_padding_top": 30,
+        "mobile_padding_bottom": 30
+      }
+    },
+    "product_details_tab_switching_HCqpBc": {
+      "type": "product-details-tab-switching",
+      "blocks": {
+        "faq_block_BMWjFe": {
+          "type": "faq_block",
+          "settings": {
+            "faq_heading": "",
+            "faq_left_box": "<p>{{ product.metafields.custom.delivery_costs_returns | metafield_tag }}<\/p>",
+            "faq_right_box": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_block_BMWjFe"
+      ],
+      "settings": {
+        "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_3.value }}",
+        "desktop_padding_top": 30,
+        "desktop_padding_bottom": 30,
+        "mobile_padding_top": 30,
+        "mobile_padding_bottom": 30
       }
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".splide__pagination li:nth-child(-n + 2) {display: none;}",
+        "@media screen and (max-width: 750px) {.splide__pagination li:nth-child(-n + 3) {display: none; }}"
+      ],
       "settings": {
-        "heading": "Related Products",
-        "heading_size": "h1",
+        "title": "Related Products",
+        "heading_position": "center",
         "products_to_show": 10,
+        "page_width": true,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "color_scheme": "scheme-9da49f90-5b84-4957-b185-c2b04dcfcf9e",
+        "enable_mobile_slider": true,
+        "enable_desktop_slider": true,
+        "show_arrows": true,
+        "show_arrows_on_mobile": true,
+        "show_dots": false,
+        "show_dots_on_mobile": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "desktop_per_page": 4,
+        "mobile_per_page": 2,
+        "desktop_padding_left": 0,
+        "desktop_padding_right": 0,
+        "mobile_padding_left": 0,
+        "mobile_padding_right": 0,
+        "gap_between_slides_on_desktop": 2,
+        "gap_between_slides_on_mobile": 1.5,
+        "hide_button_desktop": false,
+        "hide_button_mobile": false,
+        "button_label": "VIEW ALL",
+        "button_url": "",
+        "desktop_padding_top": 30,
+        "desktop_padding_bottom": 30,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
       }
     },
     "6384ab31-b366-4e70-9ed4-7a8b7db6a04c": {
@@ -286,6 +501,10 @@
   },
   "order": [
     "main",
+    "tab_switch_header_MQEeye",
+    "product_details_tab_switching_nwjfxh",
+    "product_details_tab_switching_yyNcFh",
+    "product_details_tab_switching_HCqpBc",
     "related-products",
     "6384ab31-b366-4e70-9ed4-7a8b7db6a04c"
   ]
