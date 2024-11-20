@@ -36,7 +36,7 @@
 
     <carousel-component
       id="slideshow--{{ section.id }}"
-      class="slideshow {% if section.blocks.size > 1 %} splide {% endif %}"
+      class="slideshow hero-banner-slider {% if section.blocks.size > 1 %} splide {% endif %}"
       data-autoplay="{{ section.settings.enable_autoplay }}"
       data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
       data-desktopperpage="1"

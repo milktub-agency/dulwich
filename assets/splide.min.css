@@ -28,20 +28,26 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
     background: #DC1636;
 }
 .collection .splide__arrow--prev,
+.testimonial-section .splide__arrow--prev,
 .related-products .splide__arrow--prev {
     left: -5%;
 }
 .collection .splide__arrow--next,
+.testimonial-section .splide__arrow--next,
 .related-products .splide__arrow--next {
     right: -5%;
 }
+.hero-banner-slider .splide__arrow svg,
 .collection .splide__arrow svg,
+.testimonial-section .splide__arrow svg,
 .related-products .splide__arrow svg {
     fill: #DC1636;
     height: 44px;
     width: 44px;
 }
+.hero-banner-slider button.splide__arrow,
 .collection button.splide__arrow,
+.testimonial-section button.splide__arrow,
 .related-products button.splide__arrow {
     background: transparent;
     width: unset;
@@ -50,17 +56,24 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 .related-products .splide__pagination {
     bottom: -18px;
 }
+.testimonial-section .splide__pagination {
+    bottom: -70px;
+}
 
 @media screen and (max-width: 990px) {
     .collection .splide__arrow--prev,
+    .testimonial-section .splide__arrow--prev,
     .related-products .splide__arrow--prev {
         left: -3.5%;
     }
     .collection .splide__arrow--next,
+    .testimonial-section .splide__arrow--next,
     .related-products .splide__arrow--next {
         right: -3.5%;
     }
+    .hero-banner-slider .splide__arrow svg,
     .collection .splide__arrow svg,
+    .testimonial-section .splide__arrow svg,
     .related-products .splide__arrow svg {
         height: 20px;
         width: 20px;
@@ -68,15 +81,20 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 }
 @media screen and (max-width: 750px) {
     .collection .splide__arrow--prev,
+    .testimonial-section .splide__arrow--prev,
     .related-products .splide__arrow--prev {
         left: -25px;
     }
     .collection .splide__arrow--next,
+    .testimonial-section .splide__arrow--next,
     .related-products .splide__arrow--next {
         right: -25px;
     }
     .collection .splide__pagination,
     .related-products .splide__pagination {
         bottom: -12px;
+    }
+    .testimonial-section .splide__pagination {
+        bottom: -23px;
     }
 }

@@ -11,7 +11,7 @@
   .newsletter-form {
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 36rem;
+    max-width: 58rem;
   }
 }
 
@@ -43,8 +43,6 @@
 }
 
 .newsletter-form__button {
-  width: 4.4rem;
-  margin: 0;
   right: var(--inputs-border-width);
   top: 0;
   height: 100%;
@@ -63,9 +61,22 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
 }
 
 .newsletter-form__button .icon {
   width: 1.5rem;
+}
+
+.newsletter .field__label.newsletter-label {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter .field__input:not(:placeholder-shown)~.field__label.newsletter-label,
+.newsletter .field__input:focus~.field__label.newsletter-label {
+    top: 25%;
 }
