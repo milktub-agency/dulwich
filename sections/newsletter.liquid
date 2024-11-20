@@ -23,7 +23,7 @@
           {% render block %}
         {%- when 'heading' -%}
           <h2
-            class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="inline-richtext tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[24px] md:tw-leading-[58px] tw-pb-[50px] md:tw-pb-[40px] bmd:tw-max-w-[94%] bmd:tw-m-auto {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -34,7 +34,7 @@
           </h2>
         {%- when 'paragraph' -%}
           <div
-            class="newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="newsletter__subheading tw-font-primary newsletter-para rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -44,7 +44,8 @@
             {{ block.settings.text }}
           </div>
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }}>
+          <div {{ block.shopify_attributes }} class="color-{{ section.settings.color_scheme }} tw-pt-[50px] md:tw-pt-[56px]">
+            <div class="tw-text-[#0C066A] tw-text-center tw-font-primary tw-text-[9px] md:tw-text-[20px] tw-font-medium tw-pb-[8px]">{{ 'newsletter.email_address' | t }}</div>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div
@@ -54,12 +55,12 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field">
+                <div class="field tw-mb-[11px] md:tw-mb-[41px]">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input"
+                    class="field__input tw-bg-white tw-text-[10px] md:tw-text-[22px] tw-min-h-[30px] tw-max-h-[30px] md:tw-max-h-[64px] md:tw-min-h-[64px]"
                     value="{{ form.email }}"
                     aria-required="true"
                     autocorrect="off"
@@ -75,19 +76,19 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                    {{ 'newsletter.label' | t }}
+                  <label class="field__label newsletter-label tw-text-[10px] md:tw-text-[22px]" for="NewsletterForm--{{ section.id }}">
+                    {{ 'newsletter.your_email_address' | t }}
                   </label>
-                  <button
-                    type="submit"
-                    class="newsletter-form__button field__button"
-                    name="commit"
-                    id="Subscribe"
-                    aria-label="{{ 'newsletter.button_label' | t }}"
-                  >
-                    {% render 'icon-arrow' %}
-                  </button>
                 </div>
+                <button
+                  type="submit"
+                  class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-center tw-m-auto tw-rounded-[12px] md:tw-rounded-[30px] tw-text-[9px] md:tw-text-[22px] tw-uppercase tw-py-0 md:tw-py-[12px] tw-min-w-[73px] md:tw-min-w-[176px]"
+                  name="commit"
+                  id="Subscribe"
+                  aria-label="{{ 'newsletter.button_label' | t }}"
+                >
+                  {{ 'newsletter.sign_up' | t }}
+                </button>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
                     {%- render 'icon-error' -%}
@@ -201,7 +202,7 @@
     {
       "type": "paragraph",
       "name": "t:sections.newsletter.blocks.paragraph.name",
-      "limit": 1,
+      "limit": 2,
       "settings": [
         {
           "type": "richtext",
@@ -214,7 +215,15 @@
     {
       "type": "email_form",
       "name": "t:sections.newsletter.blocks.email_form.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color_scheme",
+          "id": "color_scheme_email",
+          "label": "t:sections.all.colors.label",
+          "default": "background-1"
+        }
+      ]
     },
     {
       "type": "@app"

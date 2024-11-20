@@ -278,7 +278,8 @@
       ],
       "settings": {
         "heading": "",
-        "padding_top": 60
+        "padding_top": 60,
+        "padding_top_mobile": 20
       }
     },
     "product_details_tab_switching_nwjfxh": {
@@ -472,14 +473,14 @@
         "mobile_padding_right": 0,
         "gap_between_slides_on_desktop": 2,
         "gap_between_slides_on_mobile": 1.5,
-        "hide_button_desktop": false,
-        "hide_button_mobile": false,
+        "hide_button_desktop": true,
+        "hide_button_mobile": true,
         "button_label": "VIEW ALL",
         "button_url": "",
-        "desktop_padding_top": 30,
-        "desktop_padding_bottom": 30,
-        "mobile_padding_top": 0,
-        "mobile_padding_bottom": 0
+        "desktop_padding_top": 94,
+        "desktop_padding_bottom": 100,
+        "mobile_padding_top": 54,
+        "mobile_padding_bottom": 60
       }
     },
     "6384ab31-b366-4e70-9ed4-7a8b7db6a04c": {

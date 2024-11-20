@@ -138,8 +138,8 @@
         "enable_desktop_slider": true,
         "show_arrows": true,
         "show_arrows_on_mobile": true,
-        "show_dots": true,
-        "show_dots_on_mobile": true,
+        "show_dots": false,
+        "show_dots_on_mobile": false,
         "enable_autoplay": false,
         "autoplay_speed": 3,
         "desktop_per_page": 4,
@@ -200,8 +200,8 @@
         "enable_desktop_slider": true,
         "show_arrows": true,
         "show_arrows_on_mobile": true,
-        "show_dots": true,
-        "show_dots_on_mobile": true,
+        "show_dots": false,
+        "show_dots_on_mobile": false,
         "enable_autoplay": false,
         "autoplay_speed": 3,
         "desktop_per_page": 4,
@@ -212,6 +212,70 @@
         "gap_between_slides_on_mobile": 1.5,
         "padding_top": 80,
         "padding_bottom": 80
+      }
+    },
+    "custom_testimonial_slider_RkcPkA": {
+      "type": "custom-testimonial-slider",
+      "blocks": {
+        "review_JTYX4k": {
+          "type": "Review",
+          "settings": {
+            "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
+            "review_name": "Jane",
+            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "star_rating": 4,
+            "review_star_caption": "From Our Website"
+          }
+        },
+        "review_TPBipE": {
+          "type": "Review",
+          "settings": {
+            "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
+            "review_name": "Jane",
+            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "star_rating": 4,
+            "review_star_caption": "From Our Website"
+          }
+        },
+        "review_hGbd4N": {
+          "type": "Review",
+          "settings": {
+            "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
+            "review_name": "Jane",
+            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "star_rating": 4,
+            "review_star_caption": "From Our Website"
+          }
+        },
+        "review_c4NRNW": {
+          "type": "Review",
+          "settings": {
+            "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
+            "review_name": "Jane",
+            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "star_rating": 4,
+            "review_star_caption": "From Our Website"
+          }
+        }
+      },
+      "block_order": [
+        "review_JTYX4k",
+        "review_TPBipE",
+        "review_hGbd4N",
+        "review_c4NRNW"
+      ],
+      "settings": {
+        "testimonial_heading": "Testimonials",
+        "Section_heading_alignment": "center",
+        "color_scheme": "scheme-1d915114-8978-4198-9b07-e7d64993e6b7",
+        "show_arrows": true,
+        "show_dots": true,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "section_padding_top": 80,
+        "section_padding_bottom": 100,
+        "mobile_padding_top": 32,
+        "mobile_padding_bottom": 32
       }
     },
     "custom_icon_with_text_qcURre": {
@@ -337,21 +401,30 @@
         "paragraph_KTNGjJ": {
           "type": "paragraph",
           "settings": {
-            "text": "<p><strong>Enter your name as well as your email to receive our newsletter with lots of health information and news about Dulwich Health.<\/strong><\/p><p><\/p><p>We use MailChimp to handle our subscribers and you can update your preferences or unsubscribe from receiving our newsletters at any time.<\/p>"
+            "text": "<p><strong>Enter your name as well as your email to receive our newsletter with lots of health information and news about Dulwich Health.<\/strong><\/p>"
+          }
+        },
+        "paragraph_rK7ed4": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>We use MailChimp to handle our subscribers and you can update your preferences or unsubscribe from receiving our newsletters at any time.<\/p>"
           }
         },
         "email_form_zFTA3L": {
           "type": "email_form",
-          "settings": {}
+          "settings": {
+            "color_scheme_email": "scheme-665daeff-21d2-4046-9a5a-68037e4349a6"
+          }
         }
       },
       "block_order": [
         "heading_MH4NFy",
         "paragraph_KTNGjJ",
+        "paragraph_rK7ed4",
         "email_form_zFTA3L"
       ],
       "settings": {
-        "color_scheme": "scheme-3d692c69-740b-4645-aac6-78638e3b8dd6",
+        "color_scheme": "scheme-1d915114-8978-4198-9b07-e7d64993e6b7",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -364,6 +437,7 @@
     "f8e4c2bf-b0d7-465b-b26a-5f48def4ab61",
     "rich_text",
     "60c6c5f7-a53f-4f0e-8c7f-ac8a2ffd94ae",
+    "custom_testimonial_slider_RkcPkA",
     "custom_icon_with_text_qcURre",
     "6aa12a9d-c825-4264-ba7b-3b0978633bbf",
     "custom_blogs_section_EpLWcY",
