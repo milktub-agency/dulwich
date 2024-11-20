@@ -98,3 +98,17 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
         bottom: -23px;
     }
 }
+
+.splide__pagination__page.is-active {
+    transform: scale(1);
+}
+.splide__pagination__page{
+    height: 12px;
+    width: 12px;
+}
+@media screen and (max-width: 750px) {
+    .splide__pagination__page{
+        height: 9px;
+        width: 9px;
+    }
+}
