@@ -268,7 +268,7 @@
         "testimonial_heading": "Testimonials",
         "Section_heading_alignment": "center",
         "color_scheme": "scheme-1d915114-8978-4198-9b07-e7d64993e6b7",
-        "show_arrows": true,
+        "show_arrows": false,
         "show_dots": true,
         "enable_autoplay": false,
         "autoplay_speed": 3,

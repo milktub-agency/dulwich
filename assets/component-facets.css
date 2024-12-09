@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  padding-top: 1rem;
 }
 
 .active-facets-mobile {
@@ -26,7 +25,7 @@
 
 @media screen and (max-width: 989px) {
   .facets-container {
-    grid-template-columns: auto minmax(0, max-content);
+    grid-template-columns:  minmax(0, max-content);
     column-gap: 2rem;
   }
 }
@@ -36,7 +35,6 @@
   display: flex;
   grid-column: 2;
   grid-row: 1;
-  padding-left: 2.5rem;
 }
 
 @media screen and (min-width: 990px) {
@@ -49,7 +47,7 @@
   display: block;
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
-  margin: 0 2rem 0 0;
+  margin: 0;
 }
 
 .facet-filters__summary {
@@ -575,7 +573,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 .mobile-facets__inner {
   background-color: rgb(var(--color-background));
   width: calc(100% - 5rem);
-  margin-left: auto;
+  margin-right: auto;
   height: 100%;
   overflow-y: auto;
   pointer-events: all;
@@ -597,12 +595,13 @@ a.active-facets__button.focused .active-facets__button-inner,
 }
 
 .js .disclosure-has-popup:not(.menu-opening) .mobile-facets__inner {
-  transform: translateX(105vw);
+  transform: translateX(-105vw);
 }
 
 .mobile-facets__header {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  padding: 1rem 2.5rem;
+  border-bottom: 0.2rem solid rgba(var(--color-foreground), 0.3);
+  padding: 1rem 1.6rem;
+  padding-bottom: 0;
   text-align: center;
   display: flex;
   position: sticky;
@@ -726,7 +725,6 @@ details.menu-opening .mobile-facets__close svg {
 }
 
 .mobile-facets__main {
-  padding: 2.7rem 0 0;
   position: relative;
   z-index: 1;
   flex-grow: 1;
@@ -987,7 +985,7 @@ input.mobile-facets__checkbox {
   }
 
   .facets-vertical .facets-wrapper {
-    padding-right: 3rem;
+    padding-right: 2.4%;
   }
 
   .facets-vertical .facets-wrapper--no-filters {
@@ -1099,5 +1097,190 @@ input.mobile-facets__checkbox {
 
   .facets-vertical .active-facets__button-remove {
     padding: 0 1rem 1rem;
+  }
+}
+
+.collection-sorting-filter {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-image: none;
+  padding-right: 44px;
+  padding-left: 4px;
+}
+.collection-sorting-filter:focus,
+.collection-sorting-filter:focus-visible {
+  outline: none;
+  outline-offset : none;
+  box-shadow: none;
+}
+.facets .select .icon-caret {
+  height: unset;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 750px) {
+  .collection-sorting-filter {
+    padding: 6px;
+    font-size: 8px;
+    border-radius: 9px;
+    padding-right: 10px;
+    padding-left: 4px;
+  }
+  .collection-sorting-filter+svg {
+    width: 6px;
+  }
+  .facet-filters__label {
+    display: inline-flex;
+  }
+  .facets-container .mobile-facets__inner {
+    max-width: 32rem;
+  }
+  .facets-container .mobile-facets__close {
+    left: 260px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .facet-filters {
+    padding-left: 3rem;
+  }
+}
+.product-grid-container .pagination__list {
+  justify-content: flex-end;
+}
+.product-grid-container .pagination__list .pagination__item {
+  border: 1px solid rgb(var(--color-button));
+  color: rgb(var(--color-button));
+  background: rgb(var(--color-background));
+  border-radius: 50%;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30.875px;
+  letter-spacing: 0.842px;
+  text-transform: uppercase;
+}
+.product-grid-container .pagination__list .pagination__item--current {
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-background));
+  opacity: 1;
+}
+.product-grid-container .pagination__list .pagination__item--current:after {
+  content: none;
+}
+.product-grid-container .pagination__list .pagination__item .icon-caret {
+  height: 12px;
+}
+.product-grid-container .pagination__list>li:not(:last-child) {
+  margin-right: 21px;
+}
+@media screen and (max-width: 750px) {
+  .product-grid-container .pagination__list .pagination__item {
+    font-size: 11.95px;
+    line-height: 13.153px;
+    letter-spacing: 0.359px;
+    height: 18px;
+    display: flex;
+  }
+  .product-grid-container .pagination__list .pagination__item .icon-caret {
+    height: 6px;
+  }
+  .product-grid-container .pagination__list>li:not(:last-child) {
+    margin-right: 9px;
+  }
+  .product-grid-container .pagination__list>li {
+    flex: 1 0 18px;
+    max-width: 18px;
+  }
+}
+.product-grid-container .colection-product-grid .product-card .badge-capsule {
+  font-size: calc(7px +(13 - 7)*(100vw - 375px) /(1440 - 375));
+}
+.desktop-facets-collection .collection-filter-drawer-mobile,
+.mobile-filter-drawer,
+.mobile-facets-collection {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .collection-filter-drawer-desktop,
+  .collection-filter-product-count { 
+    display: none;
+  }
+  .facets-vertical,
+  .mobile-filter-drawer,
+  .mobile-facets-collection,
+  .facets-sort-by-filter .mobile-facets-collection .facets-container {
+    display: block;
+  }
+  .collection-filter-label {
+    min-width: 100%;
+  }
+  .collection-filter-label span {
+    font-size: 18px;
+    padding: 5px;
+  }
+  .facets-sort-by-filter {
+    justify-content: center;
+  }
+  .facets-sort-by-filter .mobile-facets-collection {
+    width: 34%;
+  }
+  .facets-sort-by-filter .mobile-facets-collection .facets-container details.mobile-facets__disclosure {
+    width: 100%;
+  }
+  .facets-sort-by-filter .facets.facets-vertical-sort .collection-sort-by-filter {
+    background: #BCE3EE;
+    border: none;
+  }
+  .facets .select .icon-caret {
+    width: 14px;
+  }
+  .facets-container .mobile-facets__close {
+    left: 420px;
+    top: 14px;
+  }
+  .mobile-facets__heading.filter-drawer-heading {
+    font-size: 25px;
+    padding: 20px 0;
+  }
+  .mobile-facets__inner {
+    max-width: 480px;
+  }
+  .overflow-hidden-mobile {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 750px) {
+  .collection-filter-label span {
+    padding: 2.6px;
+  }
+  .mobile-facets__heading.filter-drawer-heading {
+    font-size: 14px;
+    padding: 12px 0;
+  }
+  .collection-filter-label span {
+    font-size: 8px;
+  }
+  .facets-sort-by-filter {
+    justify-content: space-evenly;
+  }
+  .facets .select .icon-caret {
+    width: 6px;
+  }
+  .facets-container .mobile-facets__close {
+    left: 260px;
+    top: 6px;
+  }
+  .facets.facets-vertical-sort {
+    width: 48%;
+  }
+  .facets.facets-vertical-sort .facet-filters__field {
+    justify-content: center;
+  }
+  .product-grid-container .pagination__list {
+    align-items: center;
   }
 }

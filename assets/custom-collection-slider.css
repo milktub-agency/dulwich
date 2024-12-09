@@ -20,6 +20,7 @@
 .collection_slider-inner-text{
   text-align: center;
   margin-top: 6px;
+  white-space: nowrap;
 }
 .collection_slider-inner img {
   position: absolute;

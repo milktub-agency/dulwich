@@ -66,7 +66,8 @@
     "button_label": "Subscribe",
     "sign_up": "Sign up",
     "email_address": "Email Address",
-    "your_email_address": "Your Email Address"
+    "your_email_address": "Your Email Address",
+    "Newsletter": "Newsletter"
   },
   "accessibility": {
     "skip_to_text": "Skip to content",
@@ -214,7 +215,9 @@
       "sort_button": "Sort",
       "sort_by_label": "Sort by:",
       "to": "To",
-      "clear_filter": "Remove filter"
+      "clear_filter": "Remove filter",
+      "product_results": "Showing {{ current_start }} - {{ current_end }} of {{ paginate_product_count }} results",
+      "product_categories": "Product Categories"
     }
   },
   "templates": {
