@@ -16,6 +16,12 @@
   }
 {%- endstyle -%}
 
+{%- unless settings.cart_type == 'drawer' -%}
+  <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+{%- endunless -%}
+
+<script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer section-{{ section.id }}-padding">
@@ -53,7 +59,7 @@
                   {%- endif -%}
                 </div>
 
-                <div class="totals">
+                <div class="totals tw-text-right">
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
                   <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
@@ -129,7 +135,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.main-cart-footer.name",
+  "name": "Cart page section",
   "class": "cart__footer-wrapper",
   "settings": [
     {

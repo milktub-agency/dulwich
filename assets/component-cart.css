@@ -222,3 +222,17 @@ cart-items {
     gap: 1rem;
   }
 }
+
+.cart-continue-shopping {
+  color: #DC1636;
+  text-align: center;
+  font-size: 17.625px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18.597px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #BCE3EE;
+  border-radius: 21px;
+  padding: 10px 20px;
+}

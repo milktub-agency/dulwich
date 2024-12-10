@@ -1,10 +1,41 @@
 {
   "sections": {
+    "rich_text_bgyfPa": {
+      "type": "rich-text",
+      "blocks": {
+        "text_kBTRdt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For all Special Deliveries, orders must be placed on weekdays before 2pm for same-day dispatch!<\/p>",
+            "text_font_size": "18",
+            "text_font_weight": "500",
+            "text_line_height": "28",
+            "text_font_size_mob": "9",
+            "text_font_weight_mob": "500",
+            "text_line_height_mob": "14"
+          }
+        }
+      },
+      "block_order": [
+        "text_kBTRdt"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-f55272d2-eeb1-4466-ab41-e3e38f03c00d",
+        "full_width": true,
+        "content_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_top_mob": 8,
+        "padding_bottom_mob": 8
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 4
       }
     },
     "cart-footer": {
@@ -23,23 +54,46 @@
         "subtotal",
         "buttons"
       ],
-      "settings": {}
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
     },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "YOU MAY BE INTERESTED IN :",
         "heading_size": "h2",
+        "description": "",
+        "show_description": false,
         "collection": "all",
         "products_to_show": 4,
-        "show_view_all": true,
-        "color_scheme": "background-1",
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-9da49f90-5b84-4957-b185-c2b04dcfcf9e",
+        "enable_quick_view": true,
+        "enable_mobile_slider": false,
+        "enable_desktop_slider": true,
+        "show_arrows": true,
+        "show_arrows_on_mobile": true,
+        "show_dots": true,
+        "show_dots_on_mobile": true,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "desktop_per_page": 4,
+        "mobile_per_page": 2,
+        "mobile_padding_left": 0,
+        "mobile_padding_right": 20,
+        "gap_between_slides_on_desktop": 2,
+        "gap_between_slides_on_mobile": 2,
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
+    "rich_text_bgyfPa",
     "cart-items",
     "cart-footer",
     "featured-collection"

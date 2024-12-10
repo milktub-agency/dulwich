@@ -277,7 +277,7 @@
               {% render 'header-drawer' %}
             {% endif %}
       
-            <a href="javascript:void(0)" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+            <a href="{% if settings.cart_type == 'notification' %}/cart{% else %}javascript:void(0){% endif %}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
               {%- liquid
                 if cart == empty
                   render 'icon-cart-empty'

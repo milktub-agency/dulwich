@@ -14,7 +14,7 @@
     }
 </style>
 
-{% unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' %}
+{% unless template == 'index' or template == 'list-collections' or template == '404' %}
     {% assign t = template | split: '.' | first %}
 
     <nav class="breadcrumbs lg:tw-px-[108px] blg:tw-px-[20px] tw-translate-x-0 lg:tw-translate-x-[-4%] tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[28px] blg:tw-mb-[6px]" role="navigation" aria-label="breadcrumbs">
@@ -82,7 +82,7 @@
 
             {% else %}
 
-                <li class="tw-text-inherit tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >
+                <li class="tw-text-inherit tw-inline-block tw-font-[normal] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >
                     <a href="{{ request.path }}" class="tw-text-inherit tw-text-[13px] md:tw-text-[20px] tw-uppercase tw-font-primary tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page_title }}</a>
                 </li>
         {% endcase %}

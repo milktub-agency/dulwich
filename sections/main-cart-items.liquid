@@ -26,7 +26,7 @@
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
-  <div class="title-wrapper-with-link">
+  <div class="title-wrapper-with-link hidden">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
@@ -463,6 +463,16 @@
       {{ 'accessibility.loading' | t }}
     </p>
   </form>
+
+  <div class="tw-my-[12px]">
+    <a href="{{ routes.all_products_collection_url }}" class="underlined-link cart-continue-shopping">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none" class="tw-inline-block">
+        <path d="M8 13L2 7L8 1" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M2 7H18.5" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      {{ 'general.continue_shopping' | t }}
+    </a>
+  </div>
 </cart-items>
 
 {% schema %}
