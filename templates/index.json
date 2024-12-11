@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "custom_collection_slider_3PGxde": {
@@ -6,7 +15,7 @@
         "collection_block_VfhgYY": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
+            "image": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
             "image_fetch": false,
             "collection": "allitech",
             "collection_name": "Allitech"
@@ -15,7 +24,7 @@
         "collection_block_rAyD4h": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg",
+            "image": "shopify://shop_images/iphone-detects-qr-code.jpg",
             "image_fetch": false,
             "collection": "animal-health",
             "collection_name": "Animal health"
@@ -24,7 +33,7 @@
         "collection_block_nKjgYJ": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/woman-in-white-dress-outside.jpg",
+            "image": "shopify://shop_images/woman-in-white-dress-outside.jpg",
             "image_fetch": false,
             "collection": "antiseptic",
             "collection_name": "Antiseptic"
@@ -33,7 +42,7 @@
         "collection_block_eJnNPF": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
+            "image": "shopify://shop_images/person-fishing-on-the-beach-is-silhouetted-at-sunset.jpg",
             "image_fetch": false,
             "collection": "digestive-health",
             "collection_name": "Digestive health"
@@ -42,7 +51,7 @@
         "collection_block_rJyLen": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ripe-red-strawberries-in-a-white-bowl.jpg",
+            "image": "shopify://shop_images/ripe-red-strawberries-in-a-white-bowl.jpg",
             "image_fetch": false,
             "collection": "losterol",
             "collection_name": "Losterol"
@@ -51,7 +60,7 @@
         "collection_block_DgEnyC": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ocean-water-with-swimmers.jpg",
+            "image": "shopify://shop_images/ocean-water-with-swimmers.jpg",
             "image_fetch": false,
             "collection": "oxytech",
             "collection_name": "Oxytech"
@@ -60,7 +69,7 @@
         "collection_block_yTWDVr": {
           "type": "collection_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bare-stony-room-with-two-wooden-benches-and-coffee-tables.jpg",
+            "image": "shopify://shop_images/bare-stony-room-with-two-wooden-benches-and-coffee-tables.jpg",
             "image_fetch": false,
             "collection": "supplements",
             "collection_name": "Supplements"
@@ -81,8 +90,8 @@
         "section_title": "",
         "flex_wrap": false,
         "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
-        "section_padding_top": 64,
-        "section_padding_bottom": 56,
+        "section_padding_top": 20,
+        "section_padding_bottom": 20,
         "mobile_padding_top": 16,
         "mobile_padding_bottom": 22
       }
@@ -93,15 +102,15 @@
         "00eb27cf-4970-4b8b-80a9-caf265729feb": {
           "type": "carousel_block",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Slide_1.png",
-            "image_mobile": "shopify:\/\/shop_images\/Slide_1_mob.png"
+            "image_desktop": "shopify://shop_images/Slide_1.png",
+            "image_mobile": "shopify://shop_images/Slide_1_mob.png"
           }
         },
         "26cad0da-0c18-4f04-9211-f8aa7a4a094c": {
           "type": "carousel_block",
           "settings": {
-            "image_desktop": "shopify:\/\/shop_images\/Slide_2.png",
-            "image_mobile": "shopify:\/\/shop_images\/Slide_2_mob.png"
+            "image_desktop": "shopify://shop_images/Slide_2.png",
+            "image_mobile": "shopify://shop_images/Slide_2_mob.png"
           }
         }
       },
@@ -158,7 +167,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Delivery to Europe?<\/strong>  We are excited to announce that EU deliveries are once again available.<\/p>",
+            "text": "<p><strong>Delivery to Europe?</strong>  We are excited to announce that EU deliveries are once again available.</p>",
             "text_font_size": "18",
             "text_font_weight": "400",
             "text_line_height": "28",
@@ -176,6 +185,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
+        "content_width": false,
         "padding_top": 24,
         "padding_bottom": 24,
         "padding_top_mob": 16,
@@ -222,7 +232,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Jane",
-            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "review_text": "<p>“Excellent delivery and easy to use website.”</p>",
             "star_rating": 4,
             "review_star_caption": "From Our Website"
           }
@@ -232,7 +242,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Jane",
-            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "review_text": "<p>“Excellent delivery and easy to use website.”</p>",
             "star_rating": 4,
             "review_star_caption": "From Our Website"
           }
@@ -242,7 +252,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Jane",
-            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "review_text": "<p>“Excellent delivery and easy to use website.”</p>",
             "star_rating": 4,
             "review_star_caption": "From Our Website"
           }
@@ -252,7 +262,7 @@
           "settings": {
             "color_scheme_block": "scheme-8a108923-5044-4c6f-975d-788cd76a586b",
             "review_name": "Jane",
-            "review_text": "<p>“Excellent delivery and easy to use website.”<\/p>",
+            "review_text": "<p>“Excellent delivery and easy to use website.”</p>",
             "star_rating": 4,
             "review_star_caption": "From Our Website"
           }
@@ -284,7 +294,7 @@
         "usp_PVCwXA": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"87\" height=\"86\" viewbox=\"0 0 87 86\" fill=\"none\">\n  <path d=\"M39.7195 17.167H14.7695C13.4461 17.167 12.1769 17.6927 11.2411 18.6285C10.3053 19.5643 9.77954 20.8335 9.77954 22.157V67.0669L4.78955 82.0369L24.7495 77.0469H64.6695C65.9928 77.0469 67.2623 76.521 68.1979 75.5853C69.1335 74.6497 69.6594 73.3803 69.6594 72.0569V47.1069\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M57.6838 41.6409L42.7139 44.3355L45.2089 29.1659L68.8117 5.66304C69.2753 5.19533 69.8272 4.82411 70.4355 4.57077C71.0432 4.31744 71.6954 4.18701 72.3546 4.18701C73.0133 4.18701 73.6655 4.31744 74.2733 4.57077C74.8815 4.82411 75.4334 5.19533 75.8975 5.66304L81.1869 10.9524C81.6545 11.4163 82.0257 11.9682 82.2792 12.5763C82.5322 13.1843 82.6629 13.8366 82.6629 14.4953C82.6629 15.154 82.5322 15.8063 82.2792 16.4144C82.0257 17.0224 81.6545 17.5743 81.1869 18.0382L57.6838 41.6409Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"87\" height=\"86\" viewbox=\"0 0 87 86\" fill=\"none\">\n  <path d=\"M39.7195 17.167H14.7695C13.4461 17.167 12.1769 17.6927 11.2411 18.6285C10.3053 19.5643 9.77954 20.8335 9.77954 22.157V67.0669L4.78955 82.0369L24.7495 77.0469H64.6695C65.9928 77.0469 67.2623 76.521 68.1979 75.5853C69.1335 74.6497 69.6594 73.3803 69.6594 72.0569V47.1069\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M57.6838 41.6409L42.7139 44.3355L45.2089 29.1659L68.8117 5.66304C69.2753 5.19533 69.8272 4.82411 70.4355 4.57077C71.0432 4.31744 71.6954 4.18701 72.3546 4.18701C73.0133 4.18701 73.6655 4.31744 74.2733 4.57077C74.8815 4.82411 75.4334 5.19533 75.8975 5.66304L81.1869 10.9524C81.6545 11.4163 82.0257 11.9682 82.2792 12.5763C82.5322 13.1843 82.6629 13.8366 82.6629 14.4953C82.6629 15.154 82.5322 15.8063 82.2792 16.4144C82.0257 17.0224 81.6545 17.5743 81.1869 18.0382L57.6838 41.6409Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
             "usp_title": "Our Blog",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
@@ -293,7 +303,7 @@
         "usp_qRqb7J": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"91\" height=\"90\" viewbox=\"0 0 91 90\" fill=\"none\">\n  <path d=\"M32.948 35.8497C41.7761 35.8497 48.9327 28.8776 48.9327 20.2772C48.9327 11.6767 41.7761 4.70459 32.948 4.70459C24.12 4.70459 16.9634 11.6767 16.9634 20.2772C16.9634 28.8776 24.12 35.8497 32.948 35.8497Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M61.1216 45.1899C59.356 45.1899 57.9246 46.5844 57.9246 48.3045V57.0642H48.9333C47.1677 57.0642 45.7363 58.4586 45.7363 60.1787V70.3007C45.7363 72.0212 47.1677 73.4152 48.9333 73.4152H57.9246V82.1751C57.9246 83.8949 59.356 85.2896 61.1216 85.2896H71.5116C73.2769 85.2896 74.7085 83.8949 74.7085 82.1751V73.4152H83.7002C85.4656 73.4152 86.8971 72.0212 86.8971 70.3007V60.1787C86.8971 58.4586 85.4656 57.0642 83.7002 57.0642H74.7085V48.3045C74.7085 46.5844 73.2769 45.1899 71.5116 45.1899H61.1216Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M36.1266 79.4406H4.17578V76.0639C4.22668 71.3161 5.51195 66.6581 7.91152 62.5254C10.3111 58.3927 13.7468 54.92 17.8975 52.4315C22.0482 49.9431 26.7787 48.5201 31.6469 48.2956C33.4032 48.2146 35.1567 48.2905 36.8862 48.5191\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"91\" height=\"90\" viewbox=\"0 0 91 90\" fill=\"none\">\n  <path d=\"M32.948 35.8497C41.7761 35.8497 48.9327 28.8776 48.9327 20.2772C48.9327 11.6767 41.7761 4.70459 32.948 4.70459C24.12 4.70459 16.9634 11.6767 16.9634 20.2772C16.9634 28.8776 24.12 35.8497 32.948 35.8497Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M61.1216 45.1899C59.356 45.1899 57.9246 46.5844 57.9246 48.3045V57.0642H48.9333C47.1677 57.0642 45.7363 58.4586 45.7363 60.1787V70.3007C45.7363 72.0212 47.1677 73.4152 48.9333 73.4152H57.9246V82.1751C57.9246 83.8949 59.356 85.2896 61.1216 85.2896H71.5116C73.2769 85.2896 74.7085 83.8949 74.7085 82.1751V73.4152H83.7002C85.4656 73.4152 86.8971 72.0212 86.8971 70.3007V60.1787C86.8971 58.4586 85.4656 57.0642 83.7002 57.0642H74.7085V48.3045C74.7085 46.5844 73.2769 45.1899 71.5116 45.1899H61.1216Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M36.1266 79.4406H4.17578V76.0639C4.22668 71.3161 5.51195 66.6581 7.91152 62.5254C10.3111 58.3927 13.7468 54.92 17.8975 52.4315C22.0482 49.9431 26.7787 48.5201 31.6469 48.2956C33.4032 48.2146 35.1567 48.2905 36.8862 48.5191\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
             "usp_title": "Health Suggestions",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
@@ -302,7 +312,7 @@
         "usp_FeM89t": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"91\" height=\"92\" viewbox=\"0 0 91 92\" fill=\"none\">\n  <path d=\"M64.449 80.7791C73.2328 80.7791 80.3536 73.659 80.3536 64.8746C80.3536 56.091 73.2328 48.9702 64.449 48.9702C55.6652 48.9702 48.5444 56.091 48.5444 64.8746C48.5444 73.659 55.6652 80.7791 64.449 80.7791Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M86.712 87.1671L75.7061 76.1611\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.3637 13.9822C45.3637 8.71191 41.0912 4.43945 35.8209 4.43945H4.01172V68.0575H35.8209\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.3638 13.9854V42.6136\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.3638 13.9822C45.3638 8.71187 49.6362 4.43945 54.9065 4.43945H86.7157V48.9738\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"91\" height=\"92\" viewbox=\"0 0 91 92\" fill=\"none\">\n  <path d=\"M64.449 80.7791C73.2328 80.7791 80.3536 73.659 80.3536 64.8746C80.3536 56.091 73.2328 48.9702 64.449 48.9702C55.6652 48.9702 48.5444 56.091 48.5444 64.8746C48.5444 73.659 55.6652 80.7791 64.449 80.7791Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M86.712 87.1671L75.7061 76.1611\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M45.3637 13.9822C45.3637 8.71191 41.0912 4.43945 35.8209 4.43945H4.01172V68.0575H35.8209\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M45.3638 13.9854V42.6136\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M45.3638 13.9822C45.3638 8.71187 49.6362 4.43945 54.9065 4.43945H86.7157V48.9738\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
             "usp_title": "Case Histories",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
@@ -311,7 +321,7 @@
         "usp_BVefNt": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"86\" height=\"86\" viewbox=\"0 0 86 86\" fill=\"none\">\n  <path d=\"M43.3364 81.8408C64.7369 81.8408 82.0849 64.4928 82.0849 43.0923C82.0849 21.6921 64.7369 4.34375 43.3364 4.34375C21.9362 4.34375 4.58789 21.6921 4.58789 43.0923C4.58789 64.4928 21.9362 81.8408 43.3364 81.8408Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M32.9883 63.7871H53.6854\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M43.3361 63.7897V39.6431H36.437\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M43.3371 24.1229C42.3845 24.1229 41.6123 23.3507 41.6123 22.3981C41.6123 21.4455 42.3845 20.6733 43.3371 20.6733\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M43.3369 24.1229C44.2895 24.1229 45.0617 23.3507 45.0617 22.3981C45.0617 21.4455 44.2895 20.6733 43.3369 20.6733\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
+            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"86\" height=\"86\" viewbox=\"0 0 86 86\" fill=\"none\">\n  <path d=\"M43.3364 81.8408C64.7369 81.8408 82.0849 64.4928 82.0849 43.0923C82.0849 21.6921 64.7369 4.34375 43.3364 4.34375C21.9362 4.34375 4.58789 21.6921 4.58789 43.0923C4.58789 64.4928 21.9362 81.8408 43.3364 81.8408Z\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M32.9883 63.7871H53.6854\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M43.3361 63.7897V39.6431H36.437\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M43.3371 24.1229C42.3845 24.1229 41.6123 23.3507 41.6123 22.3981C41.6123 21.4455 42.3845 20.6733 43.3371 20.6733\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M43.3369 24.1229C44.2895 24.1229 45.0617 23.3507 45.0617 22.3981C45.0617 21.4455 44.2895 20.6733 43.3369 20.6733\" stroke=\"#DC1636\" stroke-width=\"7.83677\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
             "usp_title": "About Us",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
@@ -339,7 +349,7 @@
         "template--21525248213314__6aa12a9d-c825-4264-ba7b-3b0978633bbf-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Remember that supplements are not meant to replace a varied diet and otherwise healthy lifestyle.<\/p>",
+            "text": "<p>Remember that supplements are not meant to replace a varied diet and otherwise healthy lifestyle.</p>",
             "text_font_size": "23",
             "text_font_weight": "500",
             "text_line_height": "32",
@@ -357,6 +367,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
+        "content_width": false,
         "padding_top": 52,
         "padding_bottom": 52,
         "padding_top_mob": 16,
@@ -401,13 +412,13 @@
         "paragraph_KTNGjJ": {
           "type": "paragraph",
           "settings": {
-            "text": "<p><strong>Enter your name as well as your email to receive our newsletter with lots of health information and news about Dulwich Health.<\/strong><\/p>"
+            "text": "<p><strong>Enter your name as well as your email to receive our newsletter with lots of health information and news about Dulwich Health.</strong></p>"
           }
         },
         "paragraph_rK7ed4": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>We use MailChimp to handle our subscribers and you can update your preferences or unsubscribe from receiving our newsletters at any time.<\/p>"
+            "text": "<p>We use MailChimp to handle our subscribers and you can update your preferences or unsubscribe from receiving our newsletters at any time.</p>"
           }
         },
         "email_form_zFTA3L": {
