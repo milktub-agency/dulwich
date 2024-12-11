@@ -121,8 +121,8 @@
         "enable_language_selector": false,
         "margin_bottom": 0,
         "wishlist_page_url": "shopify://pages/wishlist",
-        "padding_top": 8,
-        "padding_bottom": 8
+        "padding_top": 4,
+        "padding_bottom": 4
       }
     },
     "29597e83-b5df-402e-9c55-1f5773f2d069": {
