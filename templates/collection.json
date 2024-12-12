@@ -2,6 +2,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -11,19 +12,16 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "enable_filtering": true,
-        "filter_type": "drawer",
+        "color_scheme_plp": "scheme-9da49f90-5b84-4957-b185-c2b04dcfcf9e",
+        "products_per_page": 12,
+        "columns_desktop": 3,
+        "enable_filtering": false,
+        "filter_type": "vertical",
         "enable_sorting": true,
+        "enable_collections_list_filter": true,
         "columns_mobile": "2",
-        "enable_infinite_scrolling": true,
-        "padding_top": 36,
+        "enable_infinite_scrolling": false,
+        "padding_top": 8,
         "padding_bottom": 36
       }
     }

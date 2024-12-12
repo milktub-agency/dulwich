@@ -1,0 +1,219 @@
+{{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+
+<div class="facets-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  <div class="collections-filter small-hide collection-filter-drawer-desktop">
+    <h2 class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[25px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[34px] tw-py-[13px] tw-whitespace-nowrap">
+      {{ 'products.facets.product_categories' | t }}
+    </h2>
+    <div class="is-divider product-filter-divider"></div>
+    <ul>
+      {% for collection in collections %}
+        <li class="tw-py-[6px] tw-border-b tw-border-solid border-[rgb(var(--color-foreground))] {% if collection.url == request.path %}active{% endif %}">
+          <a
+            href="{{ collection.url }}"
+            class="tw-capitalize tw-text-[#334862] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[44px] custom-collection-filter-list tw-text-[13px] md:tw-text-[24px]"
+          >
+            {{ collection.title | replace: '-', ' ' }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="tw-mt-[20px] md:tw-mt-[40px]">
+      <h2 class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[25px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[34px] tw-py-[13px] tw-whitespace-nowrap">
+        {{ 'newsletter.Newsletter' | t }}
+      </h2>
+      <div class="is-divider product-filter-divider"></div>
+      <div {{ block.shopify_attributes }} class="collection-filter-newsletter">
+        <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[16px] tw-font-medium tw-pb-[8px]">
+          {{ 'newsletter.email_address' | t }}
+        </div>
+        {% form 'customer', class: 'newsletter-form' %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div
+            class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            <div class="field tw-mb-[8px] md:tw-mb-[12px]">
+              <input
+                id="NewsletterForm--{{ section.id }}"
+                type="email"
+                name="contact[email]"
+                class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[13px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[32px] md:tw-min-h-[32px]"
+                value="{{ form.email }}"
+                aria-required="true"
+                autocorrect="off"
+                autocapitalize="off"
+                autocomplete="email"
+                {% if form.errors %}
+                  autofocus
+                  aria-invalid="true"
+                  aria-describedby="Newsletter-error--{{ section.id }}"
+                {% elsif form.posted_successfully? %}
+                  aria-describedby="Newsletter-success--{{ section.id }}"
+                {% endif %}
+                placeholder="{{ 'newsletter.label' | t }}"
+                required
+              >
+              <label
+                class="field__label newsletter-label tw-text-[9px] md:tw-text-[14px]"
+                for="NewsletterForm--{{ section.id }}"
+              >
+                {{ 'newsletter.your_email_address' | t }}
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-uppercase tw-py-0 md:tw-py-[6px] tw-min-w-[70px] md:tw-min-w-[106px]"
+              name="commit"
+              id="Subscribe"
+              aria-label="{{ 'newsletter.button_label' | t }}"
+            >
+              {{ 'newsletter.sign_up' | t }}
+            </button>
+            {%- if form.errors -%}
+              <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                {%- render 'icon-error' -%}
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </small>
+            {%- endif -%}
+          </div>
+          {%- if form.posted_successfully? -%}
+            <h3
+              class="newsletter-form__message newsletter-form__message--success form__message"
+              id="Newsletter-success--{{ section.id }}"
+              tabindex="-1"
+              autofocus
+            >
+              {% render 'icon-success' -%}
+              {{- 'newsletter.success' | t }}
+            </h3>
+          {%- endif -%}
+        {% endform %}
+      </div>
+    </div>
+  </div>
+  {% comment %}  Drawer and mobile filter {% endcomment %}
+  <menu-drawer
+    class="mobile-facets__wrapper collection-filter-drawer-mobile"
+    data-breakpoint="mobile"
+  >
+    <details class="mobile-facets__disclosure disclosure-has-popup bmd:tw-border-none bmd:tw-border tw-border-solid tw-border-black bmd:tw-pl-[12px] bmd:tw-pr-[12px] tw-rounded-[31px] tw-py-[2px] tw-bg-[#BCE3EE] bmd:tw-min-w-[116px]">
+      <summary class="mobile-facets__open-wrapper collection-filter-label focus-offset">
+        <span class="mobile-facets__open">
+          <span class="mobile-facets__open-label button-label tw-text-[8px] tw-m-auto">
+            {{ 'products.facets.filter_button' | t }}
+          </span>
+        </span>
+        <span tabindex="0" class="mobile-facets__close mobile-facets__close--no-js">{%- render 'icon-close' -%}</span>
+      </summary>
+      <div id="FacetFiltersFormMobile" class="mobile-facets">
+        <div class="mobile-facets__inner gradient">
+          <div class="mobile-facets__header">
+            <div class="mobile-facets__header-inner tw-text-left">
+              <h2 class="mobile-facets__heading tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[25px] tw-font-semibold tw-uppercase tw-leading-[19px] tw-py-[13px] tw-whitespace-nowrap filter-drawer-heading">
+                {{ 'products.facets.product_categories' | t }}
+              </h2>
+            </div>
+          </div>
+          <div class="mobile-facets__main has-submenu gradient">
+            <ul class="tw-px-[16px]">
+              {% for collection in collections %}
+                <li class="tw-py-[6px] tw-border-b tw-border-solid border-[rgb(var(--color-foreground))] {% if collection.url == request.path %}active{% endif %}">
+                  <a
+                    href="{{ collection.url }}"
+                    class="tw-capitalize tw-text-[#334862] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[44px] custom-collection-filter-list tw-text-[13px] md:tw-text-[24px]"
+                  >
+                    {{ collection.title | replace: '-', ' ' }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+
+            <div class="tw-mt-[20px] md:tw-mt-[40px] tw-px-[16px]">
+              <h2 class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[17px] md:tw-text-[25px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[34px] tw-py-[13px] tw-whitespace-nowrap">
+                {{ 'newsletter.Newsletter' | t }}
+              </h2>
+              <div class="is-divider product-filter-divider"></div>
+              <div {{ block.shopify_attributes }} class="collection-filter-newsletter">
+                <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[16px] tw-font-medium tw-pb-[8px]">
+                  {{ 'newsletter.email_address' | t }}
+                </div>
+                {% form 'customer', class: 'newsletter-form' %}
+                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <div
+                    class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                    {% if settings.animations_reveal_on_scroll %}
+                      data-cascade
+                      style="--animation-order: {{ forloop.index }};"
+                    {% endif %}
+                  >
+                    <div class="field tw-mb-[8px] md:tw-mb-[12px]">
+                      <input
+                        id="NewsletterForm--{{ section.id }}"
+                        type="email"
+                        name="contact[email]"
+                        class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[13px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[32px] md:tw-min-h-[32px]"
+                        value="{{ form.email }}"
+                        aria-required="true"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="email"
+                        {% if form.errors %}
+                          autofocus
+                          aria-invalid="true"
+                          aria-describedby="Newsletter-error--{{ section.id }}"
+                        {% elsif form.posted_successfully? %}
+                          aria-describedby="Newsletter-success--{{ section.id }}"
+                        {% endif %}
+                        placeholder="{{ 'newsletter.label' | t }}"
+                        required
+                      >
+                      <label
+                        class="field__label newsletter-label tw-text-[9px] md:tw-text-[14px]"
+                        for="NewsletterForm--{{ section.id }}"
+                      >
+                        {{ 'newsletter.your_email_address' | t }}
+                      </label>
+                    </div>
+                    <button
+                      type="submit"
+                      class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-uppercase tw-py-0 md:tw-py-[6px] tw-min-w-[70px] md:tw-min-w-[106px]"
+                      name="commit"
+                      id="Subscribe"
+                      aria-label="{{ 'newsletter.button_label' | t }}"
+                    >
+                      {{ 'newsletter.sign_up' | t }}
+                    </button>
+                    {%- if form.errors -%}
+                      <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                        {%- render 'icon-error' -%}
+                        {{- form.errors.translated_fields.email | capitalize }}
+                        {{ form.errors.messages.email -}}
+                      </small>
+                    {%- endif -%}
+                  </div>
+                  {%- if form.posted_successfully? -%}
+                    <h3
+                      class="newsletter-form__message newsletter-form__message--success form__message"
+                      id="Newsletter-success--{{ section.id }}"
+                      tabindex="-1"
+                      autofocus
+                    >
+                      {% render 'icon-success' -%}
+                      {{- 'newsletter.success' | t }}
+                    </h3>
+                  {%- endif -%}
+                {% endform %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+  </menu-drawer>
+</div>
