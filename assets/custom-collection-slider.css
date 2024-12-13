@@ -5,8 +5,8 @@
 } 
 @media screen and (min-width: 990px){
   .collection_slider-inner {
-    min-width: 9%;
-    max-width: 9%;
+    min-width: 6%;
+    max-width: 6%;
     margin: 0 18px;
   }  
 }
@@ -20,7 +20,6 @@
 .collection_slider-inner-text{
   text-align: center;
   margin-top: 6px;
-  white-space: nowrap;
 }
 .collection_slider-inner img {
   position: absolute;
@@ -29,4 +28,9 @@
   object-fit: cover;
   top: 0;
   left: 0;
+}
+@media screen and (max-width: 750px) {
+  .collection_slider-inner-text{
+    white-space: nowrap;
+  }
 }

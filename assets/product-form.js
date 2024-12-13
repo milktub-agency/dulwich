@@ -83,6 +83,7 @@ if (!customElements.get('product-form')) {
             } else {
               this.cart.renderContents(response);
             }
+              updateCartTotalPrice();
           })
           .catch((e) => {
             console.error(e);

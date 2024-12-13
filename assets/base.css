@@ -2911,8 +2911,20 @@ li.active a {
 .product-card .product-card__info .product-card__title {
   min-height: 38px;
 }
+.collection .featured-collection-hd.h4 {
+  font-size: 25px;
+  margin-bottom: 22px;
+  line-height: unset;
+}
+.cart-count-bubble {
+  background: #DC1636;
+}
 @media screen and (max-width: 750px) {
   .product-card .product-card__info .product-card__title {
     min-height: 20px;
+  }
+  .collection .featured-collection-hd.h4 {
+    font-size: 16px;
+    margin-bottom: 18px;
   }
 }

@@ -81,7 +81,7 @@
       <div class="collection section-{{ section.id }}-padding {% unless section.settings.full_width %} page-width page-width-lg-slider {% endunless %}">
 
         {%- if section.settings.title != blank -%}
-          <h2 class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-text-center {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <h2 class="featured-collection-hd tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-text-{{ section.settings.text_alignment }} {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             {{ section.settings.title }}
           </h2>
         {%- endif -%}
@@ -192,6 +192,26 @@
       "id": "title",
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
     },
     {
       "type": "select",

@@ -58,18 +58,21 @@
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">
                   {{ 'sections.cart.headings.product' | t }}
                 </th>
-                <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">
-                  {{ 'sections.cart.headings.total' | t }}
+                <th class="medium-hide large-up-hide hidden right caption-with-letter-spacing" colspan="1" scope="col">
+                  {{ 'sections.cart.headings.sub_total' | t }}
+                </th>
+                <th class="caption-with-letter-spacing" colspan="1" scope="col">
+                  {{ 'sections.cart.headings.price' | t }}
                 </th>
                 <th
-                  class="cart-items__heading--wide cart-items__heading--quantity small-hide caption-with-letter-spacing"
+                  class="cart-items__heading--wide cart-items__heading--quantity caption-with-letter-spacing"
                   colspan="1"
                   scope="col"
                 >
                   {{ 'sections.cart.headings.quantity' | t }}
                 </th>
-                <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">
-                  {{ 'sections.cart.headings.total' | t }}
+                <th class="right caption-with-letter-spacing" colspan="1" scope="col">
+                  {{ 'sections.cart.headings.sub_total' | t }}
                 </th>
               </tr>
             </thead>
@@ -87,7 +90,7 @@
                           class="cart-item__image"
                           alt="{{ item.image.alt | escape }}"
                           loading="lazy"
-                          width="150"
+                          width="100"
                           height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
                         >
                       </div>
@@ -100,27 +103,6 @@
                     {%- endif -%}
 
                     <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
-
-                    {%- if item.original_price != item.final_price -%}
-                      <div class="cart-item__discounted-prices">
-                        <span class="visually-hidden">
-                          {{ 'products.product.price.regular_price' | t }}
-                        </span>
-                        <s class="cart-item__old-price product-option">
-                          {{- item.original_price | money -}}
-                        </s>
-                        <span class="visually-hidden">
-                          {{ 'products.product.price.sale_price' | t }}
-                        </span>
-                        <strong class="cart-item__final-price product-option">
-                          {{ item.final_price | money }}
-                        </strong>
-                      </div>
-                    {%- else -%}
-                      <div class="product-option">
-                        {{ item.original_price | money }}
-                      </div>
-                    {%- endif -%}
 
                     {%- if item.product.has_only_default_variant == false
                       or item.properties.size != 0
@@ -168,7 +150,30 @@
                     </ul>
                   </td>
 
-                  <td class="cart-item__totals right medium-hide large-up-hide">
+                  <td class="cart-item__price">
+                    {%- if item.original_price != item.final_price -%}
+                      <div class="cart-item__discounted-prices">
+                        <span class="visually-hidden">
+                          {{ 'products.product.price.regular_price' | t }}
+                        </span>
+                        <s class="cart-item__old-price product-option">
+                          {{- item.original_price | money -}}
+                        </s>
+                        <span class="visually-hidden">
+                          {{ 'products.product.price.sale_price' | t }}
+                        </span>
+                        <strong class="cart-item__final-price product-option">
+                          {{ item.final_price | money }}
+                        </strong>
+                      </div>
+                    {%- else -%}
+                      <div class="product-option">
+                        {{ item.original_price | money }}
+                      </div>
+                    {%- endif -%}
+                  </td>
+
+                  <td class="cart-item__totals right medium-hide hidden large-up-hide">
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         <svg
@@ -395,7 +400,7 @@
                     </quantity-popover>
                   </td>
 
-                  <td class="cart-item__totals right small-hide">
+                  <td class="cart-item__totals right">
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         <svg
@@ -464,15 +469,17 @@
     </p>
   </form>
 
-  <div class="tw-my-[12px]">
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link cart-continue-shopping">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none" class="tw-inline-block">
-        <path d="M8 13L2 7L8 1" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M2 7H18.5" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-      {{ 'general.continue_shopping' | t }}
-    </a>
-  </div>
+  {%- if cart != empty -%}
+    <div class="tw-my-[12px]">
+      <a href="{{ routes.all_products_collection_url }}" class="underlined-link cart-continue-shopping">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none" class="tw-inline-block">
+          <path d="M8 13L2 7L8 1" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M2 7H18.5" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        {{ 'general.continue_shopping' | t }}
+      </a>
+    </div>
+  {%- endif -%}
 </cart-items>
 
 {% schema %}

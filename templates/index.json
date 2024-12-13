@@ -81,8 +81,8 @@
         "section_title": "",
         "flex_wrap": false,
         "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
-        "section_padding_top": 64,
-        "section_padding_bottom": 56,
+        "section_padding_top": 10,
+        "section_padding_bottom": 6,
         "mobile_padding_top": 16,
         "mobile_padding_bottom": 22
       }
@@ -176,6 +176,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
+        "content_width": false,
         "padding_top": 24,
         "padding_bottom": 24,
         "padding_top_mob": 16,
@@ -357,6 +358,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
+        "content_width": false,
         "padding_top": 52,
         "padding_bottom": 52,
         "padding_top_mob": 16,

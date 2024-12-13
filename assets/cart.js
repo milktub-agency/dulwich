@@ -6,6 +6,10 @@ class CartRemoveButton extends HTMLElement {
       event.preventDefault();
       const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
       cartItems.updateQuantity(this.dataset.index, 0);
+      setTimeout(()=>
+      {
+        updateCartTotalPrice();
+      },2000)
     });
   }
 }
@@ -98,7 +102,7 @@ class CartItems extends HTMLElement {
       {
         id: 'main-cart-footer',
         section: document.getElementById('main-cart-footer').dataset.id,
-        selector: '.js-contents',
+        selector: '.js-cart-footer',
       },
     ];
   }
