@@ -90,13 +90,8 @@
         "section_title": "",
         "flex_wrap": false,
         "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
-<<<<<<< HEAD
         "section_padding_top": 10,
         "section_padding_bottom": 6,
-=======
-        "section_padding_top": 20,
-        "section_padding_bottom": 20,
->>>>>>> 39b9564871c53d2883f403c578867fd0d5362b73
         "mobile_padding_top": 16,
         "mobile_padding_bottom": 22
       }
