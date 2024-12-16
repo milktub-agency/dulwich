@@ -526,27 +526,29 @@
                     <div class="totals">
                       <h2 class="totals__total tw-uppercase tw-font-primary tw-text-[12px] md:tw-text-[18px] tw-font-bold tw-leading-[15px] md:tw-leading-[19px] tw-tracking-[1px] tw-text-left tw-pb-[11px]">{{ 'sections.cart.basket_totals' | t }}</h2>
 
+                      <div class="tw-flex tw-gap-[4px]">
+                        {% render 'icon-coupon' %}
+                        <h4 class="tw-font-primary tw-text-bright-red tw-text-[11px] md:tw-text-[18px] tw-font-normal tw-leading-[15px] md:tw-leading-[19px] tw-tracking-normal">
+                          {{ 'sections.cart.coupon' | t }}
+                        </h4>
+                      </div>
+
                       <div class="tw-flex tw-justify-between tw-items-center tw-border-t tw-border-solid tw-border-black tw-pt-[10px] tw-pb-[4px]">
-                        <h4 class="tw-font-primary tw-text-bright-red tw-text-[12px] md:tw-text-[18px] tw-font-normal tw-leading-[15px] md:tw-leading-[19px] tw-tracking-normal">{{ 'sections.cart.headings.sub_total' | t }}</h4>
-                        <p class="totals__total-value tw-font-primary tw-text-bright-red tw-text-[12px] md:tw-text-[18px] tw-font-normal tw-leading-[15px] md:tw-leading-[19px] tw-tracking-normal" id="cart-page-total-price">{{ cart.total_price | money }}</p>
+                        <h4 class="tw-font-primary tw-text-black tw-text-[12px] md:tw-text-[18px] tw-font-normal tw-leading-[15px] md:tw-leading-[19px] tw-tracking-normal">{{ 'sections.cart.headings.total' | t }}</h4>
+                        <p class="totals__total-value tw-font-primary tw-text-black tw-text-[12px] md:tw-text-[18px] tw-font-normal tw-leading-[15px] md:tw-leading-[19px] tw-tracking-normal" id="cart-page-total-price">{{ cart.total_price | money }}</p>
                       </div>
 
                       <small class="tax-note caption-large rte">
                         {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                           {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
                         {%- elsif cart.taxes_included -%}
-                          {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+                          {{ 'sections.cart.taxes_shipping_at_checkout' | t }}
                         {%- elsif shop.shipping_policy.body != blank -%}
                           {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
                         {%- else -%}
                           {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                         {%- endif -%}
                       </small>
-
-                      <div class="tw-flex tw-justify-between tw-items-center tw-border-t tw-border-solid tw-border-black tw-pt-[10px] tw-pb-[4px]">
-                        <h4 class="tw-font-primary tw-text-black tw-text-[12px] md:tw-text-[18px] tw-font-medium tw-leading-[15px] md:tw-leading-[19px]">{{ 'sections.cart.headings.total' | t }}</h4>
-                        <p class="totals__total-value tw-font-primary tw-text-black tw-text-[12px] md:tw-text-[18px] tw-font-medium tw-leading-[15px] md:tw-leading-[19px]" id="cart-page-total-price">{{ cart.total_price | money }}</p>
-                      </div>
                     </div>
                   </div>
                 {%- else -%}

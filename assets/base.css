@@ -2928,3 +2928,17 @@ li.active a {
     margin-bottom: 18px;
   }
 }
+
+.cart__footer .sc_simple-container {
+  flex-direction: column;
+  gap: 13px;
+}
+.cart__footer .sc_simple-container .sc-cube-text,
+.cart__footer .sc_simple-container .sc_code-btn input[type=button] {
+  width: 100%;
+  border-radius: 21px;
+}
+.sc_simple-info .sc_simple-info__row.sc_code-info,
+.sc_simple-info .sc_simple-info__row {
+  color: #DC1636;
+}
