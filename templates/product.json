@@ -64,7 +64,7 @@
           "type": "text",
           "settings": {
             "text": "<p>{{ product.metafields.custom.product_description.value.text_2 | metafield_tag }}<\/p>",
-            "text_color": "#0c066a",
+            "text_color": "#60919f",
             "text_font_style": "italic",
             "text_style": "body",
             "text_font_size": "20",

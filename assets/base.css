@@ -1620,7 +1620,7 @@ deferred-media {
     height: 33px;
   }
   .cart-header-price {
-    color: #DC1636;
+    color: #60919F;
     font-size: 18.232px;
     font-style: normal;
     font-weight: 600;
@@ -2918,7 +2918,7 @@ li.active a {
   line-height: unset;
 }
 .cart-count-bubble {
-  background: #DC1636;
+  background: #AF9CB6;
 }
 @media screen and (max-width: 750px) {
   .product-card .product-card__info .product-card__title {
@@ -2969,4 +2969,9 @@ li.active a {
   .product-card .badge-capsule {
     font-size: 13px;
   }
+}
+
+cart-upsell-recommendations.splide.is-initialized {
+  padding-top: 60px;
+  border: none;
 }

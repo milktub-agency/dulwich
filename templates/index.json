@@ -237,7 +237,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
-        "content_width": false,
+        "content_width": true,
         "padding_top": 24,
         "padding_bottom": 24,
         "padding_top_mob": 16,

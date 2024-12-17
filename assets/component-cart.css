@@ -58,7 +58,6 @@ cart-items {
 .cart__items {
   position: relative;
   padding-bottom: 1rem;
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .cart__items--disabled {
@@ -248,7 +247,7 @@ cart-items {
   flex-direction: column;
 }
 @media screen and (min-width: 1024px) {
-  .cart-section .cart-section__cart-items {
+  .cart-section .cart-section__cart-items-upsell {
     width: 64%;
     padding-right: 40px;
   }

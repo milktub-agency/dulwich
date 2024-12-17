@@ -1,12 +1,12 @@
 .red-color {
-  color: #DC1636;
+  color: #60919F;
 }
 .red-color-bold {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 600;
 }
 .red-color-bolder {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 700;
   font-size: 24px;
   display: inline-block;
@@ -17,11 +17,11 @@
   font-weight: 700;
 }
 .faq-red-medium {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 500;
 }
 .faq-red-bold {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 700;
   font-size: 23px;
 }
@@ -30,13 +30,13 @@
   font-weight: 700;
 }
 .faq-red-italic {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 700;
   font-style: italic;
   font-size: 19px;
 }
 .review-red-bold {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 700;
   font-style: italic;
   display: inline-block;
@@ -48,17 +48,17 @@
   font-style: italic;
 }
 .instr-red-color-bolder {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 700;
 }
 .instr-red-italic-bolder {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 700;
   font-style: italic;
   font-size: 26px;
 }
 .instr-red-size-bolder {
-  color: #DC1636;
+  color: #60919F;
   font-weight: 700;
   font-size: 28px;
 }
@@ -104,7 +104,7 @@ table.product-information-table thead th {
 }
 .collapsible-content--details.active {
   color: #000;
-  background: #BCE3EE;
+  background: #EFEFC8;
   border: 1.5px solid #999;
   border-bottom: none;
   font-weight: 500;
@@ -112,7 +112,7 @@ table.product-information-table thead th {
 }
 .tabs-button:not(.active) {
   color: #FFF;
-  background: #DC1636;
+  background: #60919F;
   border: 2px solid #FFF;
   border-bottom: none;
   font-weight: 600;
@@ -134,7 +134,7 @@ table.product-information-table thead th {
   z-index: 0;
 }
 .tab-switch-content {
-  background: #BCE3EE;
+  background: #EFEFC8;
   border: 1.5px solid #999;
   padding: 0 54px;
   border-radius: 0px 40px 40px 40px;
@@ -151,7 +151,7 @@ table.product-information-table thead th {
 }
 @media screen and (max-width: 990px) {
   .collapsible-content--details.active {
-    background: #DC1636;
+    background: #60919F;
     color: #FFF;
     border: 1.5px solid #fff;
     border-bottom: none;

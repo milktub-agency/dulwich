@@ -62,7 +62,7 @@ module.exports = {
     extend: {
       colors: {
         'pale-sky-blue': '#BCE3EE',
-        'bright-red': '#DC1636',
+        'bright-red': '#60919F',
         'deep-blue': '#E9F6FF',
         'light-gray': '#F1F1F1',
         'taupe-gray': '#726969',

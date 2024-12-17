@@ -306,10 +306,11 @@
 
     .header-menu-search .search__input.field__input {
         border-radius: 37.347px;
-        background: #BCE3EE;
+        background: #60919F;
         padding-left: 40px;
     }
     .header-menu-search .search__input.field__input+label {
         left: 40px;
+        color: #fff;
     }
 }
