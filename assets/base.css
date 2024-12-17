@@ -1630,8 +1630,8 @@ deferred-media {
     width: 90%;
   }
   .header-menu-search .header__search {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25.2%;
+    margin-right: 2%;
   }
   .list-menu--inline {
     width: 100%;
@@ -1642,7 +1642,8 @@ deferred-media {
     font-size: 18px;
   }
   .header-menu-search .header__icons {
-    gap: 40px;
+    white-space: nowrap;
+    gap: 34px;
   }
   .header-menu-search {
     margin-bottom: 12px;
@@ -2961,5 +2962,11 @@ li.active a {
   .grid--3-col-desktop .grid__item {
     width: calc(25% - var(--grid-desktop-horizontal-spacing)* 3 / 4);
     max-width: calc(25% - var(--grid-desktop-horizontal-spacing)* 3 / 4);
+  }
+  .product-card .badge-new {
+    font-size: 31px;
+  }
+  .product-card .badge-capsule {
+    font-size: 13px;
   }
 }

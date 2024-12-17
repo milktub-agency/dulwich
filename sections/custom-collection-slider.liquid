@@ -22,7 +22,7 @@
 
   {{ 'custom-collection-slider.css' | asset_url | stylesheet_tag }}
 
-  <div class="padding-{{ section.id }} color-{{ section.settings.color_scheme }} tw-px-[40px]">
+  <div class="padding-{{ section.id }} color-{{ section.settings.color_scheme }} tw-px-[20px] md:tw-px-[40px]">
     {% if section.settings.section_title != blank %}
       <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full tw-text-[rgb(var(--color-button))]">{{ section.settings.section_title }}</div>
     {% endif %}
