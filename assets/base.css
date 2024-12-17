@@ -1645,7 +1645,7 @@ deferred-media {
     gap: 40px;
   }
   .header-menu-search {
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 }
 
@@ -2929,6 +2929,10 @@ li.active a {
   }
 }
 
+/* styles for coupan and shipping price apps */
+.cart__footer .scDiscount__container+.sc-srcp-container {
+  width: 100% !important;
+}
 .cart__footer .sc_simple-container {
   flex-direction: column;
   gap: 13px;
@@ -2939,6 +2943,23 @@ li.active a {
   border-radius: 21px;
 }
 .sc_simple-info .sc_simple-info__row.sc_code-info,
-.sc_simple-info .sc_simple-info__row {
+.sc_simple-info .sc_simple-info__row { 
   color: #DC1636;
+}
+.header__menu-item {
+  padding-bottom: 4px;
+}
+
+@media screen and (min-width: 750px) {
+  header.header {
+    padding-left: 56px;
+    padding-right: 36px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .grid--3-col-desktop .grid__item {
+    width: calc(25% - var(--grid-desktop-horizontal-spacing)* 3 / 4);
+    max-width: calc(25% - var(--grid-desktop-horizontal-spacing)* 3 / 4);
+  }
 }

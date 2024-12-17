@@ -34,3 +34,6 @@
     white-space: nowrap;
   }
 }
+.custom-collection-slider::-webkit-scrollbar {
+  width: 8px;
+}

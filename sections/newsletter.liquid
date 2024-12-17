@@ -23,7 +23,7 @@
           {% render block %}
         {%- when 'heading' -%}
           <h2
-            class="inline-richtext tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[24px] md:tw-leading-[58px] tw-pb-[50px] md:tw-pb-[40px] bmd:tw-max-w-[94%] bmd:tw-m-auto {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="inline-richtext tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[19px] md:tw-text-[30px] tw-font-light tw-leading-[24px] md:tw-leading-[58px] tw-pb-[20px] md:tw-pb-[40px] bmd:tw-max-w-[94%] bmd:tw-m-auto {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
