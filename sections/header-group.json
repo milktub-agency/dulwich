@@ -188,6 +188,19 @@
     },
     "megamenu_item_demo_1_TwyGRF": {
       "type": "megamenu-item-demo-1",
+      "blocks": {
+        "column_GU8tDk": {
+          "type": "column",
+          "settings": {
+            "link_text": "shop",
+            "link_description": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_GU8tDk"
+      ],
       "settings": {
         "parent": "Shop",
         "heading": "",
