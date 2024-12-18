@@ -134,94 +134,6 @@
         "padding_bottom": 52
       }
     },
-    "cb405230-628a-4089-807a-c8664c7378b9": {
-      "type": "megamenu-item",
-      "blocks": {
-        "96f5c4b2-8f7f-47de-93cb-feccccd2ee43": {
-          "type": "column",
-          "settings": {
-            "link_text": "Shop",
-            "link_description": "",
-            "link_url": ""
-          }
-        },
-        "ecd8f8d0-55af-48c9-823f-1684d9fe87d1": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "6cae09e9-97eb-46ad-9c4e-89b60a20c784": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "1d6656e5-9246-44d5-93ec-09f72bfee2d7": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "87c0ee14-ab14-4e9e-b2c4-05c7e1d686f0": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "22d92066-2acf-49a6-9033-12c37a854233": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "2849358e-cddb-427c-8572-a8b97ff3d3c4": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        },
-        "3e6be402-ae87-4b83-9a89-e31070a89004": {
-          "type": "column",
-          "settings": {
-            "link_text": "I-series",
-            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
-            "link_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "96f5c4b2-8f7f-47de-93cb-feccccd2ee43",
-        "ecd8f8d0-55af-48c9-823f-1684d9fe87d1",
-        "6cae09e9-97eb-46ad-9c4e-89b60a20c784",
-        "1d6656e5-9246-44d5-93ec-09f72bfee2d7",
-        "87c0ee14-ab14-4e9e-b2c4-05c7e1d686f0",
-        "22d92066-2acf-49a6-9033-12c37a854233",
-        "2849358e-cddb-427c-8572-a8b97ff3d3c4",
-        "3e6be402-ae87-4b83-9a89-e31070a89004"
-      ],
-      "settings": {
-        "parent": "Shop",
-        "heading": "",
-        "subheading": "",
-        "image_heading": "",
-        "image_subheading": "",
-        "image_button_text": "",
-        "image_button_link": ""
-      }
-    },
     "pdp_announcement_bar_prQhEe": {
       "type": "pdp-announcement-bar",
       "blocks": {
@@ -273,6 +185,19 @@
         "padding_top": 4,
         "padding_bottom": 4
       }
+    },
+    "megamenu_item_demo_1_TwyGRF": {
+      "type": "megamenu-item-demo-1",
+      "settings": {
+        "parent": "Shop",
+        "heading": "",
+        "subheading": "",
+        "menu": "main-menu",
+        "image_heading": "",
+        "image_subheading": "",
+        "image_button_text": "",
+        "image_button_link": ""
+      }
     }
   },
   "order": [
@@ -281,7 +206,7 @@
     "announcement-bar",
     "header",
     "29597e83-b5df-402e-9c55-1f5773f2d069",
-    "cb405230-628a-4089-807a-c8664c7378b9",
-    "pdp_announcement_bar_prQhEe"
+    "pdp_announcement_bar_prQhEe",
+    "megamenu_item_demo_1_TwyGRF"
   ]
 }
