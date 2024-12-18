@@ -60,7 +60,7 @@
   }
 
   summary.list-menu__item {
-    padding-right: 2.7rem;
+    padding-right: 2.4rem;
   }
 
   .list-menu__item {
@@ -267,8 +267,9 @@
   
             {%- if cart.item_count < 100 -%}
               <a href="javascript:void(0)" id="header-cart-price">
-                <div class="login-text blg:tw-hidden lg:tw-block">
-                  {{ 'templates.cart.Basket' | t }} <span id="cart-header-price" class="cart-header-price">/{{ cart.total_price | money }}</span>
+                <div class="login-text header-basket-price blg:tw-hidden lg:tw-block">
+                  <span class="basket-label">{{ 'templates.cart.Basket' | t }}</span>
+                  <span id="cart-header-price" class="cart-header-price">/{{ cart.total_price | money }}</span>
                 </div>
               </a>
             {%- endif -%}

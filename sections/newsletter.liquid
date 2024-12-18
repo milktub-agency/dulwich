@@ -23,7 +23,7 @@
           {% render block %}
         {%- when 'heading' -%}
           <h2
-            class="inline-richtext tw-font-primary tw-text-[19px] md:tw-text-[30px] tw-font-light tw-leading-[24px] md:tw-leading-[58px] tw-pb-[20px] md:tw-pb-[40px] bmd:tw-max-w-[94%] bmd:tw-m-auto {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="inline-richtext tw-font-primary tw-text-[19px] md:tw-text-[30px] tw-font-light tw-leading-[24px] md:tw-leading-[58px] tw-pb-[10px] md:tw-pb-[0px] bmd:tw-max-w-[94%] bmd:tw-m-auto {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -44,8 +44,8 @@
             {{ block.settings.text }}
           </div>
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }} class="color-{{ section.settings.color_scheme }} tw-pt-[50px] md:tw-pt-[56px]">
-            <div class="tw-text-[#0C066A] tw-text-center tw-font-primary tw-text-[9px] md:tw-text-[20px] tw-font-medium tw-pb-[8px]">{{ 'newsletter.email_address' | t }}</div>
+          <div {{ block.shopify_attributes }} class="color-{{ section.settings.color_scheme }} tw-pt-[10px] md:tw-pt-[26px]">
+            <div class="tw-text-[#0C066A] tw-text-center tw-font-primary tw-text-[9px] md:tw-text-[20px] tw-font-medium tw-pb-[8px] hidden">{{ 'newsletter.email_address' | t }}</div>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div
@@ -55,7 +55,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field tw-mb-[11px] md:tw-mb-[41px]">
+                <div class="field tw-mb-[11px] md:tw-mb-[16px]">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"

@@ -64,7 +64,7 @@
     {% assign badge_text_new = "" %}
     {% if product.tags contains 'new' or product.tags contains 'New' %}
       {% assign badge_text_new = "new!" | capitalize %}
-      <span class="badge-new tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[21%] lg:tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[7.4%] tw-px-[7.5%] lg:tw-px-[7%]">{{ badge_text_new }}</span>
+      <span class="badge-new tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[21%] lg:tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[%] tw-px-[7.5%] lg:tw-px-[7%]">{{ badge_text_new }}</span>
     {% endif %}
     
     <div class="product-card__badges tw-absolute tw-top-4 tw-left-4">

@@ -9,7 +9,7 @@
     border-bottom: 1px solid black;
 }
 .custom-announcement-bar .list-social__link svg {
-    height: 18px;
+    height: 17px;
 }
 .custom-announcement-bar .list-social__link svg path {
     fill: rgb(var(--color-foreground));
