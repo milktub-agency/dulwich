@@ -127,6 +127,7 @@
     },
     "29597e83-b5df-402e-9c55-1f5773f2d069": {
       "type": "header-drawer",
+      "disabled": true,
       "settings": {
         "menu": "main-menu",
         "padding_top": 40,
