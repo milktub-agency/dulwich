@@ -3034,6 +3034,10 @@ li.active a {
     padding-left: 300px;
     padding-right: 300px;
   }
+  .product__info-container p.product__text {
+    font-size: 30px;
+    line-height: normal;
+  }
 }
 
 cart-upsell-recommendations.splide.is-initialized {
