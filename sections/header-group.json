@@ -210,6 +210,19 @@
         "image_button_text": "",
         "image_button_link": ""
       }
+    },
+    "megamenu_item_demo_1_XJ43Ue": {
+      "type": "megamenu-item-demo-1",
+      "settings": {
+        "parent": "main-menu",
+        "heading": "",
+        "subheading": "",
+        "menu": "",
+        "image_heading": "",
+        "image_subheading": "",
+        "image_button_text": "",
+        "image_button_link": ""
+      }
     }
   },
   "order": [
@@ -219,6 +232,7 @@
     "header",
     "29597e83-b5df-402e-9c55-1f5773f2d069",
     "pdp_announcement_bar_prQhEe",
-    "megamenu_item_kKRaPA"
+    "megamenu_item_kKRaPA",
+    "megamenu_item_demo_1_XJ43Ue"
   ]
 }
