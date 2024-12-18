@@ -188,6 +188,14 @@
     "megamenu_item_demo_1_axwhPV": {
       "type": "megamenu-item-demo-1",
       "blocks": {
+        "column_r9TA8R": {
+          "type": "column",
+          "settings": {
+            "link_text": "I-series",
+            "link_description": "Lorem ipsum dolor sit amet, consectetur adipiscing",
+            "link_url": ""
+          }
+        },
         "column_Dm7J9X": {
           "type": "column",
           "settings": {
@@ -198,6 +206,7 @@
         }
       },
       "block_order": [
+        "column_r9TA8R",
         "column_Dm7J9X"
       ],
       "settings": {
