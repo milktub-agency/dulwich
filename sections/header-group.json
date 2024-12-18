@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -23,28 +32,28 @@
         "block_zGBAMG": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Dulwich Heath Trusted Since 1986<\/p>",
+            "block_value": "<p>Dulwich Heath Trusted Since 1986</p>",
             "link": ""
           }
         },
         "block_A4JBjf": {
           "type": "block",
           "settings": {
-            "block_value": "<p>With over 30,000 customers<\/p>",
+            "block_value": "<p>With over 30,000 customers</p>",
             "link": ""
           }
         },
         "block_6C3eTF": {
           "type": "block",
           "settings": {
-            "block_value": "<p>30 Day No Quibbles Returns<\/p>",
+            "block_value": "<p>30 Day No Quibbles Returns</p>",
             "link": ""
           }
         },
         "block_MP7GNt": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Fast Delivery<\/p>",
+            "block_value": "<p>Fast Delivery</p>",
             "link": ""
           }
         }
@@ -111,7 +120,7 @@
         "enable_country_selector": false,
         "enable_language_selector": false,
         "margin_bottom": 0,
-        "wishlist_page_url": "shopify:\/\/pages\/wishlist",
+        "wishlist_page_url": "shopify://pages/wishlist",
         "padding_top": 4,
         "padding_bottom": 8
       }
@@ -204,48 +213,9 @@
       ],
       "disabled": true,
       "settings": {
-        "parent": "Catalog",
-        "heading": "Main Heading",
-        "subheading": "Main Subheading",
-        "image_heading": "Heading",
-        "image_subheading": "<p>Subheading<\/p>",
-        "image_button_text": "Click",
-        "image_button_link": "shopify:\/\/collections\/all"
-      }
-    },
-    "7a146f3f-997d-4b81-882f-6acfbd99a2c1": {
-      "type": "megamenu-item-demo-1",
-      "settings": {
-        "parent": "",
+        "parent": "Shop",
         "heading": "",
         "subheading": "",
-        "menu": "main-menu",
-        "image_heading": "",
-        "image_subheading": "",
-        "image_button_text": "",
-        "image_button_link": ""
-      }
-    },
-    "a6ac85cd-b558-4cf8-9f53-accb3b902ecd": {
-      "type": "megamenu-item-demo-1",
-      "settings": {
-        "parent": "Clothing & Shoes",
-        "heading": "",
-        "subheading": "",
-        "menu": "",
-        "image_heading": "",
-        "image_subheading": "",
-        "image_button_text": "",
-        "image_button_link": ""
-      }
-    },
-    "9f76b2d6-657b-4613-a0e4-a5d25da00bd5": {
-      "type": "megamenu-item-demo-1",
-      "settings": {
-        "parent": "Home & Living",
-        "heading": "",
-        "subheading": "",
-        "menu": "",
         "image_heading": "",
         "image_subheading": "",
         "image_button_text": "",
@@ -258,28 +228,28 @@
         "block_p7ntLj": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Dulwich Heath Trusted Since 1986<\/p>",
+            "block_value": "<p>Dulwich Heath Trusted Since 1986</p>",
             "link": ""
           }
         },
         "block_NcPLYD": {
           "type": "block",
           "settings": {
-            "block_value": "<p>With over 30,000 customers<\/p>",
+            "block_value": "<p>With over 30,000 customers</p>",
             "link": ""
           }
         },
         "block_FGUnCL": {
           "type": "block",
           "settings": {
-            "block_value": "<p>30 Day No Quibbles Returns<\/p>",
+            "block_value": "<p>30 Day No Quibbles Returns</p>",
             "link": ""
           }
         },
         "block_wbmLQ8": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Fast Delivery<\/p>",
+            "block_value": "<p>Fast Delivery</p>",
             "link": ""
           }
         }
@@ -312,9 +282,6 @@
     "header",
     "29597e83-b5df-402e-9c55-1f5773f2d069",
     "cb405230-628a-4089-807a-c8664c7378b9",
-    "7a146f3f-997d-4b81-882f-6acfbd99a2c1",
-    "a6ac85cd-b558-4cf8-9f53-accb3b902ecd",
-    "9f76b2d6-657b-4613-a0e4-a5d25da00bd5",
     "pdp_announcement_bar_prQhEe"
   ]
 }
