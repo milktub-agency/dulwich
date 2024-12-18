@@ -2966,14 +2966,19 @@ li.active a {
   background: #fff !important;
   padding-left: 16px !important;
 }
+.cart__footer .cbb-shipping-rates-calculator-update-button {
+  width: 74% !important;
+  margin: auto;
+  font-size: 13px !important;
+  margin-top: 20px !important;
+}
 .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label {
-  width: 46%;
+  width: 47%;
   display: inline-block;
 }
-/* .cart__footer .sc_simple-container {
-  flex-direction: column;
-  gap: 13px;
-} */
+.cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label[for="region"] {
+  margin-left: 3%;
+}
 .cart__footer .sc_simple-container .sc-cube-text,
 .cart__footer .sc_simple-container .sc_code-btn input[type=button] {
   width: 100%;
@@ -3030,13 +3035,17 @@ li.active a {
     padding-left: 200px;
     padding-right: 200px;
   }
-  .collection.page-width-lg-slider {
+  .collection.page-width-lg-slider,
+  .related-products.page-width-lg-slider {
     padding-left: 300px;
     padding-right: 300px;
   }
   .product__info-container p.product__text {
-    font-size: 30px;
+    font-size: 26px;
     line-height: normal;
+  }
+  .product__title .product-title-lg {
+    font-size: 52px;
   }
 }
 
