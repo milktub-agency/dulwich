@@ -113,7 +113,7 @@
       "settings": {
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "none",
+        "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "background-1",
         "menu_color_scheme": "",
@@ -127,7 +127,6 @@
     },
     "29597e83-b5df-402e-9c55-1f5773f2d069": {
       "type": "header-drawer",
-      "disabled": true,
       "settings": {
         "menu": "main-menu",
         "padding_top": 40,
