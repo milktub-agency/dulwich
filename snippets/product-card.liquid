@@ -58,13 +58,13 @@
     {% endfor %}
 
     {% if badge_text != blank %}
-      <span class="badge-capsule tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] tw-font-primary tw-font-semibold tw-border tw-border-solid tw-border-[rgb(var(--color-foreground))] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] lg:tw-max-w-[40.7%]">{{ badge_text }}</span>
+      <span class="badge-capsule tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] tw-font-primary tw-font-semibold tw-border bmd:tw-border-[0.5px] tw-border-solid tw-border-[rgb(var(--color-foreground))] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] lg:tw-max-w-[40.7%]">{{ badge_text }}</span>
     {% endif %}
 
     {% assign badge_text_new = "" %}
     {% if product.tags contains 'new' or product.tags contains 'New' %}
       {% assign badge_text_new = "new!" | capitalize %}
-      <span class="badge-new tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[21%] lg:tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[%] tw-px-[7.5%] lg:tw-px-[7%]">{{ badge_text_new }}</span>
+      <span class="badge-new tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[21%] bmd:tw-min-h-[21%] lg:tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[6.1%] tw-px-[7.5%] lg:tw-px-[5.6%]">{{ badge_text_new }}</span>
     {% endif %}
     
     <div class="product-card__badges tw-absolute tw-top-4 tw-left-4">
@@ -100,21 +100,21 @@
     {% endif %}
 
     {% if settings.mm_show_vendor %}
-      <div class="product-vendor tw-font-primary tw-text-[6px] md:tw-text-[12px] tw-font-semibold tw-leading-[6px] md:tw-leading-[13px] tw-uppercase tw-pt-[9px] md:tw-pt-[19px]">
+      <div class="product-vendor tw-font-primary tw-text-[6px] md:tw-text-[11px] tw-font-semibold tw-leading-[6px] md:tw-leading-[13px] tw-uppercase tw-pt-[9px] md:tw-pt-[18px]">
         {{ product.vendor }}
       </div>
     {% endif %}
 
-    <div class="tw-flex tw-justify-between tw-gap-[22px] tw-pt-[7px] md:tw-pt-[14px] tw-pb-[10px] md:tw-pb-[19px]">
-      <a href="{{ product.url }}" class="product-card__title truncate-product-title tw-font-primary tw-text-[8px] md:tw-text-[16px] tw-font-semibold tw-leading-[10px] md:tw-leading-[19px]">
+    <div class="tw-flex tw-justify-between tw-items-start tw-gap-[22px] tw-pt-[6px] md:tw-pt-[13px] tw-pb-[13px] md:tw-pb-[17px]">
+      <a href="{{ product.url }}" class="product-card__title truncate-product-title tw-font-primary tw-text-[10px] md:tw-text-[15px] tw-font-semibold tw-leading-[12px] md:tw-leading-[19px]">
         {{ product.title }}
       </a>
       
-      <div id="price--{{ sectionId }}--{{ product.id }}" class="product-card__price">  
-        <span class="{% if compare_at_price > price %} tw-font-bold{% endif %} tw-font-primary tw-text-[9px] md:tw-text-[18px] tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
+      <div id="price--{{ sectionId }}--{{ product.id }}" class="product-card__price bmd:tw-leading-[9px]">  
+        <span class="{% if compare_at_price > price %} tw-font-bold{% endif %} tw-font-primary tw-text-[10px] md:tw-text-[16px] tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
           {{ price | money_without_trailing_zeros }}
         </span>            
-        <span class="tw-line-through{% unless compare_at_price > price %} hidden{% endunless %} tw-font-primary tw-text-[9px] md:tw-text-[18px] tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
+        <span class="tw-line-through{% unless compare_at_price > price %} hidden{% endunless %} tw-font-primary tw-text-[10px] md:tw-text-[16px] tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
           {{ compare_at_price | money_without_trailing_zeros }}
         </span>
       </div>
@@ -143,7 +143,7 @@
             id="{{ product_form_id }}-submit"
             type="submit"
             name="add"
-            class="quick-add__submit product-card-atc-btn button button--full-width{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %} tw-font-primary tw-text-center tw-text-[7px] md:tw-text-[15px] tw-font-semibold tw-leading-[10px] md:tw-leading-[20px] tw-uppercase tw-min-h-[15px] md:tw-min-h-[31px] bmd:tw-p-0 tw-whitespace-nowrap"
+            class="quick-add__submit product-card-atc-btn button button--full-width{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %} tw-font-primary tw-text-center tw-text-[10px] md:tw-text-[14px] tw-font-medium md:tw-font-semibold tw-leading-[10px] md:tw-leading-[20px] tw-uppercase tw-min-h-[15px] md:tw-min-h-[31px] bmd:tw-p-0 tw-whitespace-nowrap"
             aria-haspopup="dialog"
             aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
             aria-live="polite"

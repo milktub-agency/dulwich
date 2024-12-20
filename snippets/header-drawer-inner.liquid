@@ -1,130 +1,91 @@
 
-<div class="menu-drawer__inner-container tw-h-full">
-    <div class="menu-drawer__navigation-container tw-grid tw-grid-rows-[1fr_auto] tw-h-full">
-      <nav class="menu-drawer__navigation">
-        <ul class="menu-drawer__menu" role="list">
-          {%- for link in section.settings.menu.links -%}
-            <li>
-              {%- if link.links != blank -%}
-                <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
-                  <summary
-                    id="HeaderDrawer-{{ link.handle }}"
-                    class="menu-drawer__menu-item list-menu__item link link--text {% if link.child_active %} tw-text-[rgb(var(--color-foreground))] tw-bg-[rgba(var(--color-foreground),0.04)] {% endif %} tw-block tw-pl-24 tw-py-[1.1rem] tw-pr-[5.2rem]"
-                  >
-                    {{ link.title | escape }}
-                    {% render 'icon-arrow' %}
-                    {% render 'icon-caret' %}
-                  </summary>
-                  <div
-                    id="link-{{ link.handle | escape }}"
-                    class="menu-drawer__submenu has-submenu gradient motion-reduce"
-                    tabindex="-1"
-                  >
-                    <div class="menu-drawer__inner-submenu">
-                      <button class="menu-drawer__close-button" aria-expanded="true">
-                        {% render 'icon-arrow' %}
-                        {{ link.title | escape }}
-                      </button>
-                      <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                        {%- for childlink in link.links -%}
-                          <li>
-                            {%- if childlink.links == blank -%}
-                              <a
-                                id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
-                                href="{{ childlink.url }}"
-                                class="menu-drawer__menu-item link link--text {% if childlink.current %} menu-drawer__menu-item--active{% endif %}"
-                                {% if childlink.current %}
-                                  aria-current="page"
-                                {% endif %}
-                              >
-                                {{ childlink.title | escape }}
-                              </a>
-                            {%- else -%}
-                              <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
-                                <summary
-                                  id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
-                                  class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
-                                >
-                                  {{ childlink.title | escape }}
-                                  {% render 'icon-arrow' %}
-                                  {% render 'icon-caret' %}
-                                </summary>
-                                <div
-                                  id="childlink-{{ childlink.handle | escape }}"
-                                  class="menu-drawer__submenu has-submenu gradient motion-reduce"
-                                >
-                                  <button
-                                    class="menu-drawer__close-button link link--text focus-inset"
-                                    aria-expanded="true"
-                                  >
-                                    {% render 'icon-arrow' %}
-                                    {{ childlink.title | escape }}
-                                  </button>
-                                  <ul
-                                    class="menu-drawer__menu list-menu"
-                                    role="list"
-                                    tabindex="-1"
-                                  >
-                                    {%- for grandchildlink in childlink.links -%}
-                                      <li>
-                                        <a
-                                          id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
-                                          href="{{ grandchildlink.url }}"
-                                          class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"
-                                          {% if grandchildlink.current %}
-                                            aria-current="page"
-                                          {% endif %}
-                                        >
-                                          {{ grandchildlink.title | escape }}
-                                        </a>
-                                      </li>
-                                    {%- endfor -%}
-                                  </ul>
-                                </div>
-                              </details>
-                            {%- endif -%}
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    </div>
-                  </div>
-                </details>
-              {%- else -%}
-                <a
+<div class="menu-drawer__inner-container tw-p-[1.6rem]">
+  <div class="menu-drawer__navigation-container tw-grid tw-grid-rows-[1fr_auto] tw-h-full">
+    <nav class="menu-drawer__navigation">
+      <ul class="menu-drawer__menu" role="list">
+        {%- for link in section.settings.menu.links -%}
+          <li>
+            {%- if link.links != blank -%}
+              {% liquid
+                assign sale_menu = section.settings.sale_menu | handleize
+                assign link_title = link.handle | handleize
+                assign apply_sale_color = false
+                if sale_menu == link_title
+                assign apply_sale_color = true
+                endif
+              %}
+              <details id="Details-menu-drawer-menu-item-{{ forloop.index }}" class="menu-drawer--custom-border">
+                <summary
                   id="HeaderDrawer-{{ link.handle }}"
-                  href="{{ link.url }}"
-                  class="menu-drawer__menu-item {% if link.current %} menu-drawer__menu-item--active{% endif %} tw-block tw-pl-24 tw-py-[1.1rem] tw-pr-[5.2rem]"
-                  {% if link.current %}
-                    aria-current="page"
-                  {% endif %}
+                  class="menu-drawer__menu-item list-menu__item link link--text tw-ml-[0.8rem]{% if link.child_active %} tw-text-[rgb(var(--color-foreground))] tw-bg-[rgba(var(--color-foreground),0.04)] {% endif %} tw-block tw-py-[1rem] tw-pr-[5.2rem] megamenu-icons-forground {% if apply_sale_color == true %} sale-color {% endif %}"
                 >
-                  {{ link.title | escape }}
-                </a>
-              {%- endif -%}
-            </li>
-          {%- endfor -%}
-        </ul>
-      </nav>
-      <div class="menu-drawer__utility-links">
-        {%- if shop.customer_accounts_enabled -%}
-          <a
-            href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-            class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
-          >
-            {% render 'icon-account' %}
-            {%- liquid
-              if customer
-                echo 'customer.account_fallback' | t
-              else
-                echo 'customer.log_in' | t
+                  <span class="tw-font-primary tw-text-body tw-font-bold tw-uppercase tw-text-[rgba(var(--color-foreground))] {% if apply_sale_color == true %} sale-color {% endif %}">{{ link.title | escape }}</span>
+                  {% render 'icon-caret' %}
+                </summary>
+                <ul class="header-drawer-block__sublink-list tw-flex tw-flex-col tw-gap-[1.4rem] md:tw-gap-[1.6rem] tw-ml-[2rem] tw-pb-[1.3rem]">
+                  {% for sublink in link.links %}
+                    <li>
+                      {% if sublink.links != blank %}
+                        <span class="tw-font-primary tw-text-body tw-font-bold tw-text-white">{{ sublink.title | upcase }}</span>
+                        <ul class="tw-flex tw-flex-col tw-gap-[1.2rem] tw-mt-[1rem] tw-pl-[20px]">
+                          {% for grandchildlink in sublink.links %}
+                              <li>
+                                <a class="tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-font-normal tw-opacity-[0.8] tw-text-body" href="{{ grandchildlink.url }}">{{ grandchildlink.title }}</a>
+                              </li>  
+                          {% endfor %} 
+                        </ul>   
+                      {% else %}
+                        <a
+                        href="{{ sublink.url }}"
+                        class="tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-text-body tw-font-normal tw-capitalize"
+                        >
+                          {{ sublink.title }}
+                        </a>
+                      {% endif %} 
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+            {%- else -%}
+            {% liquid
+              assign sale_menu = section.settings.sale_menu | handleize
+              assign link_title = link.handle | handleize
+              assign apply_sale_color = false
+              if sale_menu == link_title
+              assign apply_sale_color = true
               endif
-            -%}
-          </a>
-        {%- endif -%}
+            %}
+              <a
+                id="HeaderDrawer-{{ link.handle }}"
+                href="{{ link.url }}"
+                class="menu-drawer__menu-item tw-font-primary tw-text-body tw-uppercase tw-font-bold {% if link.current %} menu-drawer__menu-item--active{% endif %} tw-block tw-py-[1rem] tw-pr-[5.2rem] tw-ml-[0.8rem] menu-drawer--custom-border tw-text-[rgb(var(--color-foreground))] {% if apply_sale_color == true %} sale-color {% endif %}"
+                {% if link.current %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {{ link.title | escape }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+    <div class="menu-drawer__utility-links tw-pl-[0.8rem] tw-py-[1rem]">
+      {%- if shop.customer_accounts_enabled -%}
+        <a
+          href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+          class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide tw-flex tw-gap-[1.2rem] tw-text-[rgb(var(--color-foreground))] megamenu-icon__forground-color tw-font-primary tw-text-body tw-font-bold tw-uppercase"
+        >
+          {%- liquid
+            if customer
+              echo 'customer.account_fallback' | t
+            else
+              echo 'customer.log_in' | t
+            endif
+          -%}
+        </a>
+      {%- endif -%}
 
-        {% render 'localization-form' %}
-        {% render 'social-icons' %}
-
-      </div>
     </div>
   </div>
+</div>

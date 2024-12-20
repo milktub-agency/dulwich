@@ -23,7 +23,7 @@
           {% render block %}
         {%- when 'heading' -%}
           <h2
-            class="inline-richtext tw-font-primary tw-text-[19px] md:tw-text-[30px] tw-font-light tw-leading-[24px] md:tw-leading-[58px] tw-pb-[10px] md:tw-pb-[0px] bmd:tw-max-w-[94%] bmd:tw-m-auto {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="inline-richtext tw-font-primary tw-text-[19px] md:tw-text-[26px] tw-font-light md:tw-font-normal tw-leading-[24px] md:tw-leading-[37px] tw-pb-[10px] md:tw-pb-[0px] bmd:tw-max-w-[94%] bmd:tw-m-auto {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -60,7 +60,7 @@
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input tw-bg-white tw-text-[10px] md:tw-text-[22px] tw-min-h-[30px] tw-max-h-[30px] md:tw-max-h-[64px] md:tw-min-h-[64px]"
+                    class="field__input tw-bg-white tw-text-[10px] md:tw-text-[12px] tw-min-h-[30px] tw-max-h-[30px] md:tw-max-h-[41px] md:tw-min-h-[41px]"
                     value="{{ form.email }}"
                     aria-required="true"
                     autocorrect="off"
@@ -76,13 +76,13 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-                  <label class="field__label newsletter-label tw-text-[10px] md:tw-text-[22px]" for="NewsletterForm--{{ section.id }}">
+                  <label class="field__label newsletter-label tw-text-[10px] md:tw-text-[12px] tw-font-light" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.your_email_address' | t }}
                   </label>
                 </div>
                 <button
                   type="submit"
-                  class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-center tw-m-auto tw-rounded-[12px] md:tw-rounded-[30px] tw-text-[9px] md:tw-text-[22px] tw-uppercase tw-py-0 md:tw-py-[12px] tw-min-w-[73px] md:tw-min-w-[176px]"
+                  class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-center tw-m-auto tw-rounded-[14px] md:tw-rounded-[17px] tw-text-[11px] md:tw-text-[13px] tw-font-medium tw-uppercase tw-py-[1.5] md:tw-py-[3px] tw-min-w-[89px] md:tw-min-w-[101px]"
                   name="commit"
                   id="Subscribe"
                   aria-label="{{ 'newsletter.button_label' | t }}"

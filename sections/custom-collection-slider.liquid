@@ -22,12 +22,12 @@
 
   {{ 'custom-collection-slider.css' | asset_url | stylesheet_tag }}
 
-  <div class="padding-{{ section.id }} color-{{ section.settings.color_scheme }} tw-px-[20px] md:tw-px-[40px]">
+  <div class="padding-{{ section.id }} color-{{ section.settings.color_scheme }} tw-px-[12px] md:tw-px-[40px]">
     {% if section.settings.section_title != blank %}
       <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full tw-text-[rgb(var(--color-button))]">{{ section.settings.section_title }}</div>
     {% endif %}
     {% if section.blocks != blank %}
-      <div class="custom-collection-slider tw-flex md:tw-flex-nowrap tw-justify-start lg:tw-justify-start tw-overflow-auto tw-pt-[20px] tw-pb-[10px] {% if section.settings.flex_wrap %} tw-flex-wrap tw-justify-center {% endif %}">
+      <div class="custom-collection-slider tw-flex md:tw-flex-nowrap tw-justify-start lg:tw-justify-start tw-overflow-auto md:tw-pt-[20px] md:tw-pb-[10px] {% if section.settings.flex_wrap %} tw-flex-wrap tw-justify-center {% endif %}">
         {% for block in section.blocks %}
           <div class="collection_slider-inner">
             <a href="{{ block.settings.collection.url }}">
@@ -41,9 +41,9 @@
                 {% render 'responsive-picture', desktopImage: block.settings.image, fetchpriority: image_fetch %}
               </div>
               {% if block.settings.collection_name != blank %}
-                <div class="collection_slider-inner-text tw-text-[7px] md:tw-text-[14px] tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection_name }}</div>
+                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-semibold tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection_name }}</div>
               {% else %}
-                <div class="collection_slider-inner-text tw-text-[7px] md:tw-text-[14px] tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection.title }}</div>
+                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-semibold tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection.title }}</div>
               {% endif %}
             </a>
           </div>

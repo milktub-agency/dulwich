@@ -6,7 +6,7 @@
 }
 
 .splide__pagination__page[type=button] {
-    background: #ccc;
+    background: #fff;
 }
 
 .splide__pagination__page.is-active[type=button] {
@@ -15,6 +15,7 @@
 
 button.splide__arrow {
     background: white;
+    opacity: 1;
 }
 
 media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
@@ -22,7 +23,7 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 }
 
 .slideshow .splide__pagination {
-    bottom: 1.8rem;
+    bottom: 2.2rem;
 }
 .splide__pagination__page.is-active[type=button] {
     background: #000;
@@ -41,7 +42,7 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 .collection .splide__arrow svg,
 .testimonial-section .splide__arrow svg,
 .related-products .splide__arrow svg {
-    fill: #000;
+    fill: #60919F;
     height: 44px;
     width: 44px;
 }
@@ -110,5 +111,8 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
     .splide__pagination__page{
         height: 9px;
         width: 9px;
+    }
+    .slideshow .splide__pagination {
+        bottom: 1.7rem;
     }
 }

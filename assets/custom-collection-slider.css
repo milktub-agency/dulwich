@@ -1,12 +1,12 @@
 .collection_slider-inner {
-  min-width: 18%;
-  max-width: 18%;
+  min-width: 15%;
+  max-width: 15%;
   margin: 0 8px;
 } 
 @media screen and (min-width: 990px){
   .collection_slider-inner {
-    min-width: 6%;
-    max-width: 6%;
+    min-width: 7%;
+    max-width: 7%;
     margin: 0 18px;
   }  
 }
@@ -31,7 +31,7 @@
 }
 @media screen and (max-width: 750px) {
   .collection_slider-inner-text{
-    white-space: nowrap;
+    line-height: normal;
   }
 }
 .custom-collection-slider::-webkit-scrollbar {

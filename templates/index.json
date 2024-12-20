@@ -141,10 +141,10 @@
         "section_title": "",
         "flex_wrap": false,
         "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
-        "section_padding_top": 10,
-        "section_padding_bottom": 6,
-        "mobile_padding_top": 16,
-        "mobile_padding_bottom": 22
+        "section_padding_top": 16,
+        "section_padding_bottom": 2,
+        "mobile_padding_top": 10,
+        "mobile_padding_bottom": 0
       }
     },
     "3fe7c8be-5899-4e5d-9802-e0af9980a81f": {
@@ -172,8 +172,8 @@
       "settings": {
         "enable_autoplay": true,
         "autoplay_speed": 3,
-        "show_arrows": true,
-        "show_arrows_on_mobile": true,
+        "show_arrows": false,
+        "show_arrows_on_mobile": false,
         "show_dots": true,
         "show_dots_on_mobile": true,
         "section-padding-top": 0,
@@ -207,8 +207,8 @@
         "mobile_per_page": 2,
         "mobile_padding_left": 0,
         "mobile_padding_right": 0,
-        "gap_between_slides_on_desktop": 2,
-        "gap_between_slides_on_mobile": 1.5,
+        "gap_between_slides_on_desktop": 2.8,
+        "gap_between_slides_on_mobile": 1.2,
         "padding_top": 36,
         "padding_bottom": 40
       }
@@ -223,9 +223,9 @@
             "text_font_size": "18",
             "text_font_weight": "400",
             "text_line_height": "28",
-            "text_font_size_mob": "9",
+            "text_font_size_mob": "11",
             "text_font_weight_mob": "400",
-            "text_line_height_mob": "14"
+            "text_line_height_mob": "16"
           }
         }
       },
@@ -238,8 +238,8 @@
         "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
         "content_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24,
+        "padding_top": 26,
+        "padding_bottom": 26,
         "padding_top_mob": 16,
         "padding_bottom_mob": 16
       }
@@ -271,8 +271,8 @@
         "mobile_per_page": 2,
         "mobile_padding_left": 0,
         "mobile_padding_right": 0,
-        "gap_between_slides_on_desktop": 2,
-        "gap_between_slides_on_mobile": 1.5,
+        "gap_between_slides_on_desktop": 2.8,
+        "gap_between_slides_on_mobile": 1.2,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -403,12 +403,12 @@
           "type": "text",
           "settings": {
             "text": "<p>Remember that supplements are not meant to replace a varied diet and otherwise healthy lifestyle.<\/p>",
-            "text_font_size": "23",
+            "text_font_size": "18",
             "text_font_weight": "500",
-            "text_line_height": "32",
-            "text_font_size_mob": "9",
+            "text_line_height": "28",
+            "text_font_size_mob": "11",
             "text_font_weight_mob": "500",
-            "text_line_height_mob": "14"
+            "text_line_height_mob": "16"
           }
         }
       },
