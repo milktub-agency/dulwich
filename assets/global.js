@@ -152,6 +152,36 @@ function onKeyUpEscape(event) {
   summaryElement.focus();
 }
 
+window.updateCartTotalPrice = function () {
+  fetch('/cart.js')
+    .then(response => response.json())
+    .then(cart => {
+      const totalPrice = (cart.total_price || 0) / 100;
+      const formattedPrice = `£${totalPrice.toFixed(2)}`;
+      const totalPriceHeader = document.getElementById('cart-header-price');
+      const totalPriceCartElements = document.querySelectorAll('#cart-page-total-price');
+      if (totalPriceHeader) {
+        totalPriceHeader.innerHTML = `/${formattedPrice}`;
+      }
+      if (totalPriceCartElements.length > 0) {
+        totalPriceCartElements.forEach(element => {
+          element.innerHTML = formattedPrice;
+        });
+      }
+      const cartCollection = document.querySelector(".cart-collection");
+      if (cartCollection) {
+        if (cart.item_count === 0) {
+          cartCollection.classList.add("hidden");
+        } else {
+          cartCollection.classList.remove("hidden");
+        }
+      }
+    })
+    .catch(error => {
+      console.log(error);
+    });
+};
+
 class QuantityInput extends HTMLElement {
   constructor() {
     super();
@@ -178,10 +208,6 @@ class QuantityInput extends HTMLElement {
 
   onInputChange(event) {
     this.validateQtyRules();
-    setTimeout(()=>
-    {
-      updateCartTotalPrice();
-    },2000)
   }
 
   onButtonClick(event) {
@@ -190,10 +216,6 @@ class QuantityInput extends HTMLElement {
 
     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
-    setTimeout(()=>
-    {
-      updateCartTotalPrice();
-    },2000)
   }
 
   validateQtyRules() {
@@ -202,11 +224,13 @@ class QuantityInput extends HTMLElement {
       const min = parseInt(this.input.min);
       const buttonMinus = this.querySelector(".quantity__button[name='minus']");
       buttonMinus.classList.toggle('disabled', value <= min);
+      updateCartTotalPrice();
     }
     if (this.input.max) {
       const max = parseInt(this.input.max);
       const buttonPlus = this.querySelector(".quantity__button[name='plus']");
       buttonPlus.classList.toggle('disabled', value >= max);
+      updateCartTotalPrice();
     }
   }
 }
@@ -2071,33 +2095,3 @@ class YoutubeBanner extends HTMLElement {
   }
 }
 customElements.define('youtube-banner', YoutubeBanner);
-
-window.updateCartTotalPrice = function () {
-  fetch('/cart.js')
-    .then(response => response.json())
-    .then(cart => {
-      const totalPrice = (cart.total_price || 0) / 100;
-      const formattedPrice = `£${totalPrice.toFixed(2)}`;
-      const totalPriceHeader = document.getElementById('cart-header-price');
-      const totalPriceCartElements = document.querySelectorAll('#cart-page-total-price');
-      if (totalPriceHeader) {
-        totalPriceHeader.innerHTML = `/${formattedPrice}`;
-      }
-      if (totalPriceCartElements.length > 0) {
-        totalPriceCartElements.forEach(element => {
-          element.innerHTML = formattedPrice;
-        });
-      }
-      const cartCollection = document.querySelector(".cart-collection");
-      if (cartCollection) {
-        if (cart.item_count === 0) {
-          cartCollection.classList.add("hidden");
-        } else {
-          cartCollection.classList.remove("hidden");
-        }
-      }
-    })
-    .catch(error => {
-      console.log(error);
-    });
-};

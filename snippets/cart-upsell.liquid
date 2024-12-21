@@ -114,7 +114,7 @@
 
 {% if cart != empty and enable_dynamic_product_recommendations or show_upselling_if_upsell_product_available %}
   <{% if enable_dynamic_product_recommendations %}cart-upsell-recommendations{% else %}carousel-component{% endif %}
-    class="splide color-{{ section.settings.color_scheme_upsell }} {% unless enable_dynamic_product_recommendations %}tw-py-5 tw-mb-16{% endunless %}"
+    class="splide cart-collection color-{{ section.settings.color_scheme_upsell }} {% unless enable_dynamic_product_recommendations %}tw-py-5 tw-mb-16{% endunless %}"
 
     {% if enable_dynamic_product_recommendations %}
       data-product-ids="{{ cart.items | map: 'product' | map: 'id' | json }}"

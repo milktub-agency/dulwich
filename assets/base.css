@@ -2710,7 +2710,6 @@ details-disclosure > details {
     width: 1.4rem;
   }
   header.header {
-    padding: 0px 2rem 4px 1.2rem;
     align-items: start;
   }
   .cart-count-bubble {
@@ -3052,8 +3051,6 @@ li.active a {
   header.header {
     padding-left: 50px;
     padding-right: 30px;
-    padding-top: 0;
-    padding-bottom: 0;
   }
   .header-menu-search .search__input.field__input+label {
     font-size: 15px;

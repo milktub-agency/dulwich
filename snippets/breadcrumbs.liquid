@@ -1,18 +1,4 @@
-<style>
-    .breadcrumbs li:not(:last-child):after {
-        content: "/\00a0";
-        display: inline-block;
-        padding-left: .75ch;
-        speak: none;
-        font-size: 15px;
-        font-weight: 400;
-    }
-    @media screen and (max-width: 750px) {
-        .breadcrumbs li:not(:last-child):after {
-            font-size: 13px;
-        }
-    }
-</style>
+{{ 'breadcrumbs-styles.css' | asset_url | stylesheet_tag }}
 
 {% unless template == 'index' or template == 'list-collections' or template == '404' %}
     {% assign t = template | split: '.' | first %}

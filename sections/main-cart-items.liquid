@@ -472,10 +472,7 @@
   {%- if cart != empty -%}
     <div class="tw-my-[12px]">
       <a href="{{ routes.all_products_collection_url }}" class="underlined-link cart-continue-shopping">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none" class="tw-inline-block">
-          <path d="M8 13L2 7L8 1" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
-          <path d="M2 7H18.5" stroke="#DC1636" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
+        {% render 'icon-left-arrow' class: "tw-inline-block tw-pr-[2px] tw-mb-[2px]" %}
         {{ 'general.continue_shopping' | t }}
       </a>
     </div>

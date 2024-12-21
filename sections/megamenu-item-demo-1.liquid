@@ -27,7 +27,7 @@
         <div class="mm-megamenu--column__menuitems tw-gap-4">
           <ul class="menu-drawer__menu has-submenu list-menu md:tw-flex tw-justify-between" role="list">
               {%- for link in section.settings.menu.links -%}
-                <li class="tw-box-content tw-flex-1 {% if forloop.index>1 %}tw-pl-[4rem] megamenu__left-border{% endif %}">
+                <li class="tw-box-content tw-flex-1 {% if forloop.index>1 %}tw-pl-[3%] megamenu__left-border{% endif %}">
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                       <summary

@@ -25,11 +25,6 @@
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
-  header-drawer {
-    justify-self: start;
-    margin-left: -1.2rem;
-  }
-
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;
@@ -43,50 +38,13 @@
       }
     }
   {%- endif -%}
-
-  .menu-drawer-container {
-    display: flex;
-  }
-
-  .list-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .list-menu--inline {
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
-
-  summary.list-menu__item {
-    padding-right: 2.4rem;
-  }
-
-  .list-menu__item {
-    display: flex;
-    align-items: center;
-    line-height: calc(1 + 0.3 / var(--font-body-scale));
-  }
-
-  .list-menu__item--link {
-    text-decoration: none;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    line-height: calc(1 + 0.8 / var(--font-body-scale));
-  }
-
-  @media screen and (min-width: 750px) {
-    .list-menu__item--link {
-      padding-bottom: 0.5rem;
-      padding-top: 0.5rem;
-    }
-  }
 </style>
+
+{{ 'header-styles.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .header {
-    padding: 0px 2rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 1.4rem;
+    padding: {{ section.settings.padding_top_mob }}px 2rem {{ section.settings.padding_bottom_mob }}px 1.2rem;
   }
 
   .section-header {
@@ -633,7 +591,7 @@
       "id": "padding_top",
       "min": 0,
       "max": 36,
-      "step": 4,
+      "step": 1,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
       "default": 20
@@ -643,9 +601,29 @@
       "id": "padding_bottom",
       "min": 0,
       "max": 36,
-      "step": 4,
+      "step": 1,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mob",
+      "min": 0,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "label": "Top padding mobile",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mob",
+      "min": 0,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "label": "Bottom padding mobile",
       "default": 20
     }
   ],
