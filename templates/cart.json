@@ -6,7 +6,7 @@
         "text_kBTRdt": {
           "type": "text",
           "settings": {
-            "text": "<p>For all Special Deliveries, orders must be placed on weekdays before 2pm for same-day dispatch!<\/p>",
+            "text": "<p>For all <strong>Special Deliveries,<\/strong> orders must be placed on weekdays before 2pm for same-day dispatch!<\/p>",
             "text_font_size": "18",
             "text_font_weight": "500",
             "text_line_height": "28",
@@ -25,8 +25,8 @@
         "color_scheme": "scheme-f55272d2-eeb1-4466-ab41-e3e38f03c00d",
         "full_width": true,
         "content_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24,
+        "padding_top": 11,
+        "padding_bottom": 11,
         "padding_top_mob": 8,
         "padding_bottom_mob": 8
       }

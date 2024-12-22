@@ -15,6 +15,7 @@
 }
 .mega-menu__content .list-menu__item {
   align-items: flex-start;
+  line-height: normal;
 }
 .megamenu__left-border {
   border-left: 1px solid #fff;

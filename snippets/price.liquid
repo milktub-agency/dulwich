@@ -78,7 +78,7 @@
         </span>
       {%- else -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-        <span class="price-item price-item--regular tw-font-primary tw-text-[21px] md:tw-text-[30px] tw-font-semibold md:tw-font-medium">
+        <span class="price-item price-item--regular tw-font-primary tw-text-[21px] md:tw-text-[26px] tw-font-semibold md:tw-font-medium">
           {{ money_price }}
         </span>
       {%- endif -%}
@@ -87,7 +87,7 @@
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span>
-          <s class="price-item price-item--regular tw-font-primary tw-text-[21px] md:tw-text-[30px] tw-font-semibold md:tw-font-medium">
+          <s class="price-item price-item--regular tw-font-primary tw-text-[21px] md:tw-text-[26px] tw-font-semibold md:tw-font-medium">
             {% if settings.currency_code_enabled %}
               {{ compare_at_price | money_with_currency }}
             {% else %}

@@ -119,7 +119,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 8rem;
+    padding: 0 5.6rem;
   }
 
   .header.page-width,
@@ -2934,19 +2934,21 @@ details-disclosure > details {
 
 li.active a {
   font-weight: 500;
+  font-size: 18px;
   color: rgb(var(--color-button));
 }
 .product-filter-divider.is-divider:empty {
   height: 1px;
-  max-width: 100px;
+  max-width: 74px;
   background-color: rgb(var(--color-button));
   opacity: 1;
+  margin-bottom: 8px;
 }
 .colection-product-grid.product-grid {
-  --grid-desktop-horizontal-spacing: 26px;
-  --grid-desktop-vertical-spacing: 110px;
-  --grid-mobile-horizontal-spacing: 17px;
-  --grid-mobile-vertical-spacing: 39px;
+  --grid-desktop-horizontal-spacing: 51px;
+  --grid-desktop-vertical-spacing: 83px;
+  --grid-mobile-horizontal-spacing: 12px;
+  --grid-mobile-vertical-spacing: 43px;
 }
 .header__search .search-modal__form .field__input:focus,
 .header__search .search-modal__form .field__input:focus-visible,
@@ -2957,11 +2959,12 @@ li.active a {
   box-shadow: none;
 }
 .collections-filter .newsletter-form .field__input:focus~.field__label,
+.collections-filter .newsletter-form .field__input:not(:placeholder-shown)~.field__label,
 .collections-filter .newsletter-form .field__input:focus-visible~.field__label {
   top: 12%;
 }
 .collections-filter .newsletter-form .field__input~.field__label {
-  top: 18%;
+  top: 28%;
 }
 .collection-filter-newsletter {
   margin: 24px 0;
@@ -3099,7 +3102,8 @@ li.active a {
     padding-right: 200px;
   }
   .collection.page-width-lg-slider,
-  .related-products.page-width-lg-slider {
+  .related-products.page-width-lg-slider,
+  .cart-section.cart-section-lg {
     padding-left: 300px;
     padding-right: 300px;
   }
