@@ -1,6 +1,6 @@
 <section
   id="MainProduct-{{ section.id }}"
-  class="page-width main-product-section section-{{ section.id }}-padding"
+  class="main-product-section tw-px-[20px] md:tw-px-[52px] pdp-section section-{{ section.id }}-padding"
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -152,7 +152,7 @@
               </p>
             {%- when 'title' -%}
               <div class="product__title blg:tw-hidden lg:tw-block" {{ block.shopify_attributes }}>
-                <h1 class="tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[48px] tw-font-medium tw-leading-normal">{{ product.title | escape }}</h1>
+                <h1 class="product-title-lg tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[48px] tw-font-medium tw-leading-normal">{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1 tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[48px] tw-font-medium tw-leading-normal">
                     {{ product.title | escape }}

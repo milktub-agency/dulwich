@@ -98,7 +98,7 @@ class CartItems extends HTMLElement {
       {
         id: 'main-cart-footer',
         section: document.getElementById('main-cart-footer').dataset.id,
-        selector: '.js-contents',
+        selector: '.js-cart-footer',
       },
     ];
   }
@@ -119,6 +119,26 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
+        const totalPrice = (parsedState.total_price || 0) / 100;
+        const formattedPrice = `£${totalPrice.toFixed(2)}`;
+        const totalPriceHeader = document.getElementById('cart-header-price');
+        const totalPriceCartElements = document.querySelectorAll('#cart-page-total-price');
+        if (totalPriceHeader) {
+          totalPriceHeader.innerHTML = `/${formattedPrice}`;
+        }
+        if (totalPriceCartElements.length > 0) {
+          totalPriceCartElements.forEach(element => {
+            element.innerHTML = formattedPrice;
+          });
+        }
+        const cartCollection = document.querySelector(".cart-collection");
+        if (cartCollection) {
+          if (parsedState.item_count === 0) {
+            cartCollection.classList.add("hidden");
+          } else {
+            cartCollection.classList.remove("hidden");
+          }
+        }
         const quantityElement =
           document.getElementById(`Quantity-${line}`) || document.getElementById(`Drawer-quantity-${line}`);
         const items = document.querySelectorAll('.cart-item');

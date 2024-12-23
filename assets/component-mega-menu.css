@@ -1,6 +1,24 @@
 .mega-menu {
   position: static;
 }
+.mega-menu.mega-menu-relative {
+  position: relative;
+}
+.mega-menu.mega-menu-relative .page-width-desktop {
+  padding: 0px 2rem;
+}
+.mega-menu.mega-menu-relative .menu-drawer__menu-item.megamenu-small {
+  display: none;
+}
+.mega-menu.mega-menu-relative .list-menu__item--link {
+  white-space: nowrap;
+}
+.mega-menu__content .list-menu__item {
+  align-items: flex-start;
+}
+.megamenu__left-border {
+  border-left: 1px solid #fff;
+}
 
 .mega-menu__content {
   background-color: rgb(var(--color-background));
@@ -9,8 +27,8 @@
   border-right: 0;
   left: 0;
   overflow-y: auto;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
   position: absolute;
   right: 0;
   top: 100%;

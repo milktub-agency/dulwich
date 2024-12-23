@@ -46,7 +46,7 @@
   {% endif %}
 {%- endstyle -%}
 
-<div data-title="{{ section.settings.tab_name |  handleize }}" class="hidden tw-hidden lg:tw-block tab-switch-page-width page-width mobile-accordian-content">
+<div data-title="{{ section.settings.tab_name |  handleize }}" class="hidden tw-hidden lg:tw-block tab-switch-page-width tw-px-[20px] md:tw-px-[52px] mobile-accordian-content">
   <div class="tab-switch-content">
     {% if section.blocks.size > 0 %}
       {%- for block in section.blocks -%}

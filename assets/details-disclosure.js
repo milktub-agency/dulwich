@@ -51,7 +51,7 @@ class HeaderMenu extends DetailsDisclosure {
     this.addEventListener('mouseleave', () => {
       this.timer = setTimeout(() => {
         this.mainDetailsToggle.open = false
-      }, 300);
+      }, 100);
     })
   }
 

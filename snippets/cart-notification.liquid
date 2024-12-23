@@ -20,33 +20,47 @@
       tabindex="-1"
     >
       <div class="cart-notification__header">
-        <h2 class="cart-notification__heading caption-large text-body">
+        <div class="tw-flex tw-justify-between tw-items-center tw-w-full tw-bg-[#bce3ee]">
+          <div class="tw-px-[20px] tw-text-bright-red tw-text-[18px] tw-font-medium tw-uppercase bmd:tw-hidden">{{ 'sections.cart.my_bag' | t }}</div>
+          <h2 class="cart-notification__heading medium-hide large-up-hide tw-text-[10px] tw-px-[20px] tw-py-[8px] caption-large text-body tw-text-[green] md:tw-hidden">
+            {%- render 'icon-checkmark' -%}
+            {{ 'general.cart.item_added' | t }}
+          </h2>
+          <a
+            href="{{ routes.cart_url }}"
+            id="cart-notification-button"
+            class="button button--secondary mobile-cart-notification-button md:tw-hidden tw-text-[10px] button--full-width tw-uppercase tw-font-semibold tw-bg-bright-red tw-text-white"
+          >{{ 'general.cart.view_empty_cart' | t }}</a>
+          <button
+            type="button"
+            class="cart-notification__close modal__close-button link link--text focus-inset"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            {% render 'icon-close' %}
+          </button>
+        </div>
+        <h2 class="cart-notification__heading small-hide tw-px-[20px] tw-py-[8px] caption-large text-body tw-text-[green] bmd:tw-hidden">
           {%- render 'icon-checkmark' -%}
           {{ 'general.cart.item_added' | t }}
         </h2>
-        <button
-          type="button"
-          class="cart-notification__close modal__close-button link link--text focus-inset"
-          aria-label="{{ 'accessibility.close' | t }}"
-        >
-          <svg class="icon icon-close" aria-hidden="true" focusable="false">
-            <use href="#icon-close">
-          </svg>
-        </button>
       </div>
-      <div id="cart-notification-product" class="cart-notification-product"></div>
-      <div class="cart-notification__links">
+      <div id="cart-notification-product" class="cart-notification-product tw-px-[20px] bmd:tw-hidden"></div>
+      <div class="cart-notification__links md:tw-pb-[20px] md:tw-px-[20px]">
         <a
           href="{{ routes.cart_url }}"
           id="cart-notification-button"
-          class="button button--secondary button--full-width"
+          class="button button--secondary small-hide button--full-width tw-uppercase tw-font-semibold tw-bg-bright-red tw-text-white"
         >{{ 'general.cart.view_empty_cart' | t }}</a>
-        <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
+        <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form" class="hidden">
           <button class="button button--primary button--full-width" name="checkout">
             {{ 'sections.cart.checkout' | t }}
           </button>
         </form>
-        <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+        <button type="button" class="link button-label tw-uppercase bmd:tw-hidden">{{ 'general.continue_shopping' | t }}</button>
+      </div>
+      <div class="tw-text-center tw-bg-[#bce3ee] tw-p-[10px] bmd:tw-hidden">
+        <h4 class="tw-text-[16px] tw-pt-[4px]">{{ 'sections.cart.cart_notification_footer' | t }}</h4>
+        <p class="tw-text-[12px]">{{ 'sections.cart.more_info' | t }} <a href="" class="tw-text-[12px] tw-text-black tw-underline">{{ 'sections.cart.here' | t }}</a></p>
       </div>
     </div>
   </div>

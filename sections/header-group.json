@@ -13,8 +13,8 @@
         "faq_text": "FAQ",
         "faq_text_link": "",
         "text_alignment": "tw-justify-between",
-        "padding_top": 6,
-        "padding_bottom": 6
+        "padding_top": 4,
+        "padding_bottom": 2
       }
     },
     "pdp_announcement_bar_wrBmjL": {
@@ -104,22 +104,24 @@
       "settings": {
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "none",
+        "sticky_header_type": "always",
         "show_line_separator": true,
         "color_scheme": "background-1",
-        "menu_color_scheme": "",
+        "menu_color_scheme": "scheme-5d415bee-8962-4d28-bea5-a42f7f862306",
         "enable_country_selector": false,
         "enable_language_selector": false,
         "margin_bottom": 0,
         "wishlist_page_url": "shopify:\/\/pages\/wishlist",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mob": 0,
+        "padding_bottom_mob": 2
       }
     },
     "29597e83-b5df-402e-9c55-1f5773f2d069": {
       "type": "header-drawer",
       "settings": {
-        "menu": "main-menu",
+        "menu": "mobile-main-menu",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -216,10 +218,10 @@
     "7a146f3f-997d-4b81-882f-6acfbd99a2c1": {
       "type": "megamenu-item-demo-1",
       "settings": {
-        "parent": "",
+        "parent": "SHOP",
         "heading": "",
         "subheading": "",
-        "menu": "main-menu",
+        "menu": "shop",
         "image_heading": "",
         "image_subheading": "",
         "image_button_text": "",
@@ -229,23 +231,10 @@
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd": {
       "type": "megamenu-item-demo-1",
       "settings": {
-        "parent": "Clothing & Shoes",
+        "parent": "CASE HISTORIES",
         "heading": "",
         "subheading": "",
-        "menu": "",
-        "image_heading": "",
-        "image_subheading": "",
-        "image_button_text": "",
-        "image_button_link": ""
-      }
-    },
-    "9f76b2d6-657b-4613-a0e4-a5d25da00bd5": {
-      "type": "megamenu-item-demo-1",
-      "settings": {
-        "parent": "Home & Living",
-        "heading": "",
-        "subheading": "",
-        "menu": "",
+        "menu": "case-histories",
         "image_heading": "",
         "image_subheading": "",
         "image_button_text": "",
@@ -301,7 +290,7 @@
         "slides_perpage": 4,
         "slides_perpage_mobile": 2,
         "padding_top": 8,
-        "padding_bottom": 8
+        "padding_bottom": 9
       }
     }
   },
@@ -314,7 +303,6 @@
     "cb405230-628a-4089-807a-c8664c7378b9",
     "7a146f3f-997d-4b81-882f-6acfbd99a2c1",
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd",
-    "9f76b2d6-657b-4613-a0e4-a5d25da00bd5",
     "pdp_announcement_bar_prQhEe"
   ]
 }

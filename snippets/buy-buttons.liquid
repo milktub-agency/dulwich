@@ -116,7 +116,7 @@
                         {% render 'icon-minus' %}
                       </button>
                       <input
-                        class="quantity__input tw-font-primary blg:tw-text-[17px] lg:tw-text-[34px] tw-font-medium tw-text-[#DC1636]"
+                        class="quantity__input tw-font-primary blg:tw-text-[17px] lg:tw-text-[34px] tw-font-medium tw-text-[#60919F]"
                         type="number"
                         name="quantity"
                         id="Quantity-{{ section.id }}"
@@ -271,7 +271,7 @@
                     id="ProductSubmitButton-{{ section_id }}"
                     type="submit"
                     name="add"
-                    class="product-form__submit tw-text-[13px] lg:tw-text-[20px] tw-font-primary tw-font-bold tw-uppercase tw-bg-[#DC1636] tw-text-white tw-border-none tw-py-[14px] button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                    class="product-form__submit tw-text-[13px] lg:tw-text-[20px] tw-font-primary tw-font-bold tw-uppercase tw-bg-[#60919F] tw-text-white tw-border-none tw-py-[14px] button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
                       disabled
                     {% endif %}

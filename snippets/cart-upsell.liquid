@@ -103,6 +103,7 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {% if enable_dynamic_product_recommendations %}
+  <script src="{{ 'carousel.js' | asset_url }}" defer></script>
   <script src="{{ 'cart-upsell-recommendations.js' | asset_url }}" defer="defer"></script>
 {% endif %}
 
@@ -113,7 +114,7 @@
 
 {% if cart != empty and enable_dynamic_product_recommendations or show_upselling_if_upsell_product_available %}
   <{% if enable_dynamic_product_recommendations %}cart-upsell-recommendations{% else %}carousel-component{% endif %}
-    class="splide {% unless enable_dynamic_product_recommendations %}tw-py-5 tw-mb-16 tw-border-t tw-border-solid tw-border-gray-300{% endunless %}"
+    class="splide cart-collection color-{{ section.settings.color_scheme_upsell }} {% unless enable_dynamic_product_recommendations %}tw-py-5 tw-mb-16{% endunless %}"
 
     {% if enable_dynamic_product_recommendations %}
       data-product-ids="{{ cart.items | map: 'product' | map: 'id' | json }}"
@@ -127,8 +128,8 @@
     data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
     data-showArrows="{{ section.settings.show_arrows }}"
     data-showArrowsOnMobile="{{ section.settings.show_arrows_on_mobile }}"
-    data-showDots="{{ section.settings.show_dots | default: 'true' }}"
-    data-showDotsOnMobile="{{ section.settings.show_dots_on_mobile | default: 'true' }}"
+    data-showDots="{{ section.settings.show_dots }}"
+    data-showDotsOnMobile="{{ section.settings.show_dots_on_mobile }}"
     data-gapBetweenSlides="{{ section.settings.gap_between_slides_on_desktop | append: 'rem' }}"
     data-gapBetweenSlidesOnMobile="{{ section.settings.gap_between_slides_on_mobile | append: 'rem' }}"
     data-mobilePaddingLeft="{{ section.settings.mobile_padding_left | append: '%' }}"
@@ -139,16 +140,8 @@
 
     <div class="tw-relative">
       {% if section.settings.upsell_heading != blank %}
-        <h3 class="tw-text-center tw-pb-8 {% if enable_dynamic_product_recommendations %} hidden {% endif %}">{{ section.settings.upsell_heading }}</h3>
+        <h3 class="tw-text-left tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[16px] md:tw-text-[25px] tw-font-light tw-leading-[15px] md:tw-leading-[23px] tw-mb-[18px] md:tw-mb-[21px] {% if enable_dynamic_product_recommendations %} hidden {% endif %}">{{ section.settings.upsell_heading }}</h3>
       {% endif %}
-      <div class="splide__arrows">
-        <button class="splide__arrow splide__arrow--prev tw-top-4 disabled:tw-hidden">
-          Prev
-        </button>
-        <button class="splide__arrow splide__arrow--next tw-top-4 disabled:tw-hidden">
-          Next
-        </button>
-      </div>
     </div>
 
     <div class="splide__track">

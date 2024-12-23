@@ -50,7 +50,7 @@
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.08);
   padding-top: 14px;
-  background: #5B5B5B;
+  background: #557781;
   color: #ffffff80;
 }
 
@@ -527,14 +527,14 @@
 }
 .is-divider:empty {
   background-color: rgb(var(--color-foreground));
-  opacity: 0.3;
+  opacity: 0.8;
   display: block;
   height: 3px;
   max-width: 30px;
   width: 100%;
 }
 .footer-block--menu ul.footer-block__details-content.list-unstyled>li+li {
-  border-top: 1px solid rgb(var(--color-foreground), 0.08);
+  border-top: 2px solid rgb(var(--color-foreground), 0.29);
 }
 .footer-block__details-content .list-menu__item--link {
   padding: 8px 0;
