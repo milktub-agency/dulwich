@@ -11,7 +11,7 @@
   <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
-{%- if settings.cart_type == "drawer" -%}
+{%- if settings.cart_type == "drawer" or settings.cart_type == "notification_drawer" -%}
   <link rel="stylesheet" href="{{ 'component-cart-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-cart.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -236,7 +236,7 @@
               {% render 'header-drawer' %}
             {% endif %}
       
-            <a href="{% if settings.cart_type == 'notification' %}/cart{% else %}javascript:void(0){% endif %}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+            <a href="{% if settings.cart_type == 'notification' %}/cart{% else %}javascript:void(0){% endif %}" class="header__icon header__icon--cart link focus-inset {% if settings.cart_type == 'notification_drawer' %}cart-notification-icon{% endif %}" id="cart-icon-bubble">
               {%- liquid
                 if cart == empty
                   render 'icon-cart-empty'

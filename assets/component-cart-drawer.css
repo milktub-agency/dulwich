@@ -411,3 +411,80 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     margin-left: 0;
   }
 }
+
+@media screen and (min-width: 750px) {
+  .drawer.cart-notification-drawer {
+    top: 120px;
+    background: transparent;
+  }
+  .drawer.cart-notification-drawer .drawer__header {
+    background: #60919F;
+    color: #fff;
+    padding: 4px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .drawer.cart-notification-drawer .cart-notification__heading {
+    flex-grow: 0;
+  }
+  .drawer.cart-notification-drawer table.cart-items thead {
+    padding: 0 20px;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__media {
+    padding: 0;
+    width: 8rem;
+  }
+  .drawer.cart-notification-drawer table.cart-items tr.cart-item {
+    padding: 0 6px;
+    gap: 2px;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__quantity {
+    display: none;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__totals {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .drawer.cart-notification-drawer .drawer__footer {
+    padding: 0;
+  }
+  .drawer.cart-notification-drawer .drawer__footer .view_cart_btn {
+    display: flex;
+  }
+  .drawer.cart-notification-drawer .drawer__footer .totals h2 {
+    font-size: 18px;
+    color: #000;
+  }
+  .drawer.cart-notification-drawer .drawer__footer .totals p {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .drawer.cart-notification-drawer .drawer__header svg.icon-close path {
+    fill: #fff;
+  }
+  .drawer.cart-notification-drawer .drawer__header .drawer__heading {
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .drawer.cart-notification-drawer .drawer__header .drawer__close {
+    position: unset;
+    min-width: 3.2rem;
+  }
+  .drawer.cart-notification-drawer .drawer__inner {
+    height: 550px;
+    margin-right: 46px;
+    transform: translateY(100%);
+    padding: 0;
+    border-radius: 11px;
+  }
+  .drawer.cart-notification-drawer.active .drawer__inner {
+    transform: translate(0);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .drawer.cart-notification-drawer.active .scDiscount__container {
+    display: none;
+  }
+}

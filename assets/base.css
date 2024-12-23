@@ -3120,3 +3120,23 @@ cart-upsell-recommendations.splide.is-initialized {
   padding-top: 60px;
   border: none;
 }
+
+.scDiscount__container {
+  max-height: 0;
+  transform: translateY(-20px);
+  opacity: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.3s ease;
+}
+.scDiscount__container:not(.visible) {
+  max-height: 500px;
+  transform: translateY(0);
+  opacity: 1;   
+}
+.coupon-toggle-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cart-section .scDiscount {
+  margin-top: 0;
+}
