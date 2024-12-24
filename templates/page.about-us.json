@@ -65,7 +65,7 @@
         "about_brand_qkNMnB"
       ],
       "settings": {
-        "page_title": "<h2>About Us Page</h2>",
+        "page_title": "<h1>[* About Us Page *]</h1>",
         "color_1": "#306776",
         "color_2": "#B3B383",
         "padding_top": 36,
