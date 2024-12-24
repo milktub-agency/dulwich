@@ -33,48 +33,48 @@
   }
 
   .h0 {
-    @apply tw-text-h0-m sm:tw-text-h0;
+    @apply tw-text-h0-m md:tw-text-h0;
   }
 
   h1,
   .h1 {
-    @apply tw-text-h1-m sm:tw-text-h1;
+    @apply tw-text-h1-m md:tw-text-h1;
   }
 
   h2,
   .h2 {
-    @apply tw-text-h2-m sm:tw-text-h2;
+    @apply tw-text-h2-m md:tw-text-h2;
   }
 
   h3,
   .h3 {
-    @apply tw-text-h3-m sm:tw-text-h3;
+    @apply tw-text-h3-m md:tw-text-h3;
   }
 
   h4,
   .h4 {
-    @apply tw-text-h4-m sm:tw-text-h4;
+    @apply tw-text-h4-m md:tw-text-h4;
   }
 
   h5,
   .h5 {
-    @apply tw-text-h5-m sm:tw-text-h5;
+    @apply tw-text-h5-m md:tw-text-h5;
   }
 
   p,
   .p {
-    @apply tw-text-body-m sm:tw-text-body;
+    @apply tw-text-body-m md:tw-text-body;
   }
 
   small,
   .small,
   .text-body {
-    @apply tw-text-body-small-m sm:tw-text-body-small;
+    @apply tw-text-body-small-m md:tw-text-body-small;
   }
 
   a,
   .a {
-    @apply tw-text-blue-700 tw-text-body-m sm:tw-text-body;
+    @apply tw-text-blue-700 tw-text-body-m md:tw-text-body;
   }
 
   blockquote {
