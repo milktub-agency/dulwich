@@ -68,14 +68,46 @@
         "page_title": "<h1>[* About Us Page *]</h1>",
         "color_1": "#306776",
         "color_2": "#B3B383",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
+      }
+    },
+    "custom_testimonial_slider_ULMRGV": {
+      "type": "custom-testimonial-slider",
+      "blocks": {
+        "review_t3TLA4": {
+          "type": "Review",
+          "settings": {
+            "color_scheme_block": "",
+            "review_name": "Jenny Ivas",
+            "review_text": "<p>The staff that I speak with over the phone are always extremely polite and helpful, and the goods I order have always arrived promptly. The products are very high quality, that’s why I continue to shop with Dulwich Health.</p>",
+            "star_rating": 4,
+            "review_star_caption": "From Our Website"
+          }
+        }
+      },
+      "block_order": [
+        "review_t3TLA4"
+      ],
+      "settings": {
+        "testimonial_heading": "",
+        "Section_heading_alignment": "center",
+        "color_scheme": "scheme-1d915114-8978-4198-9b07-e7d64993e6b7",
+        "show_arrows": false,
+        "show_dots": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "section_padding_top": 80,
+        "section_padding_bottom": 80,
+        "mobile_padding_top": 32,
+        "mobile_padding_bottom": 32
       }
     }
   },
   "order": [
     "main",
     "form",
-    "about_us_section_6GGbJr"
+    "about_us_section_6GGbJr",
+    "custom_testimonial_slider_ULMRGV"
   ]
 }
