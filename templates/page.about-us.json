@@ -102,12 +102,22 @@
         "mobile_padding_top": 32,
         "mobile_padding_bottom": 32
       }
+    },
+    "custom_liquid_f8H9U8": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'social-icons', class: 'footer__list-social', footerStyles: 'footer-social-icons' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "form",
     "about_us_section_6GGbJr",
-    "custom_testimonial_slider_ULMRGV"
+    "custom_testimonial_slider_ULMRGV",
+    "custom_liquid_f8H9U8"
   ]
 }
