@@ -226,6 +226,7 @@
     },
     "7a146f3f-997d-4b81-882f-6acfbd99a2c1": {
       "type": "megamenu-item-demo-1",
+      "disabled": true,
       "settings": {
         "parent": "SHOP",
         "heading": "",
