@@ -417,8 +417,10 @@ h6:empty {
   color: rgb(var(--color-foreground));
 }
 
-.link--text:hover {
-  color: rgba(var(--color-foreground), 0.75);
+@media screen and (min-width:750px) {
+  .link--text:hover {
+    color: rgba(var(--color-foreground), 0.75);
+  }
 }
 
 .link-with-icon {

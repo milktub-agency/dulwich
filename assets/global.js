@@ -2095,3 +2095,20 @@ class YoutubeBanner extends HTMLElement {
   }
 }
 customElements.define('youtube-banner', YoutubeBanner);
+
+class CloseHeaderDrawer extends HTMLElement {
+  constructor() {
+    super();
+    this.detailsElement = this.closest("details");
+    this.addEventListener("click", this.closeHeaderDrawer.bind(this));
+  }
+
+  closeHeaderDrawer() {
+    if (this.detailsElement.hasAttribute("open")) {
+      this.detailsElement.removeAttribute("open");
+      this.detailsElement.querySelector("summary").setAttribute("aria-expanded" , false)
+    }
+  }
+}
+
+customElements.define('close-header-drawer', CloseHeaderDrawer);
