@@ -2106,6 +2106,7 @@ class CloseHeaderDrawer extends HTMLElement {
   closeHeaderDrawer() {
     if (this.detailsElement.hasAttribute("open")) {
       this.detailsElement.removeAttribute("open");
+      this.detailsElement.querySelector("summary").setAttribute("aria-expanded" , false)
     }
   }
 }
