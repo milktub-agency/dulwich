@@ -1,64 +1,132 @@
-
-<div class="menu-drawer__inner-container tw-p-[1.6rem]">
-  <div class="menu-drawer__navigation-container tw-grid tw-grid-rows-[1fr_auto] tw-h-full">
+<div class="menu-drawer__inner-container tw-h-full">
+  <div class="menu-drawer__navigation-container tw-flex tw-flex-col tw-h-full tw-px-[30px] tw-py-[10px] tw-overflow-auto">
+    <close-header-drawer class="tw-h-[20px] tw-w-[20px] tw-fixed tw-right-[25px] tw-top-[10px]">
+      {% render "icon-close" %}
+    </close-header-drawer>
+    {%- if settings.logo != blank -%}  
+      <div>
+        <a href="{{ routes.root_url }}" class="tw-flex tw-pb-[10px] tw-items-center tw-justify-center tw-w-full">
+            <div class="header__heading-logo-wrapper">
+              {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+              {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+              {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+              {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+              {{ settings.logo | image_url: width: 600 | image_tag:
+                class: 'header__heading-logo motion-reduce',
+                widths: widths,
+                height: logo_height,
+                width: settings.logo_width,
+                alt: logo_alt,
+                sizes: sizes,
+                preload: true
+              }}
+            </div>
+        </a>
+      </div>
+    {% endif %}
+    {%- if shop.customer_accounts_enabled -%}
+      <div class="tw-flex tw-items-center tw-justify-center tw-pb-[20px]">
+        {% if customer == blank %}
+          <a
+            href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+            class="button tw-bg-[rgba(var(--color-button-text))] tw-text-[rgb(var(--color-button))]"
+          >
+            LOG IN / SIGN UP
+          </a>
+        {% else %}
+          <a
+            href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+            class="button tw-bg-[rgba(var(--color-button-text))] tw-text-[rgb(var(--color-button))]"
+          >
+            MY ACCOUNT
+          </a>
+        {% endif %}
+      </div>
+    {%- endif -%}
     <nav class="menu-drawer__navigation">
       <ul class="menu-drawer__menu" role="list">
         {%- for link in section.settings.menu.links -%}
           <li>
             {%- if link.links != blank -%}
-              {% liquid
-                assign sale_menu = section.settings.sale_menu | handleize
-                assign link_title = link.handle | handleize
-                assign apply_sale_color = false
-                if sale_menu == link_title
-                assign apply_sale_color = true
-                endif
-              %}
-              <details id="Details-menu-drawer-menu-item-{{ forloop.index }}" class="menu-drawer--custom-border">
+              <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                 <summary
                   id="HeaderDrawer-{{ link.handle }}"
-                  class="menu-drawer__menu-item list-menu__item link link--text tw-ml-[0.8rem]{% if link.child_active %} tw-text-[rgb(var(--color-foreground))] tw-bg-[rgba(var(--color-foreground),0.04)] {% endif %} tw-block tw-py-[1rem] tw-pr-[5.2rem] megamenu-icons-forground {% if apply_sale_color == true %} sale-color {% endif %}"
+                  class="menu-drawer__menu-item list-menu__item link link--text {% if link.child_active %} tw-text-[rgb(var(--color-foreground))] tw-bg-[rgba(var(--color-foreground),0.04)] {% endif %} tw-block tw-py-[1.1rem] tw-pr-[5.2rem] tw-uppercase tw-text-[15px] tw-font-[500] !tw-leading-[18px] tw-border-0 tw-border-b-2 tw-border-white tw-border-solid"
                 >
-                  <span class="tw-font-primary tw-text-body tw-font-bold tw-uppercase tw-text-[rgba(var(--color-foreground))] {% if apply_sale_color == true %} sale-color {% endif %}">{{ link.title | escape }}</span>
-                  {% render 'icon-caret' %}
+                  {{ link.title | escape }}
+                  {% render 'icon-menu-arrow' %}
                 </summary>
-                <ul class="header-drawer-block__sublink-list tw-flex tw-flex-col tw-gap-[1.4rem] md:tw-gap-[1.6rem] tw-ml-[2rem] tw-pb-[1.3rem]">
-                  {% for sublink in link.links %}
-                    <li>
-                      {% if sublink.links != blank %}
-                        <span class="tw-font-primary tw-text-body tw-font-bold tw-text-white">{{ sublink.title | upcase }}</span>
-                        <ul class="tw-flex tw-flex-col tw-gap-[1.2rem] tw-mt-[1rem] tw-pl-[20px]">
-                          {% for grandchildlink in sublink.links %}
-                              <li>
-                                <a class="tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-font-normal tw-opacity-[0.8] tw-text-body" href="{{ grandchildlink.url }}">{{ grandchildlink.title }}</a>
-                              </li>  
-                          {% endfor %} 
-                        </ul>   
-                      {% else %}
-                        <a
-                        href="{{ sublink.url }}"
-                        class="tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-text-body tw-font-normal tw-capitalize"
-                        >
-                          {{ sublink.title }}
-                        </a>
-                      {% endif %} 
-                    </li>
-                  {% endfor %}
-                </ul>
+                <div
+                  id="link-{{ link.handle | escape }}"
+                  class="menu-drawer__submenu has-submenu gradient motion-reduce tw-h-full tw-px-[30px] tw-py-[10px]"
+                  tabindex="-1"
+                >
+                  <div class="menu-drawer__inner-submenu">
+                    <button class="menu-drawer__close-button tw-uppercase tw-text-[15px] tw-font-[500] !tw-leading-[18px] tw-border-0 tw-border-b-2 tw-border-white tw-border-solid tw-flex tw-gap-[15px] tw-w-full tw-py-[1.1rem] tw-pr-[5.2rem]" aria-expanded="true">
+                      {% render 'icon-menu-arrow' %}
+                      {{ link.title | escape }}
+                    </button>
+                    <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                      {%- for childlink in link.links -%}
+                        <li>
+                          {%- if childlink.links == blank -%}
+                            <a
+                              id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
+                              href="{{ childlink.url }}"
+                              class="tw-uppercase menu-drawer__menu-item link link--text {% if childlink.current %} menu-drawer__menu-item--active{% endif %} !tw-leading-[18px] tw-border-0 tw-border-b-[1.5px] tw-border-white tw-border-solid tw-flex tw-gap-[15px] tw-w-full tw-py-[1.1rem] tw-pr-[5.2rem] tw-font-['Poppins']"
+                              {% if childlink.current %}
+                                aria-current="page"
+                              {% endif %}
+                            >
+                              {{ childlink.title | escape }}
+                            </a>
+                          {%- else -%}
+                            <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}" class="tw-border-0 tw-border-b-[1.5px] tw-border-white tw-border-solid">
+                              <summary
+                                id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
+                                class="menu-drawer__menu-item link link--text list-menu__item focus-inset tw-uppercase !tw-leading-[18px] tw-flex tw-gap-[15px] tw-w-full tw-py-[1.1rem] tw-pr-[5.2rem] tw-font-['Poppins']"
+                              >
+                                {{ childlink.title | escape }}
+                                {% render 'icon-menu-caret' %}
+                              </summary>
+                              <div
+                                id="childlink-{{ childlink.handle | escape }}"
+                                class="has-submenu gradient motion-reduce"
+                              >
+                                <ul
+                                  class="menu-drawer__menu list-menu"
+                                  role="list"
+                                  tabindex="-1"
+                                >
+                                  {%- for grandchildlink in childlink.links -%}
+                                    <li>
+                                      <a
+                                        id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                                        href="{{ grandchildlink.url }}"
+                                        class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %} tw-uppercase !tw-leading-[18px] tw-flex tw-gap-[15px] tw-w-full tw-py-[1.1rem] tw-pr-[5.2rem] tw-text-[rgba(var(--color-button))] tw-text-[13px]"
+                                        {% if grandchildlink.current %}
+                                          aria-current="page"
+                                        {% endif %}
+                                      >
+                                        {{ grandchildlink.title | escape }}
+                                      </a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              </div>
+                            </details>
+                          {%- endif -%}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  </div>
+                </div>
               </details>
             {%- else -%}
-            {% liquid
-              assign sale_menu = section.settings.sale_menu | handleize
-              assign link_title = link.handle | handleize
-              assign apply_sale_color = false
-              if sale_menu == link_title
-              assign apply_sale_color = true
-              endif
-            %}
               <a
                 id="HeaderDrawer-{{ link.handle }}"
                 href="{{ link.url }}"
-                class="menu-drawer__menu-item tw-font-primary tw-text-body tw-uppercase tw-font-bold {% if link.current %} menu-drawer__menu-item--active{% endif %} tw-block tw-py-[1rem] tw-pr-[5.2rem] tw-ml-[0.8rem] menu-drawer--custom-border tw-text-[rgb(var(--color-foreground))] {% if apply_sale_color == true %} sale-color {% endif %}"
+                class="menu-drawer__menu-item {% if link.current %} menu-drawer__menu-item--active{% endif %} tw-block tw-py-[1.1rem] tw-pr-[5.2rem] tw-uppercase tw-text-[15px] tw-font-[500] !tw-leading-[18px] tw-border-0 tw-border-b-2 tw-border-white tw-border-solid tw-text-[rgba(var(--color-foreground))]"
                 {% if link.current %}
                   aria-current="page"
                 {% endif %}
@@ -70,22 +138,10 @@
         {%- endfor -%}
       </ul>
     </nav>
-    <div class="menu-drawer__utility-links tw-pl-[0.8rem] tw-py-[1rem]">
-      {%- if shop.customer_accounts_enabled -%}
-        <a
-          href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
-          class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide tw-flex tw-gap-[1.2rem] tw-text-[rgb(var(--color-foreground))] megamenu-icon__forground-color tw-font-primary tw-text-body tw-font-bold tw-uppercase"
-        >
-          {%- liquid
-            if customer
-              echo 'customer.account_fallback' | t
-            else
-              echo 'customer.log_in' | t
-            endif
-          -%}
-        </a>
-      {%- endif -%}
-
-    </div>
+    {% if section.settings.contact_phone_number != blank %}
+      <div class="tw-mt-[auto] tw-text-center tw-pt-[20px] tw-text-[13px]">
+        {{ section.settings.contact_phone_number }}
+      </div>
+    {% endif %}
   </div>
 </div>
