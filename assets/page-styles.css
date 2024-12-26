@@ -42,6 +42,16 @@
   background-color: #4D8091;
 }
 
+.page-title h1 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.page_heading h1 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
 @media screen and (min-width: 750px) {
   .page p:empty,
   .page h2:empty {
@@ -63,5 +73,11 @@
   }
   .page .page_heading::before {
     bottom: -13px;
+  }
+  .page-title h1 {
+    font-size: 34px;
+  }
+  .page_heading h1 {
+    font-size: 35px;
   }
 }
