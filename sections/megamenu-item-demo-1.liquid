@@ -40,9 +40,14 @@
                             <li>
                               <a
                               href="{{ sublink.url }}"
-                              class="tw-text-[1.4rem] md:tw-text-[1.3rem] tw-font-normal tw-font-secondary link link--text list-menu__item list-menu__item--link tw-py-0 {% if link.active %} list-menu__item--active{% endif %}"
+                              class="tw-text-[1.4rem] md:tw-text-[1.3rem] tw-font-normal tw-font-secondary link link--text list-menu__item list-menu__item--link tw-py-0 {% if link.active %} list-menu__item--active{% endif %} tw-text-[rgb(var(--color-button))]"
                               >
                                 {{ sublink.title }}
+                                {% assign menu_item = sublink.title |  strip |  handleize %}
+                                {% assign popular_menu = section.settings.popular_menu_item |  strip |  handleize %}
+                                {% if menu_item == popular_menu %}
+                                  <p class="tw-text-white tw-text-[10px] tw-font-[600] tw-uppercase tw-pl-[12px] tw-mt-[3px]">{{ section.settings.popular_text }}</p>
+                                {% endif %}
                               </a>
                             </li>
                           {% endfor %}
@@ -212,6 +217,18 @@
         "type": "link_list",
         "id": "menu",
         "label": "Menu"
+      },
+      {
+        "type": "text",
+        "id": "popular_menu_item",
+        "default": "AlliTech",
+        "label": "Popular Menu Item"
+      },
+      {
+        "type": "text",
+        "id": "popular_text",
+        "default": "Popular",
+        "label": "Popular Text"
       },
       {
         "type": "header",
