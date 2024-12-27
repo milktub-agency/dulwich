@@ -4,10 +4,10 @@
     .quantity {
         color: rgba(var(--color-foreground));
         position: relative;
-        width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+        width: calc(12rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
         display: flex;
         border-radius: var(--inputs-radius);
-        min-height: calc((var(--inputs-border-width) * 2) + 5.24rem);
+        min-height: calc((var(--inputs-border-width) * 2) + 4.4rem);
     }
 
     .quantity:after {
@@ -55,7 +55,7 @@
     }
 
     .quantity__button {
-        width: calc(4.5rem / var(--font-body-scale));
+        width: calc(3.5rem / var(--font-body-scale));
         flex-shrink: 0;
         font-size: 1.8rem;
         border: 0;
@@ -70,12 +70,10 @@
 
     .quantity__button:first-child {
         margin-left: calc(var(--inputs-border-width));
-        padding-left: 10px;
     }
 
     .quantity__button:last-child {
         margin-right: calc(var(--inputs-border-width));
-        padding-right: 10px;
     }
 
     .quantity__button svg {

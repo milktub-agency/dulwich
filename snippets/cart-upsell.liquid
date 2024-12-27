@@ -140,7 +140,7 @@
 
     <div class="tw-relative">
       {% if section.settings.upsell_heading != blank %}
-        <h3 class="tw-text-left tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[16px] md:tw-text-[25px] tw-font-light tw-leading-[15px] md:tw-leading-[23px] tw-mb-[18px] md:tw-mb-[21px] {% if enable_dynamic_product_recommendations %} hidden {% endif %}">{{ section.settings.upsell_heading }}</h3>
+        <h3 class="tw-text-center tw-font-primary tw-text-[rgb(var(--color-foreground))] tw-text-[16px] md:tw-text-[25px] tw-font-light tw-leading-[15px] md:tw-leading-[23px] tw-mb-[18px] md:tw-mb-[21px] tw-tracking-normal {% if enable_dynamic_product_recommendations %} hidden {% endif %}">{{ section.settings.upsell_heading }}</h3>
       {% endif %}
     </div>
 
@@ -151,6 +151,8 @@
         {% endunless %}
       </ul>
     </div>
+
+    {% render 'custom-splide-arrows' %}
 
   </{% if enable_dynamic_product_recommendations %}cart-upsell-recommendations{% else %}carousel-component{% endif %}>
 {% endif %}
