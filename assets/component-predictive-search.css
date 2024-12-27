@@ -83,7 +83,7 @@ predictive-search[loading] .predictive-search {
     display: initial;
   }
   .predictive-search__result-group:first-child {
-    flex: 0 0 26.4rem;
+    flex: 1 1 auto;
   }
   .predictive-search__results-groups-wrapper--no-products .predictive-search__result-group:first-child,
   .predictive-search__result-group:only-child {

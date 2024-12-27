@@ -8,10 +8,10 @@
     <div class="is-divider product-filter-divider"></div>
     <ul>
       {% for collection in collections %}
-        <li class="tw-py-[3px] tw-border-b tw-border-solid border-[rgb(var(--color-foreground))] {% if collection.url == request.path %}active{% endif %}">
+        <li class="tw-py-[3px] tw-border-b tw-border-solid tw-border-[#C3C3C3] {% if collection.url == request.path %}active{% endif %}">
           <a
             href="{{ collection.url }}"
-            class="tw-capitalize tw-text-[#334862] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[33px] custom-collection-filter-list tw-text-[13px] md:tw-text-[14px]"
+            class="tw-capitalize tw-text-[#000] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[33px] custom-collection-filter-list tw-text-[13px] md:tw-text-[14px]"
           >
             {{ collection.title | replace: '-', ' ' }}
           </a>
@@ -42,7 +42,7 @@
                 id="NewsletterForm--{{ section.id }}"
                 type="email"
                 name="contact[email]"
-                class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[13px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[32px] md:tw-min-h-[32px]"
+                class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[13px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[30px] md:tw-min-h-[30px]"
                 value="{{ form.email }}"
                 aria-required="true"
                 autocorrect="off"
@@ -123,10 +123,10 @@
           <div class="mobile-facets__main has-submenu gradient">
             <ul class="tw-px-[16px]">
               {% for collection in collections %}
-                <li class="tw-py-[3px] tw-border-b tw-border-solid border-[rgb(var(--color-foreground))] {% if collection.url == request.path %}active{% endif %}">
+                <li class="tw-py-[3px] tw-border-b tw-border-solid tw-border-[#C3C3C3] {% if collection.url == request.path %}active{% endif %}">
                   <a
                     href="{{ collection.url }}"
-                    class="tw-capitalize tw-text-[#334862] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[33px] custom-collection-filter-list tw-text-[13px] md:tw-text-[14px]"
+                    class="tw-capitalize tw-text-[#000] tw-font-primary tw-font-light tw-leading-[24px] md:tw-leading-[33px] custom-collection-filter-list tw-text-[13px] md:tw-text-[14px]"
                   >
                     {{ collection.title | replace: '-', ' ' }}
                   </a>
@@ -157,7 +157,7 @@
                         id="NewsletterForm--{{ section.id }}"
                         type="email"
                         name="contact[email]"
-                        class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[13px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[32px] md:tw-min-h-[32px]"
+                        class="field__input tw-bg-white tw-border tw-border-solid tw-border-black  tw-text-[9px] md:tw-text-[13px] tw-min-h-[22px] tw-max-h-[22px] md:tw-max-h-[30px] md:tw-min-h-[30px]"
                         value="{{ form.email }}"
                         aria-required="true"
                         autocorrect="off"

@@ -116,14 +116,10 @@
                   {%- endif -%}
 
                   <button type="reset" class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}" aria-label="{{ 'general.search.reset' | t }}">
-                    <svg class="icon icon-close" aria-hidden="true" focusable="false">
-                      <use xlink:href="#icon-reset">
-                    </svg>
+                    {% render 'icon-close' %}
                   </button>
                   <button type="submit" class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                    <svg class="icon icon-search" aria-hidden="true" focusable="false">
-                      <use xlink:href="#icon-search">
-                    </svg>
+                    {% render 'icon-header-search' %}
                   </button>
                 </div>
               </form>
@@ -160,7 +156,7 @@
                       <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                     {%- endfor -%}
                   </select>
-                  {% render 'icon-caret' %}
+                  {% render 'icon-dropdown' class : "icon icon-caret tw-h-[2.1rem]" %}
                 </div>
               </div>
               <noscript>
@@ -225,8 +221,8 @@
                     {%- case item.object_type -%}
                       {%- when 'product' -%}
                         {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
-                        {% render 'card-product',
-                          card_product: item,
+                        {% render 'product-card',
+                          product: item,
                           media_aspect_ratio: section.settings.image_ratio,
                           image_shape: section.settings.image_shape,
                           show_secondary_image: section.settings.show_secondary_image,

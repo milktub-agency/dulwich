@@ -1179,7 +1179,7 @@ input.mobile-facets__checkbox {
   height: 12px;
 }
 .product-grid-container .pagination__list>li:not(:last-child) {
-  margin-right: 21px;
+  margin-right: 16px;
 }
 @media screen and (max-width: 750px) {
   .product-grid-container .pagination__list .pagination__item {

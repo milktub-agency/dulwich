@@ -3390,6 +3390,9 @@ p.product__text:empty {
 .cart-section .cart-section__cart-items-upsell .cart-items .cart-item  td.cart-item__media {
   padding-top: 24px;
 }
+.template-search__search .search__input.field__input {
+  border: 1px solid #000;
+}
 @media screen and (max-width: 750px) {
   .cart-section .cart-section__cart-items-upsell .cart-items .cart-item  td.cart-item__media {
     padding-top: 0;
