@@ -23,6 +23,7 @@
   padding: 1rem;
   padding-right: 5rem;
   padding-top: 1.8rem;
+  text-align: center;
 }
 
 .newsletter-form__field-wrapper .field {
@@ -36,12 +37,6 @@
 
 .newsletter-form__message--success {
   margin-top: 2rem;
-}
-
-@media screen and (min-width: 750px) {
-  .newsletter-form__message {
-    justify-content: flex-start;
-  }
 }
 
 .newsletter-form__button {
@@ -77,6 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .newsletter .field__input:not(:placeholder-shown)~.field__label.newsletter-label,
 .newsletter .field__input:focus~.field__label.newsletter-label {
