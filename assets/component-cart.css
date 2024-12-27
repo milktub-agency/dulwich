@@ -223,7 +223,7 @@ cart-items {
 }
 
 .cart-continue-shopping {
-  color: #DC1636;
+  color: #fff;
   text-align: center;
   font-size: 17.6px;
   font-style: normal;
@@ -231,9 +231,9 @@ cart-items {
   line-height: 18.5px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: #BCE3EE;
+  background: #60919F;
   border-radius: 21px;
-  padding: 10px 20px;
+  padding: 10px 11px;
 }
 .cart__footer .cart__blocks,
 .cart-section .cart-section__cart-items,
@@ -281,6 +281,7 @@ cart-items {
   padding-right: 0;
 }
 .cart-section:has(.is-empty) .cart-section__cart-items .continue-cart,
+.cart-section:has(.is-empty) .cart-section__cart-items+.upsell-products-cart,
 .cart-section .cart-section__cart-footer.is-empty {
   display: none;
 }
