@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_YBWeJt": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_6pDtNM": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h2><strong>[*Oxygen Healing Therapy – OxyTech</strong></h2><p>For Candida, bloated stomach, irritable bowel syndrome, leaky gut, skin disorder, continuous constipation or diarrhoea, thrush and lack of energy.</p><p></p><p><strong>[*The Importance of Oxygen</strong><br/>Of all the chemical elements, oxygen is the most vital to the human body. We would survive for only minutes without oxygen. Oxygen is the life-giving, life-sustaining element. Approximately 90% of the body’s energy is created by oxygen. Nearly all of the body’s activities, from brain function to elimination, are regulated by oxygen.</p><p></p><p>The only way to truly optimise health is to ensure complete cellular oxygenation. Every one of the body’s trillions of cells demands oxygen for proper function. Oxygen starvation at cellular level (hypoxia) is the underlying cause of most serious illness.</p><p></p><p>This oxygen-energy cycle has become critically important today, more than at any time in human history, because of the unnatural decrease in atmospheric oxygen.</p><p></p><p>There are many causes for this decrease in atmospheric oxygen such as deforestation, auto and industrial pollution, devitalised soil, volcanic eruptions and so on. It has been estimated that the air breathed by our distant ancestors contained approximately 50% oxygen. Two hundred years ago, the air was composed of 38% oxygen and 1% carbon dioxide. The level measured by Swiss scientists in 1945-1946 was 22%. They have been carefully monitoring it ever since. The most recent measurement was 19% with more than 25% carbon dioxide. In our major cities the oxygen level can be lower than 10%!</p><p></p><p>It is clearly of the utmost importance that we begin to significantly increase our intake of oxygen.</p><p></p><p><strong>[*OxyTech™ What is it?</strong><br/>A specially-formulated Magnesium Oxide compound with Activated Oxygen enhancement along with Vitamin C and Bioflavoid Complex.</p><p><br/><strong><br/>[*What is it for?</strong><br/>Oxygen Therapy detoxifies and cleanses the intestines, colon, arteries, blood and internal organs including the brain.</p><p><br/><strong><br/>[*Why use it?</strong><br/>Many of us suffer from varying degrees of toxaemia and low oxygen levels. Common causes for this condition include the intake of devitalised food, lack of exercise, breathing polluted air, chronic stress and chronic shallow breathing. These results in insufficient metabolism causing the body to accumulate waste products faster than it can eliminate them. Pathogens (disease-causing viruses, bacteria, fungi etc.) proliferate in the environment created by these conditions, in turn creating disease states (flu, herpes, Candida, ME, AIDS etc.). These pathogens, because they are essentially anaerobic, cannot survive and will die when ideal oxygen levels are once again achieved.</p><p></p><p><strong>[*How does it work?</strong><br/>As OxyTech™ reaches the acid environment of the stomach and continues into the bloodstream, the Vitamin C and bioflavonoid complex begins to cleave the magnesium oxide bond releasing activated oxygen and beneficial peroxides. These begin to immediately soften intestinal and arterial plaque, kill pathogenic microbes and purify and energise the cells throughout the body. As the now liquefied plaque and dead pathogens are ready to be eliminated from the body, the magnesium component creates a colon flushing reaction that increases bowel activity and prevents reabsorption of the toxins. Each OxyTech™ tablet creates more than 2 litres of activated oxygen when in contact with acids in your stomach. This starts after about 8 minutes. The oxygen contents of the blood have shown by a doctor to increase within 20 minutes of taking OxyTech™ capsules.</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        },
+        "about_brand_HdRK8i": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "<h1>Rolf Gordon</h1>",
+            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
+            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_6pDtNM",
+        "about_brand_HdRK8i"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_YBWeJt"
   ]
 }
