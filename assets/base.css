@@ -1552,6 +1552,10 @@ deferred-media {
   .header__heading-link {
     text-align: center;
   }
+  
+  .header__heading-link {
+    padding-bottom: 13px;
+  }
 
   .header--mobile-left .header__heading,
   .header--mobile-left .header__heading-link {
@@ -2724,7 +2728,7 @@ details-disclosure > details {
     padding-left: 28px;
   }
   .header-menu-search .search__input.field__input {
-    max-height: 20px;
+    max-height: 23px;
   }
   .product-card__price {
     line-height: 9px;
@@ -2733,13 +2737,15 @@ details-disclosure > details {
     letter-spacing: normal;
   }
   predictive-search .field__label {
-    font-size: 9px;
+    font-size: 7px;
     top: 50%;
     transform: translateY(-50%);
     line-height: normal;
+    font-weight: 600;
+    line-height: 11px;
   }
   .search-modal__form .field__input:focus~.field__label, .search-modal__form .field__input:not(:placeholder-shown)~.field__label {
-    top: 9px;
+    top: 4px;
   }
   .header-menu-search .search__input.field__input+label {
     left: 28px;

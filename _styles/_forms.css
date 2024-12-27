@@ -18,7 +18,7 @@
         min-height: calc(var(--inputs-border-width) * 2);
         min-width: calc(7rem + (var(--inputs-border-width) * 2));
         position: relative;
-        border: 0;
+        border: 1px solid;
     }
 
     .field:before,
