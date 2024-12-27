@@ -1,0 +1,384 @@
+{{ "page-styles.css" |  asset_url |  stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .section-{{ section.id }}-padding .color-1 {
+    color: {{ section.settings.color_1 }};
+  }
+  .section-{{ section.id }}-padding .color-2 {
+    color: {{ section.settings.color_2 }};
+  }
+{%- endstyle -%}
+
+<div class="page section-{{ section.id }}-padding">
+  {% if section.settings.page_title != blank %}
+    {% assign page_title = section.settings.page_title
+      | split: '[*' | join: '<span class="color-1">'
+      | split: '*]' | join: '</span>'
+      | split: '[' | join: '<span class="color-2">'
+      | split: ']' | join: '</span>'
+    %}
+  <div class="tw-mb-[28px] tw-text-center bmd:tw-bg-[#DBD1DE] page-width bmd:tw-pt-[20px] bmd:tw-pb-[15px] page-title">{{ page_title }}</div>
+{% endif %}
+  <div class="page-width">
+    <div class="page-content-container grid grid--1-col {% if section.blocks.size > 1 %} grid--2-col-desktop {% else %} grid--1-col-desktop {% endif %}">
+      {% for block in section.blocks %}
+        <div class="grid__item">
+          {% if block.settings.brand_image != blank %}
+            <div class="page-content-image">
+              {% render "responsive-picture" , mobileImage: block.settings.brand_image , desktopImage: block.settings.brand_image %}
+            </div>
+          {% endif %}
+          {% if block.settings.brand_heading and block.settings.brand_sub_heading %}
+            <div>
+              {% if block.settings.brand_heading %}
+                {% assign brand_heading = block.settings.brand_heading
+                  | split: '[*' | join: '<span class="color-1">'
+                  | split: '*]' | join: '</span>'
+                  | split: '[' | join: '<span class="color-2">'
+                  | split: ']' | join: '</span>'
+                %}
+                <div class="page_heading">{{ brand_heading }}</div>
+              {% endif %}
+              {% if block.settings.brand_sub_heading %}
+                {% assign brand_sub_heading = block.settings.brand_sub_heading
+                  | split: '[*' | join: '<span class="color-1">'
+                  | split: '*]' | join: '</span>'
+                  | split: '[' | join: '<span class="color-2">'
+                  | split: ']' | join: '</span>'
+                %}
+                <div>{{brand_sub_heading }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if block.settings.content_1 %}
+            {% assign content_1 = block.settings.content_1
+              | split: '[*' | join: '<span class="color-1">'
+              | split: '*]' | join: '</span>'
+              | split: '[' | join: '<span class="color-2">'
+              | split: ']' | join: '</span>'
+            %}
+            {% if content_1 %}
+              <div class="page_content">
+                {{ content_1 }}
+              </div>
+            {% endif %}
+          {% endif %}
+          {% if block.settings.image_content_block_image_1 or block.settings.image_conetnt_block_content_1 %}
+            <div class="tw-flex tw-gap-[20px] tw-justify-between tw-items-center">
+              {% if block.settings.image_content_block_image_1 != blank %}
+                {% render "responsive-picture" , mobileImage: block.settings.image_content_block_image_1 , desktopImage: block.settings.image_content_block_image_1 , class:"tw-basis-[33%] tw-min-w-[33%]" %}
+              {% endif %}
+              {% if block.settings.image_conetnt_block_content_1 != blank %}
+                {% assign image_conetnt_block_content_1 = block.settings.image_conetnt_block_content_1
+                  | split: '[*' | join: '<span class="color-1">'
+                  | split: '*]' | join: '</span>'
+                  | split: '[' | join: '<span class="color-2">'
+                  | split: ']' | join: '</span>'
+                %}
+                <div class="content">
+                  {{ image_conetnt_block_content_1 }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if block.settings.image_1 != blank %}
+            <div class="page-featured-image-container">
+              {% if block.settings.image_1 %}
+                <div>
+                  {% render "responsive-picture" , mobileImage: block.settings.image_1 , desktopImage: block.settings.image_1 %}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if block.settings.content_2 %}
+            {% assign content_2 = block.settings.content_2
+              | split: '[*' | join: '<span class="color-1">'
+              | split: '*]' | join: '</span>'
+              | split: '[' | join: '<span class="color-2">'
+              | split: ']' | join: '</span>'
+            %}
+            <div class="page_content">
+              {{ content_2 }}
+            </div>
+          {% endif %}
+          {% if block.settings.image_content_block_image_2 or block.settings.image_conetnt_block_content_2 %}
+            <div class="tw-flex tw-gap-[30px] tw-justify-between tw-items-center">
+              {% if block.settings.image_content_block_image_2 != blank %}
+                {% render "responsive-picture" , mobileImage: block.settings.image_content_block_image_2 , desktopImage: block.settings.image_content_block_image_2 , class:"tw-basis-[33%] tw-min-w-[33%]" %}
+              {% endif %}
+              {% if block.settings.image_conetnt_block_content_2 != blank %}
+                {% assign image_conetnt_block_content_2 = block.settings.image_conetnt_block_content_2
+                  | split: '[*' | join: '<span class="color-1">'
+                  | split: '*]' | join: '</span>'
+                  | split: '[' | join: '<span class="color-2">'
+                  | split: ']' | join: '</span>'
+                %}
+                <div class="content">
+                  {{ image_conetnt_block_content_2 }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if block.settings.image_2 != blank %}
+            <div class="page-featured-image-container">
+              {% if block.settings.image_2 %}
+                <div>
+                  {% render "responsive-picture" , mobileImage: block.settings.image_2 , desktopImage: block.settings.image_2 %}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if block.settings.content_3 %}
+            {% assign content_3 = block.settings.content_3
+              | split: '[*' | join: '<span class="color-1">'
+              | split: '*]' | join: '</span>'
+              | split: '[' | join: '<span class="color-2">'
+              | split: ']' | join: '</span>'
+            %}
+            <div class="page_content">
+              {{ content_3 }}
+            </div>
+          {% endif %}
+          {% if block.settings.image_content_block_image_3 or block.settings.image_conetnt_block_content_3 %}
+            <div class="tw-flex tw-gap-[20px] tw-justify-between tw-items-center">
+              {% if block.settings.image_content_block_image_3 != blank %}
+                {% render "responsive-picture" , mobileImage: block.settings.image_content_block_image_3 , desktopImage: block.settings.image_content_block_image_3 , class:"tw-basis-[33%] tw-min-w-[33%]" %}
+              {% endif %}
+              {% if block.settings.image_conetnt_block_content_3 != blank %}
+                {% assign image_conetnt_block_content_3 = block.settings.image_conetnt_block_content_3
+                  | split: '[*' | join: '<span class="color-1">'
+                  | split: '*]' | join: '</span>'
+                  | split: '[' | join: '<span class="color-2">'
+                  | split: ']' | join: '</span>'
+                %}
+                <div class="content">
+                  {{ image_conetnt_block_content_3 }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Page",
+  "enabled_on": {
+    "templates": ["page"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Page Settings"
+    },
+    {
+      "type": "richtext",
+      "id": "page_title",
+      "default": "<h2>About Us Page</h2>",
+      "label": "Page Title"
+    },
+    {
+      "type": "header",
+      "content": "Color Settings"
+    },
+    {
+      "type": "color",
+      "id": "color_1",
+      "default": "#306776",
+      "label": "Color 1",
+      "info": "Add [*   *] specifier to conent where you want apply this color."
+    },
+    {
+      "type": "color",
+      "id": "color_2",
+      "default": "#B3B383",
+      "label": "Color 2",
+      "info": "Add [   ] specifier to conent where you want apply this color."
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "about_brand",
+      "name": "About Brand",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image Block"
+        },
+        {
+          "type": "image_picker",
+          "id": "brand_image",
+          "label": "Image",
+          "info": "Recommenede Size: 620 X 480 Px"
+        },
+        {
+          "type": "header",
+          "content": "Brand Headlines"
+        },
+        {
+          "type": "richtext",
+          "id": "brand_heading",
+          "default": "<h1>Rolf Gordon</h1>",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "label": "Sub Heading",
+          "id": "brand_sub_heading",
+          "default": "<p>Founder of Dulwitch Health</p>"
+        },
+        {
+          "type": "header",
+          "content": "Content Block"
+        },
+        {
+          "type": "richtext",
+          "id": "content_1",
+          "label": "Page Content",
+          "default": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+        },
+        {
+          "type": "header",
+          "content": "Image & Content Block"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_content_block_image_1",
+          "label": "Image",
+          "info": "Recommended Sizes: 200 X 400 Px"
+        },
+        {
+          "type": "richtext",
+          "id": "image_conetnt_block_content_1",
+          "label": "Content",
+          "default": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+        },
+        {
+          "type": "header",
+          "content": "Image Block"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image",
+          "info": "Recommenede Size: 620 X 480 Px"
+        },
+        {
+          "type": "header",
+          "content": "Content Block"
+        },
+        {
+          "type": "richtext",
+          "id": "content_2",
+          "label": "Page Content",
+          "default": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+        },
+        {
+          "type": "header",
+          "content": "Image & Content Block"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_content_block_image_2",
+          "label": "Image",
+          "info": "Recommended Sizes: 200 X 400 Px"
+        },
+        {
+          "type": "richtext",
+          "id": "image_conetnt_block_content_2",
+          "label": "Content",
+          "default": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+        },
+        {
+          "type": "header",
+          "content": "Image Block"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image",
+          "info": "Recommenede Size: 620 X 480 Px"
+        },
+        {
+          "type": "header",
+          "content": "Content Block"
+        },
+        {
+          "type": "richtext",
+          "id": "content_3",
+          "label": "Page Content",
+          "default": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+        },
+        {
+          "type": "header",
+          "content": "Image & Content Block"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_content_block_image_3",
+          "label": "Image",
+          "info": "Recommended Sizes: 200 X 400 Px"
+        },
+        {
+          "type": "richtext",
+          "id": "image_conetnt_block_content_3",
+          "label": "Content",
+          "default": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Page",
+      "blocks": [
+        {
+          "type": "about_brand"
+        },
+        {
+          "type": "about_brand"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

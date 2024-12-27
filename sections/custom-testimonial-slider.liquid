@@ -24,23 +24,20 @@
         class="splide md:tw-max-w-[80%] md:tw-w-full md:tw-block md:tw-m-auto"
         data-autoplay="{{ section.settings.enable_autoplay }}"
         data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
-        data-desktopPerPage="2"
+        data-desktopPerPage="1"
         data-mobilePerPage="1"
-        data-type="loop"
-        data-mobileslidetype="loop"
         data-showArrows="{{ section.settings.show_arrows }}"
         data-showDots="{{ section.settings.show_dots }}"
         data-showarrowsonmobile="{{ section.settings.show_arrows }}"
         data-showdotsonmobile="{{ section.settings.show_dots }}"
-        data-focus="left" 
-        data-gapBetweenSlides="9.3%"
+        data-focus="left"
         data-gapBetweenSlidesOnMobile="1.6rem"
       >
         <div class="splide__track">
           <ul class="splide__list">
             {% if section.blocks.size > 0 %}
               {%- for block in section.blocks -%}
-                <li class="splide__slide md:tw-max-w-[491px] tw-min-h-[188px] md:tw-min-h-[286px]">
+                <li class="splide__slide tw-min-h-[188px] md:tw-min-h-[286px]">
                   <div class="color-{{ block.settings.color_scheme_block }} tw-rounded-[30px] md:tw-rounded-[50px] tw-p-[10px] md:tw-p-[16px] tw-flex tw-flex-col tw-justify-between tw-h-full">
                     {% if block.settings.review_name != blank %}
                       <div class="tw-text-[rgb(var(--color-foreground))] tw-text-center tw-font-primary tw-text-[13px] md:tw-text-[20px] tw-font-medium tw-leading-[21px] md:tw-leading-[35px]">{{ block.settings.review_name }}</div>
