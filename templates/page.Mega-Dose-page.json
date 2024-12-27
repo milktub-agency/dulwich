@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_FfXFWh": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_fFE4Nd": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h2><strong>[*Mega-Dose Vitamin C</strong></h2><p>It has been known for a long time that giving large quantities of Vitamin C, by intravenous infusion, has been a successful way of treating degenerative diseases such as Alzheimer’s, Arthritis, Cancer, Diabetes, Gout, Heart, Lupus, Multiple Sclerosis, Osteoporosis etc. Also drug overdose and miscellaneous poisons including poisonous mushrooms and snake bites.</p><p></p><p>There are some doctors in the UK who now offer Vitamin C intravenous infusions, but this can be expensive. Also you need strong veins, as several litres of liquid are inserted, throughout treatment.</p><p></p><p>Fortunately, a new form of Vitamin C has been launched which encapsulates a natural liposomal delivery system, which gets the Vitamin C directly into the blood, the same as intravenous infusion, and is claimed to be very powerful. It is highly bioavailable and non acidic.</p><p></p><p>Recommend dose, one sachet 1-2 times per day or as directed by a health practitioner. Cut the notched end of the sachet, squeeze the contents into your mouth and mix it with a little of your favourite cool drink. Alternatively, empty the contents of a sachet into a small cool drink before drinking it all. Wait at least 15 minutes before eating.</p><p></p><p><strong>[Keep out of reach of children. If you are on warfarin, pregnant or breastfeeding, consult with your health practitioner beforehand.]</strong></p><p></p><p>You can buy the product on the internet from Amazon under the name of Lypo-Spheric Vitamin C. You can take Mega-Dose of Vitamin C with all other supplements, pharmaceutical drugs and during any medical treatment. Unlike antibiotics and vaccinations, Vitamin C has no unhealthy side effects. Even when taking very large doses of Vitamin C, it is not toxic.</p><p></p><p>If one is high in micro parasites, one should also take AlliTech.</p><p></p><p>Do not expect wide acceptance of Mega-Dose Vitamin C in traditional emergency treatment centres in the near future, so keep your own supply of Mega-Dose Vitamin C in stock.</p><p></p><p><strong>[*More Information<br/></strong>Twice Nobel Prize Laureate research scientist, Linus Pauling, working with cancer specialist Dr. Ewan Cameron in Scotland, gave 100 tenninally ill cancer patients 1O,000mg of Vitamin C each day, plus a course of intravenous Vitamin C treatment. When they compared the outcome with 1000 cancer patients given conventional treatment, the survival rate was five times longer in those taking Vitamin C. While all of the 1000 ‘controlled patients’ died within a short period, 13 of the Vitamin C patients were still alive several years later, with 12 apparently free from cancer.</p><p></p><p>A ten year research study of 11 ,000 men and women at the University of California, found that women with the highest Vitamin C intake had a 25% lower death rate from heart disease and 42% reduced death rate from cancer.</p><p></p><p>Humans, monkeys and guinea pigs are the only ones wbo cannot synthesise Vitamin C. Most wild animals who have not been treated with drugs and honnones die of old age, unless killed by a predator. Adult goats with roughly the body weight as a human adult, synthesise 13,000 mg of Vitamin C daily and can double this if ill.</p><p></p><p><strong>[*Studies published in medical journals, show mega-dose Vitamin C gave the following results:</strong></p><p></p><ul><li>60 out of 60 polio victims cured, without any lingering complications all within five days.<br/><br/></li><li>Resolved 327 out of 327 cases of shingles in three days.<br/><br/></li><li>Treated 7 of 7 cases of rheumatic fever just as quickly.</li></ul>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_9YVYVF": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "<h1>Rolf Gordon</h1>",
+            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
+            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_fFE4Nd",
+        "about_brand_9YVYVF"
+      ],
+      "settings": {
+        "page_title": "<h2>About Us Page</h2>",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_FfXFWh"
   ]
 }
