@@ -1665,7 +1665,7 @@ deferred-media {
     gap: 40px;
   }
   .header-menu-search {
-    margin-bottom: 12px;
+    margin-bottom: 25px;
   }
 }
 
@@ -2882,8 +2882,7 @@ details-disclosure > details {
   max-width: 174px;
 }
 .product-card .product-card-atc-btn {
-  min-width: 70%;
-  max-width: 70%;
+  max-width: 60%;
 }
 @media screen and (max-width: 1024px) {
   .product-card .product-card-atc-btn {
@@ -3117,4 +3116,8 @@ li.active a {
 cart-upsell-recommendations.splide.is-initialized {
   padding-top: 60px;
   border: none;
+}
+
+.collection .splide__arrow {
+  top: 35%;
 }
