@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_n4Fyha": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_UNerJB": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "<h2>[*Magnesium Deficiency*]</h2><p>Magnesium deficiency is linked with many diseases including:</p><p></p><ul><li><strong>[*Heart problems</strong></li></ul><p><strong>     [*Migraine</strong></p><ul><li><strong>[*Pre-Menstrural Syndrome</strong></li></ul><p><strong>    [*Fatigue</strong></p><ul><li><strong>[*Cancer<br/></strong></li><li><strong>[*Irritable Bowel Syndrome<br/></strong></li><li><strong>[*Hypertension<br/></strong></li><li><strong>[*Asthma<br/></strong></li><li><strong>[*Back pains<br/></strong></li><li><strong>[*Allergy<br/></strong></li></ul><p>Also dementia, schizophrenia, depression, anxiety, agitation, irritability, restlessness, hallucination, osteoporosis, and muscle cramp and spasms.</p>",
+            "content_1": "<p></p><p><strong>[*Benefits of magnesium</strong><br/>There are 20-28 g of magnesium in the human body, of which 99% is located within the cells where it:</p><p></p><ul><li><strong>[*regulates over 300 enzyme systems and is required for division of cells.<br/></strong></li></ul><p></p><ul><li><strong>[*protects the cells against a range of diseases.<br/></strong></li></ul><p></p><ul><li><strong>[*improves immune system, fights infection, revitalises organs and allows the body to reject toxins, used cells etc.<br/><br/></strong></li><li><strong>[*is required for normal muscle functions. Calcium is involved in muscle contraction. Magnesium allows muscles to relax.</strong></li></ul><p></p><ul><li><strong>[*important for the heart, and the entire circulation system, as it prevents the blood pressure from rising.<br/><br/></strong></li><li><strong>[*helps the body to utilize calcium and make bones strong.<br/><br/></strong></li><li><strong>[*together with calcium is required to regulate T-lymphetes, which transform into killer cells, which are able to attack, among other things, cancer.<br/><br/></strong></li></ul><p>In the event of magnesium deficiency the permeability of the cell membranes is affected, causing potassium and calcium to be forced out, while sodium and calcium force their way in. This influx of sodium releases calcium from the mitochondrion and this gives rise to a substance called AMP, which causes the cell membranes to become even more permeable. This vicious circle eventually results in cell death.</p><p></p><p><strong>[*What deprives the body of magnesium?</strong><br/>A number of diseases increase magnesium loss inc. diabetes, kidney diseases and certain hormonal disorder. Magnesium loss with the urine is also increased by alcohol and various diuretic medicines, heart medicine and antibiotics. Profuse sweating causes considerable loss of magnesium.</p><p></p><p><strong>[*Stress</strong></p><p> (especially Geopathic Stress) drains the body of magnesium and can drastically reduce the body’s absorption of magnesium from food and supplements. Also the more we eat processed food the less magnesium we get. </p><p>Refining/processing whole-wheat to white flour, polished rice and corn to starch reduces magnesium contents by over 80%. The same applies regarding the increased amount of radiation and additives introduced to our food to make it last longer.</p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_MM7qYT": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "<h1>Rolf Gordon</h1>",
+            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
+            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_UNerJB",
+        "about_brand_MM7qYT"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_n4Fyha"
   ]
 }
