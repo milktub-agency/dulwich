@@ -311,8 +311,8 @@
     "megamenu_item_demo_1_bnzqex": {
       "type": "megamenu-item-demo-1",
       "settings": {
-        "parent": "https://dulwich-health.myshopify.com/pages/ashtma-page",
-        "heading": "HEALTH SUGGESTIONS",
+        "parent": "HEALTH SUGGESTIONS",
+        "heading": "",
         "subheading": "",
         "menu": "health-suggestions",
         "popular_menu_item": "AlliTech",
