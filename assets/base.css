@@ -2798,6 +2798,10 @@ details-disclosure > details {
   padding: 14px;
   z-index: 6;
 }
+
+.sticky-atc .product-form__error-message-wrapper {
+  justify-content: center;
+}
 @media screen and (max-width: 750px) {
   #stickyAddToCartWrapper .desktop-sticky-add-to-cart-button{
     width: unset;
