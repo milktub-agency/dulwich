@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_FDKmKr": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_7ybHnG": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h2>[*RDA (Recommended Daily Allowance)<br/>Reference Guide</h2><p>Recommended Dietary Allowances (RDAs) are the levels of intake of essential nutrients that, on the basis of scientific knowledge, are judged by the Food and Nutrition Board to be adequate to meet the known nutrient needs of practically all healthy persons.</p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_9MGhWB": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "<h1>Rolf Gordon</h1>",
+            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
+            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_7ybHnG",
+        "about_brand_9MGhWB"
+      ],
+      "settings": {
+        "page_title": "<h2>About Us Page</h2>",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_FDKmKr"
   ]
 }
