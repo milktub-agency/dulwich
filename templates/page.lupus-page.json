@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_zFdrzw": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_kNLaNA": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "<h1><strong>[*Lupus*]</strong></h1>",
+            "content_1": "<p>Lupus affects about 8000 people, in the UK, unfortunately for many on a permanent basis.</p><p></p><p>This wretched disease causes joint pain, skin rashes and tiredness. It often involves hair loss, weight loss, problems with your kidneys and other organs.</p><p></p>",
+            "image_conetnt_block_content_1": "<p><strong>[*We have successfully treated two women.</strong><br/>Liz, who is 72 years old, had Lupus for over 4 years. She had a heavy rash on her face, could not walk and lost most of her hair. Now, she often walks 4 miles. She no longer has a rash nor joint pains and her hair has grown back. Liz’s liver and kidneys are now working normally again.</p><p></p><p>Mary, in her forties, was diagnosed with Lupus 2½ years ago, which made her feel very fatigued, had a ‘butterfly’ rash across the bridge of her nose, joint pains all over and felt no better after long orthodox treatment. Mary no longer has problems with Lupus and is now an active teacher again.</p><p></p><p>On her second check-up, over a three month period, Mary’s blood again showed no Lupus and the Professor, who specialises in Lupus, discharged Mary and said that she now looked healthier than most doctors at the hospital. When Mary told the Professor about our help, the Professor’s reply was ‘No’, Mary had ‘grown out of Lupus’. (‘Spontaneous healing’ is the usual explanation given by doctors when our advice has helped).</p><p></p><p><em><strong>[If you have Lupus, please contact us for free advice, to ensure that the health problems below can be dealt with.]<br/></strong></em><em><br/></em><strong>Several new Lupus cases that we are dealing with, are responding very well.</strong></p>",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_WqRMeK": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "<h1>Rolf Gordon</h1>",
+            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
+            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_kNLaNA",
+        "about_brand_WqRMeK"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_zFdrzw"
   ]
 }
