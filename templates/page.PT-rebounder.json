@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_ggREJ7": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_zKDMGh": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h2><strong>[*The PT Rebounder</strong></h2><h2></h2><p><strong>[*Heart diseases<br/></strong>Research in USA on men aged between 71 and 93 showed for each mile they walked each day they reduced the risk of heart disease by 30%. So 6 minutes exercise on a <a href=\"https://www.dulwichhealth.co.uk/product/pt-rebounder-uk-only/?v=13b5bfe96f3e\"><em><strong>Rebounder</strong></em></a> per day should greatly reduce risk of heart disease. Excellent for increasing your heartbeat on a regular basis. <a href=\"https://www.dulwichhealth.co.uk/product/pt-rebounder-uk-only/?v=13b5bfe96f3e\"><em><strong>BUY The PT Rebounder</strong></em></a></p><p></p><p>A good diet and supplement programme must be kept up at all times to maintain an ample supply of antioxidants, vitamins, minerals and trace elements which will reinforce the benefit of exercising, taking <a href=\"https://www.dulwichhealth.co.uk/product-category/seagreens-seaweed/?v=13b5bfe96f3e\"><em><strong>Seagreens</strong></em></a> is highly recommended.</p><p><br/><br/><a href=\"https://www.dulwichhealth.co.uk/product/pt-rebounder-uk-only/?v=13b5bfe96f3e\"><em><strong>BUY The PT Rebounder</strong></em></a></p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_bFemz4": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "<h1>Rolf Gordon</h1>",
+            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
+            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_zKDMGh",
+        "about_brand_bFemz4"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_ggREJ7"
   ]
 }
