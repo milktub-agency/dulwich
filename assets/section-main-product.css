@@ -28,7 +28,7 @@
   }
 
   .product__info-wrapper--extra-padding {
-    padding: 0 0 0 8%;
+    padding: 0 0 0 27px;
   }
 
   .product--right .product__info-wrapper {
@@ -1431,7 +1431,7 @@ a.product__text {
   }
 
   .product__inventory {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
@@ -1632,4 +1632,8 @@ a.product__text {
   .main-product-section {
     padding: 0 2rem;
   }
+}
+
+.product-form__submit .loading-overlay__spinner .spinner .path {
+  stroke: white;
 }

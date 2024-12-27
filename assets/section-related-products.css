@@ -5,3 +5,7 @@
 .related-products__heading {
   margin: 0 0 3rem;
 }
+
+.related-products .splide__arrow {
+  top: 35%;
+}

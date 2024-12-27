@@ -1539,6 +1539,7 @@ deferred-media {
 .header__heading-logo {
   height: auto;
   max-width: 100%;
+  mix-blend-mode: multiply;
 }
 
 .header__heading-logo-wrapper {
@@ -2798,6 +2799,10 @@ details-disclosure > details {
   background: #E5EEF3;
   padding: 0 14px;
   z-index: 6;
+}
+
+.sticky-atc .product-form__error-message-wrapper {
+  justify-content: center;
 }
 @media screen and (max-width: 750px) {
   #stickyAddToCartWrapper .desktop-sticky-add-to-cart-button{
