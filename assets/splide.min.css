@@ -60,6 +60,11 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 .testimonial-section .splide__pagination {
     bottom: -70px;
 }
+.testimonial-section .splide__pagination {
+  display: block;
+  text-align: center;
+}
+
 .hero-banner-slider .splide__arrow svg,
 .collection .splide__arrow svg,
 .testimonial-section .splide__arrow svg,

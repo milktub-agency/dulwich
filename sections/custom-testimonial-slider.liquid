@@ -24,14 +24,15 @@
         class="splide md:tw-max-w-[80%] md:tw-w-full md:tw-block md:tw-m-auto"
         data-autoplay="{{ section.settings.enable_autoplay }}"
         data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000 }}"
-        data-desktopPerPage="1"
-        data-mobilePerPage="1"
+        data-desktopPerPage="{{ section.settings.desktop_per_page }}"
+        data-mobilePerPage="{{ section.settings.mobile_per_page }}"
         data-showArrows="{{ section.settings.show_arrows }}"
         data-showDots="{{ section.settings.show_dots }}"
         data-showarrowsonmobile="{{ section.settings.show_arrows }}"
         data-showdotsonmobile="{{ section.settings.show_dots }}"
         data-focus="left"
-        data-gapBetweenSlidesOnMobile="1.6rem"
+        data-gapbetweenslides="{{ section.settings.desktop_gap }}px"
+        data-gapBetweenSlidesOnMobile="{{ section.settings.mobile_gap }}px"
       >
         <div class="splide__track">
           <ul class="splide__list">
@@ -115,6 +116,46 @@
       {
         "type": "header",
         "content": "Carousel Settings"
+      },
+      {
+        "type": "range",
+        "id": "mobile_per_page",
+        "default": 1,
+        "label": "Mobile per page",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "unit": "itm"
+      },
+      {
+        "type": "range",
+        "id": "desktop_per_page",
+        "default": 2,
+        "label": "Desktop per page",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "unit": "itm"
+      },
+      {
+        "type": "range",
+        "id": "mobile_gap",
+        "default": 1,
+        "label": "Gap between cards in Mobile",
+        "min": 1,
+        "max": 50,
+        "step": 1,
+        "unit": "Px"
+      },
+      {
+        "type": "range",
+        "id": "desktop_gap",
+        "default": 2,
+        "label": "Gap between cards in Desktop",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "unit": "Px"
       },
       {
         "type": "checkbox",
