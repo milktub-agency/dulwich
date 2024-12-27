@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_iLgQJQ": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_AYBQRr": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h2><strong>[*Unisex Natural Underarm Deodorant</strong></h2><p>Your body gets rid of a lot of toxins through your apocvine glands in your groin and arm pits. The material is broken down by bacteria to form odourous substances. You need to kill the bacteria without blocking the glands, otherwise the toxins go back into your lymph nodes, many of which are near the upper outer part of your breasts, where the larger number of breast cancers tumours develop.</p><p></p><p>Most traditional antiseptic deodorant stick or spray will block your sweat glands and may contain Propyl Alcohol which can encourage parasites present in most cases of cancer. An even quicker why for Propyl Alcohol to enter your blood stream under your armpit, is when shaving because you can accidentally cut the skin and expose blood vessels.</p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_9VQ3kN": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h4><strong>[*Salt of the Earth Deodorant Classic</strong></h4><p>Use instead <a href=\"https://www.dulwichhealth.co.uk/product/salt-of-the-earth-deodorant-classic/?v=13b5bfe96f3e\"><strong>‘Crystal Spring’ Deodorant Stick</strong></a> a total natural and traditional antiseptic deodorant, which uses the property of pur alum mineral salts, a naturally occurring mineral with astringent and antiseptic qualities, neutralizes bacteria and therefore helps to control body odour. A ‘Crystal Spring Deodorant’ sticks costs less than £5, protects you for 24 hours and lasts about 18 months. Put your perfume somewhere else and save money.</p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_AYBQRr",
+        "about_brand_9VQ3kN"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_iLgQJQ"
   ]
 }
