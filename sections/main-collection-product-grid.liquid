@@ -113,7 +113,7 @@
      </div>
 
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical tw-px-[20px] md:tw-px-[56px] {% endif %}">
-      {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+      {{ 'component-facets.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering -%}
         <aside
