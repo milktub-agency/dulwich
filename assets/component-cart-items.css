@@ -147,8 +147,8 @@ cart-remove-button .button:not([disabled]):hover {
 }
 
 cart-remove-button .icon-remove {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .cart-item .loading-overlay {
@@ -286,7 +286,7 @@ cart-remove-button .icon-remove {
   .cart-item .cart-item__quantity,
   .cart-item__quantity--info quantity-popover>*,
   .no-js .cart-item .cart-item__quantity--info {
-    padding-left: 3rem;
+    padding-left: 4rem;
   }
 
   .cart-item .cart-item__quantity--info,
@@ -304,7 +304,7 @@ cart-remove-button .icon-remove {
 
 table.cart-items th {
   color: #111;
-  text-align: left;
+  text-align: center;
   font-size: 17.513px;
   font-style: normal;
   font-weight: 700;
@@ -313,11 +313,13 @@ table.cart-items th {
   white-space: nowrap;
   padding-bottom: 4px;
   letter-spacing: normal;
+  opacity: 1;
 }
 table.cart-items td {
   padding: 0;
 }
 table.cart-items td.cart-item__details {
+  padding: 10px;
   padding-left: 14px;
   padding-right: 14px;
 }
@@ -329,7 +331,7 @@ table.cart-items td.cart-item__price .product-option {
   text-align: center;
   font-size: 17.5px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 23px;
   white-space: nowrap;
 }
@@ -338,8 +340,12 @@ table.cart-items td.cart-item__quantity button.quantity__button {
   width: calc(2.4rem / var(--font-body-scale));
 }
 table.cart-items td.cart-item__quantity .quantity {
-  width: calc(8rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
-  min-height: calc(var(--inputs-border-width)* 2 + 3rem);
+  width: calc(9.3rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
+  min-height: calc(var(--inputs-border-width)* 2 + 3.6rem);
+}
+table.cart-items td.cart-item__quantity .quantity .quantity__input {
+  color: #60919F;
+  font-size: 27px;
 }
 table.cart-items .cart-item cart-remove-button {
   margin: 0;
@@ -349,7 +355,7 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
   text-align: center;
   font-size: 17px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 23.059px;
 }
 @media screen and (max-width: 750px) {
@@ -361,37 +367,43 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
     padding: 0 6px;
   }
   table.cart-items th {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 10px;
     padding-bottom: 8px;
+  }
+  .cart-section__cart-items table.cart-items th {
+    text-align: center;
   }
   .cart-items th {
     border-bottom: .1rem solid rgba(var(--color-foreground));
   }
   table.cart-items td.cart-item__details .cart-item__name {
     color: #334862;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 12px;
   }
   table.cart-items td.cart-item__price .product-option,
   table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
-    font-size: 7.5px;
+    font-size: 13px;
     line-height: 10px;
   }
   table.cart-items td.cart-item__quantity .quantity {
-    width: calc(4rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
-    min-height: calc(var(--inputs-border-width)* 2 + 1.6rem);
+    width: calc(5.5rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
+    min-height: calc(var(--inputs-border-width)* 2 + 2rem);
   }
   table.cart-items td.cart-item__quantity button.quantity__button {
-    width: calc(1rem / var(--font-body-scale));
+    width: calc(1.4rem / var(--font-body-scale));
   }
   table.cart-items td.cart-item__quantity .quantity__button svg {
-    width: 0.4rem;
+    width: 0.7rem;
   }
   table.cart-items td.cart-item__quantity .quantity__input {
     font-size: 8px;
+  }
+  table.cart-items td.cart-item__quantity .quantity .quantity__input {
+    font-size: 12px;
   }
   table.cart-items td.cart-item__quantity .quantity:after {
     --inputs-border-width: 1px;
@@ -406,7 +418,6 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
   }
   .cart-section .cart-section__cart-items .cart__contents .cart__items .js-contents {
     border-radius: 15px;
-    border: 1px solid #D5D5D5;
     padding: 7px 0;
   }
   table.cart-items td.cart-item__totals {
@@ -416,5 +427,60 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
   table.cart-items td.cart-item__details {
     padding-left: 6px;
     padding-right: 6px;
+  }
+  .cart-section__cart-items table.cart-items thead tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: .1rem solid rgba(var(--color-foreground),0.3);
+  }
+  .cart-section__cart-items table.cart-items tbody tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    border-bottom: .1rem solid rgba(var(--color-foreground),0.3);
+    padding-top: 6px;
+  }
+  .cart-section__cart-items table.cart-items tbody tr td {
+    margin: auto;
+  }
+  .cart-section__cart-items table.cart-items tbody tr td.cart-item__media .cart-item__image {
+    max-width: calc(6.5rem / var(--font-body-scale));
+  }
+  .cart-section__cart-items table.cart-items tbody tr td.cart-item__media {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .cart-section__cart-items table.cart-items tbody tr td.cart-item__details {
+    grid-area: 2 / 1 / 3 / 3;
+    padding-top: 2px;
+    margin: 0;
+  }
+  .cart-section__cart-items table.cart-items tbody tr td.cart-item__price {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .cart-section__cart-items table.cart-items tbody tr td.cart-item__quantity {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .cart-section__cart-items table.cart-items tbody tr td.cart-item__totals {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .cart-section__cart-items-upsell ,
+  .cart-section__cart-footer {
+    display: contents;
+  }
+  .cart-section__cart-items-upsell .cart-section__cart-items {
+    order: 1;
+  }
+  .cart-section__cart-items-upsell .upsell-products-cart {
+    order: 3;
+    margin-bottom: 34px;
+  }
+  .cart-section__cart-footer .cart-coupan-shipping-totals {
+    order: 2;
+  }
+  .cart-section .cart-section__cart-footer .cart-coupan-shipping-totals .cart__footer {
+    padding-bottom: 2rem;
   }
 }

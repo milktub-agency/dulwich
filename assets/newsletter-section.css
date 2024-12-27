@@ -30,7 +30,8 @@
 }
 
 .newsletter__wrapper .newsletter-form__field-wrapper {
-  max-width: 58rem;
+  max-width: 26.6rem;
+  margin: auto;
 }
 
 .newsletter-form__field-wrapper .newsletter-form__message {
@@ -76,7 +77,7 @@
     line-height: 10px;
   }
   .newsletter__wrapper .newsletter-form__field-wrapper {
-    max-width: 264px;
+    max-width: 228px;
   }
 }
 .field__label.newsletter-label {
