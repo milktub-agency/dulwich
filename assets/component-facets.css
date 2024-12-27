@@ -48,6 +48,7 @@
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
   margin: 0;
+  padding-right: 6px;
 }
 
 .facet-filters__summary {
@@ -1104,12 +1105,12 @@ input.mobile-facets__checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 10px;
-  font-size: 18px;
+  padding: 2px;
+  font-size: 13px;
   border-radius: 4px;
   background-image: none;
-  padding-right: 44px;
-  padding-left: 4px;
+  padding-right: 56px;
+  padding-left: 10px;
 }
 .collection-sorting-filter:focus,
 .collection-sorting-filter:focus-visible {
@@ -1121,11 +1122,13 @@ input.mobile-facets__checkbox {
   height: unset;
   top: 50%;
   transform: translateY(-50%);
+  margin-right: 10px;
 }
 @media screen and (max-width: 750px) {
   .collection-sorting-filter {
-    padding: 6px;
+    padding: 3.5px;
     font-size: 8px;
+    font-weight: 600;
     border-radius: 9px;
     padding-right: 10px;
     padding-left: 4px;
@@ -1135,6 +1138,7 @@ input.mobile-facets__checkbox {
   }
   .facet-filters__label {
     display: inline-flex;
+    padding-right: 0;
   }
   .facets-container .mobile-facets__inner {
     max-width: 32rem;
@@ -1219,8 +1223,8 @@ input.mobile-facets__checkbox {
     min-width: 100%;
   }
   .collection-filter-label span {
-    font-size: 18px;
-    padding: 5px;
+    font-size: 13px;
+    padding: 3px;
   }
   .facets-sort-by-filter {
     justify-content: center;
@@ -1232,8 +1236,10 @@ input.mobile-facets__checkbox {
     width: 100%;
   }
   .facets-sort-by-filter .facets.facets-vertical-sort .collection-sort-by-filter {
-    background: #DCDCAE;
-    border: none;
+    border: 1px solid #60919F;
+    border-radius: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   .facets .select .icon-caret {
     width: 14px;
@@ -1252,23 +1258,34 @@ input.mobile-facets__checkbox {
   .overflow-hidden-mobile {
     overflow: hidden;
   }
+  .facet-filters__field .select {
+    border: none;
+  }
 }
 @media screen and (max-width: 750px) {
   .collection-filter-label span {
-    padding: 2.6px;
+    padding: 2.4px;
+    font-size: 8px;
+    letter-spacing: normal;
   }
   .mobile-facets__heading.filter-drawer-heading {
     font-size: 14px;
     padding: 12px 0;
   }
-  .collection-filter-label span {
-    font-size: 8px;
-  }
   .facets-sort-by-filter {
     justify-content: space-evenly;
   }
+  .facets-sort-by-filter .mobile-facets-collection .facets-container details.mobile-facets__disclosure {
+    padding-top: 0.6px;
+    padding-bottom: 0.6px;
+  }
+  .facets-sort-by-filter .facets.facets-vertical-sort .collection-sort-by-filter {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
   .facets .select .icon-caret {
     width: 6px;
+    margin-right: 0;
   }
   .facets-container .mobile-facets__close {
     left: 260px;

@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "about_us_section_ggREJ7": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_zKDMGh": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h2><strong>[*The PT Rebounder</strong></h2><h2></h2><p><strong>[*Heart diseases<br/></strong>Research in USA on men aged between 71 and 93 showed for each mile they walked each day they reduced the risk of heart disease by 30%. So 6 minutes exercise on a <a href=\"https://www.dulwichhealth.co.uk/product/pt-rebounder-uk-only/?v=13b5bfe96f3e\"><em><strong>Rebounder</strong></em></a> per day should greatly reduce risk of heart disease. Excellent for increasing your heartbeat on a regular basis. <a href=\"https://www.dulwichhealth.co.uk/product/pt-rebounder-uk-only/?v=13b5bfe96f3e\"><em><strong>BUY The PT Rebounder</strong></em></a></p><p></p><p>A good diet and supplement programme must be kept up at all times to maintain an ample supply of antioxidants, vitamins, minerals and trace elements which will reinforce the benefit of exercising, taking <a href=\"https://www.dulwichhealth.co.uk/product-category/seagreens-seaweed/?v=13b5bfe96f3e\"><em><strong>Seagreens</strong></em></a> is highly recommended.</p><p><br/><br/><a href=\"https://www.dulwichhealth.co.uk/product/pt-rebounder-uk-only/?v=13b5bfe96f3e\"><em><strong>BUY The PT Rebounder</strong></em></a></p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_zbReaC": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<p><strong>[*Case Histories using The PT Rebounder<br/></strong></p><p></p><p><em><strong>[“My varicose veins in my legs are now not so prominent”</strong></em></p><p></p><p><strong>[“I am no longer depressed; feel much happier, more alive and energetic”</strong></p><p><strong>[“My appetite has returned”</strong></p><p></p><p><strong>[“Our son suffers from Downs Syndrome, and like many of his friends, is grossly overweight and constipated. He loves the Rebounder and has lost 1 ½ stone. His trips to the loo are so regular. I can hardly believe it”.</strong></p><p></p><p><strong>[“I lost 4 stones and reduced my dress size from 22 to 14”.</strong></p><p></p><p><strong>[“My husband, 81 year old Tom, has Parkinson’s disease, can now walk much better, can climb stairs, which he hasn’t been able to do for 2 years”.</strong></p><p></p><p><strong>[“I had arthritis in both hips and knee joints and could only walk with the help of two sticks. After rebounding for two month, 2 minutes 3 times a day. I have thrown away my sticks, my dress size reduced from 18 to 12, varicose veins have improved, blood pressure and cholesterol levels dropped – I am eternally grateful”]</strong></p><p></p><p><a href=\"https://www.dulwichhealth.co.uk/product/pt-rebounder-uk-only/?v=13b5bfe96f3e\"><em><strong>BUY The PT Rebounder NOW!</strong></em></a></p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_zKDMGh",
+        "about_brand_zbReaC"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "about_us_section_ggREJ7"
+  ]
+}

@@ -30,7 +30,7 @@
                 href={{ media | image_url }}
                 data-fancybox="gallery"
                 data-download-src="https://cdn.pixabay.com/photo/2023/10/10/15/20/swimming-pool-8306716_1280.jpg"
-                class="!tw-static tw-w-full tw-h-full bmd:tw-pointer-events-none"
+                class="!tw-static tw-w-full tw-h-full tw-pointer-events-none"
               >
                {% render 'product-media', media: media, loop: section.settings.enable_video_looping, forloop: forloop %}
               </a>
@@ -90,7 +90,7 @@
       <div class="splide__track">
         <ul class="{% if section.settings.gallery_layout contains 'slider' %} splide__list{% else %} tw-flex tw-flex-wrap tw-justify-center tw-gap-y-3{% endif %}">
           {%- for media in product.media -%}
-          <li class="{% if section.settings.gallery_layout contains 'slider' %} splide__slide tw-rounded-[17px] tw-overflow-hidden tw-mr-[22px]{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
+          <li class="{% if section.settings.gallery_layout contains 'slider' %} splide__slide tw-rounded-[17px] tw-overflow-hidden tw-mr-[6px] md:tw-mr-[22px]{% else %} {{ section.settings.mobile_items }} {{ section.settings.desktop_items }} tw-px-2{% endif %}" data-media-id="{{ media.id }}" data-filter="{{ media.alt | escape }}">
             <div class="slot-item group">
               {%- if media.media_type == 'model' -%}
                 <span class="thumbnail__badge" aria-hidden="true">

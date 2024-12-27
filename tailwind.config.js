@@ -34,7 +34,7 @@ module.exports = {
     },
     fontFamily: {
       'primary': ["Poppins"],
-      'secondary': ['arial'],
+      'secondary': ['Arial'],
       'tertiary': ['Poppins']
     },
     fontSize: {

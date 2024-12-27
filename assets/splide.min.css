@@ -19,7 +19,7 @@ button.splide__arrow {
 }
 
 media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
-    border: 2px solid #000;
+    border: 2px solid #60919F;
 }
 
 .slideshow .splide__pagination {
@@ -60,12 +60,17 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
 .testimonial-section .splide__pagination {
     bottom: -70px;
 }
-
 .testimonial-section .splide__pagination {
   display: block;
   text-align: center;
 }
 
+.hero-banner-slider .splide__arrow svg,
+.collection .splide__arrow svg,
+.testimonial-section .splide__arrow svg,
+.related-products .splide__arrow svg {
+    fill: #fff;
+}
 @media screen and (max-width: 990px) {
     .collection .splide__arrow--prev,
     .testimonial-section .splide__arrow--prev,
@@ -102,6 +107,34 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
     }
     .testimonial-section .splide__pagination {
         bottom: -23px;
+    }
+    .collection button.splide__arrow,
+    .related-products button.splide__arrow,
+    cart-upsell-recommendations button.splide__arrow {
+        background: #60919F;
+        height: 27px;
+        width: 27px;
+    }
+    .collection .splide__arrow svg,
+    .related-products .splide__arrow svg,
+    cart-upsell-recommendations .splide__arrow svg {
+        fill: #60919F;
+        height: 13px;
+        width: 14px;
+    }
+    .collection .splide__arrow--next,
+    .related-products .splide__arrow--next,
+    cart-upsell-recommendations .splide__arrow--next {
+        top: unset;
+        bottom: -60px;
+        right: 0;
+    }
+    .collection .splide__arrow--prev,
+    .related-products .splide__arrow--prev,
+    cart-upsell-recommendations .splide__arrow--prev {
+        top: unset;
+        bottom: -60px;
+        left: 0;
     }
 }
 
