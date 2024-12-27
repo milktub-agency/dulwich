@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_bc87dH": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_nCiPkn": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h2>[*The Facts About Salt</h2><h4><strong>Salt – The Facts (also Calcium, Iodine & Magnesium)<br/>Salt is essential for life. In the following extracts from ‘The Newsletter of Advanced Natural Therapies’, by the Editor Sam Biser (Vol 2. No 6.) you will read that life cannot exist without salt and many medical problems can be aided or prevented with the use of a sea salt. He entitles his article </strong><em><strong>‘Don’t be conned by the Crusade against salt’.</strong></em></h4><h4></h4><h4></h4><p>Once again I must blow the cover on a medical and health food crusade that is being jammed down your throat I’m referring to the forty year old health lie that avoiding salt will help you live longer. The health food establishment has swallowed this one whole – like Jonah in the body of the whale. They solemnly tell you that avoiding salt will help lead you into the land of everlasting health.</p><p></p><p></p><p><em><strong>[*For most of you, it definitely will not. What they DON’T tell you is that!</strong></em></p><ul><li><strong>A low salt diet for the treatment of high blood pressure is a colossal national disgrace based on dogma, not evidence.<br/><br/></strong></li><li><strong>A lack of salt can cause accelerated aging, cellular degeneration, and biochemical starvation.<br/><br/></strong></li><li><strong>A salt restrictive diet can actually raise your blood pressure.<br/><br/></strong></li><li><strong>A lack of salt can literally cripple your health and cause liver failure, kidney problems, and massive adrenal exhaustion.<br/><br/></strong></li><li><strong>On a salt free diet the valves of your heart can tire, lacerate and cause a fatal heart attack.<br/><br/></strong></li><li><strong>The healing powers of good salt equal those of Vitamin C, Vitamin E and many other nutrients in the health food store.<br/><br/></strong></li></ul><p>The prevailing viewpoint of modern medicine is that salt is a general poison like alcohol and tobacco. Salt has been vilified as the great devil at the dinner table.  The health media are always looking for simple, easy answers that don’t require much thinking, therefore, they routinely present the same, reckless, across the board advice to avoid salt – whether you desperately need it or not. The fact that our population is a vastly heterogeneous group, with grossly divergent biochemistries, makes no difference to them. The chant is always the same: “salt is bad!” It’s gone far enough. The dogma must end.<br/><br/></p><p><strong>[*Biser:</strong><em><strong> Why is the scientific literature so against salt?*]</strong></em><br/>De Langre:<em> Science has arrived at some dangerous conclusions based on the wrong salt. 99% of the world’s research on salt is done on commercial table salt. This is the only salt they know of. They think all the salt is the same, but they are wrong.</em></p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        },
+        "about_brand_bWrrrU": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "<h1>Rolf Gordon</h1>",
+            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
+            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
+            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_nCiPkn",
+        "about_brand_bWrrrU"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_bc87dH"
   ]
 }
