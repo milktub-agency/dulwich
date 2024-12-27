@@ -70,7 +70,6 @@
     padding-right: 0;
     row-gap: 1.5rem;
     padding-top: 11px;
-    padding-bottom: 16px;
   }
 
   .footer__content-bottom-wrapper {
@@ -532,6 +531,9 @@
   height: 3px;
   max-width: 30px;
   width: 100%;
+}
+.article-card-wrapper .is-divider:empty {
+  opacity: 0.2;
 }
 .footer-block--menu ul.footer-block__details-content.list-unstyled>li+li {
   border-top: 2px solid rgb(var(--color-foreground), 0.29);

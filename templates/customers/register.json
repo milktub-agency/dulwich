@@ -1,10 +1,29 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "main": {
-      "type": "main-register"
+    "advanced_registration": {
+      "type": "apps",
+      "blocks": {
+        "advanced_registration": {
+          "type": "shopify://apps/advanced-registration/blocks/advanced-registration/a64c4b10-b618-4bd2-915b-dbb6662c9253",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "advanced_registration"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "advanced_registration"
   ]
 }

@@ -40,6 +40,10 @@
         font-style: {{ block.settings.text_font_style }};
         margin-top: {{ block.settings.text_top_spacing }}px;
         margin-bottom: {{ block.settings.text_bottom_spacing }}px;
+        {% unless block.settings.text_bg_color == '' %}
+          background: {{ block.settings.text_bg_color }};
+          padding: 9px 16px;
+        {% endunless %}
       }
       @media screen and (max-width: 750px) {
         .product__info-container .description-text--{{block.id }} {
@@ -112,9 +116,9 @@
         {%- case block.type -%}
           {%- when 'title' -%}
             <div class="product__title blg:tw-block lg:tw-hidden" {{ block.shopify_attributes }}>
-              <h1 class="tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[48px] tw-font-medium tw-leading-normal">{{ product.title | escape }}</h1>
+              <h1 class="tw-font-primary tw-tracking-normal tw-text-[22px] md:tw-text-[48px] tw-font-medium tw-leading-normal">{{ product.title | escape }}</h1>
               <a href="{{ product.url }}" class="product__title">
-                <h2 class="h1 tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[48px] tw-font-medium tw-leading-normal">
+                <h2 class="h1 tw-font-primary tw-tracking-normal tw-text-[22px] md:tw-text-[48px] tw-font-medium tw-leading-normal">
                   {{ product.title | escape }}
                 </h2>
               </a>
@@ -144,17 +148,19 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'text' -%}
-              <p
-                class="product__text description-text--{{block.id }} tw-tracking-normal inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
-                {{ block.shopify_attributes }}
-              >
-                {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
-              </p>
+              {% if block.settings.text != blank %} 
+                <p
+                  class="product__text description-text--{{block.id }} tw-leading-normal tw-tracking-normal inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
+                </p>
+              {% endif %}
             {%- when 'title' -%}
               <div class="product__title blg:tw-hidden lg:tw-block" {{ block.shopify_attributes }}>
-                <h1 class="product-title-lg tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[48px] tw-font-medium tw-leading-normal">{{ product.title | escape }}</h1>
+                <h1 class="product-title-lg tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[42px] tw-font-medium tw-leading-normal">{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
-                  <h2 class="h1 tw-font-primary tw-tracking-normal tw-text-[21px] md:tw-text-[48px] tw-font-medium tw-leading-normal">
+                  <h2 class="h1 tw-font-primary tw-tracking-normal tw-text-[22px] md:tw-text-[48px] tw-font-medium tw-leading-normal">
                     {{ product.title | escape }}
                   </h2>
                 </a>
@@ -190,7 +196,7 @@
               </div>
             {%- when 'inventory' -%}
               <p
-                class="product__inventory tw-text-[11px] md:tw-text-[18px] tw-tracking-normal no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
+                class="product__inventory tw-text-[11px] md:tw-text-[15px] tw-tracking-normal no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
                 {{ block.shopify_attributes }}
                 id="Inventory-{{ section.id }}"
                 role="status"
@@ -346,7 +352,7 @@
             {%- when 'payment_icons' -%}
               <div class="tw-flex tw-items-start tw-justify-start">
                 {%- if block.settings.payment_enable -%}
-                  <div class="tw-mt-[17px] md:tw-mt-[44px]">
+                  <div class="tw-mt-[0px]">
                     <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
                     <ul class="list list-payment" role="list">
                       {%- for type in shop.enabled_payment_types -%}
@@ -649,6 +655,11 @@
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
         },
         {
+          "type": "color",
+          "id": "text_bg_color",
+          "label": "Text background color"
+        },
+        {
           "type": "header",
           "content": "Desktop"
         },
@@ -658,15 +669,15 @@
           "label": "Font size",
           "options": [
             {
-              "value": "13",
+              "value": "12",
               "label": "Smaller"
             },
             {
-              "value": "16",
+              "value": "14",
               "label": "Small"
             },
             {
-              "value": "18",
+              "value": "15",
               "label": "Medium"
             },
             {
@@ -724,7 +735,7 @@
           "label": "Font size",
           "options": [
             {
-              "value": "11",
+              "value": "12",
               "label": "Smaller"
             },
             {
