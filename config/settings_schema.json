@@ -1723,6 +1723,10 @@
           {
             "value": "notification",
             "label": "t:settings_schema.cart.settings.cart_type.notification.label"
+          },
+          {
+            "value": "notification_drawer",
+            "label": "Notification Drawer"
           }
         ],
         "default": "notification",

@@ -74,7 +74,7 @@
           </div>
         {%- endif -%}
         <div class="card__content">
-          <div class="card__information bmd:tw-text-center">
+          <div class="card__information tw-text-center">
             <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
               <a href="{{ article.url }}" class="full-unstyled-link tw-font-primary tw-text-[19px] md:tw-text-[17px] tw-font-medium tw-leading-[28px] md:tw-leading-[24px]">
                 {{ article.title | truncate: 40 | escape }}
@@ -105,7 +105,7 @@
               </div>
             {%- endif -%}
             {% if show_read_more %}
-              <div class="is-divider tw-mt-[26px] tw-mb-[7px] bmd:tw-mx-auto"></div>
+              <div class="is-divider tw-mt-[26px] tw-mb-[7px] tw-mx-auto"></div>
               <a href="{{ article.url }}" class="tw-text-[rgb(var(--color-button))] tw-font-primary tw-text-[12px] md:tw-text-[11px] tw-uppercase tw-font-bold">{{ 'blogs.article.read_more' | t }}</a>
             {% endif %}
           </div>
@@ -117,7 +117,7 @@
         </div>
       </div>
       <div class="card__content">
-        <div class="card__information">
+        <div class="card__information tw-text-center">
           <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link tw-font-primary tw-text-[19px] md:tw-text-[17px] tw-font-medium tw-leading-[28px] md:tw-leading-[24px]">
               {{ article.title | truncate: 50 | escape }}
@@ -147,7 +147,7 @@
               {%- endif -%}
             </div>
             {% if show_read_more %}
-              <div class="is-divider tw-mt-[26px] tw-mb-[7px] bmd:tw-mx-auto"></div>
+              <div class="is-divider tw-mt-[26px] tw-mb-[7px] tw-mx-auto"></div>
               <a href="{{ article.url }}" class="tw-text-[rgb(var(--color-button))] tw-font-primary tw-text-[12px] md:tw-text-[11px] tw-uppercase tw-font-bold">{{ 'blogs.article.read_more' | t }}</a>
             {% endif %}
           {%- endif -%}

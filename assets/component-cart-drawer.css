@@ -411,3 +411,159 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
     margin-left: 0;
   }
 }
+.drawer.cart-notification-drawer {
+  top: 128px;
+  background: transparent;
+}
+.drawer.cart-notification-drawer .drawer__header {
+  background: #60919F;
+  color: #fff;
+  padding: 4px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.drawer.cart-notification-drawer .cart-notification__heading {
+  flex-grow: 0;
+}
+.drawer.cart-notification-drawer table.cart-items thead {
+  padding: 0 20px;
+}
+.drawer.cart-notification-drawer table.cart-items td.cart-item__media {
+  padding: 0;
+  width: 8rem;
+}
+.drawer.cart-notification-drawer table.cart-items tr.cart-item {
+  padding: 0 6px;
+  gap: 2px;
+}
+.drawer.cart-notification-drawer table.cart-items td.cart-item__quantity {
+  display: none;
+}
+.drawer.cart-notification-drawer table.cart-items td.cart-item__totals {
+  justify-content: center;
+  padding-left: 0;
+}
+.drawer.cart-notification-drawer .drawer__footer {
+  padding: 0;
+}
+.drawer.cart-notification-drawer .drawer__footer .view_cart_btn {
+  display: flex;
+}
+.drawer.cart-notification-drawer .drawer__footer .totals h2 {
+  font-size: 18px;
+  color: #000;
+}
+.drawer.cart-notification-drawer .drawer__footer .totals p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.drawer.cart-notification-drawer .drawer__header svg.icon-close path {
+  fill: #fff;
+}
+.drawer.cart-notification-drawer .drawer__header .drawer__heading {
+  margin: 0;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.drawer.cart-notification-drawer .drawer__header .drawer__close {
+  position: unset;
+  min-width: 3.2rem;
+}
+.drawer.cart-notification-drawer .drawer__inner {
+  height: 550px;
+  margin-right: 46px;
+  transform: translateY(100%);
+  padding: 0;
+  border-radius: 11px;
+}
+.drawer.cart-notification-drawer.active .drawer__inner {
+  transform: translate(0);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.drawer.cart-notification-drawer .drawer__inner:focus-visible,
+.header__icon--cart.focus-inset:focus-visible {
+  outline: none;
+}
+.header__icon--cart.focus-inset:focus-visible {
+  box-shadow: none;
+}
+.drawer.cart-notification-drawer.active .scDiscount__container,
+.drawer.cart-notification-drawer .cart-drawer__overlay {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .drawer.cart-notification-drawer {
+    top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .header-cart-drawer-sticky.drawer.cart-notification-drawer {
+    top: 94px;
+  }
+  .drawer.cart-notification-drawer .drawer__inner {
+    margin-right: 0;
+    height: 100%;
+    max-height: 51rem;
+    width: 100%;
+    max-width: 34rem;
+  }
+  .drawer.cart-notification-drawer .drawer__header .drawer__heading {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .drawer.cart-notification-drawer .drawer__header .drawer__close {
+    min-width: 1.8rem;
+    min-height: 3.4rem;
+  }
+  .drawer.cart-notification-drawer .drawer__close svg {
+    height: 1.8rem;
+    width: 1.8rem;
+  }
+  .drawer.cart-notification-drawer .cart-notification__heading {
+    font-size: 10px;
+    padding: 4px;
+  }
+  .drawer.cart-notification-drawer .cart-notification__heading .icon-checkmark {
+    margin-right: 0;
+  }
+  .drawer.cart-notification-drawer table.cart-items th {
+    font-size: 10px;
+    padding: 0 7px;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__media {
+    padding: 0 8px;
+    width: 8rem;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__details .cart-item__name {
+    color: #000;
+    font-weight: 500;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__details .product-option{
+    font-size: 10px;
+    color: #000;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+  }
+  .drawer.cart-notification-drawer table.cart-items td.cart-item__totals {
+    justify-content: end;
+    padding-right: 10px;
+  }
+  .drawer.cart-notification-drawer cart-drawer-items {
+    overflow: auto;
+  }
+  .drawer.cart-notification-drawer .drawer__footer .totals h2 {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .drawer.cart-notification-drawer .drawer__footer .totals p {
+    font-size: 13px;
+  }
+  .drawer.cart-notification-drawer .mobile-cart-notification-button {
+    padding: 8px;
+  }
+}

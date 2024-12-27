@@ -83,51 +83,6 @@
             "collection": "oxytech",
             "collection_name": "Oxytech"
           }
-        },
-        "collection_block_GaP48m": {
-          "type": "collection_block",
-          "settings": {
-            "image": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
-            "image_fetch": false,
-            "collection": "allitech",
-            "collection_name": "Allitech"
-          }
-        },
-        "collection_block_rJyLen": {
-          "type": "collection_block",
-          "settings": {
-            "image": "shopify://shop_images/ripe-red-strawberries-in-a-white-bowl.jpg",
-            "image_fetch": false,
-            "collection": "losterol",
-            "collection_name": "Losterol"
-          }
-        },
-        "collection_block_PdbtYJ": {
-          "type": "collection_block",
-          "settings": {
-            "image": "shopify://shop_images/ocean-water-with-swimmers.jpg",
-            "image_fetch": false,
-            "collection": "oxytech",
-            "collection_name": "Oxytech"
-          }
-        },
-        "collection_block_yTWDVr": {
-          "type": "collection_block",
-          "settings": {
-            "image": "shopify://shop_images/bare-stony-room-with-two-wooden-benches-and-coffee-tables.jpg",
-            "image_fetch": false,
-            "collection": "supplements",
-            "collection_name": "Supplements"
-          }
-        },
-        "collection_block_eR6GHc": {
-          "type": "collection_block",
-          "settings": {
-            "image": "shopify://shop_images/merchant-taking-sale-with-chip-and-swipe-reader.jpg",
-            "image_fetch": false,
-            "collection": "allitech",
-            "collection_name": "Allitech"
-          }
         }
       },
       "block_order": [
@@ -138,12 +93,7 @@
         "collection_block_J8bNdz",
         "collection_block_eJnNPF",
         "collection_block_7VtLQy",
-        "collection_block_DgEnyC",
-        "collection_block_GaP48m",
-        "collection_block_rJyLen",
-        "collection_block_PdbtYJ",
-        "collection_block_yTWDVr",
-        "collection_block_eR6GHc"
+        "collection_block_DgEnyC"
       ],
       "settings": {
         "show_desktop": true,
@@ -246,7 +196,7 @@
         "content_alignment": "center",
         "color_scheme": "scheme-86803cb1-9ce9-4289-b05e-740e11eebf02",
         "full_width": true,
-        "content_width": true,
+        "content_width": false,
         "padding_top": 26,
         "padding_bottom": 26,
         "padding_top_mob": 16,
@@ -367,7 +317,7 @@
         "usp_PVCwXA": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"70\" height=\"70\" viewbox=\"0 0 70 70\" fill=\"none\">\n  <path d=\"M32.0135 14.2561H11.804C10.732 14.2561 9.70395 14.6819 8.94594 15.4399C8.18796 16.198 7.76211 17.226 7.76211 18.298V54.675L3.72021 66.8007L19.8878 62.7588H52.2229C53.2948 62.7588 54.3231 62.3328 55.081 61.575C55.8388 60.8171 56.2648 59.7888 56.2648 58.7169V38.5075\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M46.5646 34.0803L34.439 36.2629L36.4599 23.9756L55.5782 4.93826C55.9537 4.55942 56.4008 4.25872 56.8935 4.05352C57.3858 3.84832 57.914 3.74268 58.448 3.74268C58.9815 3.74268 59.5098 3.84832 60.0021 4.05352C60.4948 4.25872 60.9418 4.55942 61.3177 4.93826L65.6021 9.22266C65.9808 9.59839 66.2816 10.0455 66.4869 10.538C66.6918 11.0305 66.7977 11.5588 66.7977 12.0924C66.7977 12.626 66.6918 13.1543 66.4869 13.6468C66.2816 14.1394 65.9808 14.5864 65.6021 14.9621L46.5646 34.0803Z\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"97\" height=\"97\" viewbox=\"0 0 97 97\" fill=\"none\">\n  <path d=\"M43.8044 18.1631H14.6584C13.1124 18.1631 11.6297 18.7772 10.5365 19.8704C9.44337 20.9636 8.8292 22.4463 8.8292 23.9923V76.4551L3 93.9427L26.3168 88.1135H72.9504C74.4963 88.1135 75.9793 87.4991 77.0722 86.4061C78.1652 85.3132 78.7796 83.8302 78.7796 82.2843V53.1383\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M64.7898 46.7528L47.3022 49.9006L50.2168 32.1798L77.7892 4.72427C78.3307 4.1779 78.9754 3.74424 79.686 3.4483C80.396 3.15236 81.1579 3 81.9279 3C82.6974 3 83.4593 3.15236 84.1693 3.4483C84.8798 3.74424 85.5245 4.1779 86.0667 4.72427L92.2456 10.9032C92.7918 11.4451 93.2255 12.0899 93.5216 12.8002C93.8172 13.5105 93.9699 14.2724 93.9699 15.0419C93.9699 15.8115 93.8172 16.5734 93.5216 17.2837C93.2255 17.9941 92.7918 18.6388 92.2456 19.1807L64.7898 46.7528Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "Our Blog",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
@@ -376,7 +326,7 @@
         "usp_qRqb7J": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"75\" height=\"73\" viewbox=\"0 0 75 73\" fill=\"none\">\n  <path d=\"M27.3724 29.1487C34.5231 29.1487 40.32 23.5013 40.32 16.5349C40.32 9.56853 34.5231 3.92114 27.3724 3.92114C20.2216 3.92114 14.4248 9.56853 14.4248 16.5349C14.4248 23.5013 20.2216 29.1487 27.3724 29.1487Z\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M50.192 36.7148C48.7619 36.7148 47.6025 37.8443 47.6025 39.2376V46.333H40.3195C38.8894 46.333 37.73 47.4624 37.73 48.8558V57.0546C37.73 58.4481 38.8894 59.5773 40.3195 59.5773H47.6025V66.6728C47.6025 68.0659 48.7619 69.1956 50.192 69.1956H58.6079C60.0379 69.1956 61.1975 68.0659 61.1975 66.6728V59.5773H68.4807C69.9107 59.5773 71.0702 58.4481 71.0702 57.0546V48.8558C71.0702 47.4624 69.9107 46.333 68.4807 46.333H61.1975V39.2376C61.1975 37.8443 60.0379 36.7148 58.6079 36.7148H50.192Z\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M29.9461 64.4578H4.06592V61.7226C4.10715 57.8769 5.14822 54.1039 7.09187 50.7565C9.03556 47.409 11.8184 44.596 15.1805 42.5804C18.5426 40.5648 22.3743 39.4122 26.3175 39.2303C27.7401 39.1647 29.1604 39.2262 30.5614 39.4113\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"104\" height=\"101\" viewbox=\"0 0 104 101\" fill=\"none\">\n  <path d=\"M36.9195 39.716C47.3266 39.716 55.7633 31.4968 55.7633 21.358C55.7633 11.2192 47.3266 3 36.9195 3C26.5124 3 18.0757 11.2192 18.0757 21.358C18.0757 31.4968 26.5124 39.716 36.9195 39.716Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M70.1318 50.7285C68.0504 50.7285 66.363 52.3724 66.363 54.4001V64.7267H55.7634C53.682 64.7267 51.9946 66.3705 51.9946 68.3983V80.3308C51.9946 82.359 53.682 84.0024 55.7634 84.0024H66.363V94.3291C66.363 96.3566 68.0504 98.0007 70.1318 98.0007H82.3803C84.4614 98.0007 86.149 96.3566 86.149 94.3291V84.0024H96.749C98.8302 84.0024 100.518 82.359 100.518 80.3308V68.3983C100.518 66.3705 98.8302 64.7267 96.749 64.7267H86.149V54.4001C86.149 52.3724 84.4614 50.7285 82.3803 50.7285H70.1318Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M40.6658 91.1036H3V87.1228C3.06001 81.5258 4.57517 76.0346 7.40395 71.1627C10.2328 66.2908 14.2829 62.1969 19.1761 59.2634C24.0693 56.3298 29.6458 54.6523 35.3848 54.3876C37.4552 54.2922 39.5224 54.3817 41.5613 54.6511\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "Health Suggestions",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
@@ -385,7 +335,7 @@
         "usp_FeM89t": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"75\" height=\"74\" viewbox=\"0 0 75 74\" fill=\"none\">\n  <path d=\"M52.8319 65.1607C59.9468 65.1607 65.7147 59.3934 65.7147 52.278C65.7147 45.1633 59.9468 39.3955 52.8319 39.3955C45.717 39.3955 39.9492 45.1633 39.9492 52.278C39.9492 59.3934 45.717 65.1607 52.8319 65.1607Z\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M70.8636 70.3357L61.9487 61.4209\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M37.372 11.0557C37.372 6.78674 33.9114 3.32605 29.6424 3.32605H3.87695V54.8567H29.6424\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M37.3721 11.0587V34.2476\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M37.3721 11.0557C37.3721 6.78671 40.8327 3.32605 45.1017 3.32605H70.8671V39.3989\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"92\" height=\"92\" viewbox=\"0 0 92 92\" fill=\"none\">\n  <path d=\"M65.3679 81.5129C74.2868 81.5129 81.5171 74.2833 81.5171 65.3638C81.5171 56.4451 74.2868 49.2148 65.3679 49.2148C56.449 49.2148 49.2188 56.4451 49.2188 65.3638C49.2188 74.2833 56.449 81.5129 65.3679 81.5129Z\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M87.9714 87.9994L76.7961 76.8242\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.9878 13.6895C45.9878 8.33816 41.6497 4 36.2983 4H4V68.5964H36.2983\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.9878 13.6924V42.7609\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.9878 13.6895C45.9878 8.33812 50.3259 4 55.6773 4H87.9756V49.2192\" stroke=\"white\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "Case Histories",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"
@@ -394,7 +344,7 @@
         "usp_BVefNt": {
           "type": "usp",
           "settings": {
-            "usp_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"71\" height=\"70\" viewbox=\"0 0 71 70\" fill=\"none\">\n  <path d=\"M35.4849 66.1608C52.8193 66.1608 66.8712 52.1089 66.8712 34.7745C66.8712 17.4403 52.8193 3.38818 35.4849 3.38818C18.1508 3.38818 4.09863 17.4403 4.09863 34.7745C4.09863 52.1089 18.1508 66.1608 35.4849 66.1608Z\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M27.103 51.5372H43.8677\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M35.4847 51.5386V31.9799H29.8965\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M35.4859 19.4098C34.7144 19.4098 34.0889 18.7843 34.0889 18.0128C34.0889 17.2412 34.7144 16.6157 35.4859 16.6157\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <path d=\"M35.4854 19.4098C36.2569 19.4098 36.8824 18.7843 36.8824 18.0128C36.8824 17.2412 36.2569 16.6157 35.4854 16.6157\" stroke=\"black\" stroke-width=\"6.34778\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "usp_svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"90\" height=\"90\" viewbox=\"0 0 90 90\" fill=\"none\">\n  <path d=\"M45 87.0001C68.1963 87.0001 87.0001 68.1963 87.0001 45C87.0001 21.8041 68.1963 3 45 3C21.8041 3 3 21.8041 3 45C3 68.1963 21.8041 87.0001 45 87.0001Z\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M33.7827 67.4316H56.2166\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M44.9995 67.4326V41.2598H37.5215\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M45.0008 24.4392C43.9684 24.4392 43.1313 23.6022 43.1313 22.5697C43.1313 21.5372 43.9684 20.7002 45.0008 20.7002\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n  <path d=\"M44.999 24.4392C46.0315 24.4392 46.8685 23.6022 46.8685 22.5697C46.8685 21.5372 46.0315 20.7002 44.999 20.7002\" stroke=\"white\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><\/path>\n<\/svg>",
             "usp_title": "About Us",
             "usp_link": "",
             "color_scheme_block": "scheme-d7ecc7bc-9e19-479f-8d05-4d34e1ea3721"

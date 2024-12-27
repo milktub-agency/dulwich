@@ -27,7 +27,7 @@
       <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full tw-text-[rgb(var(--color-button))]">{{ section.settings.section_title }}</div>
     {% endif %}
     {% if section.blocks != blank %}
-      <div class="custom-collection-slider tw-flex md:tw-flex-nowrap tw-justify-start lg:tw-justify-start tw-overflow-auto md:tw-pt-[20px] md:tw-pb-[10px] {% if section.settings.flex_wrap %} tw-flex-wrap tw-justify-center {% endif %}">
+      <div class="custom-collection-slider tw-flex md:tw-flex-nowrap tw-justify-start lg:tw-justify-center tw-overflow-auto md:tw-pt-[20px] md:tw-pb-[10px] {% if section.settings.flex_wrap %} tw-flex-wrap tw-justify-center {% endif %}">
         {% for block in section.blocks %}
           <div class="collection_slider-inner">
             <a href="{{ block.settings.collection.url }}">

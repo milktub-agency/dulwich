@@ -42,7 +42,7 @@
     {%- endstyle -%}
 
     <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
-      <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+      <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %} {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}">
         <div class="rich-text__wrapper rich-text__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
           <div class="rich-text__blocks {% if section.settings.content_width == true %}richtext-content-width{% endif %} {{ section.settings.content_alignment }}">
             {%- for block in section.blocks -%}
@@ -193,6 +193,18 @@
       "type": "checkbox",
       "id": "content_width",
       "label": "Text width full",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_in_mobile",
+      "label": "Hide in mobile. Show in desktop",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_in_desktop",
+      "label": "Hide in Desktop. Show in Mobile",
       "default": false
     },
     {
@@ -348,7 +360,7 @@
           "label": "Desktop text font size",
           "options": [
             {
-              "value": "18",
+              "value": "17",
               "label": "Small"
             },
             {
@@ -360,7 +372,7 @@
               "label": "Large"
             },
           ],
-          "default": "18"
+          "default": "17"
         },
         {
           "type": "select",

@@ -119,7 +119,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 8rem;
+    padding: 0 5.6rem;
   }
 
   .header.page-width,
@@ -1754,6 +1754,7 @@ deferred-media {
 .header__icon--cart {
   position: relative;
   margin-right: -1.2rem;
+  z-index: 999999999;
 }
 
 .header__icon--menu[aria-expanded='true']::before {
@@ -2705,7 +2706,7 @@ details-disclosure > details {
     width: 3rem;
   }
   .header-menu-search .header-search--search-btn svg path {
-    stroke: #fff;
+    stroke: #60919f;
   }
   .header .search__button .icon {
     height: 1.4rem;
@@ -2761,7 +2762,7 @@ details-disclosure > details {
   .header-menu-search {
     margin-right: auto;
     width: 100%;
-    gap: 22px;
+    gap: 4px;
   }
 }
 @media screen and (min-width: 990px) {
@@ -2795,7 +2796,7 @@ details-disclosure > details {
   bottom: 0;
   left: 0;
   background: #E5EEF3;
-  padding: 14px;
+  padding: 0 14px;
   z-index: 6;
 }
 @media screen and (max-width: 750px) {
@@ -2834,8 +2835,8 @@ details-disclosure > details {
 }
 .usp-block svg,
 .usp-block img {
-  width: 63px;
-  height: 63px;
+  width: 84px;
+  height: 84px;
 }
 @media screen and (max-width: 750px) {
   .product__info-container .quantity {
@@ -2851,8 +2852,8 @@ details-disclosure > details {
   }
   .usp-block svg,
   .usp-block img {
-    width: 34px;
-    height: 34px;
+    width: 41px;
+    height: 41px;
   }
 }
 
@@ -2885,10 +2886,22 @@ details-disclosure > details {
   min-width: 70%;
   max-width: 70%;
 }
+cart-upsell-recommendations .product-card .product-card-atc-btn {
+  font-size: 13px;
+}
+cart-upsell-recommendations .product-card .product-card__title {
+  font-size: 14px;
+}
+cart-upsell-recommendations.splide.is-initialized {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 1024px) {
   .product-card .product-card-atc-btn {
     min-width: 100%;
     max-width: 100%;
+  }
+  .cart-announcement-text {
+    margin-top: 18px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -2897,6 +2910,14 @@ details-disclosure > details {
     max-width: 80%;
     min-height: 25px;
     max-height: 25px;
+  }
+  cart-upsell-recommendations .product-card .product-card-atc-btn {
+    font-size: 9px;
+  }
+  cart-upsell-recommendations .product-card .product-card__info .product-card__title {
+    font-size: 11px;
+    line-height: 14px;
+    min-height: 28px;
   }
 }
 @media screen and (max-width: 990px) {
@@ -2936,19 +2957,21 @@ details-disclosure > details {
 
 li.active a {
   font-weight: 500;
+  font-size: 18px;
   color: rgb(var(--color-button));
 }
 .product-filter-divider.is-divider:empty {
   height: 1px;
-  max-width: 100px;
+  max-width: 74px;
   background-color: rgb(var(--color-button));
   opacity: 1;
+  margin-bottom: 8px;
 }
 .colection-product-grid.product-grid {
-  --grid-desktop-horizontal-spacing: 26px;
-  --grid-desktop-vertical-spacing: 110px;
-  --grid-mobile-horizontal-spacing: 17px;
-  --grid-mobile-vertical-spacing: 39px;
+  --grid-desktop-horizontal-spacing: 27px;
+  --grid-desktop-vertical-spacing: 66px;
+  --grid-mobile-horizontal-spacing: 31px;
+  --grid-mobile-vertical-spacing: 40px;
 }
 .header__search .search-modal__form .field__input:focus,
 .header__search .search-modal__form .field__input:focus-visible,
@@ -2959,11 +2982,12 @@ li.active a {
   box-shadow: none;
 }
 .collections-filter .newsletter-form .field__input:focus~.field__label,
+.collections-filter .newsletter-form .field__input:not(:placeholder-shown)~.field__label,
 .collections-filter .newsletter-form .field__input:focus-visible~.field__label {
   top: 12%;
 }
 .collections-filter .newsletter-form .field__input~.field__label {
-  top: 18%;
+  top: 28%;
 }
 .collection-filter-newsletter {
   margin: 24px 0;
@@ -2988,6 +3012,10 @@ li.active a {
 .cart-count-bubble {
   background: #AF9CB6;
 }
+.main-product-section .list-payment__item svg {
+  height: 54px;
+  width: 74px;
+}
 @media screen and (max-width: 750px) {
   .product-card .product-card__info .product-card__title {
     min-height: 20px;
@@ -2996,20 +3024,31 @@ li.active a {
     font-size: 16px;
     margin-bottom: 18px;
   }
+  .main-product-section .list-payment__item svg {
+    height: 31px;
+    width: 44px;
+  }
 }
 
 /* styles for coupan and shipping price apps */
-.cart__footer .scDiscount__container+.sc-srcp-container {
+.cart__footer .scDiscount__container+.sc-srcp-container,
+.cart__footer #srcp-container-div.sc-srcp-container {
   width: 100% !important;
 }
 .cart__footer .cbb-shipping-rates-calculator-change-shipping-address {
   text-align: left !important;
+  padding-top: 2px !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 0 !important;
+  font-size: 13px;
 }
 .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label select,
 .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label input {
   border-radius: 21px !important;
   background: #fff !important;
   padding-left: 16px !important;
+  height: 30px !important;
+  width: 100% !important;
 }
 .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label input {
   border-radius: 21px !important;
@@ -3020,7 +3059,47 @@ li.active a {
   width: 74% !important;
   margin: auto;
   font-size: 13px !important;
-  margin-top: 20px !important;
+  margin-top: 13px !important;
+  padding: 5px 0px !important;
+}
+.cart__footer .cbb-shipping-rates-calculator {
+  margin-top: 0px !important;
+} 
+.cart__footer h4.cbb-shipping-rates-calculator-header,
+.cart__footer .cbb-shipping-rates-calculator-totals,
+.cart__footer .cbb-shipping-rates-calculator-chooser {
+  font-size: 13px !important;
+}
+.cart__footer h4.cbb-shipping-rates-calculator-header {
+  margin-bottom: 10px !important;
+}
+.cart__footer .cbb-shipping-rates-calculator-cart-subtotal,
+.cart__footer .cbb-shipping-rates-calculator-shipping-subtotal,
+.cart__footer .cbb-shipping-rates-calculator-cart-total {
+  text-align: left !important;
+}
+.cart__footer .cbb-shipping-rates-calculator-cart-subtotal,
+.cart__footer .cbb-shipping-rates-calculator-cart-total,
+.cart__footer .cbb-shipping-rates-calculator-shipping-subtotal {
+  padding: 3px 0;
+  display: flex !important;
+  justify-content: space-between;
+}
+.cart__footer .cbb-shipping-rates-calculator-shipping-subtotal {
+  padding-bottom: 8px;
+}
+.cart__footer .cbb-shipping-rates-calculator-cart-total {
+  padding-top: 8px;
+}
+.cart__footer #cbb-shipping-rates-calculator-cart-total {
+  border: none !important;
+}
+.cart__footer .cbb-shipping-rates-calculator-cart-total {
+  border-top: 1px solid #000;
+}
+.cart__footer .sc_simple-info .sc_simple-info__row {
+  font-size: 13px;
+  margin-bottom: 4px;
 }
 .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label {
   width: 47%;
@@ -3029,10 +3108,21 @@ li.active a {
 .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label[for="region"] {
   margin-left: 3%;
 }
+.cart__footer .sc_simple-container {
+  flex-direction: column;
+  gap: 12px;
+}
 .cart__footer .sc_simple-container .sc-cube-text,
 .cart__footer .sc_simple-container .sc_code-btn input[type=button] {
   width: 100%;
   border-radius: 21px;
+  max-height: 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.cart__footer .sc_simple-container .sc_code-btn {
+  width: 45%;
+  margin: auto;
 }
 .sc_simple-info .sc_simple-info__row.sc_code-info,
 .sc_simple-info .sc_simple-info__row { 
@@ -3042,11 +3132,15 @@ li.active a {
   padding-bottom: 4px;
 }
 .header-menu-search .search__input.field__input {
-  background: #60919f;
-  color: #fff;
+  border: 1px solid #60919F;
+  background: #fff;
+  color: #60919f;
 }
 .header-menu-search .search__input.field__input+label {
-  color: #fff;
+  color: #60919f;
+}
+.header-search--cancel-btn svg path {
+  fill: #60919f;
 }
 
 @media screen and (min-width: 750px) {
@@ -3083,6 +3177,9 @@ li.active a {
     padding-top: 11px;
     padding-bottom: 11px;
   }
+  .header-search--cancel-btn svg path {
+    fill: #60919F;
+  }
 }
 
 @media screen and (min-width: 1441px) {
@@ -3101,7 +3198,8 @@ li.active a {
     padding-right: 200px;
   }
   .collection.page-width-lg-slider,
-  .related-products.page-width-lg-slider {
+  .related-products.page-width-lg-slider,
+  .cart-section.cart-section-lg {
     padding-left: 300px;
     padding-right: 300px;
   }
@@ -3115,6 +3213,180 @@ li.active a {
 }
 
 cart-upsell-recommendations.splide.is-initialized {
-  padding-top: 60px;
+  padding-top: 20px;
   border: none;
+}
+
+.scDiscount__container {
+  max-height: 0;
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.3s ease;
+}
+.scDiscount__container:not(.visible) {
+  max-height: 500px;
+  transform: translateY(0);
+  opacity: 1;  
+  visibility: visible; 
+}
+.coupon-toggle-link {
+  cursor: pointer;
+}
+.cart-section .scDiscount {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.header .header-icon-search-sticky {
+  display: none;
+}
+.drawer.is-empty.cart-notification-drawer .drawer__header,
+.drawer.is-empty.cart-notification-drawer .cart-notification__heading {
+  display: none;
+}
+@media screen and (min-width: 990px) {
+  .scrolled-past-header .header .header__search,
+  .scrolled-past-header .header .login-text,
+  .scrolled-past-header .header #header-cart-price,
+  .header .header-icon-account,
+  .header .header-icon-search-sticky,
+  .header .header-search-close-icon {
+    display: none;
+  }
+  .scrolled-past-header .header .header-icon-account,
+  .scrolled-past-header .header .header-icon-search-sticky,
+  .scrolled-past-header .header .header-search-close-icon.is-visible {
+    display: block;
+  }
+  .scrolled-past-header .header .header-icons-search-menu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .scrolled-past-header .header .header__search.is-visible {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    z-index: 9999999999;
+  }
+  .scrolled-past-header .header .header-search-close-icon.is-visible {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999999;
+    font-size: 30px;
+    padding: 24px;
+  }
+  .scrolled-past-header .header .header-search-close-icon svg {
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+  }
+  .scrolled-past-header .header .header-icon-search-sticky {
+    cursor: pointer;
+  }
+  .scrolled-past-header .header .header-icon-search-sticky svg,
+  .scrolled-past-header .header .header-icon-account svg {
+    height: 28px;
+    width: 28px;
+  }
+  .scrolled-past-header .header .header-menu-search .header__icons {
+    gap: 30px;
+  }
+  .scrolled-past-header .header .header__heading .header__heading-link {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .scrolled-past-header .header .header__heading-logo {
+    width: 75px;
+    height: 63px;
+  }
+  .scrolled-past-header .header .header-menu-search {
+    margin-bottom: 0;
+  }
+  .scrolled-past-header .header .list-menu--inline {
+    column-gap: 2.8%;
+  }
+  .scrolled-past-header sticky-header.header-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+  .header-cart-drawer-sticky.drawer.cart-notification-drawer {
+    top: 74px;
+  }
+}
+p.product__text:empty {
+  display: none;
+}
+.cart__footer .tax-note {
+  margin: 0;
+  text-align: center;
+}
+.cart__footer .cart__ctas {
+  gap: 0;
+}
+.cart__footer .cart__ctas .payment-icons-cart {
+  margin-top: 24px;
+}
+.cart__footer .coupon-toggle-text {
+  font-size: 12px;
+}
+.cart__footer .cbb-shipping-rates-calculator-change-shipping-address-link {
+  font-size: 12px;
+}
+@media screen and (max-width: 750px) {
+  .cart__footer .coupon-toggle-text,
+  .cart__footer .cbb-shipping-rates-calculator-change-shipping-address,
+  .cart__footer .sc_simple-info .sc_simple-info__row {
+    font-size: 11px;
+  }
+  .cart__footer .tax-note {
+    font-size: 9px;
+    color: #1C3840;
+  }
+  .cart-section .cart-section__cart-footer .cart__footer .cart__checkout-button {
+    margin-top: 5px;
+    font-size: 13px;
+    max-width: 94%;
+    min-height: calc(3.3rem + var(--buttons-border-width)* 2);
+  }
+  .cart__footer .cart__ctas .payment-icons-cart {
+    margin-top: 4px;
+  }
+  .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label select, .cart__footer .cbb-shipping-rates-calculator-shipping-address-chooser label input {
+    padding-left: 8px !important;
+    height: 23px !important;
+    width: 100% !important;
+    font-size: 9px !important;
+  }
+  .cart__footer .cbb-shipping-rates-calculator-update-button {
+    width: 64% !important;
+    margin: auto;
+    font-size: 12px !important;
+    margin-top: 13px !important;
+    padding: 5px 0 !important;
+    text-transform: capitalize !important;
+  }
+  .cart__footer h4.cbb-shipping-rates-calculator-header, .cart__footer .cbb-shipping-rates-calculator-totals, .cart__footer .cbb-shipping-rates-calculator-chooser {
+    font-size: 11px !important;
+  }
+  .cart__footer .sc_simple-container .sc-cube-text, .cart__footer .sc_simple-container .sc_code-btn input[type=button] {
+    max-height: 23px;
+    font-size: 11px;
+  }
+  .cart__footer .sc_simple-container .sc_code-btn input[type=button] {
+    padding-top: 3px;
+  }
+}
+.cart-section .cart-section__cart-items-upsell .cart-items .cart-item  td.cart-item__media {
+  padding-top: 24px;
+}
+@media screen and (max-width: 750px) {
+  .cart-section .cart-section__cart-items-upsell .cart-items .cart-item  td.cart-item__media {
+    padding-top: 0;
+  }
 }

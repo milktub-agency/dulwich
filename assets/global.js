@@ -2096,6 +2096,23 @@ class YoutubeBanner extends HTMLElement {
 }
 customElements.define('youtube-banner', YoutubeBanner);
 
+// code for sticky header search box
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('header-search-sticky');
+  const searchContainer = document.querySelector('.header__search');
+  const closeButton = document.getElementById('close-search');
+  if (toggleButton && searchContainer && closeButton) {
+    toggleButton.addEventListener('click', function () {
+      searchContainer.classList.add('is-visible');
+      closeButton.classList.add('is-visible');
+    });
+    closeButton.addEventListener('click', function () {
+      searchContainer.classList.remove('is-visible');
+      closeButton.classList.remove('is-visible');
+    });
+  }
+});
+
 class CloseHeaderDrawer extends HTMLElement {
   constructor() {
     super();
@@ -2110,5 +2127,4 @@ class CloseHeaderDrawer extends HTMLElement {
     }
   }
 }
-
 customElements.define('close-header-drawer', CloseHeaderDrawer);

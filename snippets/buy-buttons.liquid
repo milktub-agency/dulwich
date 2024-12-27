@@ -75,7 +75,7 @@
           -%}
           <sticky-add-to-cart-button id="stickyAddToCartWrapper">
             <div class="sticky-atc-button">
-              <div class="tw-flex tw-gap-[12px] sticky-add-to-cart-button desktop-sticky-add-to-cart-button" id="stickyAddToCart">
+              <div class="tw-flex tw-gap-[23px] md:tw-gap-[27px] tw-w-full md:tw-w-[94.3%] sticky-add-to-cart-button desktop-sticky-add-to-cart-button" id="stickyAddToCart">
                 <div class="bmd:tw-min-w-[34px] md:tw-min-w-[43px] lg:tw-min-w-[76px] sticky-atc-img">
                   <img src="{{ product.featured_media | img_url: '' }}" height="" width="60px" />
                 </div>
@@ -116,7 +116,7 @@
                         {% render 'icon-minus' %}
                       </button>
                       <input
-                        class="quantity__input tw-font-primary blg:tw-text-[17px] lg:tw-text-[34px] tw-font-medium tw-text-[#60919F]"
+                        class="quantity__input tw-font-primary blg:tw-text-[17px] lg:tw-text-[30px] tw-font-medium tw-text-[#60919F]"
                         type="number"
                         name="quantity"
                         id="Quantity-{{ section.id }}"
@@ -271,7 +271,7 @@
                     id="ProductSubmitButton-{{ section_id }}"
                     type="submit"
                     name="add"
-                    class="product-form__submit tw-text-[13px] lg:tw-text-[20px] tw-font-primary tw-font-bold tw-uppercase tw-bg-[#60919F] tw-text-white tw-border-none tw-py-[14px] button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                    class="product-form__submit tw-text-[13px] lg:tw-text-[20px] tw-font-primary tw-font-bold tw-uppercase tw-bg-[#60919F] tw-text-white tw-border-none tw-py-[12px] button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
                       disabled
                     {% endif %}
