@@ -10,21 +10,64 @@ class CartDrawer extends HTMLElement {
   setHeaderCartIconAccessibility() {
     const cartLink = document.querySelector('#cart-icon-bubble');
     const cartHeaderPrice = document.querySelector('#header-cart-price');
+    const drawerInner = this.querySelector('.drawer__inner');
+    let closeTimeout;
     cartLink.setAttribute('role', 'button');
     cartLink.setAttribute('aria-haspopup', 'dialog');
-    cartLink.addEventListener('click', (event) => {
-      event.preventDefault();
+    const enableDesktopBehavior = () => {
+      cartLink.addEventListener('mouseover', handleMouseOver);
+      cartLink.addEventListener('mouseleave', handleMouseLeave);
+      drawerInner.addEventListener('mouseover', handleMouseOver);
+      drawerInner.addEventListener('mouseleave', handleMouseLeave);
+    };
+    const handleMouseOver = () => {
+      clearTimeout(closeTimeout);
       this.open(cartLink);
-    });
-    cartHeaderPrice.addEventListener('click', (event) => {
+    };
+    const handleMouseLeave = () => {
+      closeTimeout = setTimeout(() => {
+        this.close();
+      }, 200);
+    };
+    const handleMobileClick = (event) => {
       event.preventDefault();
-      this.open(cartLink);
-    });
+      if (this.classList.contains('active')) {
+        this.close();
+      } else {
+        this.open(cartLink);
+      }
+    };
+    const enableMobileBehavior = () => {
+      cartLink.removeEventListener('mouseover', handleMouseOver);
+      cartLink.removeEventListener('mouseleave', handleMouseLeave);
+      drawerInner.removeEventListener('mouseover', handleMouseOver);
+      drawerInner.removeEventListener('mouseleave', handleMouseLeave);
+      cartLink.addEventListener('click', handleMobileClick);
+      document.addEventListener('click', (event) => {
+        const isInsideDrawer = drawerInner.contains(event.target) || cartLink.contains(event.target);
+        if (!isInsideDrawer) {
+          this.close();
+        }
+      });
+    };
+    const applyResponsiveBehavior = () => {
+      const isMobile = window.innerWidth <= 749;
+      if (isMobile) {
+        enableMobileBehavior(); 
+      } else {
+        enableDesktopBehavior();
+      }
+    };
+    applyResponsiveBehavior();
     cartLink.addEventListener('keydown', (event) => {
       if (event.code.toUpperCase() === 'SPACE') {
         event.preventDefault();
         this.open(cartLink);
       }
+    });
+    cartHeaderPrice.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.open(cartLink);
     });
   }
 

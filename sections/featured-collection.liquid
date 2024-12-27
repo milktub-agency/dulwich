@@ -138,10 +138,20 @@
                   {%- endfor -%}
               </ul>
           </div>
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev bmd:tw-bg-bright-red">
+              <span class="tw-inline-block md:tw-hidden">{% render 'icon-arrow-left' %}</span>
+              <span class="tw-hidden md:tw-inline-block">{% render 'icon-arrow-left-desktop' %}</span>
+            </button>
+            <button class="splide__arrow splide__arrow--next bmd:tw-bg-bright-red">
+              <span class="tw-inline-block md:tw-hidden">{% render 'icon-arrow-left' %}</span>
+              <span class="tw-hidden md:tw-inline-block">{% render 'icon-arrow-left-desktop' %}</span>
+            </button>
+          </div>
         </carousel-component>
   
         {%- if section.settings.show_view_all -%}
-          <div class="center tw-flex tw-justify-center tw-mt-[10px] md:tw-mt-[30px] collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          <div class="center tw-flex tw-justify-center tw-mt-[24px] md:tw-mt-[30px] collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
             <a
               href="{{ section.settings.collection.url }}"
               class="{% if section.settings.view_all_style == 'link' %}link tw-flex tw-justify-center tw-items-center tw-font-primary tw-text-[11px] tw-text-[rgb(var(--color-button))] md:tw-text-[21px] tw-font-normal tw-underline tw-uppercase underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"

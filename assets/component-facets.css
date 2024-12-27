@@ -1127,7 +1127,7 @@ input.mobile-facets__checkbox {
 @media screen and (max-width: 750px) {
   .collection-sorting-filter {
     padding: 3.5px;
-    font-size: 7px;
+    font-size: 8px;
     font-weight: 600;
     border-radius: 9px;
     padding-right: 10px;
@@ -1236,8 +1236,7 @@ input.mobile-facets__checkbox {
     width: 100%;
   }
   .facets-sort-by-filter .facets.facets-vertical-sort .collection-sort-by-filter {
-    background: #DCDCAE;
-    border: none;
+    border: 1px solid #60919F;
     border-radius: 30px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -1266,7 +1265,8 @@ input.mobile-facets__checkbox {
 @media screen and (max-width: 750px) {
   .collection-filter-label span {
     padding: 2.4px;
-    font-size: 7px;
+    font-size: 8px;
+    letter-spacing: normal;
   }
   .mobile-facets__heading.filter-drawer-heading {
     font-size: 14px;

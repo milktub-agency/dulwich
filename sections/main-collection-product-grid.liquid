@@ -41,7 +41,7 @@
             <div class="facet-filters sorting caption">
               <div class="facet-filters__field bmd:tw-rounded-[10px] tw-pl-[12px] tw-pr-[12px] md:tw-pl-[26px] md:tw-pr-[22px] tw-bg-white collection-sort-by-filter">
                 <h2 class="facet-filters__label caption-large text-body">
-                  <label class="tw-font-primary tw-text-[7px] md:tw-text-[13px] tw-font-light tw-whitespace-nowrap" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+                  <label class="tw-font-primary tw-text-[8px] md:tw-text-[13px] tw-font-light tw-whitespace-nowrap" for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
                 </h2>
                 <div class="select bmd:tw-border-none tw-border tw-border-solid tw-border-black tw-rounded-[30px]">
                   {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
@@ -109,7 +109,7 @@
      </div>
    
      <div class="page-width mobile-filter-drawer">
-      <p class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[18px] bmd:tw-font-medium md:tw-font-normal tw-leading-normal tw-pt-[11px] md:tw-pt-[22px] tw-text-right md:tw-text-center">{{ 'products.facets.product_results' | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count }}</p>
+      <p class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[9px] md:tw-text-[18px] bmd:tw-font-medium md:tw-font-normal tw-leading-normal tw-pt-[11px] md:tw-pt-[22px] tw-text-right md:tw-text-center">{{ 'products.facets.product_results' | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count }}</p>
      </div>
 
     <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical tw-px-[20px] md:tw-px-[56px] {% endif %}">

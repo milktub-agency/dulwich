@@ -14,7 +14,7 @@
   }
 </style>
 
-<cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %} {{ class_names }}">
+<cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %} {{ class_names }} {% if template.name == "cart" %}hidden{% endif %}">
   <div id="CartDrawer" class="cart-drawer">
     <div id="CartDrawer-Overlay" class="cart-drawer__overlay"></div>
     <div
@@ -67,7 +67,7 @@
           {% render 'icon-close' %}
         </button>
       </div>
-      <h2 class="cart-notification__heading small-hide tw-px-[20px] tw-py-[8px] caption-large text-body tw-text-[green] bmd:tw-hidden">
+      <h2 class="cart-notification__heading tw-px-[20px] tw-py-[8px] caption-large text-body tw-text-[green] bmd:tw-hidden">
         {%- render 'icon-checkmark' -%}
         {{ 'general.cart.item_added' | t }}
       </h2>
@@ -494,7 +494,7 @@
           <!-- Start blocks -->
           <!-- Subtotals -->
 
-          <div class="tw-py-[4px] tw-px-[20px]" {{ block.shopify_attributes }}>
+          <div class="tw-py-[8px] md:tw-py-[4px] tw-px-[20px]" {{ block.shopify_attributes }}>
             {%- if cart.cart_level_discount_applications.size > 0 -%}
               <div>
                 <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
@@ -556,12 +556,12 @@
 
           <a
             href="{{ routes.cart_url }}"
-            class="button button--secondary mobile-cart-notification-button view_cart_btn tw-px-[10px] tw-w-[86%] tw-m-auto tw-text-[15px] tw-uppercase tw-font-semibold tw-bg-bright-red tw-text-white"
+            class="button button--secondary mobile-cart-notification-button view_cart_btn bmd:tw-mx-[14px] bmd:tw-py-[8px] tw-px-[10px] tw-w-[86%] tw-m-auto tw-text-[12px] md:tw-text-[15px] tw-uppercase tw-font-semibold tw-bg-bright-red tw-text-white"
           >{{ 'general.cart.view_empty_cart' | t }}</a>
 
-          <div class="tw-text-center tw-mt-[10px] tw-bg-[#60919F] tw-p-[10px]">
-            <h4 class="tw-text-[16px] tw-pt-[4px] tw-text-white">{{ 'sections.cart.cart_notification_footer' | t }}</h4>
-            <p class="tw-text-[12px] tw-text-white">{{ 'sections.cart.more_info' | t }} <a href="#" class="tw-text-[12px] tw-text-white tw-underline">{{ 'sections.cart.here' | t }}</a></p>
+          <div class="tw-text-center tw-mt-[10px] tw-bg-[#60919F] tw-py-0 md:tw-p-[10px]">
+            <h4 class="tw-text-[12px] md:tw-text-[16px] tw-pt-[4px] tw-text-white bmd:tw-leading-normal">{{ 'sections.cart.cart_notification_footer' | t }}</h4>
+            <p class="tw-text-[10px] md:tw-text-[12px] tw-text-white bmd:tw-pb-[4px]">{{ 'sections.cart.more_info' | t }} <a href="#" class="tw-text-[10px] md:tw-text-[12px] tw-text-white tw-underline">{{ 'sections.cart.here' | t }}</a></p>
           </div>
         </div>
       {% endif %}

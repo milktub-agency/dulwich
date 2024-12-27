@@ -2096,28 +2096,19 @@ class YoutubeBanner extends HTMLElement {
 }
 customElements.define('youtube-banner', YoutubeBanner);
 
-// code for toggling the coupan code in cart page which is coming from Dkart app
-// As it is coming from app we are not able to access the code. so we have used mutation observer to check the element
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector(".cart-section");
-  const observer = new MutationObserver(() => {
-    const toggleLink = document.querySelector('.coupon-toggle-link');
-    const couponForm = document.querySelector('.scDiscount__container');
-    if (toggleLink && couponForm) {
-      couponForm.classList.add('visible');
-      toggleLink.addEventListener('click', () => {
-        couponForm.classList.toggle('visible');
-        if (couponForm.classList.contains('visible')) {
-          toggleLink.textContent = 'Click Here';
-        } else {
-          toggleLink.textContent = 'Hide';
-        }
-      });
-      observer.disconnect();
-    }
-  });
-  observer.observe(container, {
-    childList: true,
-    subtree: true
-  });
+// code for sticky header search box
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButton = document.getElementById('header-search-sticky');
+  const searchContainer = document.querySelector('.header__search');
+  const closeButton = document.getElementById('close-search');
+  if (toggleButton && searchContainer && closeButton) {
+    toggleButton.addEventListener('click', function () {
+      searchContainer.classList.add('is-visible');
+      closeButton.classList.add('is-visible');
+    });
+    closeButton.addEventListener('click', function () {
+      searchContainer.classList.remove('is-visible');
+      closeButton.classList.remove('is-visible');
+    });
+  }
 });
