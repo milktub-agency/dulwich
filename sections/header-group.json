@@ -132,6 +132,7 @@
       "settings": {
         "menu": "mobile-main-menu",
         "padding_top": 40,
+        "contact_phone_number": "<p>Call us on <strong>+44 (0)20 8670 5883</strong></p>",
         "padding_bottom": 52
       }
     },
@@ -232,6 +233,8 @@
         "heading": "",
         "subheading": "",
         "menu": "shop",
+        "popular_menu_item": "AlliTech",
+        "popular_text": "Popular",
         "image_heading": "",
         "image_subheading": "",
         "image_button_text": "",
@@ -245,6 +248,8 @@
         "heading": "",
         "subheading": "",
         "menu": "case-histories",
+        "popular_menu_item": "AlliTech",
+        "popular_text": "Popular",
         "image_heading": "",
         "image_subheading": "",
         "image_button_text": "",
@@ -302,6 +307,21 @@
         "padding_top": 8,
         "padding_bottom": 9
       }
+    },
+    "megamenu_item_demo_1_bnzqex": {
+      "type": "megamenu-item-demo-1",
+      "settings": {
+        "parent": "HEALTH SUGGESTIONS",
+        "heading": "",
+        "subheading": "",
+        "menu": "health-suggestions",
+        "popular_menu_item": "AlliTech",
+        "popular_text": "Popular",
+        "image_heading": "",
+        "image_subheading": "",
+        "image_button_text": "",
+        "image_button_link": ""
+      }
     }
   },
   "order": [
@@ -313,6 +333,7 @@
     "cb405230-628a-4089-807a-c8664c7378b9",
     "7a146f3f-997d-4b81-882f-6acfbd99a2c1",
     "a6ac85cd-b558-4cf8-9f53-accb3b902ecd",
-    "pdp_announcement_bar_prQhEe"
+    "pdp_announcement_bar_prQhEe",
+    "megamenu_item_demo_1_bnzqex"
   ]
 }
