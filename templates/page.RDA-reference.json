@@ -32,27 +32,13 @@
             "content_3": "",
             "image_conetnt_block_content_3": ""
           }
-        },
-        "about_brand_9MGhWB": {
-          "type": "about_brand",
-          "settings": {
-            "brand_heading": "<h1>Rolf Gordon</h1>",
-            "brand_sub_heading": "<p>Founder of Dulwitch Health</p>",
-            "content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
-            "image_conetnt_block_content_1": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
-            "content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
-            "image_conetnt_block_content_2": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
-            "content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>",
-            "image_conetnt_block_content_3": "<p>“Welcome to what I believe are the most powerful range of natural health products, helping you to deal with and prevent most health problems. All the products work on their own or in conjunction with both complementary and orthodox treatments.”  Rolf Gordon</p>"
-          }
         }
       },
       "block_order": [
-        "about_brand_7ybHnG",
-        "about_brand_9MGhWB"
+        "about_brand_7ybHnG"
       ],
       "settings": {
-        "page_title": "<h2>About Us Page</h2>",
+        "page_title": "",
         "color_1": "#306776",
         "color_2": "#B3B383",
         "padding_top": 36,
