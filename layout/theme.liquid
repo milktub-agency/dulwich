@@ -408,6 +408,9 @@ window.location = '/account/login?checkout_url='+returnUrl;
     {%- if settings.cart_type == 'drawer' -%}
       {%- section 'cart-drawer' -%}
     {%- endif -%}
+    {%- if settings.cart_type == 'notification_drawer' -%}
+      {%- section 'cart-drawer-notification' -%}
+    {%- endif -%}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
