@@ -1539,6 +1539,7 @@ deferred-media {
 .header__heading-logo {
   height: auto;
   max-width: 100%;
+  mix-blend-mode: multiply;
 }
 
 .header__heading-logo-wrapper {
