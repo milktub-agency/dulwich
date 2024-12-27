@@ -138,16 +138,7 @@
                   {%- endfor -%}
               </ul>
           </div>
-          <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev bmd:tw-bg-bright-red">
-              <span class="tw-inline-block md:tw-hidden">{% render 'icon-arrow-left' %}</span>
-              <span class="tw-hidden md:tw-inline-block">{% render 'icon-arrow-left-desktop' %}</span>
-            </button>
-            <button class="splide__arrow splide__arrow--next bmd:tw-bg-bright-red">
-              <span class="tw-inline-block md:tw-hidden">{% render 'icon-arrow-left' %}</span>
-              <span class="tw-hidden md:tw-inline-block">{% render 'icon-arrow-left-desktop' %}</span>
-            </button>
-          </div>
+          {% render 'custom-splide-arrows' %}
         </carousel-component>
   
         {%- if section.settings.show_view_all -%}

@@ -194,7 +194,7 @@
             </div>
       
             {% if customer and section.settings.wishlist_page_url != blank %}
-              <a href="{{ section.settings.wishlist_page_url }}" class="tw-flex tw-px-4">
+              <a href="{{ section.settings.wishlist_page_url }}" class="tw-flex tw-px-4 hidden">
                 <img src="{{ 'wishlist_unfilled.svg' | asset_url }}" width="25" height="25" alt="">
               </a>
             {% endif %}

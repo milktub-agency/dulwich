@@ -100,16 +100,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="splide__arrows">
-          <button class="splide__arrow splide__arrow--prev bmd:tw-bg-bright-red">
-            <span class="tw-inline-block md:tw-hidden">{% render 'icon-arrow-left' %}</span>
-            <span class="tw-hidden md:tw-inline-block">{% render 'icon-arrow-left-desktop' %}</span>
-          </button>
-          <button class="splide__arrow splide__arrow--next bmd:tw-bg-bright-red">
-            <span class="tw-inline-block md:tw-hidden">{% render 'icon-arrow-left' %}</span>
-            <span class="tw-hidden md:tw-inline-block">{% render 'icon-arrow-left-desktop' %}</span>
-          </button>
-        </div>
+        {% render 'custom-splide-arrows' %}
       </carousel-component>
       <div class="tw-flex tw-justify-center tw-mt-[24px] md:tw-mt-[30px] navigation-button {% if section.settings.hide_button_mobile %} tw-hidden {% else %} tw-flex {% endif %} {% if section.settings.hide_button_desktop %} md:tw-hidden {% else %} md:tw-flex {% endif %}">
         {% if section.settings.button_url != blank %}
