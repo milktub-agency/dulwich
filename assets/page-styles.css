@@ -24,6 +24,12 @@
   margin: 15px 0;
 }
 
+.page-content-container ol {
+  list-style: decimal;
+  padding-left: 40px;
+  margin: 15px 0;
+}
+
 .page p {
   color: #3D3D3D;
   font-family: Arial;
