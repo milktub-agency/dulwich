@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_rLq9FW": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_Ea68n7": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "",
+            "image_conetnt_block_content_1": "<h3><strong>[*Pocket size RadiTech G-Oyster</strong></h3><p>To shield yourself against Geopathic Stress and Electro Pollution at home, at work or on the move we have now introduced the first neutraliser you can wear all the time. The <a href=\"https://www.dulwichhealth.co.uk/product/g-oyster-raditech/?v=13b5bfe96f3e\"><strong>G-Oyster</strong></a> is a powerful energy detoxer which will make you:</p><p></p><ul><li><em><strong>Feel more energetic</strong></em></li><li><em><strong>Sleep better</strong></em></li><li><em><strong>Feel stress-free</strong></em></li><li><em><strong>Not get stressed by other people</strong></em></li></ul><p></p><p>The <a href=\"https://www.dulwichhealth.co.uk/product/g-oyster-raditech/?v=13b5bfe96f3e\"><strong>G-Oyster</strong></a> will protect you – including children – where you sit, rest or sleep; at home, in the office, public buildings including schools and hospitals; in cars, on public transport and aeroplanes (prevent jet lag) – wherever you are 24 hours a day.</p><p></p><p>The <a href=\"https://www.dulwichhealth.co.uk/product/g-oyster-raditech/?v=13b5bfe96f3e\"><strong>G-Oyster</strong></a> can be carried in your pocket or hung inside/outside your trousers or skirt, in the pouch the G-Oyster comes in, from your belt, buttons or on a cord across your body from your shoulder. Put it in your handbag or rucksack:, if they are next to you all the time. You can also have it with you in bed.</p><p></p><p>Take the <a href=\"https://www.dulwichhealth.co.uk/product/g-oyster-raditech/?v=13b5bfe96f3e\"><strong>G-Oyster</strong></a> with you on holiday and business trips, in your car to be more refreshed on your journey. Have it on your desk or by your computer to reduce tiredness and install calm.</p><p></p><p>If you are very sensitive, you may prefer to have the G-Oyster with you for shorter periods to start with, before wearing it all the time.</p><p></p><p><strong>Note: Every six months, put the </strong><a href=\"https://www.dulwichhealth.co.uk/product/g-oyster-raditech/?v=13b5bfe96f3e\"><strong>G-Oyster</strong></a><strong> under running water for about 15 seconds to revitalise it back to its full strength, (the G-Oyster is waterproof).</strong></p>",
+            "content_2": "<p></p><p><strong>[Specification</strong></p><p>Thickness: 2.4 cm – Just under 1″<br/>Diameter:  8.5 cm – 3 1/3″<br/>Weight: 152 g<br/>Coverage: In the vicinity of you the carrier</p>",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_LbRLTM": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "",
+            "image_conetnt_block_content_1": "<p><em><strong>[*Case Histories</strong></em></p><p></p><p><strong>[“20 month old Thijmen does not want to be without his G-Oyster, night and day. Before he couldn’t sleep and was always unsettled. Now he is a little darling.”</strong><em><br/></em>Monique from The Netherlands.</p><p></p><p><em><strong>[“After carrying the G-Oyster on me for a couple of weeks, my food intolerances improved considerably and my digestive system started to work normally.”</strong></em><br/>Sue H. from Chesterfield, UK.</p><p></p><p><em><strong>[“I am a Nurse by profession. I no longer feel stressed out at the end of the day after treating stressed patients, as I wear the G-Oyster all the time.”</strong></em><br/>Jackie S. from Kent, UK.</p><p></p><p><em><strong>[“I really had a lot of problems with jet lag before I got the G-Oyster. Now I do not get jet lag after a long flight, due to wearing my G-Oyster. Amazing!”</strong></em><br/>Dave from Minneapolis, USA</p><p></p><p><em><strong>[“My son, Paul, couldn’t concentrate in school and was hyperactive. Then I got him to carry a G-Oyster on him. He is now a completely different boy. So calm and happy. Thank you so much.”  </strong></em>Paula D. from Edinburgh, Scotland.</p><p></p><p>Linda M from Northern Ireland, had a little withdrawal symptoms after she started wearing a G-Oyster, but within a few days, she was feeling so much better. Her food tolerance had improved and her digestion system started to work normally.</p><p></p><p><em><strong>[“Since carrying the G-Oyster my asthma has improved. I can now breathe freely and easily.”</strong></em><em>  </em>Anita C. from Reading, UK.</p><p></p><p><em><strong>[“My headache disappeared after only 20 minutes. Wow!”</strong></em><br/>Gary S. from London, UK.</p><p></p><p><em><strong>[“I felt my energies went into balance as soon as I had the G-Oyster in my hands. Then I had a good night’s sleep for the first time in 12 years. Yes, twelve years!”</strong></em><br/>Willy P. from The Netherlands.</p><p></p><p><em><strong>[“I placed the G-Oyster on my painful kidney and experienced immediate relief. It has made a huge difference in my daily life.”</strong></em><br/>Inge H. from Norway.</p><p></p><p><em><strong>[“I am so grateful for the little Oyster which has helped me to recover quickly from my knee ligament injury. The doctors could not believe how quickly it had healed!”</strong></em><br/>Maria B. from Switzerland.</p><p></p><p><em><strong>[“I had back pain for years and have taken a lot of painkillers, with only temporary relief. After a few days with the G-Oyster, my pain completely went away. Thank you, thank you, thank you.”</strong></em><em>  </em>Ken B. from Bath, UK.</p><p></p><p><em><strong>[“I felt a little spaced out the first two days I had the G-Oyster under my pillow, but now I sleep so much better.”</strong></em><br/>Karen T from Staffs. UK.</p><p></p><p><em><strong>[“As soon as the G-Oyster went under my pillow I had a wonderful night sleep!”</strong></em><em><br/></em>Lena P from Staplefield, Kent, UK.</p><p></p><p><em><strong>[“I am slightly asthmatic and found I wheeze far less during the night with my G-Oyster under my pillow.”</strong></em><em>  </em>Jean M from South London, UK.</p><p></p><p>Ken from Ramsgate, UK, found his stomach pain eased after placing the G-Oyster against the painful area.</p><p></p><p><em><strong>[“I would not live without my G-Oyster.”</strong></em><em>  </em>Richard B. from Thailand.</p><p></p><p><em><strong>[“My son of 28 tried to commit suicide last Monday as he kept hearing noises inside his head and kept banging his head. On the following Saturday, we received the G-Oyster which my son has had on him all the time ever since. This Tuesday my son is a different person, completely calm. Thank you so much”</strong></em><strong>.</strong><br/>Mrs G from Hants.</p><p></p><p><em><strong>[“I have been carrying my G-Oyster whenever I have been out and I have definitely noticed an improvement in my sense of well being. I somehow feel more alive altogether.”  </strong></em>Doreas from Cornwall.</p>",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_Ea68n7",
+        "about_brand_LbRLTM"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_rLq9FW"
   ]
 }
