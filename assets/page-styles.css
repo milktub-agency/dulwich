@@ -18,8 +18,10 @@
   gap: 28px;
 }
 
-.page-content-container li {
+.page-content-container ul {
   list-style: disc;
+  padding-left: 40px;
+  margin: 15px 0;
 }
 
 .page p {
