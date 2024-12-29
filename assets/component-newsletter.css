@@ -25,7 +25,9 @@
   padding-top: 1.8rem;
   text-align: center;
 }
-
+.collection-filter-newsletter .newsletter-form__field-wrapper .field__input {
+  text-align: left;
+}
 .newsletter-form__field-wrapper .field {
   z-index: 0;
 }

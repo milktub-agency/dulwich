@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -25,7 +16,7 @@
           "settings": {
             "brand_heading": "",
             "brand_sub_heading": "",
-            "content_1": "<h3><strong>[*RadiTech Research</strong></h3><h3></h3><p>Research has shown how effectively the <a href=\"https://www.dulwichhealth.co.uk/product-category/raditech-neutralisers/?v=13b5bfe96f3e\"><strong>RadiTech</strong></a> works to improve your health.</p>",
+            "content_1": "<h3><strong>[*RadiTech Research<\/strong><\/h3><h3><\/h3><p>Research has shown how effectively the <a href=\"https:\/\/www.dulwichhealth.co.uk\/product-category\/raditech-neutralisers\/?v=13b5bfe96f3e\"><strong>RadiTech<\/strong><\/a> works to improve your health.<\/p>",
             "image_conetnt_block_content_1": "",
             "content_2": "",
             "image_conetnt_block_content_2": "",
@@ -38,7 +29,7 @@
           "settings": {
             "brand_heading": "",
             "brand_sub_heading": "",
-            "content_1": "<p><strong>[*Unclustered Blood Cells</strong></p><p><strong><br/></strong>Picture A shows how clustered red blood cells were when Steve was Geopathic Stressed. By placing his hands and feet on a <a href=\"https://www.dulwichhealth.co.uk/product-category/raditech-neutralisers/?v=13b5bfe96f3e\"><strong>RadiTech</strong></a> for 15 minutes, Picture B shows Steve’s red blood cells became even and unclustered. Free moving red blood cells transfer more oxygen through the capillaries, preventing accumulation of toxins, infection and long-term damage to the tissues. Certain sticky cells may adhere more easily to the blood vessel walls and may cause arteriosclerosis and a host of other adverse affects.</p><p></p><p><strong>[*Thermograph pictures</strong></p><p><br/>Part of the body would show up in red colour (too hot) where a Geopathic Stress line crosses a person, when in bed. After the person has become Geopathic Stress free by installing a <a href=\"https://www.dulwichhealth.co.uk/product-category/raditech-neutralisers/?v=13b5bfe96f3e\"><strong>RadiTech</strong></a> the thermograph pictures would show the body back to normal colour all over.</p>",
+            "content_1": "<p><strong>[*Unclustered Blood Cells<\/strong><\/p><p><strong><br\/><\/strong>Picture A shows how clustered red blood cells were when Steve was Geopathic Stressed. By placing his hands and feet on a <a href=\"https:\/\/www.dulwichhealth.co.uk\/product-category\/raditech-neutralisers\/?v=13b5bfe96f3e\"><strong>RadiTech<\/strong><\/a> for 15 minutes, Picture B shows Steve’s red blood cells became even and unclustered. Free moving red blood cells transfer more oxygen through the capillaries, preventing accumulation of toxins, infection and long-term damage to the tissues. Certain sticky cells may adhere more easily to the blood vessel walls and may cause arteriosclerosis and a host of other adverse affects.<\/p><p><\/p><p><strong>[*Thermograph pictures<\/strong><\/p><p><br\/>Part of the body would show up in red colour (too hot) where a Geopathic Stress line crosses a person, when in bed. After the person has become Geopathic Stress free by installing a <a href=\"https:\/\/www.dulwichhealth.co.uk\/product-category\/raditech-neutralisers\/?v=13b5bfe96f3e\"><strong>RadiTech<\/strong><\/a> the thermograph pictures would show the body back to normal colour all over.<\/p>",
             "image_conetnt_block_content_1": "",
             "content_2": "",
             "image_conetnt_block_content_2": "",

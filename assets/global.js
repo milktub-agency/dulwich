@@ -2124,6 +2124,7 @@ class CloseHeaderDrawer extends HTMLElement {
     if (this.detailsElement.hasAttribute("open")) {
       this.detailsElement.removeAttribute("open");
       this.detailsElement.querySelector("summary").setAttribute("aria-expanded" , false)
+      document.body.classList.remove(`overflow-hidden-${document.querySelector("header-drawer").dataset.breakpoint}`);
     }
   }
 }

@@ -6,6 +6,8 @@
   margin: 0 0 3rem;
 }
 
-.related-products .splide__arrow {
-  top: 35%;
+@media screen and (min-width: 750px) {
+  .related-products .splide__arrow {
+    top: 35%;
+  }
 }

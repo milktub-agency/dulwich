@@ -2995,6 +2995,7 @@ li.active a {
 .collections-filter .newsletter-form .field__input:not(:placeholder-shown)~.field__label,
 .collections-filter .newsletter-form .field__input:focus-visible~.field__label {
   top: 12%;
+  font-size: 8px;
 }
 .collections-filter .newsletter-form .field__input~.field__label {
   top: 28%;
@@ -3227,8 +3228,10 @@ cart-upsell-recommendations.splide.is-initialized {
   border: none;
 }
 
-.collection .splide__arrow {
-  top: 35%;
+@media screen and (min-width: 750px) {
+  .collection .splide__arrow {
+    top: 35%;
+  }
 }
 
 .scDiscount__container {

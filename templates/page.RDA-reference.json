@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -25,7 +16,7 @@
           "settings": {
             "brand_heading": "",
             "brand_sub_heading": "",
-            "content_1": "<h2>[*RDA (Recommended Daily Allowance)<br/>Reference Guide</h2><p>Recommended Dietary Allowances (RDAs) are the levels of intake of essential nutrients that, on the basis of scientific knowledge, are judged by the Food and Nutrition Board to be adequate to meet the known nutrient needs of practically all healthy persons.</p>",
+            "content_1": "<h2>[*RDA (Recommended Daily Allowance)<br\/>Reference Guide<\/h2><p>Recommended Dietary Allowances (RDAs) are the levels of intake of essential nutrients that, on the basis of scientific knowledge, are judged by the Food and Nutrition Board to be adequate to meet the known nutrient needs of practically all healthy persons.<\/p>",
             "image_conetnt_block_content_1": "",
             "content_2": "",
             "image_conetnt_block_content_2": "",

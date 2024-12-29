@@ -83,7 +83,6 @@ if (!customElements.get('product-form')) {
             } else {
               this.cart.renderContents(response);
               this.cart.setHeaderCartIconAccessibility();
-              document.body.classList.add('overflow-hidden');
             }
               updateCartTotalPrice();
           })
