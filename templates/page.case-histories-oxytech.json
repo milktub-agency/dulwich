@@ -25,7 +25,20 @@
           "settings": {
             "brand_heading": "",
             "brand_sub_heading": "",
-            "content_1": "<p><strong>[*Testimonials*]<\/strong><br\/><em><strong>“OxyTech has successfully cleared my daughter’s Candida”.  <\/strong><\/em>Mr. K. M. in Yorkshire<em><br\/><\/em><br\/><em><strong>“I’ve been taking OxyTech since 2001 and it has solved all my gut problems”  <\/strong><\/em>Mrs. S.M. in North Yorkshire<em><br\/><\/em><br\/><em><strong>“I have been constipated for years. Everything I have tried before has stopped working after a while. OxyTech keeps on working”  <\/strong><\/em>Mrs. P. W. in Bucks<em><br\/><\/em><br\/><em><strong>“My stomach bloating stopped as soon as I started taking OxyTech”  <\/strong><\/em>R.D.G. in Kent<br\/><\/p><p><em><strong>“I stopped taking OxyTech, but my energy plummeted again, so I’m back on OxyTech” <\/strong><\/em>Practitioner in the Midlands<\/p><p><em><strong>“A week after starting OxyTech I gave blood and the nurse remarked: ‘your blood is very well oxygenated” <\/strong><\/em>S.D.K. in London<\/p><p><em><strong>“Before I started taking OxyTech I had been constipated for 20 years”  <\/strong><\/em>P.J. in Scotland<em><br\/><\/em><br\/><em><strong>“Your OxyTech has been very helpful in purifying and stabilising my stomach. My doctor told me I had several chronic stomach diseases and that I would need to take prescriptive medicine for life. Now I only take OxyTech and I am getting better!” <\/strong><\/em>D.N. in Denmark<\/p>",
+            "content_1": "<p><strong>[*Testimonials*]</strong><br/><em><strong>“OxyTech has successfully cleared my daughter’s Candida”.  </strong></em>Mr. K. M. in Yorkshire</p><p><em><br/></em><br/><em><strong>“I’ve been taking OxyTech since 2001 and it has solved all my gut problems”  </strong></em>Mrs. S.M. in North Yorkshire</p><p><em><br/></em><br/><em><strong>“I have been constipated for years. Everything I have tried before has stopped working after a while. OxyTech keeps on working”  </strong></em>Mrs. P. W. in Bucks</p><p><em><br/></em><br/><em><strong>“My stomach bloating stopped as soon as I started taking OxyTech”  </strong></em>R.D.G. in Kent<br/></p><p><em><strong>“I stopped taking OxyTech, but my energy plummeted again, so I’m back on OxyTech” </strong></em>Practitioner in the Midlands</p><p></p><p><em><strong>“A week after starting OxyTech I gave blood and the nurse remarked: ‘your blood is very well oxygenated” </strong></em>S.D.K. in London</p><p></p><p><em><strong>“Before I started taking OxyTech I had been constipated for 20 years”  </strong></em>P.J. in Scotland</p><p><em><br/></em><br/><em><strong>“Your OxyTech has been very helpful in purifying and stabilising my stomach. My doctor told me I had several chronic stomach diseases and that I would need to take prescriptive medicine for life. Now I only take OxyTech and I am getting better!” </strong></em>D.N. in Denmark</p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_CPPV4L": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<p><em><strong>“After trying many remedies over a long period OxyTech at last got rid of my Candida” </strong></em>J.S.J. in South Wales<em><strong>“</strong></em></p><p></p><p><em><strong>It’s the first time in weeks that I’ve had any relief from constipation!” </strong></em>P.L. in Edmonton, London<em><strong>“</strong></em></p><p></p><p><em><strong>I have had Candida and a leaky gut for a long time. I’ve tried many types of medicines and herbs etc. without any success. Since I have been on OxyTech, I have not had any digestive problems.”  </strong></em>Mrs. W.B. in Kent</p><p></p><p><strong>[FULL MONEY BACK GUARANTEE: If you feel that you have not benefited from taking 150 OxyTech capsules, you can return the balance for a full refund.</strong></p>",
             "image_conetnt_block_content_1": "",
             "content_2": "",
             "image_conetnt_block_content_2": "",
@@ -35,12 +48,13 @@
         }
       },
       "block_order": [
-        "about_brand_a76he9"
+        "about_brand_a76he9",
+        "about_brand_CPPV4L"
       ],
       "settings": {
         "page_title": "",
         "color_1": "#306776",
-        "color_2": "#B3B383",
+        "color_2": "#b3b383",
         "padding_top": 36,
         "padding_bottom": 36
       }
