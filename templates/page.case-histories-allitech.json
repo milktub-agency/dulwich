@@ -11,13 +11,57 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_us_section_cGVNDM": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_Dj8zP6": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "<h2><strong>A-Z of Ailments:<br/>Case Histories using AlliTech Liquid, Spray, Capsules & Gel</strong></h2><h2></h2>",
+            "content_1": "<h3></h3><p>At Dulwich Health, we are committed to providing you with the most valuable and up-to-date information on the benefits of our products. Our “Case Studies” section is a growing resource where you can explore how customers have used <a href=\"https://www.dulwichhealth.co.uk/product-category/allitech/?v=79cba1185463\"><strong>AlliTech</strong></a> to address various health concerns.</p><p></p><p><strong>Continuously Updated Information:</strong> Please be aware that this section is regularly updated to include new case studies and testimonials. If you don’t find information on a specific ailment you’re interested in, rest assured that it will be available in the near future as we expand our collection of real-life experiences.</p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_Qy3tG9": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<p><strong>Share Your Testimonial:</strong> Have you experienced positive results with Allitech that you’d like to share? We welcome your testimonials. Your unique stories can inspire and assist others on their wellness journey. Please send your testimonials to <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk</strong></a>, and we’ll be delighted to consider including them in our “Case Studies.”</p><p></p><p>Thank you for being a part of our health-conscious community. Together, we can continue to support one another in achieving optimal well-being.</p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_Dj8zP6",
+        "about_brand_Qy3tG9"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_us_section_cGVNDM"
   ]
 }
