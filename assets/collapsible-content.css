@@ -126,3 +126,19 @@
     }
   }
 }
+
+.collapsible-content p:empty,
+.collapsible-content h2:empty {
+  display: block;
+  margin-bottom: 30px;
+}
+.collapsible-content p:empty + p:empty,
+.collapsible-content h2:empty + h2:empty {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .collapsible-content p:empty,
+  .collapsible-content h2:empty {
+    margin-bottom: 28px;
+  }
+}

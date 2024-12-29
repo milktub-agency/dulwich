@@ -1,15 +1,11 @@
 .page p:empty,
-.page h2:empty,
-.collapsible-content p:empty,
-.collapsible-content h2:empty {
+.page h2:empty {
   display: block;
   margin-bottom: 30px;
 }
 
 .page p:empty + p:empty,
-.page h2:empty + h2:empty,
-.collapsible-content p:empty + p:empty,
-.collapsible-content h2:empty + h2:empty {
+.page h2:empty + h2:empty {
   display: none;
 }
 
@@ -70,9 +66,7 @@
 
 @media screen and (min-width: 750px) {
   .page p:empty,
-  .page h2:empty,
-  .collapsible-content p:empty,
-  .collapsible-content h2:empty {
+  .page h2:empty {
     margin-bottom: 28px;
   }
   .page img {
