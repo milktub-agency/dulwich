@@ -18,6 +18,10 @@
   gap: 28px;
 }
 
+.page-content-container li {
+  list-style: disc;
+}
+
 .page p {
   color: #3D3D3D;
   font-family: Arial;
