@@ -2977,7 +2977,8 @@ li.active a {
   opacity: 1;
   margin-bottom: 8px;
 }
-.colection-product-grid.product-grid {
+.colection-product-grid.product-grid,
+.search-product-grid.product-grid {
   --grid-desktop-horizontal-spacing: 27px;
   --grid-desktop-vertical-spacing: 66px;
   --grid-mobile-horizontal-spacing: 31px;
