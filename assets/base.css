@@ -96,7 +96,7 @@ html.no-js .no-js-hidden {
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -119,7 +119,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5.6rem;
+    padding: 0 14.7rem;
   }
 
   .header.page-width,
@@ -2932,7 +2932,7 @@ cart-upsell-recommendations.splide.is-initialized {
 }
 @media screen and (max-width: 990px) {
   .page-width-lg-slider {
-    padding: 0 2.8rem;
+    padding: 0 2.5rem;
   }
 }
 .badge-capsule {
@@ -3157,8 +3157,8 @@ li.active a {
 
 @media screen and (min-width: 750px) {
   header.header {
-    padding-left: 50px;
-    padding-right: 30px;
+    padding-left: 147px;
+    padding-right: 127px;
   }
   .header-menu-search .search__input.field__input+label {
     font-size: 15px;
@@ -3212,8 +3212,8 @@ li.active a {
   .collection.page-width-lg-slider,
   .related-products.page-width-lg-slider,
   .cart-section.cart-section-lg {
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 147px;
+    padding-right: 147px;
   }
   .product__info-container p.product__text {
     font-size: 26px;

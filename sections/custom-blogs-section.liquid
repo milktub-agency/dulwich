@@ -52,7 +52,7 @@
                         <ul class="splide__list">
                             {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
                                 {%- for article in section.settings.blog.articles -%}
-                                    <li class="splide__slide md:tw-min-w-[30rem] tw-min-w-[none]">
+                                    <li class="splide__slide">
                                         {% render 'article-card',
                                             blog: section.settings.blog,
                                             article: article,
