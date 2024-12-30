@@ -3410,3 +3410,7 @@ p.product__text:empty {
     padding-top: 0;
   }
 }
+
+.cart-drawer__empty-content a.button {
+  background: #60919F;
+}
