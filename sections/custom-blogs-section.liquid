@@ -23,7 +23,7 @@
     <div class="page-width">
         <div class="recent-blogs__section">
             {% if section.settings.blog_heading != blank %}
-                <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light md:tw-font-normal tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[20px] tw-w-full tw-text-{{ section.settings.Section_heading_alignment }} tw-text-[rgb(var(--color-button))]">
+                <div class="tw-text-center tw-font-primary tw-text-[19px] md:tw-text-[41px] tw-font-light md:tw-font-normal tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[24px] tw-w-full tw-text-{{ section.settings.Section_heading_alignment }} tw-text-[rgb(var(--color-button))]">
                     {{ section.settings.blog_heading }}
                 </div>
             {% endif %}
@@ -40,7 +40,7 @@
                     data-showarrowsonmobile="{{ section.settings.show_arrows }}"
                     data-showDots="{{ section.settings.show_dots }}"
                     data-showdotsonmobile="{{ section.settings.show_dots }}"
-                    data-gapBetweenSlides="1rem"
+                    data-gapBetweenSlides="0rem"
                     data-focus="left" 
                     data-enableonmobile="{{ section.settings.enable_splider}}"
                     {% if section.settings.enable_carousel_looping %}
@@ -52,7 +52,7 @@
                         <ul class="splide__list">
                             {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
                                 {%- for article in section.settings.blog.articles -%}
-                                    <li class="splide__slide md:tw-min-w-[30rem] tw-min-w-[none]">
+                                    <li class="splide__slide">
                                         {% render 'article-card',
                                             blog: section.settings.blog,
                                             article: article,

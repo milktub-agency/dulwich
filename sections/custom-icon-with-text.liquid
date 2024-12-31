@@ -14,10 +14,10 @@
 
 <div class="icon-with-text page-width tw-flex tw-flex-wrap tw-justify-between color-{{ section.settings.color_scheme }} section-{{ section.id }}-padding">
     <div class="tw-text-center tw-font-primary tw-text-[rgb(var(--color-foreground))] tw-text-[19px] md:tw-text-[41px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[11px] md:tw-mb-[40px] tw-w-full">{{ section.settings.heading }}</div>
-    <div class="tw-flex tw-flex-row blg:tw-flex-wrap tw-justify-center md:tw-justify-evenly bmd:tw-gap-[22px] tw-gap-y-[34px] tw-gap-x-[35px] tw-w-[100%] md:tw-w-[79%] tw-m-auto">
+    <div class="tw-flex tw-flex-row blg:tw-flex-wrap tw-justify-center md:tw-justify-evenly bmd:tw-gap-[22px] tw-gap-y-[32px] md:tw-gap-y-[20px] tw-gap-x-[31px] md:tw-gap-x-[28px] tw-w-[100%] md:tw-w-[100%] tw-m-auto">
         {% if section.blocks.size > 0 %}
             {% for block in section.blocks %}
-                <div class="usp-block tw-flex tw-flex-col tw-items-center tw-relative tw-px-[12px] md:tw-px-[20px] tw-pb-[12px] md:tw-pb-[18px] tw-pt-[12px] md:tw-pt-[26px] md:tw-w-[100%] tw-min-w-[121px] bmd:tw-max-w-[121px] md:tw-max-w-[265px] tw-rounded-[7px] md:tw-rounded-[17px] color-{{ block.settings.color_scheme_block }}">
+                <div class="usp-block tw-flex tw-flex-col tw-items-center tw-relative tw-px-[12px] md:tw-px-[20px] tw-pb-[12px] md:tw-pb-[25px] tw-pt-[12px] md:tw-pt-[37px] md:tw-w-[100%] tw-min-w-[121px] bmd:tw-max-w-[121px] md:tw-max-w-[265px] tw-rounded-[7px] md:tw-rounded-[17px] color-{{ block.settings.color_scheme_block }}">
                     <a class="tw-h-full" {% if block.settings.usp_link != blank %} href="{{ block.settings.usp_link }}" {% endif %}>
                         <div class="tw-flex tw-flex-col tw-items-center tw-gap-[16px] md:tw-gap-[30px] tw-h-full tw-justify-between">
                             {% if block.settings.usp_image != blank %}
@@ -28,7 +28,7 @@
                                 {{ 'product-6' | placeholder_svg_tag : 'placeholder-icon' }}
                             {% endif %}
                             {% if block.settings.usp_title != blank %}
-                                <div class="tw-font-primary tw-text-[9px] md:tw-text-[18px] tw-font-medium tw-text-center tw-text-[rgba(var(--color-foreground))] tw-leading-[11px] md:tw-leading-[24px]">
+                                <div class="tw-font-primary tw-text-[9px] md:tw-text-[20px] tw-font-medium tw-text-center tw-text-[rgba(var(--color-foreground))] tw-leading-[11px] md:tw-leading-[31px]">
                                     {{ block.settings.usp_title }}
                                 </div>
                             {% endif %}
