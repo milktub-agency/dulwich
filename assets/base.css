@@ -2846,8 +2846,8 @@ details-disclosure > details {
 }
 .usp-block svg,
 .usp-block img {
-  width: 84px;
-  height: 84px;
+  width: 96px;
+  height: 96px;
 }
 @media screen and (max-width: 750px) {
   .product__info-container .quantity {
@@ -2894,7 +2894,7 @@ details-disclosure > details {
   max-width: 174px;
 }
 .product-card .product-card-atc-btn {
-  max-width: 60%;
+  max-width: 66.3%;
 }
 cart-upsell-recommendations .product-card .product-card-atc-btn {
   font-size: 13px;

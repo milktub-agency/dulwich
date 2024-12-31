@@ -15,7 +15,7 @@
   <div class="page-width page-width-lg-slider">
     <div class="testimonial-section">
       {% if section.settings.testimonial_heading != blank %}
-        <div class="tw-font-primary tw-text-black tw-text-[19px] md:tw-text-[43px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[22px] md:tw-mb-[20px] tw-text-{{ section.settings.Section_heading_alignment }}">
+        <div class="tw-font-primary tw-text-black tw-text-[19px] md:tw-text-[43px] tw-font-light tw-leading-[27px] md:tw-leading-[58px] tw-mb-[22px] md:tw-mb-[60px] tw-text-{{ section.settings.Section_heading_alignment }}">
           {{ section.settings.testimonial_heading }}
         </div>
       {% endif %}
@@ -38,13 +38,13 @@
           <ul class="splide__list">
             {% if section.blocks.size > 0 %}
               {%- for block in section.blocks -%}
-                <li class="splide__slide tw-min-h-[188px] md:tw-min-h-[286px]">
+                <li class="splide__slide tw-min-h-[188px] md:tw-min-h-[301px]">
                   <div class="color-{{ block.settings.color_scheme_block }} tw-rounded-[30px] md:tw-rounded-[50px] tw-p-[10px] md:tw-p-[16px] tw-flex tw-flex-col tw-justify-between tw-h-full">
                     {% if block.settings.review_name != blank %}
                       <div class="tw-text-[rgb(var(--color-foreground))] tw-text-center tw-font-primary tw-text-[13px] md:tw-text-[20px] tw-font-medium tw-leading-[21px] md:tw-leading-[35px]">{{ block.settings.review_name }}</div>
                     {% endif %}
                     {% if block.settings.review_text != blank %}
-                      <div class="tw-text-[rgb(var(--color-button))] tw-text-center tw-font-primary tw-text-[15px] md:tw-text-[18px] tw-font-normal tw-leading-[18px] md:tw-leading-[30px] md:tw-w-[80%] md:tw-m-auto">{{ block.settings.review_text |strip_html }}</div>
+                      <div class="tw-text-[rgb(var(--color-button))] tw-text-center tw-font-primary tw-text-[15px] md:tw-text-[18px] tw-font-normal tw-leading-[18px] md:tw-leading-[30px] md:tw-w-[62%] md:tw-m-auto">{{ block.settings.review_text |strip_html }}</div>
                     {% endif %}
                     <div class="tw-flex tw-flex-col tw-gap-[5px] md:tw-gap-[7px]">
                       {% if block.settings.star_rating != blank %}

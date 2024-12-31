@@ -121,8 +121,8 @@
   .footer-block {
     display: block;
     margin-top: 0;
-    padding-left: 19px;
-    padding-right: 28px;
+    padding-left: 20px;
+    padding-right: 0;
   }
 }
 
