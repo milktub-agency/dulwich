@@ -18,7 +18,6 @@
   {%- if section.settings.image_enlarge == 'enable'-%}
     {{ 'fancybox.min.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
-
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
