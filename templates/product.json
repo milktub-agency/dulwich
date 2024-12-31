@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+ {
   "sections": {
     "main": {
       "type": "main-product",
@@ -271,19 +271,19 @@
         "text_eanV6W": {
           "type": "text",
           "settings": {
-            "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_1.value }}"
+            "tab_name": "Description"
           }
         },
         "text_6HRxnV": {
           "type": "text",
           "settings": {
-            "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_2.value }}"
+            "tab_name": "Additional Information"
           }
         },
         "text_AdWaU3": {
           "type": "text",
           "settings": {
-            "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_3.value }}"
+            "tab_name": "Delivery costs & Returns"
           }
         }
       },
@@ -296,6 +296,27 @@
         "heading": "",
         "padding_top": 60,
         "padding_top_mobile": 20
+      }
+    },
+    "product_details_tab_switching_yyNcFh": {
+      "type": "product-details-tab-switching",
+      "blocks": {
+        "description_qEfWdw": {
+          "type": "description",
+          "settings": {
+            "show_description": true
+          }
+        }
+      },
+      "block_order": [
+        "description_qEfWdw"
+      ],
+      "settings": {
+        "tab_name": "Description",
+        "desktop_padding_top": 30,
+        "desktop_padding_bottom": 30,
+        "mobile_padding_top": 30,
+        "mobile_padding_bottom": 30
       }
     },
     "product_details_tab_switching_nwjfxh": {
@@ -405,6 +426,7 @@
         "list_block_PAbnmx",
         "media_wwNhkf"
       ],
+      "disabled": true,
       "settings": {
         "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_1.value }}",
         "desktop_padding_top": 30,
@@ -413,10 +435,10 @@
         "mobile_padding_bottom": 30
       }
     },
-    "product_details_tab_switching_yyNcFh": {
+    "product_details_tab_switching_4LXyBX": {
       "type": "product-details-tab-switching",
       "blocks": {
-        "faq_block_6PTgrQ": {
+        "faq_block_ran6gJ": {
           "type": "faq_block",
           "settings": {
             "faq_heading": "",
@@ -426,14 +448,14 @@
         }
       },
       "block_order": [
-        "faq_block_6PTgrQ"
+        "faq_block_ran6gJ"
       ],
       "settings": {
-        "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_2.value }}",
+        "tab_name": "Additional Information",
         "desktop_padding_top": 30,
         "desktop_padding_bottom": 30,
-        "mobile_padding_top": 30,
-        "mobile_padding_bottom": 30
+        "mobile_padding_top": 10,
+        "mobile_padding_bottom": 10
       }
     },
     "product_details_tab_switching_HCqpBc": {
@@ -443,7 +465,7 @@
           "type": "faq_block",
           "settings": {
             "faq_heading": "",
-            "faq_left_box": "<h3>[* Delivery Costs*]</h3><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.<br/><br/></p><h4>[* UK Standard Postage *]</h4><p><strong>Royal Mail 48:</strong>£3.5<br/><strong>Royal Mail Special Delivery:</strong>£9<br/><strong>Books:</strong>FREE OF CHARGE<br/><strong>RadiTech:</strong> £15 + £7.5 for each additional item<br/><br/></p><h4>[*Europe Postage*]</h4><p><strong>Supplements/Books:</strong> £10 + £1 for each additional item<br/><strong>RadiTech:</strong>£25 + £5 for each additional item<br/><br/></p><h4>[*International Postage*]</h4><p><strong>Supplements/Books:</strong> £15 + £1 for each additional item<br/><strong>RadiTech:</strong>£45 + £20 for each additional item<br/><br/></p><h3>[*30 Day No Quibbles Returns*]</h3><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br/><strong>Of course we will replace any faulty item free of charge.</strong></p>",
+            "faq_left_box": "<h2><strong>[* Delivery Costs *]</strong></h2><p></p><p>Our delivery and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><h2><br/><br/><strong>[* UK Standard Postage*]</strong></h2><p><strong>Royal Mail 48:</strong>£3.5<br/><strong>Royal Mail Special Delivery:</strong>£9<br/><strong>Royal Mail Special Saturday Delivery:</strong>£11<br/><strong>Books:</strong>FREE OF CHARGE<br/><strong>RadiTech:</strong>£15 + £7.5 for each additional item<br/><br/></p><h2><strong>[*Europe Postage *]</strong></h2><p><strong>Supplements/Books:</strong>£10 + £1 for each additional item<br/><strong>RadiTech:</strong>£25 + £5 for each additional item<br/><br/></p><h2><strong>[*International Postage*]</strong></h2><p><strong>Supplements/Books:</strong>£15 + £1 for each additional item<br/><strong>RadiTech:</strong>£45 + £20 for each additional item<br/><br/></p><h2><strong>[*30 Day No Quibbles Returns*]</strong></h2><p>You can return products for a refund within 30 days of delivery if not suitable. We hope you understand that we cannot accept returns on products where the seal or packaging has been broken.<br/><strong>Of course we will replace any faulty item free of charge.</strong></p>",
             "faq_right_box": ""
           }
         }
@@ -452,7 +474,7 @@
         "faq_block_BMWjFe"
       ],
       "settings": {
-        "tab_name": "{{ product.metafields.custom.product_description_header_tabs.value.tab_3.value }}",
+        "tab_name": "Delivery costs & Returns",
         "desktop_padding_top": 30,
         "desktop_padding_bottom": 30,
         "mobile_padding_top": 30,
@@ -519,8 +541,9 @@
   "order": [
     "main",
     "tab_switch_header_MQEeye",
-    "product_details_tab_switching_nwjfxh",
     "product_details_tab_switching_yyNcFh",
+    "product_details_tab_switching_nwjfxh",
+    "product_details_tab_switching_4LXyBX",
     "product_details_tab_switching_HCqpBc",
     "related-products",
     "6384ab31-b366-4e70-9ed4-7a8b7db6a04c"

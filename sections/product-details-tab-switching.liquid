@@ -355,7 +355,13 @@
                 %}
               {%- endif -%}
             </div>
-        {% endcase %}
+          {% when "description" %}
+            {% if block.settings.show_description == true %}
+              <div class="product-description-tab">
+                {{ product.description }}
+              </div>
+            {% endif %}
+          {% endcase %}
       {% endfor %}
     {% endif %}
   </div>
@@ -894,6 +900,18 @@
           "id": "cover_mobile_image",
           "label": "Cover Image mobile",
           "info": "Recommended image dimenisions: 576 x 340 pixels"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_description",
+          "label": "Show Description",
+          "default": true
         }
       ]
     }
