@@ -49,6 +49,12 @@
 }
 
 @media screen and (min-width: 990px) {
+  .product__media-wrapper  .global-media-settings {
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
   .product--large:not(.product--no-media) .product__media-wrapper {
     max-width: 65%;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
@@ -66,14 +72,14 @@
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 57.5%;
-    width: calc(57.5% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 50.5%;
+    width: calc(50.5% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 42.5%;
-    width: calc(42.5% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 49.5%;
+    width: calc(49.5% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 
