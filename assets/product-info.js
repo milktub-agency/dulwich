@@ -100,7 +100,7 @@ if (!customElements.get('product-info')) {
 }
 
 // adding Line brakes for text which is coming from metafield
-document.querySelectorAll('.metafield-multi_line_text_field').forEach(element => {
+document.querySelectorAll('.metafield-multi_line_text_field')?.forEach(element => {
   element.childNodes.forEach(node => {
     if (node.nodeType === Node.TEXT_NODE && node.nodeValue.includes('/')) {
       const splitText = node.nodeValue.split('/').map(part => part.trim());

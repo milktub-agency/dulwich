@@ -237,8 +237,7 @@ table.product-information-table thead th {
 }
 
 .product-description-tab .section {
-  padding-left: 30px;
-  padding-right: 30px;  
+  padding: 0px 30px; 
 }
 
 .product-description-tab [data-text-color="primary"] {
