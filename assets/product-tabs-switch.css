@@ -255,7 +255,7 @@ table.product-information-table thead th {
 }
 
 .product-description-tab p {
-  margin-bottom: 1.3em
+  margin-bottom: 1.3em;
 }
 
 .product-description-tab ol li,
@@ -320,16 +320,13 @@ table.product-information-table thead th {
 }
 
 .container .row:not(.row-collapse),.lightbox-content .row:not(.row-collapse),.row .gallery,.row .row:not(.row-collapse) {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0px -15px;
+  padding: 0;
   width: auto
 }
 
 .row .container {
-  padding-left: 0;
-  padding-right: 0
+  padding: 0;
 }
 
 .banner+.row:not(.row-collapse),.banner-grid-wrapper+.row:not(.row-collapse),.section+.row:not(.row-collapse),.slider-wrapper+.row:not(.row-collapse) {
@@ -354,8 +351,7 @@ table.product-information-table thead th {
 
 .container .row-small:not(.row-collapse),.row .row-small:not(.row-collapse) {
   margin-bottom: 0;
-  margin-left: -10px;
-  margin-right: -10px
+  margin: 0px -10px;
 }
 
 
