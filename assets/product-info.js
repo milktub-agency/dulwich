@@ -98,3 +98,22 @@ if (!customElements.get('product-info')) {
     }
   );
 }
+
+// adding Line brakes for text which is coming from metafield
+document.querySelectorAll('.metafield-multi_line_text_field').forEach(element => {
+  element.childNodes.forEach(node => {
+    if (node.nodeType === Node.TEXT_NODE && node.nodeValue.includes('/')) {
+      const splitText = node.nodeValue.split('/').map(part => part.trim());
+      const fragment = document.createDocumentFragment();
+      splitText.forEach((text, index) => {
+        if (index > 0) {
+          fragment.appendChild(document.createElement('br'));
+        }
+        if (text) {
+          fragment.appendChild(document.createTextNode(text));
+        }
+      });
+      node.replaceWith(fragment);
+    }
+  });
+});
