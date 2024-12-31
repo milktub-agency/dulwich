@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "about_us_section_7nhbRH": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_7Ga8ic": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "<h1><strong>[* Selenium *]</strong></h1>",
+            "content_1": "<h2><strong>Why is selenium so important to health?</strong></h2><h2></h2><ul><li><strong>[*Immune function *]</strong></li><li><strong>[* Thyroid function *]</strong></li><li><strong>[* Hair and nails *]</strong></li><li><strong>[* Sperm quality *]</strong></li></ul><p></p><h2><strong>[* What selenium does for us *]</strong></h2><h2></h2><p>Selenium is needed to produce glutathione peroxidase (GPx): the main antioxidant used by the human body.</p><p>Antioxidants help counteract oxidative stress, which threatens to damage our bodily cells and contribute to disease. Without selenium, we would not be able to produce this vital substance.</p><p>The selenoprotein iodothyronine deiodinase (DI) plays a vital role in the function of the thyroid gland and supporting thyroid function, which includes aiding normal energy levels.</p><p>Thioredoxin reductases (TRx) are selenoproteins needed for our cells to grow in a healthy way and support the function of other nutrients too, such as coenzyme Q10.</p><h4></h4>",
+            "image_content_block_image_1": "shopify://shop_images/apple4Selenium.jpg",
+            "image_conetnt_block_content_1": "<p></p><p><em>[* The oxidation process can be seen in an apple. If half an apple is left on the kitchen table, the white of the apple will turn brown after a while. Free radicals have attacked the healthy cells of the apple and oxidise their naturally occurring compounds, leading to browning. Antioxidants help prevent oxidation and destruction by protecting the cell membrane. *]</em></p>",
+            "content_2": "<h1><strong>[* We lack selenium in the UK *]</strong></h1><h1></h1><h2><strong>Selenium in the food chain</strong></h2><p></p><p>Selenium exists in our soil as inorganic salts, which plants then uptake and convert into organic selenium compounds which are much more useful to the human body.</p><p>When these plants are eaten by livestock and humans, selenium enters the food chain – making selenium levels in the soils vital!</p><p></p><h2><strong>Selenium in organic farming</strong></h2><p></p><p>In organic farming, manure from livestock is favoured over the use of inorganic fertilisers, to add extra nutrients to the soil. It’s therefore unlikely that any external selenium will be added to the soil, meaning selenium levels will always remain low and result in selenium-low crops.</p><p></p><p>For this reason, ecologically conscious consumers should be aware that their selenium needs may not be met from organic foods.</p>",
+            "image_conetnt_block_content_2": "",
+            "image_2": "shopify://shop_images/map4selenium-1.jpg",
+            "content_3": "<p><em>[* Pooled research conducted by experts and health authorities in various countries serve to prove that the European population as a whole gets too little selenium. *]</em></p><p></p><h3><strong>Selenium is unevenly distributed throughout the world</strong></h3><h3></h3><p>Some countries (such as the USA and Chile) have selenium-rich soils, while the UK & Europe have low levels resulting in low selenium food. In 1985,</p><p>Finland added selenium to agricultural fertilisers, knowing that selenium deficiency increases the risk of heart disease. By 2005, studies showed that selenium intakes of animals and healthy people in Finland were safe and adequate -the only exception were those who consumed organic produce.</p><p></p><h1><strong>[* Critically low selenium *]</strong></h1><h3><strong>UK Statistics</strong></h3><p></p><p>Most of us in the UK need additional selenium in our diets, but recent statistics show some of us have dramatically lower intakes.</p><p></p><p>According to the results from the rolling Nutrient and Diet Survey*, from Public Health England, of those aged 19+:</p><ul><li><strong>[* 26% of Men *]</strong></li><li><strong>[* 50% of Women *]</strong></li></ul><p>have selenium intakes below the lower reference nutrient intake – which is far below what’s needed for good health!</p><p>This is a problem that could easily be rectified with the inclusion of high quality selenium supplements, such as <a href=\"https://www.dulwichhealth.co.uk/product/bio-selenium-zinc-90-tablets?v=13b5bfe96f3e\"><em><strong>Bio-Selenium +Zinc</strong></em></a></p><p></p><p>Adequate intakes of selenium are important for the functioning of a healthy body. When selenium needs aren’t met, our bodies may struggle in a series of different ways.</p><p></p><h3><strong>Symptoms of deficiency</strong></h3><p></p><p>Research indicates that low selenium levels can contribute to a plethora of health issues including:</p><ul><li><strong>[* Cardiovascular disease *]</strong></li><li><strong>[* Weakened immunity *]</strong></li><li><strong>[* Hypothyroidism/Low thyroid function *]</strong></li></ul><p>Low thyroid function is associated with fatigue, mental health issues and weight gain.</p><p></p><h3><strong>Selenium Deficiency Diseases</strong></h3><p></p><p><strong>Keshan Disease<br/></strong>A rare condition characterised by significant heart problems due to an enlargement of cardiac tissue.</p><p>It is thought to be due to a lack of the selenoprotein GPx occurring due to low selenium. Selenium supplementation successfully prevents the disorder.</p><p></p><p><strong>Kashin-Beck Disease<br/></strong>Associated with low selenium status, Kash in-Beck causes degeneration of the cartilage of the joints causing significant joint pain and stiffness.</p><p> </p><p><em>[* *National Diet and Nutrition Survey. Results from Years 7-8 (combined) of the Rolling Programme (207 4/7 s to 20 7 5/7 6). *]</em></p><p></p>",
+            "image_content_block_image_3": "shopify://shop_images/girl4selenium2.jpg",
+            "image_conetnt_block_content_3": "<p><em>[* Tiredness, weak hair, poor skin and immunity issues could all be due to low selenium levels. *]</em></p><p><a href=\"https://www.freepik.com/free-photo/expressive-young-woman-posing-studio_13996624.htm?query=woman%20with%20cold%20bad%20hair#from_view=detail_alsolike%22%3E\"><em>Image by 8photo on Freepik</em></a></p>"
+          }
+        },
+        "about_brand_89kQQ7": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "",
+            "content_1": "<h1><strong>[* We need more selenium *]</strong></h1><h3><strong>Some groups are especially at risk</strong></h3><p>Although selenium intakes are generally low, some groups of people have shown to demonstrate lower selenium status than others.</p><p></p><h3><strong>Vegetarians and Vegans</strong></h3><p>Major sources of selenium include animal products such as meat, fish and poultry. Research <em>(1,2)</em> shows that vegetarians and vegans (who omit meat/animal products from their diet respectively) are frequently lower in selenium intakes than those with omnivorous diets. This is likely due to excluding selenium-rich sources without including selenium in the form of a supplement.</p><p></p><p>Both Bio-SelenoPrecise and Bio- Selenium+Zinc are suitable for vegetarians and vegans.</p><p></p><h3><strong>Those who avoid gluten</strong></h3><p>There are a few reasons why we may choose to avoid gluten, with the main reason being coeliac disease: an inflammatory allergic response to gluten that can only be treated by removing gluten-containing foods from our diet.</p><p></p><p>Gluten is present in major cereal grains barley, rye and wheat (and in many cases, oats). Cereal grains are currently our main source of selenium in the UK, so removing these will exacerbate selenium deficiency if not replaced.</p><p>Research suggests that those with coeliac disease may have an impaired ability to absorb selenium from foods, which could contribute to issues in various parts of the body, including the thyroid gland.</p><p> </p><p><em>[* (1) Turner-McGrievy G, Barnard N, Scialli A, Lanou A. Effects of a low-fat vegan diet and a Step II diet on macro- and micronutrient intakes in overweight postmenopausal women. Nutrition. 2004;20(9):738-746. *]</em></p><p></p><p><em>[* (2) Larsson C, Johansson G. Dietary intake and nutritional status of young vegans and omnivores in Sweden. The American Journal of Clinical Nutrition. 2002;76(1):100-106. *]</em></p><p></p>",
+            "image_conetnt_block_content_1": "",
+            "image_1": "shopify://shop_images/bread4selenium.jpg",
+            "content_2": "<p><em>[* Those with coeliac disease may have an impaired ability to absorb selenium from foods. *]</em></p><p></p><h1>[* <strong>Why SelenoPrecise?</strong> *]</h1><h3><strong>SelenoPrecise is a proven way to ensure you get the daily selenium intake that you need.</strong></h3><p></p><p>In research, SelenoPrecise is shown to be</p><ul><li><h4><strong>[* Effective</strong></h4></li><li><h4><strong>[* Safe</strong></h4></li><li><h4><strong>[* Stable</strong></h4></li><li><h4><strong>[* Bioavailable</strong></h4></li></ul><p></p><p>Other selenium supplements may be inorganic, such as sodium selenite or sodium selenate. Studies show that only approximately 50% of the selenium gets absorbed by the body from these sources.</p><p></p><p>Bio-SelenoPrecise is a patented product that supplies a source of cellular-bound organic selenium, and can guarantee 89% absorption(1)!</p><p></p><p>Selenium intakes are low in the UK/Europe and research suggests this is getting worse. Many of us are living with low selenium and may not even realise it, with certain groups showing that they are at even greater risk.</p><p></p><p>However, this problem can be easily fixed with an appropriate supplement.</p><p></p><p>Organically bound selenium supplements can either be organic or inorganic. It is known that organic selenium compounds have an easier time getting absorbed in the body and incorporated into the different selenium-dependent enzymes and selenoproteins.</p><p></p><p>[* (1) <em>Biigel S, Larsen E, Sloth J, Flytlie K, Overvad K, Steenberg Let al. All this while being produced to pharmaceutical standards – the quality assurance you’ve come to expect from Dulwich Health and Pharma Nord.</em></p>",
+            "image_conetnt_block_content_2": "",
+            "image_2": "shopify://shop_images/bio-selenoPrecise-co.png",
+            "content_3": "<p>Bio-SelenoPrecise is rich in L-selenomethionine (approximately 60%) which is the form most often found in the human body. SelenoPrecise also contains as many as 30 other selenium species (including se-methylselenocysteine).</p><p></p><h3><strong>Approved safety</strong></h3><p>The European Food Safety Authority (EFSA) has reviewed the extensive documentation on SelenoPrecise and confirmed its safety, while stating that it demonstrates better absorption and lower toxicity than the inorganic selenium forms selenite and selenate<em>(3)</em></p><p></p><h3><strong>Scientifically documented</strong></h3><p>More than 40 scientific studies have been published on SelenoPrecise testifying to its:</p><p></p><ul><li><strong>[*Quality</strong></li><li><strong>[*Stable 81% selenium content</strong></li><li><strong>[*High level of bioavailability</strong></li><li><strong>[*Safety</strong></li></ul><p></p><p><em>[* The content of various organic selenium compounds in Pharma Nord’s selenium yeast is stable at each new production. In this study it is shown with the selenium compound selenomethionine. *]</em></p><p></p><h3><strong>What is PRECISE?</strong></h3><p>SelenoPrecise has been used in major cancer research, exploring its potential role in reducing risk of certain cancers.</p><p></p><p>One such trial includes the ‘Prevention of Cancer with Selenium in Europe and America: also known as ‘PRECISE: SelenoPrecise was featured in and named after this trial, and has since been used in trials worldwide due to its high bioavailability, quality and stability.</p><p></p><p><em>[* (3) Selenium-enriched yeast as source for selenium added for nutritional purposes in foods for particular nutritional uses and foods (including food supplements) for the general population – Scientific Opinion of the Panel on Food Additives, Flavourings, Processing Aids and Materials in Contact with Food. EFSA Journal. 2008;6(7).</em></p>",
+            "image_conetnt_block_content_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_7Ga8ic",
+        "about_brand_89kQQ7"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
+        "color_2": "#B3B383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "about_us_section_7nhbRH"
+  ]
+}

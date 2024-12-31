@@ -59,7 +59,6 @@ if (!customElements.get('product-info')) {
 
       fetchQuantityRules() {
         if (!this.currentVariant || !this.currentVariant.value) return;
-        this.querySelector('.quantity__rules-cart .loading-overlay').classList.remove('hidden');
         fetch(`${this.dataset.url}?variant=${this.currentVariant.value}&section_id=${this.dataset.section}`)
           .then((response) => {
             return response.text();
