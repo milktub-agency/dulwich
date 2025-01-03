@@ -1,0 +1,35 @@
+<div class="cart-user tw-flex tw-flex-col tw-gap-4">
+    <div class="form-group form-group-email tw-flex tw-flex-col tw-gap-2">
+      <label for="customer_email" class="tw-text-left tw-text-sm tw-font-semibold">{{ 'customer.login_page.email' | t }}*</label>
+      <input
+        class="custom-login-form-input tw-border tw-border-gray-300 tw-p-2 tw-rounded-md tw-focus:outline-none tw-focus:ring-2 tw-focus:ring-blue-500"
+        type="email"
+        placeholder="{{ 'customer.login_page.email' | t }}"
+        name="customer[email]"
+        required
+      >
+    </div>
+    <div class="form-group password-show-container tw-flex tw-flex-col tw-gap-2">
+      <label for="customer_password" class="tw-text-left tw-text-sm tw-font-semibold">{{ 'customer.login_page.password' | t }}*</label>
+      <div class="tw-relative">
+        <input
+          class="form-control custom-login-form-input tw-border tw-border-gray-300 tw-p-2 tw-rounded-md tw-focus:outline-none tw-focus:ring-2 tw-focus:ring-blue-500 tw-w-full"
+          id="password-field1"
+          type="password"
+          value=""
+          placeholder="{{ 'customer.login_page.password' | t }}"
+          name="customer[password]"
+          required
+        >
+        <div class="tw-absolute tw-right-2 tw-top-1/2 tw-transform tw--translate-y-1/2 tw-flex tw-items-center tw-cursor-pointer password-show-btn pass-show" toggle="#password-field1">
+          <div class="show-password password-toggler">
+            <span class="password-show-text-show bs-show tw-text-sm tw-text-black">Show</span>
+          </div>
+          <div class="hide-password password-toggler" hidden>
+            <span class="password-show-text-hide bs-hide tw-text-sm tw-text-black">Hide</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

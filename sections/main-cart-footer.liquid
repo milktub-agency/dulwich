@@ -557,19 +557,87 @@
                       </button>
                     </noscript>
 
-                    <button
-                      type="submit"
-                      id="checkout"
-                      class="cart__checkout-button button tw-bg-bright-red tw-uppercase tw-font-bold tw-text-[9px] md:tw-text-[16px] tw-min-h-[40px]"
-                      name="checkout"
-                      {% if cart == empty %}
-                        disabled
-                      {% endif %}
-                      form="cart"
-                    >
-                      <span class="tw-pr-[8px]">{{ 'sections.cart.checkout' | t }}</span>
-                      {% render 'icon-checkout-arrow' class:"bmd:tw-w-[10px] bmd:tw-h-[10px] bmd:tw-mb-[2px]" %}
-                    </button>
+                    {% if customer %}
+                      <button
+                        type="submit"
+                        id="checkout"
+                        class="cart__checkout-button button tw-bg-bright-red tw-uppercase tw-font-bold tw-text-[9px] md:tw-text-[16px] tw-min-h-[40px]"
+                        name="checkout"
+                        {% if cart == empty %}
+                          disabled
+                        {% endif %}
+                        form="cart"
+                      >
+                        <span class="tw-pr-[8px]">{{ 'sections.cart.checkout' | t }}</span>
+                        {% render 'icon-checkout-arrow' class:"bmd:tw-w-[10px] bmd:tw-h-[10px] bmd:tw-mb-[2px]" %}
+                      </button>
+                    {% else %}
+                      <checkout-popup>
+                        <button id="proceed-to-checkout" class="checkout-button tw-flex tw-items-center button tw-bg-bright-red tw-uppercase tw-font-bold tw-text-[9px] md:tw-text-[16px] tw-min-h-[40px]">
+                          <span class="tw-pr-[8px] tw-text-white">{{ 'sections.cart.checkout' | t }}</span>
+                          {% render 'icon-checkout-arrow' class:"bmd:tw-w-[10px] bmd:tw-h-[10px] bmd:tw-mb-[2px]" %}
+                        </button>
+                    
+                        <div id="checkout-popup" class="tw-fixed tw-inset-0 tw-bg-black/50 tw-flex tw-items-center tw-justify-center tw-z-[9999] tw-hidden">
+                          <div class="tw-bg-white tw-rounded-lg tw-shadow-lg tw-w-[90%] md:tw-w-[800px] tw-p-[20px] tw-relative">
+                            <button id="close-popup" class="checkout-popup-close-btn tw-absolute tw-top-[10px] tw-right-[14px] tw-text-gray-500 hover:tw-text-gray-800 tw-text-[20px]">{% render 'icon-close', svg_classes: "tw-h-[20px] tw-w-[20px]" %}</button>
+                            <h2 class="tw-text-lg tw-font-bold tw-mb-[10px]">Welcome to checkout</h2>
+                            <div class="tw-p-[24px] tw-bg-white">
+                              {% if customer %}
+                                {% assign url = routes.cart_url %}
+                              {% else %}
+                                {% assign url = '/checkout' %}
+                              {% endif %}
+                              <form action="{{ url }}" method="post" novalidate class="cart-form">
+                                <login-toggle-button>
+                                  <div class="cart-user-box">
+                                    <div class="cart-user-box-inner">
+                                      <div class="radio-button-options tw-p-6 tw-text-left tw-border tw-border-solid tw-border-gray-400 tw-rounded-lg tw-mb-[24px]">
+                                        <label class="tw-flex tw-items-center tw-gap-4 tw-cursor-pointer">
+                                          <input
+                                            type="radio"
+                                            value="user-guest"
+                                            checked="checked"
+                                            name="customers-account"
+                                            class="tw-w-6 tw-h-6 tw-accent-black"
+                                          >
+                                          <span class="tw-text-lg tw-text-black tw-font-medium">Guest checkout</span>
+                                        </label>
+                                        <div class="tw-mt-4 tw-pl-10 tw-text-sm tw-text-gray-600">
+                                          You can create an account once you've completed your order
+                                        </div>
+                                      </div>
+                                      <div class="radio-button-options tw-p-6 tw-text-left tw-border tw-border-solid tw-border-gray-400 tw-rounded-lg">
+                                        <label class="tw-flex tw-items-center tw-gap-4 tw-cursor-pointer">
+                                          <input
+                                            type="radio"
+                                            value="user-registered"
+                                            name="customers-account"
+                                            class="tw-w-6 tw-h-6 tw-accent-black"
+                                          >
+                                          <span class="tw-text-lg tw-text-black tw-font-medium">Sign in</span>
+                                        </label>
+                                        <div class="tw-mt-4 tw-pl-10 tw-text-sm tw-text-gray-600">Checkout faster with saved details</div>
+                                      </div>
+                                      <div class="login-box tw-p-[24px] tw-border tw-border-solid tw-border-gray-400" hidden>
+                                        {% render 'cart_customer_link' %}
+                                      </div>
+                                      <div class="checkout-button-container tw-mt-6">
+                                        <button
+                                          type="submit"
+                                          class="checkout-button button checkout-popup-btn tw-bg-bright-red tw-uppercase tw-font-bold tw-text-[9px] md:tw-text-[16px] tw-min-h-[40px]">
+                                          <span class="tw-pr-[8px] tw-text-white">Checkout</span>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </login-toggle-button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </checkout-popup>
+                    {% endif %}
 
                     <div class="tw-flex tw-items-center tw-justify-center payment-icons-cart">
                       {%- if section.settings.payment_enable -%}

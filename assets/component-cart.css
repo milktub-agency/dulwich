@@ -285,3 +285,7 @@ cart-items {
 .cart-section .cart-section__cart-footer.is-empty {
   display: none;
 }
+
+checkout-popup .checkout-popup-close-btn {
+  width: auto;
+}

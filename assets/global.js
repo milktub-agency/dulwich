@@ -2129,3 +2129,118 @@ class CloseHeaderDrawer extends HTMLElement {
   }
 }
 customElements.define('close-header-drawer', CloseHeaderDrawer);
+
+class cartLoginToggle extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    const checkoutButton = document.querySelector(".checkout-button.checkout-popup-btn span");
+    if (!checkoutButton) return;
+    const defaultRadioButton = this.querySelector("[value='user-guest']");
+    if (defaultRadioButton && defaultRadioButton.checked) {
+      checkoutButton.textContent = "Continue as Guest";
+    }
+    this.querySelectorAll("[name='customers-account']").forEach((button) => {
+      button.addEventListener("change", () => {
+        const cartForm = document.querySelector(".cart-form");
+        if (!cartForm) return;
+        const loginBox = document.querySelector(".login-box");
+        if (!loginBox) return;
+        if (button.value == "user-guest") {
+          loginBox.setAttribute("hidden", "");
+          loginBox.classList.remove('expand');
+          loginBox.classList.add('collapse');
+          cartForm.setAttribute("action", "/checkout");
+          checkoutButton.textContent = "Continue as Guest";
+          cartForm.setAttribute("novalidate", "");
+        } else if (button.value == "user-registered") {
+          loginBox.removeAttribute("hidden");
+          loginBox.classList.remove('collapse');
+          loginBox.classList.add('expand');
+          cartForm.setAttribute("action", "/account/login?checkout_url=/checkout");
+          checkoutButton.textContent = "Sign In";
+          cartForm.removeAttribute("novalidate");
+        }
+      });
+    });
+    this.querySelectorAll(".password-toggler").forEach((button) => {
+      button.addEventListener("click", () => {
+        const passwordInput = document.getElementById("password-field1");
+        if (!passwordInput) return;
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text"; 
+          document.querySelector(".show-password").setAttribute("hidden", "");
+          document.querySelector(".hide-password").removeAttribute("hidden");
+        } else {
+          passwordInput.type = "password";
+          document.querySelector(".show-password").removeAttribute("hidden");
+          document.querySelector(".hide-password").setAttribute("hidden", "");
+        }
+      });
+    });
+  }
+}
+customElements.define('login-toggle-button', cartLoginToggle);
+
+class CheckoutPopup extends HTMLElement {
+  constructor() {
+    super();
+    this.popup = null;
+    this.closeBtn = null;
+    this.init();
+  }
+  init() {
+    document.addEventListener('DOMContentLoaded', () => {
+      const button = this.querySelector('#proceed-to-checkout');
+      this.popup = this.querySelector('#checkout-popup');
+      this.closeBtn = this.querySelector('#close-popup');
+      if (button && this.popup && this.closeBtn) {
+        this.attachEventListeners(button);
+      }
+    });
+  }
+  attachEventListeners(button) {
+    button.addEventListener('click', (e) => this.openPopup(e));
+    this.closeBtn.addEventListener('click', () => this.closePopup());
+    this.popup.addEventListener('click', (e) => this.closeOnOutsideClick(e));
+  }
+  openPopup(e) {
+    e.preventDefault();
+    this.popup.classList.remove('tw-hidden');
+    document.body.classList.add("overflow-hidden");
+  }
+  closePopup() {
+    this.popup.classList.add('tw-hidden');
+    document.body.classList.remove("overflow-hidden");
+  }
+  closeOnOutsideClick(e) {
+    if (e.target === this.popup) {
+      this.closePopup();
+    }
+  }
+}
+customElements.define('checkout-popup', CheckoutPopup);
+
+class checkoutLoginToggle extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.querySelectorAll(".password-toggler").forEach((button) => {
+      button.addEventListener("click", () => {
+        var passwordInput = document.getElementById("password-field1");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          document.querySelector(".show-password").setAttribute("hidden", "");
+          document.querySelector(".hide-password").removeAttribute("hidden");
+        } else {
+          passwordInput.type = "password";
+          document.querySelector(".show-password").removeAttribute("hidden");
+          document.querySelector(".hide-password").setAttribute("hidden", "");
+        }
+      });
+    });
+  }
+}
+customElements.define('checkout-login', checkoutLoginToggle);
