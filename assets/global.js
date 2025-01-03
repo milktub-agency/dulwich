@@ -2129,3 +2129,26 @@ class CloseHeaderDrawer extends HTMLElement {
   }
 }
 customElements.define('close-header-drawer', CloseHeaderDrawer);
+
+class checkoutLoginToggle extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.querySelectorAll(".password-toggler").forEach((button) => {
+      button.addEventListener("click", () => {
+        var passwordInput = document.getElementById("password-field1");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          document.querySelector(".show-password").setAttribute("hidden", "");
+          document.querySelector(".hide-password").removeAttribute("hidden");
+        } else {
+          passwordInput.type = "password";
+          document.querySelector(".show-password").removeAttribute("hidden");
+          document.querySelector(".hide-password").setAttribute("hidden", "");
+        }
+      });
+    });
+  }
+}
+customElements.define('checkout-login', checkoutLoginToggle);
