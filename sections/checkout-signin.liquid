@@ -1,0 +1,98 @@
+{{ 'guest-checkout-signin.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_mob }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mob }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="tw-flex tw-justify-center section-{{ section.id }}-padding tw-bg-[#f3f2f1]">
+  <div class="lg:tw-w-[64%] tw-w-full page-width">
+    <h1 class="tw-text-[#141414] tw-mb-[24px] tw-text-[32px] tw-font-medium tw-leading-[36px] tw-font-primary tw-tracking-normal tw-text-center">
+      Login to Checkout
+    </h1>
+    <div class="tw-p-[24px] tw-bg-white">
+      <form action="/account/login?checkout_url=/checkout" method="post" novalidate class="cart-form">
+        <checkout-login>
+          <div class="cart-user-box">
+            <div class="cart-user-box-inner">
+              <div class="login-box tw-p-[24px]">
+                {% render 'cart_customer_link' %}
+              </div>
+              <div class="checkout-button-container tw-mt-6 tw-text-center">
+                <button
+                  type="submit"
+                  id="proceed-to-checkout"
+                  class="checkout-button button tw-bg-bright-red tw-uppercase tw-font-bold tw-text-[9px] md:tw-text-[16px] tw-min-h-[24px] md:tw-min-h-[40px]"
+                >
+                  <span class="tw-pr-[8px] tw-text-white">Log in</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </checkout-login>
+      </form>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Guest Checkout SignIn",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mob",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top mobile",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mob",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom mobile",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Guest Checkout SignIn"
+    }
+  ]
+}
+{% endschema %}

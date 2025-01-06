@@ -438,7 +438,9 @@
       "password": "Password",
       "title": "Login",
       "sign_in": "Sign in",
-      "submit": "Submit"
+      "submit": "Submit",
+      "email_placeholder": "Please enter your Email",
+      "password_placeholder": "Please enter your Password"
     },
     "order": {
       "title": "Order {{ name }}",

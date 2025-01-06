@@ -2,13 +2,24 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "checkout_signin_DhGfzD": {
+      "type": "checkout-signin",
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mob": 20,
+        "padding_bottom_mob": 20
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "checkout_signin_DhGfzD"
   ]
 }

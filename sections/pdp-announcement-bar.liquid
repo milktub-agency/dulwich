@@ -13,7 +13,7 @@
   }
 {% endstyle %}
 
-<div class="color-{{ section.settings.color_scheme }} tw-px-[10px] md:tw-px-[147px] padding-{{ section.id }} {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %} {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}">
+<div class="color-{{ section.settings.color_scheme }} pdp-announcement-bar tw-px-[10px] md:tw-px-[147px] padding-{{ section.id }} {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %} {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}">
   <carousel-component
     id="carousel--{{ section.id }}"
     class="splide"
