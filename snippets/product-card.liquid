@@ -40,7 +40,7 @@
     {% endif %}
     
     <a href="{{ product.url }}"
-      class="media media--portrait tw-bg-[#E5EEF3] tw-rounded-[11px] md:tw-rounded-[23px] product-card-media tw-pb-[106.3%]"
+      class="media media--portrait tw-bg-[#E5EEF3] tw-rounded-[11px] md:tw-rounded-[23px] product-card-media tw-pb-[103%] md:tw-pb-[106.3%]"
     >
         {% render 'lazy-image', 
           src: featured_media, 
@@ -105,15 +105,15 @@
     {% endif %}
 
     <div class="tw-flex bmd:tw-flex-col bmd:tw-gap-[10px] tw-justify-between tw-items-start tw-gap-[22px] tw-pt-[6px] md:tw-pt-[13px] tw-pb-[8px] md:tw-pb-[16px]">
-      <a href="{{ product.url }}" class="product-card__title truncate-product-title tw-font-primary tw-text-[11px] md:tw-text-[14.3px] tw-font-medium md:tw-font-semibold tw-leading-[12px] md:tw-leading-[19px]">
+      <a href="{{ product.url }}" class="product-card__title truncate-product-title tw-font-primary tw-text-[12px] md:tw-text-[14.3px] tw-font-normal md:tw-font-semibold tw-leading-[16px] md:tw-leading-[19px]">
         {{ product.title }}
       </a>
       
       <div id="price--{{ sectionId }}--{{ product.id }}" class="product-card__price bmd:tw-leading-[9px] bmd:tw-m-auto">  
-        <span class="{% if compare_at_price > price %} tw-font-bold{% endif %} tw-font-primary tw-text-[11px] md:tw-text-[16.4px] tw-font-medium md:tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
+        <span class="{% if compare_at_price > price %} tw-font-bold{% endif %} tw-font-primary tw-text-[12px] md:tw-text-[16.4px] tw-font-normal md:tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
           {{ price | money_without_trailing_zeros }}
         </span>            
-        <span class="tw-line-through{% unless compare_at_price > price %} hidden{% endunless %} tw-font-primary tw-text-[11px] md:tw-text-[16.4px] tw-font-medium md:tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
+        <span class="tw-line-through{% unless compare_at_price > price %} hidden{% endunless %} tw-font-primary tw-text-[12px] md:tw-text-[16.4px] tw-font-normal md:tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
           {{ compare_at_price | money_without_trailing_zeros }}
         </span>
       </div>

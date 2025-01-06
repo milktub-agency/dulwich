@@ -72,14 +72,14 @@
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 50.5%;
-    width: calc(50.5% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 50.7%;
+    width: calc(50.7% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 49.5%;
-    width: calc(49.5% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: 49.3%;
+    width: calc(49.3% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
 
@@ -149,7 +149,7 @@
   display: flex;
   align-items: flex-start;
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin: 6px;
 }
 
 .product-form__error-message-wrapper svg {
@@ -1636,7 +1636,7 @@ a.product__text {
 
 @media screen and (max-width: 990px) {
   .main-product-section {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
 }
 

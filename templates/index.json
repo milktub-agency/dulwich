@@ -158,7 +158,7 @@
         "mobile_padding_left": 0,
         "mobile_padding_right": 0,
         "gap_between_slides_on_desktop": 2.8,
-        "gap_between_slides_on_mobile": 1.2,
+        "gap_between_slides_on_mobile": 3.1,
         "padding_top": 36,
         "padding_bottom": 40
       }

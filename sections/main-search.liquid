@@ -63,10 +63,7 @@
   }
 {%- endstyle -%}
 
-{% paginate search.results by 50 %}
-  {% assign current_start = paginate.current_offset | plus: 1 %}
-    {% assign current_end = paginate.current_offset | plus: paginate.items %}
-    {% assign paginate_product_count = search.results_count %}
+{% paginate search.results by 24 %}
   <div class="template-search color-{{ section.settings.color_scheme }} {% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       <h1 class="h2 center">
@@ -148,7 +145,9 @@
         <facet-filters-form class="facets facets-vertical-sort page-width no-js-hidden">
           <form class="facets-vertical-form tw-items-center tw-flex bmd:tw-flex-col-reverse tw-gap-[10px]" id="FacetSortForm">
             <div class="product-count-vertical" role="status">
-              <p class="tw-font-primary bmd:tw-text-[rgb(var(--color-button))] tw-text-[9px] md:tw-text-[13px] tw-font-normal">{{ 'products.facets.product_results' | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count }}</p>
+              {%- if search.results_count -%}
+                <p class="tw-font-primary bmd:tw-text-[rgb(var(--color-button))] tw-text-[9px] md:tw-text-[13px] tw-font-normal">{{ 'templates.search.results_with_count' | t: terms: search.terms, count: search.results_count }}</p>
+              {%- endif -%}
               <div class="loading-overlay__spinner">
                 {% render "icon-spinner" %}
               </div>

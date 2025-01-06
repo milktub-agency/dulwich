@@ -127,7 +127,7 @@
     {%- endif -%}
 
     <div class="header-menu-search-container bmd:tw-mt-[10px]">
-      <div class="blg:tw-flex md:tw-mb-[18px] bmd:tw-mb-[4px] tw-font-primary bmd:tw-text-[7px] tw-font-normal tw-justify-end lg:tw-hidden">Call us on +44 (0)20 8670 5883</div>
+      <div class="mobile-calling-no blg:tw-flex md:tw-mb-[18px] bmd:tw-mb-[4px] tw-font-primary bmd:tw-text-[7px] tw-font-normal tw-justify-end lg:tw-hidden">Call us on +44 (0)20 8670 5883</div>
       <div class="blg:tw-flex tw-flex-row-reverse lg:tw-block header-icons-search-menu">
         <div class="header-menu-search ">
           <span id="header-search-sticky" class="header-icon-search-sticky">{% render 'icon-header-search' %}</span>
@@ -227,14 +227,12 @@
               {%- endcase -%}
             {%- endfor -%}
   
-            {%- if cart.item_count < 100 -%}
-              <a href="javascript:void(0)" id="header-cart-price">
-                <div class="login-text header-basket-price blg:tw-hidden lg:tw-block">
-                  <span class="basket-label">{{ 'templates.cart.Basket' | t }}</span>
-                  <span id="cart-header-price" class="cart-header-price">/{{ cart.total_price | money }}</span>
-                </div>
-              </a>
-            {%- endif -%}
+            <a href="javascript:void(0)" id="header-cart-price">
+              <div class="login-text header-basket-price blg:tw-hidden lg:tw-block">
+                <span class="basket-label">{{ 'templates.cart.Basket' | t }}</span>
+                <span id="cart-header-price" class="cart-header-price">/{{ cart.total_price | money }}</span>
+              </div>
+            </a>
 
             {% if section.settings.menu != blank %}
               {% render 'header-drawer' %}

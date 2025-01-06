@@ -1,5 +1,5 @@
 <div class="menu-drawer__inner-container tw-h-full">
-  <div class="menu-drawer__navigation-container tw-flex tw-flex-col tw-h-full tw-px-[30px] tw-py-[10px] tw-overflow-auto">
+  <div class="menu-drawer__navigation-container tw-flex tw-flex-col tw-h-full tw-px-[33px] tw-py-[10px] tw-overflow-auto">
     <close-header-drawer class="tw-h-[20px] tw-w-[20px] tw-fixed tw-right-[25px] tw-top-[10px]">
       {% render "icon-close" %}
     </close-header-drawer>
@@ -25,7 +25,7 @@
       </div>
     {% endif %}
     {%- if shop.customer_accounts_enabled -%}
-      <div class="tw-flex tw-items-center tw-justify-center tw-pb-[20px]">
+      <div class="mobile-header-drawer tw-flex tw-items-center tw-justify-center tw-pb-[20px]">
         {% if customer == blank %}
           <a
             href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -139,7 +139,7 @@
       </ul>
     </nav>
     {% if section.settings.contact_phone_number != blank %}
-      <div class="tw-mt-[auto] tw-text-center tw-pt-[20px] tw-text-[13px]">
+      <div class="mobile-drawer-no tw-mt-[auto] tw-text-center tw-pt-[20px] tw-text-[13px]">
         {{ section.settings.contact_phone_number }}
       </div>
     {% endif %}

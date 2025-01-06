@@ -531,6 +531,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   .drawer.cart-notification-drawer table.cart-items th {
     font-size: 10px;
     padding: 0 7px;
+    padding-bottom: 6px;
   }
   .drawer.cart-notification-drawer table.cart-items td.cart-item__media {
     padding: 0 8px;

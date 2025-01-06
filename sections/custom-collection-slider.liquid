@@ -41,9 +41,9 @@
                 {% render 'responsive-picture', desktopImage: block.settings.image, fetchpriority: image_fetch %}
               </div>
               {% if block.settings.collection_name != blank %}
-                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-semibold tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection_name }}</div>
+                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-medium tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection_name }}</div>
               {% else %}
-                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-semibold tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection.title }}</div>
+                <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-mediumc tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection.title }}</div>
               {% endif %}
             </a>
           </div>

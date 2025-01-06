@@ -20,12 +20,12 @@
     </ul>
 
     <div class="tw-mt-[20px] md:tw-mt-[40px]">
-      <h2 class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[24px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-py-[13px] tw-whitespace-nowrap">
+      <h2 class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[8px] md:tw-text-[19px] tw-font-semibold tw-uppercase tw-leading-[19px] md:tw-leading-[26px] tw-py-[13px] tw-whitespace-nowrap">
         {{ 'newsletter.Newsletter' | t }}
       </h2>
       <div class="is-divider product-filter-divider"></div>
       <div {{ block.shopify_attributes }} class="collection-filter-newsletter">
-        <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[12px] tw-font-medium tw-pb-[8px]">
+        <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[16px] tw-font-medium tw-pb-[8px]">
           {{ 'newsletter.email_address' | t }}
         </div>
         {% form 'customer', class: 'newsletter-form' %}
@@ -67,7 +67,7 @@
             </div>
             <button
               type="submit"
-              class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[10px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-min-w-[70px] md:tw-min-w-[80px]"
+              class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-min-w-[70px] md:tw-min-w-[80px]"
               name="commit"
               id="Subscribe"
               aria-label="{{ 'newsletter.button_label' | t }}"
@@ -105,7 +105,7 @@
     <details class="mobile-facets__disclosure disclosure-has-popup tw-border tw-border-solid tw-border-bright-red bmd:tw-pl-[12px] bmd:tw-pr-[12px] tw-rounded-[31px] tw-py-[2px] bmd:tw-min-w-[116px] ">
       <summary class="mobile-facets__open-wrapper collection-filter-label focus-offset">
         <span class="mobile-facets__open">
-          <span class="mobile-facets__open-label button-label tw-text-[7px] tw-font-semibold tw-m-auto">
+          <span class="mobile-facets__open-label button-label tw-text-[7px] tw-font-medium tw-m-auto">
             {{ 'products.facets.filter_button' | t }}
           </span>
         </span>
@@ -140,7 +140,7 @@
               </h2>
               <div class="is-divider product-filter-divider"></div>
               <div {{ block.shopify_attributes }} class="collection-filter-newsletter">
-                <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[12px] tw-font-medium tw-pb-[8px]">
+                <div class="tw-text-black tw-text-left tw-font-primary tw-text-[11px] md:tw-text-[16px] tw-font-medium tw-pb-[8px]">
                   {{ 'newsletter.email_address' | t }}
                 </div>
                 {% form 'customer', class: 'newsletter-form' %}
@@ -182,7 +182,7 @@
                     </div>
                     <button
                       type="submit"
-                      class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[10px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-min-w-[70px] md:tw-min-w-[80px]"
+                      class="newsletter-form__button field__button tw-relative tw-bg-[rgb(var(--color-button))] tw-text-[rgb(var(--color-button-text))] tw-text-left tw-rounded-[12px] md:tw-rounded-[19px] tw-text-[9px] md:tw-text-[13px] tw-capitalize tw-py-0 md:tw-py-[2.5px] tw-min-w-[70px] md:tw-min-w-[80px]"
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"

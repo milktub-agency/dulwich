@@ -131,6 +131,7 @@ table.product-information-table thead th {
   border-radius: 40px 40px 0px 0px;
   margin-left: -20px;
   position: relative;
+  text-transform: uppercase;
 }
 .tabs-button:first-child {
   margin-left: 0;
@@ -206,6 +207,9 @@ table.product-information-table thead th {
   tab-switch-product details[open] svg {
     transform: rotate(180deg);
   }
+  .tabs-button.collapsible-content--details {
+    font-weight: 600;
+  }
 }
 .iframe-container {
   position: relative;
@@ -223,7 +227,7 @@ table.product-information-table thead th {
 }
 @media screen and (max-width: 1024px) {
   .tab-switch-page-width {
-    padding: 0 20px;
+    padding: 0 25px;
   }
 }
 

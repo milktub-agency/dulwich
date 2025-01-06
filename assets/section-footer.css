@@ -525,7 +525,7 @@
   padding-left: 0;
 }
 .is-divider:empty {
-  background-color: #60919F;
+  background-color: #ffffffca;
   opacity: 0.8;
   display: block;
   height: 3px;
@@ -534,6 +534,7 @@
 }
 .article-card-wrapper .is-divider:empty {
   opacity: 0.2;
+  background-color: #60919F;
 }
 .footer-block--menu ul.footer-block__details-content.list-unstyled>li+li {
   border-top: 2px solid rgb(var(--color-foreground), 0.29);

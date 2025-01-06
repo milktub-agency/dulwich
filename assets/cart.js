@@ -119,17 +119,19 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
-        const totalPrice = (parsedState.total_price || 0) / 100;
-        const formattedPrice = `£${totalPrice.toFixed(2)}`;
-        const totalPriceHeader = document.getElementById('cart-header-price');
-        const totalPriceCartElements = document.querySelectorAll('#cart-page-total-price');
-        if (totalPriceHeader) {
-          totalPriceHeader.innerHTML = `/${formattedPrice}`;
-        }
-        if (totalPriceCartElements.length > 0) {
-          totalPriceCartElements.forEach(element => {
-            element.innerHTML = formattedPrice;
-          });
+        if (parsedState.total_price) {
+          const totalPrice = (parsedState.total_price || 0) / 100;
+          const formattedPrice = `£${totalPrice.toFixed(2)}`;
+          const totalPriceHeader = document.getElementById('cart-header-price');
+          const totalPriceCartElements = document.querySelectorAll('#cart-page-total-price');
+          if (totalPriceHeader) {
+            totalPriceHeader.innerHTML = `/${formattedPrice}`;
+          }
+          if (totalPriceCartElements.length > 0) {
+            totalPriceCartElements.forEach(element => {
+              element.innerHTML = formattedPrice;
+            });
+          }
         }
         const cartCollection = document.querySelector(".cart-collection");
         if (cartCollection) {
