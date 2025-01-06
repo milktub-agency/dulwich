@@ -248,11 +248,11 @@ cart-items {
 }
 @media screen and (min-width: 1024px) {
   .cart-section .cart-section__cart-items-upsell {
-    width: 64%;
+    width: 65.3%;
     padding-right: 40px;
   }
   .cart-section .cart-section__cart-footer {
-    width: 36%;
+    width: 34.7%;
   }
   .cart-section {
     flex-direction: row;
@@ -284,4 +284,11 @@ cart-items {
 .cart-section:has(.is-empty) .cart-section__cart-items+.upsell-products-cart,
 .cart-section .cart-section__cart-footer.is-empty {
   display: none;
+}
+
+.cart-announcement-text p {
+  font-size: 14px;
+}
+.cart__items .quantity__button svg {
+  width: 1rem;
 }

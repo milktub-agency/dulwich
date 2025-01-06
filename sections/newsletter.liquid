@@ -44,7 +44,7 @@
             {{ block.settings.text }}
           </div>
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }} class="color-{{ section.settings.color_scheme }} tw-pt-[10px] md:tw-pt-[26px]">
+          <div {{ block.shopify_attributes }} class="color-{{ section.settings.color_scheme }} tw-pt-[10px] md:tw-pt-[35px]">
             <div class="tw-text-[#0C066A] tw-text-center tw-font-primary tw-text-[9px] md:tw-text-[20px] tw-font-medium tw-pb-[8px] hidden">{{ 'newsletter.email_address' | t }}</div>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
@@ -55,7 +55,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field tw-mb-[11px] md:tw-mb-[16px]">
+                <div class="field tw-mb-[13px] md:tw-mb-[11px]">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"

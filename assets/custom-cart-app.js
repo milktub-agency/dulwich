@@ -2,10 +2,10 @@
 // Since the code is dynamically generated, a Mutation Observer is used to detect the element.
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector(".cart-section");
-  const observer = new MutationObserver(() => {
+  const attachToggleListener = () => {
     const toggleLink = document.querySelector('.coupon-toggle-link');
     const couponForm = document.querySelector('.scDiscount__container');
-    if (toggleLink && couponForm) {
+    if (toggleLink && couponForm && !toggleLink.hasAttribute('data-listener-attached')) {
       couponForm.classList.add('visible');
       toggleLink.addEventListener('click', () => {
         couponForm.classList.toggle('visible');
@@ -15,11 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
           toggleLink.textContent = 'Hide';
         }
       });
-      observer.disconnect();
+      toggleLink.setAttribute('data-listener-attached', 'true');
     }
+  };
+  const observer = new MutationObserver(() => {
+    attachToggleListener();
   });
   observer.observe(container, {
     childList: true,
     subtree: true
   });
+  attachToggleListener();
 });

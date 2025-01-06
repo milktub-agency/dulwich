@@ -353,7 +353,7 @@
     <div class="footer__content-bottom-wrapper md:tw-pl-[147px] md:tw-pr-[127px] {% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--left{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content md:tw-text-[16px] tw-text-[14px] tw-font-secondary"
-          >{{ 'sections.footer.copyright' | t }} {{ 'now' | date: '%Y' }} &copy; <span class="tw-font-bold">{{ shop.name | link_to: routes.root_url -}}</span>
+          >{{ 'sections.footer.copyright' | t }} {{ 'now' | date: '%Y' }} &copy; <span class="tw-font-bold ">{{ shop.name | link_to: routes.root_url -}}</span>
         </small>
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">

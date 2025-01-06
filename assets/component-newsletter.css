@@ -35,6 +35,7 @@
 .newsletter-form__message {
   justify-content: center;
   margin-bottom: 0;
+  width: 100%;
 }
 
 .newsletter-form__message--success {

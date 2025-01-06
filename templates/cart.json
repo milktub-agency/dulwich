@@ -60,7 +60,7 @@
       "settings": {
         "cart_announcement_text": "<p>For all <strong>Special Deliveries, <\/strong>orders must be placed on weekdays before 2pm for same-day dispatch!<\/p>",
         "enable_upsell": true,
-        "upsell_heading": "YOU MAY BE INTERESTED IN :",
+        "upsell_heading": "You May Be Interested In:",
         "limit_upsell_products": 10,
         "enable_dynamic_product_recommendations": true,
         "recommendation_intent": "related",
@@ -81,7 +81,7 @@
         "gap_between_slides_on_desktop": 2,
         "gap_between_slides_on_mobile": 2,
         "payment_enable": true,
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 40,
         "padding_top_mob": 10,
         "padding_bottom_mob": 10

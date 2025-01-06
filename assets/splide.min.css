@@ -109,11 +109,15 @@ media-gallery .splide__track--nav>.splide__list>.splide__slide.is-active {
         bottom: -23px;
     }
     .collection button.splide__arrow,
-    .related-products button.splide__arrow,
-    cart-upsell-recommendations button.splide__arrow {
+    .related-products button.splide__arrow {
         background: #60919F;
         height: 27px;
         width: 27px;
+    }
+    cart-upsell-recommendations button.splide__arrow {
+        background: #60919F;
+        height: 31px;
+        width: 31px;
     }
     .collection .splide__arrow svg,
     .related-products .splide__arrow svg,

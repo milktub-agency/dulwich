@@ -1555,7 +1555,7 @@ deferred-media {
   }
   
   .header__heading-link {
-    padding-bottom: 13px;
+    padding-bottom: 0px;
   }
 
   .header--mobile-left .header__heading,
@@ -1578,8 +1578,9 @@ deferred-media {
     gap: 12px;
   }
   .header__heading-logo-wrapper {
-    min-width: 75px;
-    max-width: 75px;
+    min-width: 64px;
+    max-width: 64px;
+    max-height: 64px;
   }
 }
 
@@ -2739,11 +2740,11 @@ details-disclosure > details {
     letter-spacing: normal;
   }
   predictive-search .field__label {
-    font-size: 7px;
+    font-size: 9px;
     top: 50%;
     transform: translateY(-50%);
     line-height: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 11px;
   }
   .search-modal__form .field__input:focus~.field__label, .search-modal__form .field__input:not(:placeholder-shown)~.field__label {
@@ -2781,20 +2782,20 @@ details-disclosure > details {
     width: 100%;
   }
   .search-modal__form {
-    max-width: 354px;
+    max-width: 266px;
   }
 }
 .list-social {
   display: flex;
 }
 
-#stickyAddToCartWrapper .desktop-sticky-add-to-cart-button{
+#stickyAddToCartWrapper .sticky-atc .desktop-sticky-add-to-cart-button{
   background: #E5EEF3;
   width: 50%;
   margin: auto;
   align-items: center;
 }
-#stickyAddToCartWrapper .desktop-sticky-add-to-cart-button .atc-down-text{
+#stickyAddToCartWrapper .sticky-atc .desktop-sticky-add-to-cart-button .atc-down-text{
   display: none;
 }
 .sticky-atc {
@@ -2811,7 +2812,7 @@ details-disclosure > details {
   justify-content: center;
 }
 @media screen and (max-width: 750px) {
-  #stickyAddToCartWrapper .desktop-sticky-add-to-cart-button{
+  #stickyAddToCartWrapper .sticky-atc .desktop-sticky-add-to-cart-button{
     width: unset;
     margin: unset;
   }
@@ -2831,7 +2832,7 @@ details-disclosure > details {
     padding-right: 0px;
   }
   .product__info-container .quantity__button svg {
-    width: 0.8rem;
+    width: 1rem;
   }
   .product__info-container .quantity__button {
     width: calc(3rem / var(--font-body-scale));
@@ -2913,10 +2914,10 @@ cart-upsell-recommendations.splide.is-initialized {
 }
 @media screen and (max-width: 750px) {
   .product-card .product-card-atc-btn {
-    min-width: 80%;
-    max-width: 80%;
-    min-height: 25px;
-    max-height: 25px;
+    min-width: 65%;
+    max-width: 65%;
+    min-height: 23px;
+    max-height: 23px;
   }
   cart-upsell-recommendations .product-card .product-card-atc-btn {
     font-size: 9px;
@@ -3027,7 +3028,7 @@ li.active a {
 }
 @media screen and (max-width: 750px) {
   .product-card .product-card__info .product-card__title {
-    min-height: 20px;
+    min-height: 26px;
   }
   .collection .featured-collection-hd.h4 {
     font-size: 16px;
@@ -3070,6 +3071,7 @@ li.active a {
   font-size: 13px !important;
   margin-top: 13px !important;
   padding: 5px 0px !important;
+  font-weight: 400 !important;
 }
 .cart__footer .cbb-shipping-rates-calculator {
   margin-top: 0px !important;
@@ -3333,6 +3335,12 @@ cart-upsell-recommendations.splide.is-initialized {
   .header-cart-drawer-sticky.drawer.cart-notification-drawer {
     top: 74px;
   }
+  .newsletter .newsletter__wrapper .inline-richtext {
+    padding-bottom: 13px;
+  }
+  cart-drawer.drawer.cart-notification-drawer {
+    top: 110px;
+  }
 }
 p.product__text:empty {
   display: none;
@@ -3403,12 +3411,55 @@ p.product__text:empty {
 .template-search__search .search__input.field__input {
   border: 1px solid #000;
 }
+footer .copyright__content a {
+  font-size: 14px;
+}
 @media screen and (max-width: 750px) {
   .cart-section .cart-section__cart-items-upsell .cart-items .cart-item  td.cart-item__media {
     padding-top: 0;
+  }
+  footer .copyright__content a {
+    font-size: 14px;
+  }
+  .testimonial-section carousel-component {
+    margin: auto;
+    width: 83.3%;
+    display: block;
+  }
+  .collection .splide__arrows {
+    position: inherit;
+  }
+  .testimonial-section .splide__pagination {
+    position: relative;
   }
 }
 
 .cart-drawer__empty-content a.button {
   background: #60919F;
+}
+.mobile-calling-no a, .mobile-calling-no, .mobile-calling-no * {
+  color: rgba(var(--color-foreground), 0.75);
+  font-size: 7px;
+}
+.mega-menu[open] .mega-menu__content::-webkit-scrollbar {
+  scrollbar-width: thin;
+}
+.mobile-header-drawer a.button {
+  min-width: 247px;
+  min-height: 41px;
+}
+.mobile-drawer-no p {
+  font-size: 13px;
+  font-weight: 400;
+}
+.mobile-drawer-no p strong {
+  font-weight: 500;
+}
+.menu-drawer__inner-submenu summary .icon-caret {
+  height: unset;
+  top: unset;
+}
+.page-width-desktop.megamenu-padding-x {
+  padding-left: 38px;
+  padding-right: 38px;
 }

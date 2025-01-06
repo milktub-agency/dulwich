@@ -219,7 +219,7 @@ cart-remove-button .icon-remove {
   }
 
   .cart-items th {
-    border-bottom: 0.1rem solid rgba(var(--color-foreground));
+    border-bottom: 0.1rem solid #D5D5D5;
   }
 
   .cart-items thead th:first-child {
@@ -370,6 +370,7 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
     font-size: 10px;
     line-height: 10px;
     padding-bottom: 8px;
+    font-weight: 600;
   }
   .cart-section__cart-items table.cart-items th {
     text-align: center;
@@ -388,6 +389,7 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
   table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
     font-size: 13px;
     line-height: 10px;
+    font-weight: 500;
   }
   table.cart-items td.cart-item__quantity .quantity {
     width: calc(5.5rem / var(--font-body-scale) + var(--inputs-border-width)* 2);
@@ -404,6 +406,7 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
   }
   table.cart-items td.cart-item__quantity .quantity .quantity__input {
     font-size: 12px;
+    color: #000;
   }
   table.cart-items td.cart-item__quantity .quantity:after {
     --inputs-border-width: 1px;
@@ -481,6 +484,6 @@ table.cart-items td.cart-item__totals .cart-item__price-wrapper .price {
     order: 2;
   }
   .cart-section .cart-section__cart-footer .cart-coupan-shipping-totals .cart__footer {
-    padding-bottom: 2rem;
+    padding-bottom: 0.9rem;
   }
 }

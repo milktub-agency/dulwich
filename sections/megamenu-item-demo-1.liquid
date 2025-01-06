@@ -19,7 +19,7 @@
 
 <javascript-injected-section style="display:none" data-target-location='[data-submenu="{{ section.settings.parent | handleize }}"]'>
   
-  <div class="page-width-desktop mm_dropdown" {{ section.index }}>
+  <div class="page-width-desktop mm_dropdown megamenu-padding-x" {{ section.index }}>
     <span class="tw-block h3">{{ section.settings.heading }}</span>
     <span class="tw-block tw-mb-8 h5">{{ section.settings.subheading }}</span>
     <div class="mm-megamenu--content tw-flex md:tw-justify-between tw-gap-[1.4rem]">
@@ -34,19 +34,19 @@
                         id="HeaderDrawer-{{ link.handle }}"
                         class="menu-drawer__menu-item list-menu__item link link--text focus-inset tw-items-start tw-no-underline{% if link.child_active %} menu-drawer__menu-item--active{% endif %} md:tw-flex md:tw-flex-col tw-justify-start"
                       >
-                        <span class="tw-text-[1.3rem] tw-uppercase tw-font-primary tw-font-bold menu-drawer__menu-item megamenu-small">{{ link.title | escape }}</span>
+                        <span class="tw-text-[1.3rem] tw-uppercase tw-font-primary tw-font-semibold menu-drawer__menu-item megamenu-small">{{ link.title | escape }}</span>
                         <ul class="megamenu__sublink-list tw-flex tw-flex-col tw-gap-[1.2rem] md:tw-gap-[0.4rem] tw-mt-[1.6rem] md:tw-mt-[2.04rem] tw-pb-[1.3rem] tw-w-[100%]">
                           {% for sublink in link.links %}
                             <li>
                               <a
                               href="{{ sublink.url }}"
-                              class="tw-text-[1.4rem] md:tw-text-[1.3rem] tw-font-normal tw-font-secondary link link--text list-menu__item list-menu__item--link tw-py-0 {% if link.active %} list-menu__item--active{% endif %} tw-text-[rgb(var(--color-button))]"
+                              class="tw-text-[1.4rem] md:tw-text-[1.3rem] tw-font-normal tw-font-primary link link--text list-menu__item list-menu__item--link tw-py-0 {% if link.active %} list-menu__item--active{% endif %} tw-text-[rgb(var(--color-button))]"
                               >
                                 {{ sublink.title }}
                                 {% assign menu_item = sublink.title |  strip |  handleize %}
                                 {% assign popular_menu = section.settings.popular_menu_item |  strip |  handleize %}
                                 {% if menu_item == popular_menu %}
-                                  <p class="tw-text-white tw-text-[10px] tw-font-[600] tw-uppercase tw-pl-[12px] tw-mt-[3px]">{{ section.settings.popular_text }}</p>
+                                  <p class="tw-text-white tw-text-[10px] tw-font-[600] tw-uppercase tw-pl-[12px]">{{ section.settings.popular_text }}</p>
                                 {% endif %}
                               </a>
                             </li>
