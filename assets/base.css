@@ -3523,3 +3523,10 @@ checkout-login .login-box {
     font-size: 12px;
   }
 }
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .header-menus .list-menu--inline {
+    justify-content: space-evenly;
+    column-gap: unset;
+  }
+}
