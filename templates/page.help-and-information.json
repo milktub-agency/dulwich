@@ -194,7 +194,88 @@
       "settings": {
         "caption": "",
         "heading": "Dulwich Health Website - How It Works",
-        "heading_size": "h1",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_tkgiEj": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Vnngdi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What forms of payment do you accept?",
+            "icon": "check_mark",
+            "row_content": "<p>We accept <strong>PayPal</strong>, <strong>Visa, Visa Debit, Visa Electron, Mastercard and MasterCard Debit payments all secured though Opayo*</strong></p><p></p><p>We do not currently accept money orders, American Express or Diners Club cards.</p><p></p><p>Bank transfers can be accepted for larger orders – please contact our telephone sales department on <strong>020 8670 5883.</strong></p><p></p><p><strong>For telephone order only</strong><br/>You may send your credit or debit card information via phone or snail mail but not by email please as it is not secure, but we believe shopping using SagePay* is far more secure.</p><p></p><p><strong>*Opayo </strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. </p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_crmiLd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will my card be charged?",
+            "icon": "check_mark",
+            "row_content": "<p>Unlike some web sites, we only charge it when the order is picked and ready to be despatched. The card is usually charged within 24 hours of the order being received.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rbY4Wj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is ordering from Dulwich Health's web site secure?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes – the shopping cart area of the site is encrypted to ensure the security of all orders. You can view Dulwich Health’s security certificate by clicking on the padlock icon in your web browser, while in the shopping cart.</p><p></p><p>Our credit card payments, use <strong>Opayo</strong> which is simple, fast and very secure.</p><p></p><p><strong>Confidential information is not kept on our computers, neither are Credit/Debit Card details and our mailing lists will never be rented or sold.</strong></p><p></p><p><strong>Purchases</strong><br/>You can pay by any of the credit cards you see at the base of this page.</p><p><br/>If you wish to purchase over the phone then please feel free to call one of our friendly operators on <strong>+44 208 670 5883</strong></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DUPzzW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "If I order from outside the UK, will I pay customs charges?",
+            "icon": "check_mark",
+            "row_content": "<p>If you are ordering from within the UK you will pay no customs charges.</p><p></p><p><strong>International shipping</strong> rates cover shipping <strong>only</strong>. You are responsible for any import duties, fees, or taxes incurred during delivery.</p><p></p><p>Now that we are no longer in the European Union, you may have to pay customs or charges and a handling fee in the receiving country before you can claim the parcel. </p><p></p><p>Within the European Union and most other countries small packages under a certain value our allow to be delivered without charge, but some charge customs duty – please contact your national customs office regarding this subject, as the customer <em>(not Dulwich Health)</em> is always liable for any such charges. However, even in these countries, it is possible to avoid customs taxes by ensuring that the value of the package is less than the local tax threshold.</p><p></p><p>Unfortunately Dulwich Health has to state the value of the items on the outside of the parcel with the custom declaration form.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pM47mX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I am ordering from outside the UK - will VAT be deducted from my order?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes – When ordering online your delivery address with determine the tax implications. Please refer to the above question about custom.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_b66hEb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I am ordering from a company inside the EU - can you deduct VAT from my order?",
+            "icon": "check_mark",
+            "row_content": "<p>No – unfortunately we cannot offer this service.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Vnngdi",
+        "collapsible_row_crmiLd",
+        "collapsible_row_rbY4Wj",
+        "collapsible_row_DUPzzW",
+        "collapsible_row_pM47mX",
+        "collapsible_row_b66hEb"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Card Payments, Charges & Tax",
+        "heading_size": "h2",
         "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "",
@@ -210,6 +291,7 @@
   "order": [
     "main",
     "rich_text_aW4AXB",
-    "collapsible_content_NDxQwy"
+    "collapsible_content_NDxQwy",
+    "collapsible_content_tkgiEj"
   ]
 }
