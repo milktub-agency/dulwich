@@ -27,7 +27,9 @@
     {{ 'customer.register.title' | t }}
   </h1>
 
-  <a href="/pages/are-you-a-practitioner" class="tw-mt-[10px] practitioner-link">{{ 'customer.register.practitioner_text' | t }}</a>
+  {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+    <a href="{{ section.settings.button_link }}" class="tw-mt-[10px] practitioner-link">{{ section.settings.button_label }}</a>
+  {% endif %}
 
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}
@@ -151,6 +153,17 @@
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Click here to create a practitioner account"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
     },
     {
       "type": "range",

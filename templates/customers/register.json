@@ -2,7 +2,12 @@
   "sections": {
     "main": {
       "type": "main-register",
-      "settings": {}
+      "settings": {
+        "button_label": "Click here to create a practitioner account",
+        "button_link": "shopify:\/\/pages\/are-you-a-practitioner",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
