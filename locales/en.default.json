@@ -489,7 +489,8 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Create",
+      "practitioner_text": "Click here to create a practitioner account"
     },
     "reset_password": {
       "title": "Reset account password",

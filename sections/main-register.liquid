@@ -27,7 +27,7 @@
     {{ 'customer.register.title' | t }}
   </h1>
 
-  <a href="/pages/are-you-a-practitioner" class="tw-mt-[10px] practitioner-link">Click here to create a practitioner account</a>
+  <a href="/pages/are-you-a-practitioner" class="tw-mt-[10px] practitioner-link">{{ 'customer.register.practitioner_text' | t }}</a>
 
   {%- form 'create_customer', novalidate: 'novalidate' -%}
     {%- if form.errors -%}
