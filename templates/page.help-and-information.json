@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -8,42 +17,160 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_aW4AXB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zV4FMn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Help &  Information",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zV4FMn"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "content_width": false,
+        "hide_in_mobile": false,
+        "hide_in_desktop": false,
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "padding_top_mob": 20,
+        "padding_bottom_mob": 20
+      }
+    },
     "collapsible_content_NDxQwy": {
       "type": "collapsible-content",
       "blocks": {
         "collapsible_row_7wTF9w": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I order online?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Making a purchase could not be easier. Just browse our online shop, and add any items that you wish to buy into the cart. To order an item, simply click on the <em>“add to cart”</em> link next to the product and it will appear in your shopping cart. Once you have finished, you can review the contents of your cart by click on the “cart” on the top right. You can also checkout here, where you will be asked for a few details that we need to be able to complete the order.</p><p></p><p>All products displayed on the web site are in stock. Orders are despatched the same day by Royal Mail First Class post.</p><p></p><p>We accept credit card or debit card payment secured though <strong>Opayo</strong> (Formerly SagePay*. If you are shopping from North America or anywhere else, place your order and your credit card company will convert the transaction to US Dollars or your own currency.</p><p></p><p>Your card is not charged until your order has been picked, packed and is ready for despatch. UK delivery time is usually 1-2 days, and international delivery time 3-7 days.</p><p></p><p><strong>Your Shipping Costs</strong><br/>Please note that our shipping and handling costs are added to your order amount at the check out once we know where you want the item delivered.</p><p></p><p>Every parcel that we send out is insured against loss, theft or damage, so you can order with confidence – in the unlikely event that you do not receive your order, or receive an order which is damaged, then we will either refund you or resend the order free of charge.</p><p></p><p>If you’re in London, you can also visit our office where we have the whole range of our products that we have on our web site.</p><p></p><p><strong>The small print</strong><br/>When confirmation of order is received, this is to indicate that we have received your order. It does not indicate that a contract exists between us. We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p><p></p><p><strong>*Opayo </strong>is the new name for SagePay. Who are one of the UK’s most trusted payment service provider (PSP). In 2019, their gateway processed £40bn worth of card payments for over 50,000 merchants, online and in-store. They changed their name because they were acquired by Elavon – a big name in payments and a subsidiary of U.S. Bank. </p>",
             "page": ""
           }
         },
         "collapsible_row_CftJNA": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "I am having problems using the shopping cart - what should I do?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The main reasons why customers may encounter problems using the shopping cart are that (a) customers are ordering from within a firewalled company network, or (b) ordering from a non-standard PC/Mac unit (eg a games console). In both these cases, the shopping cart may not function properly, so we recommend using a normal stand-alone PC/Mac where possible. Another possible source of problems is that the security settings on your web browser are set at maximum, which prevents your computer communicating with our server properly. If using Internet Explorer, adjust the security level slider to a medium setting.</p><p></p><p>For other browsers, “Java”, “JavaScript” and “Cookies” should all be enabled in the browser options.</p>",
             "page": ""
           }
         },
         "collapsible_row_bXca3P": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I know if an item is in stock?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>All products listed are in stock, and our web site is updated in real time to ensure that stock levels are as accurate as possible. Very occasionally, an item may be subject to a stock level error – if this occurs, we will e-mail you to notify you of the unavailable item, and you will not be charged for it.</p>",
             "page": ""
           }
         },
         "collapsible_row_3JW7gk": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How do I know you have received my order?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>You will receive an immediate e-mail confirmation of each order from<strong>Dulwich Health</strong>, stating the items ordered and the total cost, followed by a second email from<strong>SagePay</strong>confirming payment details</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_kbMGng": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you have a shop I can visit?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes –<em><strong>BUT</strong></em>we would prefer you ordered online, you can visit our office at<strong>2 Grecian Crescent, London SE19 3HH</strong>. Where we will be happy to help.(Between 9am – 5pm weekdays)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_c4pJqH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it possible to collect my order from your offices, instead of having it mailed?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes – <em><strong>BUT</strong></em><strong> </strong>you must call us first on <strong>020 8670 5883</strong> to place your order and state that you wish to arrange a collection. Otherwise your order will be sent in the post, and you will be charged for postage!</p><p></p><p>You can collect your order from our office at <strong>2 Grecian Crescent, London SE19 3HH</strong>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yxBNwb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I order by telephone?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes – <em><strong>BUT</strong></em> we would prefer you ordered online, all orders can be placed by telephone on <strong>020 8670 5883 </strong>between 9am – 5pm weekdays.</p><p></p><p>We don’t man the phones at weekends or public holidays.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gDHjci": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How are the delivery made for orders from the Online Shop?",
+            "icon": "check_mark",
+            "row_content": "<p>All orders are despatched by Royal Mail 48 tracked the same day, as long as the order is received by 3pm. Larger orders will be dispatched by other couriers, as long as they are received by 2pm. Orders received after this time are despatched within 24 hours.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ifweL8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I place an order now for despatch at a later date?",
+            "icon": "check_mark",
+            "row_content": "<p>Sorry, we don’t really offer this facility online – all orders are despatched as soon as possible after they are received.</p><p></p><p><em><strong>BUT</strong></em> with phones orders you are welcome to ask for a delay in despatch. Please contact our telephone sales department on <strong>020 8670 5883</strong> between 9am – 5pm weekdays.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fWfXXq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will I receive an invoice with my order?",
+            "icon": "check_mark",
+            "row_content": "<p>A confirmation of your order and an invoice will automatically be sent to you by email. (it won’t be included with the order as standard.) If you would like to receive an invoice with your items, please state this in the ‘Special Instructions’ field of the shopping cart.</p><p></p><p>You will also receive a packing slip with your purchase, that includes your order number. </p><p></p><p>Email is our preferred method of communication. If you don’t have an email, you can request that we send your invoice and packing slip with your order.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LLNGM6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "An item I saw recently on the web site is no longer listed - can I still order it?",
+            "icon": "check_mark",
+            "row_content": "<p>Our listings are updated in real-time to show only in-stock items, so if an item goes out of stock, it will no longer appear and cannot be ordered. We don’t back-order out-of-stock items for customers.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7x4Vjq": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "If a product is not listed, can you order it in for me?",
+            "icon": "check_mark",
+            "row_content": "<p>Sorry, no – we don’t currently place special orders for customers.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PwmTCt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I add items to an order I have already placed?",
+            "icon": "check_mark",
+            "row_content": "<p>As we despatch orders very quickly, unfortunately it is not possible to add to an existing order. If you require further items, you must place a new order via the shopping cart. (The extra postage cost of sending two separate orders is relatively small.)</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iKMjxg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What exactly happens after ordering?",
+            "icon": "check_mark",
+            "row_content": "<p>We endeavor to dispatch 95% of all your orders within 24 hrs for next day delivery in the UK. (Europe: 2-5 days)</p><p></p><p>When you receive confirmation of your order by email, this indicates that we have received your order. It does not indicate that a contract exists between us.</p><p></p><p>We will indicate acceptance of your order, and hence a contract between us, when we send you an invoice, by email. We have included this term to protect us in the case that a mistake has been made in pricing, we have inadvertently under-priced goods, or we are no longer able to supply a particular product for some reason. In the case of a change of price, we will always contact you first to ensure that the price is acceptable.</p>",
             "page": ""
           }
         }
@@ -52,7 +179,17 @@
         "collapsible_row_7wTF9w",
         "collapsible_row_CftJNA",
         "collapsible_row_bXca3P",
-        "collapsible_row_3JW7gk"
+        "collapsible_row_3JW7gk",
+        "collapsible_row_kbMGng",
+        "collapsible_row_c4pJqH",
+        "collapsible_row_yxBNwb",
+        "collapsible_row_gDHjci",
+        "collapsible_row_ifweL8",
+        "collapsible_row_fWfXXq",
+        "collapsible_row_LLNGM6",
+        "collapsible_row_7x4Vjq",
+        "collapsible_row_PwmTCt",
+        "collapsible_row_iKMjxg"
       ],
       "settings": {
         "caption": "",
@@ -72,6 +209,7 @@
   },
   "order": [
     "main",
+    "rich_text_aW4AXB",
     "collapsible_content_NDxQwy"
   ]
 }
