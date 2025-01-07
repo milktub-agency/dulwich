@@ -32,7 +32,7 @@
         "block_zGBAMG": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Dulwich Heath Trusted Since 1986</p>",
+            "block_value": "<p>Trusted Since 1986<\/p>",
             "link": ""
           }
         },
@@ -261,7 +261,7 @@
         "block_p7ntLj": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Trusted Since 1986</p>",
+            "block_value": "<p>Trusted Since 1986<\/p>",
             "link": ""
           }
         },

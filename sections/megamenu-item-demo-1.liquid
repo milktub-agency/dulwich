@@ -34,7 +34,12 @@
                         id="HeaderDrawer-{{ link.handle }}"
                         class="menu-drawer__menu-item list-menu__item link link--text focus-inset tw-items-start tw-no-underline{% if link.child_active %} menu-drawer__menu-item--active{% endif %} md:tw-flex md:tw-flex-col tw-justify-start"
                       >
-                        <span class="tw-text-[1.3rem] tw-uppercase tw-font-primary tw-font-semibold menu-drawer__menu-item megamenu-small">{{ link.title | escape }}</span>
+                        <a
+                          href="{{ link.url }}"
+                          class="tw-text-black"
+                        >
+                          <span class="tw-text-[1.3rem] tw-uppercase tw-font-primary tw-font-semibold menu-drawer__menu-item megamenu-small">{{ link.title | escape }}</span>
+                        </a>
                         <ul class="megamenu__sublink-list tw-flex tw-flex-col tw-gap-[1.2rem] md:tw-gap-[0.4rem] tw-mt-[1.6rem] md:tw-mt-[2.04rem] tw-pb-[1.3rem] tw-w-[100%]">
                           {% for sublink in link.links %}
                             <li>

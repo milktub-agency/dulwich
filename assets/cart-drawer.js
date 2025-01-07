@@ -43,7 +43,7 @@ class CartDrawer extends HTMLElement {
       drawerInner.removeEventListener('mouseover', handleMouseOver);
       drawerInner.removeEventListener('mouseleave', handleMouseLeave);
       cartLink.addEventListener('click', handleMobileClick);
-      document.addEventListener('click', (event) => {
+      this.addEventListener('click', (event) => {
         const isInsideDrawer = drawerInner.contains(event.target) || cartLink.contains(event.target);
         if (!isInsideDrawer) {
           this.close();

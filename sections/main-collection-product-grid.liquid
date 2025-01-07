@@ -31,6 +31,24 @@
 
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
      <div class="tw-flex tw-items-center tw-justify-end facets-sort-by-filter tw-px-[25px] md:tw-px-[147px]">
+      <nav class="breadcrumbs tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] tw-mr-auto bmd:tw-hidden md:tw-block" role="navigation" aria-label="breadcrumbs">
+        <ol class="tw-list-none tw-m-0 tw-p-0">
+          <li class="tw-inline-block">
+              <a class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-light tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" href="/" title="Home">Home</a>
+          </li>
+          {% if current_tags %}
+            <li class="tw-inline-block">{{ collection.title | link_to: collection.url }}</li>
+            <li class="tw-inline-block">
+              {% capture tag_url %}{{ collection.url }}/{{ current_tags | join: "+"}}{% endcapture %}
+              <a href="{{ tag_url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + "}}</a>
+            </li>
+          {% else %}
+            <li class="tw-inline-block">
+              <a href="{{ collection.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ collection.title }}</a>
+            </li>
+          {% endif %}
+        </ol>
+      </nav>
       <div class="mobile-facets-collection">
         {% render 'collection-list-facets' %}
       </div>

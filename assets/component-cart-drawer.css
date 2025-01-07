@@ -472,7 +472,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   min-width: 3.2rem;
 }
 .drawer.cart-notification-drawer .drawer__inner {
-  height: 550px;
+  height: 450px;
   margin-right: 46px;
   transform: translateY(100%);
   padding: 0;

@@ -1,0 +1,39 @@
+login-toggle-button {
+    text-align: left;
+}
+.cart-user-box-inner {
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0;
+}
+.custom-layout-body .cart-user-box-inner label {
+    color: #ffffff;
+}
+.custom-layout-body .custom-login-form-input {
+    color: #fff;
+}
+.custom-login-form-input {
+    width: 100%;
+}
+.password-show-container {
+    display:flex;
+    position: relative;
+}
+.password-show-btn.pass-show {
+    position: absolute;
+    right: 10px;
+}
+show-password {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-75%);
+    margin-right: 17px;
+    cursor: pointer;
+}
+show-password.active .icon.show, show-password .icon.hide {
+    display: none;
+}
+show-password.active .icon.hide, show-password .icon.show {
+    display: block;
+}

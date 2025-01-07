@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -438,7 +447,9 @@
       "password": "Password",
       "title": "Login",
       "sign_in": "Sign in",
-      "submit": "Submit"
+      "submit": "Submit",
+      "email_placeholder": "Please enter your Email",
+      "password_placeholder": "Please enter your Password"
     },
     "order": {
       "title": "Order {{ name }}",
@@ -487,7 +498,8 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create"
+      "submit": "Create",
+      "practitioner_text": "Click here to create a practitioner account"
     },
     "reset_password": {
       "title": "Reset account password",
