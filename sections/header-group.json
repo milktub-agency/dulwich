@@ -20,7 +20,7 @@
         "show_social_icons": true,
         "color_scheme": "background-1",
         "faq_text": "FAQ",
-        "faq_text_link": "",
+        "faq_text_link": "shopify://pages/help-and-information",
         "text_alignment": "tw-justify-between",
         "padding_top": 4,
         "padding_bottom": 2
@@ -32,7 +32,7 @@
         "block_zGBAMG": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Trusted Since 1986<\/p>",
+            "block_value": "<p>Trusted Since 1986</p>",
             "link": ""
           }
         },
@@ -261,7 +261,7 @@
         "block_p7ntLj": {
           "type": "block",
           "settings": {
-            "block_value": "<p>Trusted Since 1986<\/p>",
+            "block_value": "<p>Trusted Since 1986</p>",
             "link": ""
           }
         },
