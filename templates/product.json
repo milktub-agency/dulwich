@@ -133,7 +133,7 @@
         "inventory_ce6m4Q": {
           "type": "inventory",
           "settings": {
-            "text_style": "body",
+            "text_style": "subtitle",
             "inventory_threshold": 10,
             "show_inventory_quantity": true,
             "show_icon": true
