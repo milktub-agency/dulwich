@@ -14,9 +14,9 @@
 {%- endstyle -%}
 
 <div class="tw-flex tw-justify-center section-{{ section.id }}-padding tw-bg-[#f3f2f1]">
-  <div class="tw-w-full lg:tw-max-w-[620px] blg:tw-px-[25px]">
+  <div class="tw-w-full lg:tw-max-w-[478px] blg:tw-px-[25px] customer login">
     <h1 class="tw-text-[#141414] tw-mb-[24px] tw-text-[22px] md:tw-text-[32px] tw-font-medium tw-leading-[36px] tw-font-primary tw-tracking-normal tw-text-center">
-      Login to Checkout
+      {{ 'customer.login_page.title' | t }}
     </h1>
     <div class="tw-p-[24px] tw-bg-white">
       <form action="/account/login?checkout_url=/checkout" method="post" novalidate class="cart-form">
@@ -38,6 +38,15 @@
             </div>
           </div>
         </checkout-login>
+      </form>
+    </div>
+    <div class="tw-p-[24px] tw-bg-white tw-text-center">
+      <hr>
+      <h2 class="tw-pb-[14px]">{{ 'customer.login_page.guest_title' | t }}</h2>
+      <form action="/checkout">
+        <button>
+          {{ 'customer.login_page.guest_continue' | t }}
+        </button>
       </form>
     </div>
   </div>

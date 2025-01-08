@@ -156,11 +156,12 @@
                               </span>
                               <strong class="cart-item__final-price product-option">
                                 {{ item.final_price | money }}
+                                <span>&times; {{ item.quantity }}</span>
                               </strong>
                             </div>
                           {%- else -%}
                             <div class="product-option">
-                              {{ item.original_price | money }}
+                              {{ item.original_price | money }} <span>&times; {{ item.quantity }}</span>
                             </div>
                           {%- endif -%}
 
