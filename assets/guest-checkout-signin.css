@@ -12,6 +12,12 @@ login-toggle-button {
 .custom-layout-body .custom-login-form-input {
     color: #fff;
 }
+.customer checkout-login input.custom-login-form-input,
+.customer checkout-login input.custom-login-form-input:focus,
+.customer checkout-login input.custom-login-form-input:focus-visible {
+    border: none;
+    box-shadow: none;
+}
 .custom-login-form-input {
     width: 100%;
 }
