@@ -3624,3 +3624,11 @@ checkout-login .login-box {
     padding-right: 0;
   }
 }
+.customer.login .field input {
+  border: none;
+}
+.customer.login .field input:focus,
+.customer.login .field input:focus-visible {
+    border: none;
+    box-shadow: none;
+}

@@ -14,7 +14,7 @@
 {%- endstyle -%}
 
 <div class="tw-flex tw-justify-center section-{{ section.id }}-padding tw-bg-[#f3f2f1]">
-  <div class="tw-w-full lg:tw-max-w-[478px] blg:tw-px-[25px] customer login">
+  <div class="tw-w-full lg:tw-max-w-[508px] blg:tw-px-[25px] customer login">
     <h1 class="tw-text-[#141414] tw-mb-[24px] tw-text-[22px] md:tw-text-[32px] tw-font-medium tw-leading-[36px] tw-font-primary tw-tracking-normal tw-text-center">
       {{ 'customer.login_page.title' | t }}
     </h1>
@@ -23,26 +23,29 @@
         <checkout-login>
           <div class="cart-user-box">
             <div class="cart-user-box-inner">
-              <div class="login-box tw-p-[24px]">
+              <div class="login-box tw-p-[24px] md:tw-pt-[10px]">
                 {% render 'cart_customer_link' %}
               </div>
-              <div class="checkout-button-container tw-mt-6 tw-text-center">
+              <div class="checkout-button-container tw-mt-6 tw-mb-[1.5rem] tw-text-center">
                 <button
                   type="submit"
                   id="proceed-to-checkout"
-                  class="checkout-button button tw-bg-bright-red tw-uppercase tw-font-bold tw-text-[9px] md:tw-text-[16px] tw-min-h-[24px] md:tw-min-h-[40px]"
+                  class="checkout-button button tw-bg-bright-red tw-font-bold tw-text-[9px] md:tw-text-[16px] tw-min-h-[24px] md:tw-min-h-[40px]"
                 >
-                  <span class="tw-pr-[8px] tw-text-white">Log in</span>
+                  <span class="tw-text-white">{{ 'customer.login_page.sign_in' | t }}</span>
                 </button>
               </div>
+              <a href="{{ routes.account_register_url }}" class="tw-text-center">
+                {{ 'customer.login_page.create_account' | t }}
+              </a>
             </div>
           </div>
         </checkout-login>
       </form>
     </div>
-    <div class="tw-p-[24px] tw-bg-white tw-text-center">
+    <div class="tw-p-[24px] md:tw-pb-[34px] tw-bg-white tw-text-center">
       <hr>
-      <h2 class="tw-pb-[14px]">{{ 'customer.login_page.guest_title' | t }}</h2>
+      <h2 class="tw-pb-[14px] tw-text-[18px]">{{ 'customer.login_page.guest_title' | t }}</h2>
       <form action="/checkout">
         <button>
           {{ 'customer.login_page.guest_continue' | t }}
