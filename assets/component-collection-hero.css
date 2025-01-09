@@ -37,6 +37,7 @@
 
 .collection-hero__title {
   margin: 2.5rem 0;
+  color: rgba(var(--color-foreground));
 }
 
 .collection-hero__title + .collection-hero__description {
@@ -54,7 +55,7 @@
   }
 
   .collection-hero__description {
-    max-width: 66.67%;
+    max-width: 100%;
   }
 
   .collection-hero--with-image .collection-hero__description {
@@ -80,6 +81,16 @@
 @media screen and (max-width: 749px) {
   .collection-hero__image-container {
     height: 20rem;
+  }
+  .collection-hero .collection-hero__title {
+    margin: 0;
+  }
+  .collection-hero .collection-hero__description p {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .collection-hero__title+.collection-hero__description {
+    margin-top: 0;
   }
 }
 

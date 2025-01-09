@@ -3623,6 +3623,15 @@ checkout-login .login-box {
     padding-left: 0;
     padding-right: 0;
   }
+  .product-description-tab:has(table) .section .section-content.relative table:not([class]) td {
+    padding: 0.5em;
+    border: .1rem solid rgba(var(--color-foreground), .2);
+    word-break: break-word;
+    letter-spacing: inherit;
+  }
+  .product-description-tab:has(table) .section .section-content.relative table {
+    width: 100%;
+  }
 }
 .customer.login .field input {
   border: none;
