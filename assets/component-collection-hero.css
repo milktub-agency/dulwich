@@ -107,3 +107,7 @@
     min-height: 20rem;
   }
 }
+
+.collection-hero__title {
+  text-transform: uppercase;
+}
