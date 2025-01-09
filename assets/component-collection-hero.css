@@ -109,5 +109,5 @@
 }
 
 .collection-hero__title {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
