@@ -167,7 +167,7 @@
         "text_DpBRNX": {
           "type": "text",
           "settings": {
-            "text": "<h4><strong>Dulwich Heath Trusted Since 1986 | With over 30,000 customers</strong></h4>",
+            "text": "<p><strong>Dulwich Heath Trusted Since 1986 | With over 30,000 customers</strong></p>",
             "text_color": "#60919f",
             "text_font_style": "normal",
             "text_style": "body",
