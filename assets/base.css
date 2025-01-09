@@ -3632,6 +3632,10 @@ checkout-login .login-box {
   .product-description-tab:has(table) .section .section-content.relative table {
     width: 100%;
   }
+  .product-description-tab .section-content.relative {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .customer.login .field input {
   border: none;
