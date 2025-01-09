@@ -3636,6 +3636,9 @@ checkout-login .login-box {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .product-description-tab .col-inner p strong i {
+    word-break: break-all;
+  }
 }
 .customer.login .field input {
   border: none;
