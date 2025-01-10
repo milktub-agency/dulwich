@@ -3350,6 +3350,9 @@ cart-upsell-recommendations.splide.is-initialized {
   cart-drawer.drawer.cart-notification-drawer {
     top: 110px;
   }
+  .scrolled-past-header .header .header-menu-search {
+    margin-top: 0;
+  }
 }
 p.product__text:empty {
   display: none;
