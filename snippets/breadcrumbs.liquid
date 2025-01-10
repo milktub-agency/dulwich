@@ -14,23 +14,26 @@
                     <a href="{{ page.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ page.title }}</a>
                 </li>
 
-            {% when 'product' %} 
-                {% if collection %}
-                  {%- assign current_collection = collection -%}
-                      <li class="tw-inline-block">
-                          <a href="{{ current_collection.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline">{{ current_collection.title }}</a>
-                      </li>
-                {% else %}
-                  {%- assign collections = product.collections -%}
-                    {% if collections.size > 0 %}
+            {% when 'product' %}
+                <breadcrumbs-referrer>
+                    <li class="tw-inline-block" id="search-term-placeholder">
+                    </li>
+                    {% if collection %}
+                        {%- assign current_collection = collection -%}
                         <li class="tw-inline-block">
-                            <a href="{{ collections.first.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline">{{ collections.first.title }}</a>
+                            <a href="{{ current_collection.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline">{{ current_collection.title }}</a>
                         </li>
-                  {% endif %}
-                {% endif %}
-                <li class="tw-inline-block">
-                    <a href="{{ product.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ product.title }}</a>
-                </li>
+                    {% else %}
+                        {% assign collections = product.collections %}
+                        {% if collections.size > 0 %}
+                                <li class="tw-inline-block" id="collection-placeholder">
+                                </li>
+                        {% endif %}
+                    {% endif %}
+                    <li class="tw-inline-block">
+                        <a href="{{ product.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium bmd:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page">{{ product.title }}</a>
+                    </li>
+                </breadcrumbs-referrer>          
 
             {% when 'collection' and collection.handle %}
 

@@ -68,6 +68,8 @@
               | split: '*]' | join: '</span>'
               | split: '[' | join: '<span class="color-2">'
               | split: ']' | join: '</span>'
+              | split: '*/' | join: '<span class="link-syles">'
+              | split: '/*' | join: '</span>'
             %}
             {% if content_1 %}
               <div class="page_content">
@@ -108,6 +110,8 @@
               | split: '*]' | join: '</span>'
               | split: '[' | join: '<span class="color-2">'
               | split: ']' | join: '</span>'
+              | split: '*/' | join: '<span class="link-syles">'
+              | split: '/*' | join: '</span>'
             %}
             <div class="page_content">
               {{ content_2 }}
@@ -146,6 +150,8 @@
               | split: '*]' | join: '</span>'
               | split: '[' | join: '<span class="color-2">'
               | split: ']' | join: '</span>'
+              | split: '*/' | join: '<span class="link-syles">'
+              | split: '/*' | join: '</span>'
             %}
             <div class="page_content">
               {{ content_3 }}

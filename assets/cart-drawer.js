@@ -14,11 +14,16 @@ class CartDrawer extends HTMLElement {
     let closeTimeout;
     cartLink.setAttribute('role', 'button');
     cartLink.setAttribute('aria-haspopup', 'dialog');
+    const handleDesktopClick = (e) => {
+      e.preventDefault();
+      window.location.href = '/cart';
+    };
     const enableDesktopBehavior = () => {
       cartLink.addEventListener('mouseover', handleMouseOver);
       cartLink.addEventListener('mouseleave', handleMouseLeave);
       drawerInner.addEventListener('mouseover', handleMouseOver);
       drawerInner.addEventListener('mouseleave', handleMouseLeave);
+      cartLink.addEventListener('click', handleDesktopClick);
     };
     const handleMouseOver = () => {
       clearTimeout(closeTimeout);
@@ -42,6 +47,7 @@ class CartDrawer extends HTMLElement {
       cartLink.removeEventListener('mouseleave', handleMouseLeave);
       drawerInner.removeEventListener('mouseover', handleMouseOver);
       drawerInner.removeEventListener('mouseleave', handleMouseLeave);
+      cartLink.removeEventListener('click', handleDesktopClick);
       cartLink.addEventListener('click', handleMobileClick);
       this.addEventListener('click', (event) => {
         const isInsideDrawer = drawerInner.contains(event.target) || cartLink.contains(event.target);
@@ -67,7 +73,7 @@ class CartDrawer extends HTMLElement {
     });
     cartHeaderPrice.addEventListener('click', (event) => {
       event.preventDefault();
-      this.open(cartLink);
+      window.location.href = '/cart';
     });
   }
 
