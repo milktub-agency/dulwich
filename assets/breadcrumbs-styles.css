@@ -11,3 +11,9 @@
     font-size: 8px;
   }
 }
+.empty-div {
+  display: none;
+}
+.empty-div::after {
+  content: '';
+}

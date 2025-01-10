@@ -17,9 +17,13 @@
   <div class="custom-announcement-bar__box tw-flex {{ section.settings.text_alignment }} md:tw-flex-row tw-gap-[4px] md:tw-gap-[40px] tw-flex-col tw-items-center tw-px-[147px]">
     {%- if section.settings.announcement_bar_text != blank -%}
       <div>
-        <a class="tw-font-primary tw-text-[12px] md:tw-text-[14px] tw-font-normal md:tw-font-medium" href="{{  section.settings.announcement_bar_text_link }}">
-          {{ section.settings.announcement_bar_text }}
-        </a>
+        {% if section.settings.announcement_bar_text_link != blank %}
+          <a class="tw-font-primary tw-text-[12px] md:tw-text-[14px] tw-font-normal md:tw-font-medium" href="{{  section.settings.announcement_bar_text_link }}">
+            {{ section.settings.announcement_bar_text }}
+          </a>
+        {% else %}
+          <p class="tw-font-primary tw-text-[12px] md:tw-text-[14px] tw-font-normal md:tw-font-medium tw-leading-normal">{{ section.settings.announcement_bar_text }}</p>
+        {% endif %}
       </div>
     {%- endif -%}
     <div class="tw-flex tw-items-center">

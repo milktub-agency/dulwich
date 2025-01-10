@@ -70,7 +70,18 @@
 .brand-sub-heading p {
   font-size: 10px;
 }
-
+.link-syles {
+  background: #5d9aaf;
+  padding: 12px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.link-syles a {
+  color: white;
+  display: inline-block;
+  width: 100%;
+}
 @media screen and (min-width: 750px) {
   .page p:empty,
   .page h2:empty {

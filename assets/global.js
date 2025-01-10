@@ -2150,3 +2150,66 @@ class checkoutLoginToggle extends HTMLElement {
   }
 }
 customElements.define('checkout-login', checkoutLoginToggle);
+
+class BreadcrumbsReferrer extends HTMLElement {
+  constructor() {
+    super();
+    this._init();
+  }
+  connectedCallback() {
+    this._init();
+  }
+  _init() {
+    document.addEventListener('DOMContentLoaded', () => {
+      const referrerUrl = document.referrer;
+      const currentPath = window.location.pathname;
+      if (referrerUrl.includes('/collections/')) {
+        const collectionHandle = new URL(referrerUrl).pathname.split('/collections/')[1]?.split('/')[0];
+        sessionStorage.setItem('lastVisitedCollection', collectionHandle);
+      }
+      if (currentPath.includes('/products/') && !referrerUrl.includes('/collections/')) {
+        sessionStorage.removeItem('lastVisitedCollection');
+      }
+      if (referrerUrl.includes('/search')) {
+        const searchParams = new URL(referrerUrl).searchParams;
+        const searchQuery = searchParams.get('q');
+        sessionStorage.setItem('lastSearchQuery', searchQuery);
+        sessionStorage.setItem('searchResultCount', searchParams.get('results_count') || '0');
+      }
+      if (currentPath.includes('/products/') && !referrerUrl.includes('/search')) {
+        sessionStorage.removeItem('lastSearchQuery');
+        sessionStorage.removeItem('searchResultCount');
+      }
+      if (currentPath.includes('/products/')) {
+        const storedSearchQuery = sessionStorage.getItem('lastSearchQuery');
+        const searchPlaceholdertext = document.getElementById('search-term-placeholder');
+        searchPlaceholdertext.classList.add("empty-div");
+        if (storedSearchQuery) {
+          searchPlaceholdertext.classList.remove("empty-div");
+          const searchPlaceholder = document.getElementById('search-term-placeholder');
+          if (searchPlaceholder) {
+            const searchResultCount = sessionStorage.getItem('searchResultCount') || '';
+            searchPlaceholder.innerHTML = `
+                <span class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal">
+                    Search: ${storedSearchQuery}
+                </span>`;
+          }
+        }
+        const lastVisitedCollection = sessionStorage.getItem('lastVisitedCollection');
+        const collectionPlaceholdertext = document.getElementById('collection-placeholder');
+        collectionPlaceholdertext.classList.add("empty-div");
+        if (lastVisitedCollection) {
+          collectionPlaceholdertext.classList.remove("empty-div");
+          const collectionPlaceholder = document.getElementById('collection-placeholder');
+          if (collectionPlaceholder) {
+            collectionPlaceholder.innerHTML = `
+                <a href="/collections/${lastVisitedCollection}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline">
+                    ${lastVisitedCollection.replace(/-/g, ' ')}
+                </a>`;
+          }
+        }
+      }
+    });
+  }
+}
+customElements.define('breadcrumbs-referrer', BreadcrumbsReferrer);

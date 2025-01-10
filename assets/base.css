@@ -3480,8 +3480,8 @@ footer .copyright__content a {
   div.tab-switch-page-width,
   nav.breadcrumbs,
   .custom-announcement-bar .custom-announcement-bar__box {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 16px;
+    padding-right: 28px;
   }
   .header-menu-search {
     margin-bottom: 6px;
@@ -3616,7 +3616,11 @@ checkout-login .login-box {
     width: 30px;
   }
 }
-
+.notification-footer-para a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #fff;
+}
 @media screen and (max-width: 750px) {
   .product-description-tab:has(table) .row .col.medium-6.small-12.large-6,
   .product-description-tab:has(table) .row .col.medium-6.small-12.large-6 .col-inner .section {
@@ -3638,6 +3642,12 @@ checkout-login .login-box {
   }
   .product-description-tab .col-inner p strong i {
     word-break: break-all;
+  }
+  .header__heading-link {
+    padding-left: 0;
+  }
+  .notification-footer-para a {
+    font-size: 10px;
   }
 }
 .customer.login .field input {

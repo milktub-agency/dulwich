@@ -97,7 +97,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Please read these FAQ or visit our <a href=\"#\" target=\"_blank\" title=\"#\">Help & Information<\/a> page before sending us a message.",
+        "heading": "Please read these FAQ or visit our <a href=\"\/pages\/help-and-information\" target=\"_blank\" title=\"help-and-information\">Help & Information<\/a> page before sending us a message.",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
