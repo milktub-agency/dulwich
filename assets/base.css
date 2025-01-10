@@ -3658,3 +3658,31 @@ checkout-login .login-box {
     border: none;
     box-shadow: none;
 }
+
+@media screen and (min-width: 990px) {
+  .header .header-menu-search-container {
+    height: 100%;
+    width: 100%;
+  }
+  .header .header-icons-search-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .header .header-menu-search {
+    margin-bottom: 6px;
+    margin-top: 22px;
+  }
+  .header .header__menu-item {
+    padding-bottom: 29px;
+    padding-top: 16px;
+  }
+  .header .header__menu-item .icon-caret {
+    right: .8rem;
+    top: 34%;
+  }
+  .header__heading .header__heading-link {
+    padding-bottom: 0;
+  }
+}
