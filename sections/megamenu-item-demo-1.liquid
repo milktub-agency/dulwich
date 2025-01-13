@@ -29,7 +29,7 @@
     <div class="mm-megamenu--content tw-flex md:tw-justify-between tw-gap-[1.4rem]">
       <div class="tw-w-[100%]">
         <div class="mm-megamenu--column__menuitems tw-gap-4">
-          <ul class="menu-drawer__menu has-submenu list-menu md:tw-flex tw-justify-between tw-mt-[1.6rem] md:tw-mt-[2.04rem] " role="list">
+          <ul class="menu-drawer__menu has-submenu md:tw-flex tw-justify-between tw-mt-[1.6rem] md:tw-mt-[2.04rem] " role="list">
               {%- for link in section.settings.menu.links -%}
                 <li class="tw-box-content tw-flex-1 {% if forloop.index>1 %}tw-pl-[2%] megamenu__left-border{% endif %}">
                   {%- if link.links != blank -%}
