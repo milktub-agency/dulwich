@@ -1656,7 +1656,7 @@ deferred-media {
   }
   .list-menu--inline {
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     column-gap: 4.3%;
   }
   .header__menu-item span {

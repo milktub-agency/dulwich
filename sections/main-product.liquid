@@ -148,12 +148,12 @@
               {% render block %}
             {%- when 'text' -%}
               {% if block.settings.text != blank %} 
-                <p
+                <div
                   class="product__text description-text--{{block.id }} tw-leading-normal tw-tracking-normal inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                   {{ block.shopify_attributes }}
                 >
-                  {{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}
-                </p>
+                  {{ block.settings.text }}
+                </div>
               {% endif %}
             {%- when 'title' -%}
               <div class="product__title blg:tw-hidden lg:tw-block" {{ block.shopify_attributes }}>

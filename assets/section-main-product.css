@@ -11,6 +11,15 @@
   padding-left: 0;
 }
 
+.product__text p:empty  {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product__text p:empty + p:empty {
+  display: none;
+}
+
 @media screen and (min-width: 990px) {
   .product__column-sticky {
     display: block;
