@@ -50,15 +50,17 @@
         <ul class="splide__list">
           {%- for block in section.blocks -%}
             <li class="splide__slide">
-              {% if block.settings.image_desktop != blank %}
-                {% render 'responsive-picture' 
-                 forloop: forloop,
-                 desktopImage: block.settings.image_desktop,
-                 mobileImage: block.settings.image_mobile,
-                 img-class: 'tw-w-full' %}
-              {% else %}
-                {{ 'lifestyle-2' | placeholder_svg_tag }}
-              {% endif %}
+              <a class="slider__image--link  lazy-load-picture" href="{{ block.settings.image_url }}">
+                {% if block.settings.image_desktop != blank %}
+                  {% render 'responsive-picture' 
+                   forloop: forloop,
+                   desktopImage: block.settings.image_desktop,
+                   mobileImage: block.settings.image_mobile,
+                   img-class: 'tw-w-full' %}
+                {% else %}
+                  {{ 'lifestyle-2' | placeholder_svg_tag }}
+                {% endif %}
+              </a>
             </li>
           {%- endfor -%}
         </ul>
@@ -149,6 +151,11 @@
             "type": "image_picker",
             "id": "image_mobile",
             "label": "Image ( Mobile )"
+          },
+          {
+            "type": "url",
+            "id": "image_url",
+            "label": "Image URL"
           }
         ]
       }
