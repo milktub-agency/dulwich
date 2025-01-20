@@ -2,7 +2,7 @@
 
 {% unless template == 'index' or template == 'list-collections' or template == '404' %}
     {% assign t = template | split: '.' | first %}
-    <nav class="breadcrumbs lg:tw-px-[147px] blg:tw-px-[25px] tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] {% if template == 'collection' %} bmd:tw-block md:tw-hidden{% endif %}" role="navigation" aria-label="breadcrumbs">
+    <nav class="breadcrumbs lg:tw-px-[147px] blg:tw-px-[25px] page-width tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] {% if template == 'collection' %} bmd:tw-block md:tw-hidden{% endif %}" role="navigation" aria-label="breadcrumbs">
         <ol class="tw-list-none tw-m-0 tw-p-0">
             <li class="tw-inline-block">
                 <a class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-light tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" href="/" title="Home">Home</a>
