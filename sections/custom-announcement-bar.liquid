@@ -14,7 +14,7 @@
 {% endstyle %}
 
 <div class="custom-announcement-bar padding-{{ section.id }} {% if section.settings.hide_mobile %}tw-hidden{% endif %} md:tw-block color-{{ section.settings.color_scheme }}">
-  <div class="custom-announcement-bar__box tw-flex {{ section.settings.text_alignment }} md:tw-flex-row tw-gap-[4px] md:tw-gap-[40px] tw-flex-col tw-items-center tw-px-[147px]">
+  <div class="custom-announcement-bar__box tw-flex {{ section.settings.text_alignment }} md:tw-flex-row tw-gap-[4px] md:tw-gap-[40px] tw-flex-col tw-items-center tw-px-[147px] page-width">
     {%- if section.settings.announcement_bar_text != blank -%}
       <div>
         {% if section.settings.announcement_bar_text_link != blank %}

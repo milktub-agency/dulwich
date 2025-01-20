@@ -57,27 +57,31 @@
     {% endfor %}
 
     {% if badge_text != blank %}
-      <span class="badge-capsule tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] md:tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-font-semibold tw-border bmd:tw-border-[0.5px] tw-border-solid tw-border-[rgb(var(--color-foreground))] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] lg:tw-max-w-[40.7%]">{{ badge_text }}</span>
+      <a href="{{ product.url }}">
+        <span class="badge-capsule tw-absolute tw-top-[4px] md:tw-top-[9px] tw-left-[4px] md:tw-left-[9px] tw-leading-normal tw-whitespace-nowrap tw-tracking-normal tw-text-[rgb(var(--color-button))] md:tw-text-[rgb(var(--color-foreground))] tw-font-primary tw-font-semibold tw-border bmd:tw-border-[0.5px] tw-border-solid tw-border-[rgb(var(--color-foreground))] tw-rounded-[20px] tw-py-[2%] tw-px-[3.6%] tw-max-h-[10.7%] lg:tw-max-w-[40.7%]">{{ badge_text }}</span>
+      </a>
     {% endif %}
 
     {% assign badge_text_new = "" %}
     {% if product.tags contains 'new' or product.tags contains 'New' %}
       {% assign badge_text_new = "new!" | capitalize %}
-      <span class="badge-new tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[19%] bmd:tw-min-h-[19%] lg:tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[6.1%] tw-px-[5.5%] lg:tw-px-[5.6%]">{{ badge_text_new }}</span>
+      <a href="{{ product.url }}">
+        <span class="badge-new tw-absolute tw-top-0 tw-right-0 tw-text-[rgb(var(--color-background))] tw-bg-[rgb(var(--color-button))] tw-font-primary tw-font-light tw-rounded-bl-[19px] lg:tw-rounded-bl-[39px] tw-rounded-tr-[11px] lg:tw-rounded-tr-[23px] tw-max-h-[19%] bmd:tw-min-h-[19%] lg:tw-max-w-[40%] tw-py-[3.8%] lg:tw-py-[6.1%] tw-px-[5.5%] lg:tw-px-[5.6%]">{{ badge_text_new }}</span>
+      </a>
     {% endif %}
     
     <div class="product-card__badges tw-absolute tw-top-4 tw-left-4">
-
-      {%- if current_variant.available == false -%}
-        <span class="badge badge--soldout" aria-hidden="true">
-          Sold Out
-        </span>
-      {%- elsif current_variant.compare_at_price > current_variant.price and current_variant.available -%}
-        <span class="badge badge--onsale" aria-hidden="true">
-          On Sale
-        </span>
-      {%- endif -%}
-
+      <a href="{{ product.url }}">
+        {%- if current_variant.available == false -%}
+          <span class="badge badge--soldout" aria-hidden="true">
+            Sold Out
+          </span>
+        {%- elsif current_variant.compare_at_price > current_variant.price and current_variant.available -%}
+          <span class="badge badge--onsale" aria-hidden="true">
+            On Sale
+          </span>
+        {%- endif -%}
+      </a>
     </div>
   </div>
   
@@ -111,10 +115,10 @@
       
       <div id="price--{{ sectionId }}--{{ product.id }}" class="product-card__price bmd:tw-leading-[9px] bmd:tw-m-auto">  
         <span class="{% if compare_at_price > price %} tw-font-bold{% endif %} tw-font-primary tw-text-[12px] md:tw-text-[16.4px] tw-font-normal md:tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
-          {{ price | money_without_trailing_zeros }}
+          {{ price | money }}
         </span>            
         <span class="tw-line-through{% unless compare_at_price > price %} hidden{% endunless %} tw-font-primary tw-text-[12px] md:tw-text-[16.4px] tw-font-normal md:tw-font-semibold tw-leading-[9px] md:tw-leading-[19px]">
-          {{ compare_at_price | money_without_trailing_zeros }}
+          {{ compare_at_price | money }}
         </span>
       </div>
     </div>

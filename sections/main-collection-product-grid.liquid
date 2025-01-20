@@ -30,7 +30,7 @@
     {% assign paginate_product_count = collection.products_count %}
 
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
-     <div class="tw-flex tw-items-center tw-justify-end facets-sort-by-filter tw-px-[25px] md:tw-px-[147px]">
+     <div class="tw-flex tw-items-center tw-justify-end facets-sort-by-filter tw-px-[25px] md:tw-px-[147px] page-width">
       <nav class="breadcrumbs tw-text-[0.85em] tw-my-[20px] blg:tw-mt-[15px] blg:tw-mb-[6px] tw-mr-auto bmd:tw-hidden md:tw-block" role="navigation" aria-label="breadcrumbs">
         <ol class="tw-list-none tw-m-0 tw-p-0">
           <li class="tw-inline-block">
@@ -130,7 +130,7 @@
       <p class="tw-font-primary tw-text-[rgb(var(--color-button))] tw-text-[9px] md:tw-text-[18px] bmd:tw-font-medium md:tw-font-normal tw-leading-normal tw-pt-[11px] md:tw-pt-[22px] tw-text-right md:tw-text-center">{{ 'products.facets.product_results' | t: current_start: current_start, current_end: current_end, paginate_product_count: paginate_product_count }}</p>
      </div>
 
-    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical tw-px-[25px] md:tw-px-[147px] {% endif %}">
+    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical tw-px-[25px] md:tw-px-[147px] page-width {% endif %}">
       {{ 'component-facets.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering -%}

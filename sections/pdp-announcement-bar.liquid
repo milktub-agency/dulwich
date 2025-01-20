@@ -14,38 +14,40 @@
 {% endstyle %}
 
 <div class="color-{{ section.settings.color_scheme }} pdp-announcement-bar tw-px-[10px] md:tw-px-[147px] padding-{{ section.id }} {% if section.settings.hide_in_desktop %}md:tw-hidden{%else%}md:tw-block{% endif %} {% if section.settings.hide_in_mobile %}tw-hidden{%else%}tw-block{% endif %}">
-  <carousel-component
-    id="carousel--{{ section.id }}"
-    class="splide"
-    data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
-    data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
-    data-desktopperpage="{{ section.settings.slides_perpage | default: 1 }}"
-    data-mobileperpage="{{ section.settings.slides_perpage_mobile | default: 1 }}"
-    data-type="slide"
-    data-mobileSlideType="loop"
-    data-showArrows="{{ section.settings.show_arrows }}"
-    data-showArrowsOnMobile="{{ section.settings.show_arrows_on_mobile }}"
-    data-perMove="1"
-    data-disabledrag="true"
-  >
-    <div class="splide__track md:tw-mx-auto ">
+  <div class="tw-max-w-[1440px] tw-mx-auto">
+    <carousel-component
+      id="carousel--{{ section.id }}"
+      class="splide"
+      data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
+      data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
+      data-desktopperpage="{{ section.settings.slides_perpage | default: 1 }}"
+      data-mobileperpage="{{ section.settings.slides_perpage_mobile | default: 1 }}"
+      data-type="slide"
+      data-mobileSlideType="loop"
+      data-showArrows="{{ section.settings.show_arrows }}"
+      data-showArrowsOnMobile="{{ section.settings.show_arrows_on_mobile }}"
+      data-perMove="1"
+      data-disabledrag="true"
+    >
+      <div class="splide__track md:tw-mx-auto ">
         <ul class="splide__list tw-items-center">
-            {% for block in section.blocks %}
-                <li class="splide__slide tw-text-center tw-items-center tw-flex pdp-announecment-block tw-flex-col tw-relative tw-gap-[1.77rem] tw-px-[0.5rem] md:tw-px-[2.5rem]">
-                    {% if block.settings.block_value != blank %}
-                        <div class="tw-text-center">
-                          {% if block.settings.link != blank %}
-                            <a href="{{ block.settings.link }}" class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">{{ block.settings.block_value | strip_html }}</a>
-                          {% else %}
-                            <div class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">{{ block.settings.block_value | strip_html }}</div>
-                          {% endif %}
-                        </div>
-                    {% endif %}
-                </li>
-            {% endfor %}
+          {% for block in section.blocks %}
+            <li class="splide__slide tw-text-center tw-items-center tw-flex pdp-announecment-block tw-flex-col tw-relative tw-gap-[1.77rem] tw-px-[0.5rem] md:tw-px-[2.5rem]">
+              {% if block.settings.block_value != blank %}
+                <div class="tw-text-center">
+                  {% if block.settings.link != blank %}
+                    <a href="{{ block.settings.link }}" class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">{{ block.settings.block_value | strip_html }}</a>
+                  {% else %}
+                    <div class="tw-text-[0.85rem] md:tw-text-[1.4rem] tw-font-medium tw-font-primary tw-text-[rgba(var(--color-foreground))]">{{ block.settings.block_value | strip_html }}</div>
+                  {% endif %}
+                </div>
+              {% endif %}
+            </li>
+          {% endfor %}
         </ul>
-    </div>
-  </carousel-component>
+      </div>
+    </carousel-component>
+  </div>
 </div>
 
 {% schema %}
