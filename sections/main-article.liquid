@@ -74,6 +74,11 @@
           {{ article.content }}
         </div>
 
+      {%- when 'social_media' -%}
+        <div class="page-width page-width--narrow">
+          {%- render 'social-icons', class: 'footer__list-social blog-social', footerStyles: 'footer-social-icons' -%}
+        </div>
+
       {%- when 'share' -%}
         <div
           class="article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -371,6 +376,11 @@
     {
       "type": "content",
       "name": "t:sections.main-article.blocks.content.name",
+      "limit": 1
+    },
+    {
+      "type": "social_media",
+      "name": "Social media",
       "limit": 1
     },
     {

@@ -125,6 +125,14 @@ window.location = '/account/login?checkout_url='+returnUrl;
     {% endif %}
 
     {% render 'meta-tags' %}
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="2af1eace-846b-40fa-a779-e6536f811218"
+      type="text/javascript"
+      defer
+    >
+    </script>
 
     <script src="{{ 'constants.js' | asset_url }}" defer></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer></script>
@@ -136,6 +144,8 @@ window.location = '/account/login?checkout_url='+returnUrl;
     {%- endif -%}
 
     {{ content_for_header }}
+
+    {% render 'cookie-consent' %}
 
     {% style %}
       {% for scheme in settings.color_schemes -%}

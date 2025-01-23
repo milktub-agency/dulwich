@@ -3338,6 +3338,12 @@ cart-upsell-recommendations.splide.is-initialized {
     padding-bottom: 26px;
     padding-top: 30px;
   }
+  .scrolled-past-header .header .header__icons .header__icon.header__icon--cart {
+    width: auto;
+  }
+  .scrolled-past-header .header .header__icons .header__icon.header__icon--cart .cart-count-bubble {
+    left: 1.6rem;
+  }
 }
 p.product__text:empty {
   display: none;
@@ -3681,5 +3687,50 @@ checkout-login .login-box {
   }
   .header__heading .header__heading-link {
     padding-bottom: 0;
+  }
+}
+
+.footer__list-social.list-social.blog-social:only-child {
+  justify-content: flex-start;
+}
+.cart-continue-shopping.underlined-link:hover {
+  color: white;
+}
+.header__search .search-modal__form .field__input:focus,
+.header__search .search-modal__form .field__input:focus-visible {
+  box-shadow: 0 0 0 calc(.1rem + var(--inputs-border-width)) #60919f;
+}
+.header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"]:focus,
+.header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"]:focus-visible,
+.header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"],
+.header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"] {
+  border-radius: 8px 8px 0 0;
+}
+.header__search .search-modal__form[open="true"]:has(.field__input[aria-expanded="true"]:focus) .predictive-search,
+.header__search .search-modal__form[open="true"]:has(.field__input[aria-expanded="true"]:focus-within) .predictive-search,
+.header__search .search-modal__form[open="true"]:has(.field__input[aria-expanded="true"]:focus-visible) .predictive-search {
+  top: calc(100% + 0.3rem);
+}
+.header__search .search-modal .search-modal__content:focus,
+.header__search .search-modal .search-modal__content:focus-visible {
+  box-shadow: none;
+}
+.newsletter .newsletter-form__button.field__button {
+  background: rgb(var(--color-button));
+}
+@media screen and (min-width: 990px) {
+  .header__search .search-modal__form .field__input,
+  .header__search .search-modal__form .field__input {
+    padding-top: 19px;
+    font-size: 13px;
+  }
+  .header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"]:focus,
+  .header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"]:focus-visible,
+  .header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"],
+  .header__search .search-modal__form[open="true"] .field__input[aria-expanded="true"] {
+    border-radius: 20px 20px 0 0;
+  }
+  .tabs-buttons .tabs-button:not(.active):nth-of-type(1) {
+    margin-left: -2px;
   }
 }
