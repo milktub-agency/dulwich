@@ -49,13 +49,13 @@
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div
-                class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="newsletter-form__field-wrapper md:tw-flex md:tw-justify-center md:tw-items-center md:tw-gap-x-3 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="field tw-mb-[13px] md:tw-mb-[11px]">
+                <div class="field bmd:tw-mb-[13px]">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"

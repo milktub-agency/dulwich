@@ -40,7 +40,7 @@
                     data-showarrowsonmobile="{{ section.settings.show_arrows }}"
                     data-showDots="{{ section.settings.show_dots }}"
                     data-showdotsonmobile="{{ section.settings.show_dots }}"
-                    data-gapBetweenSlides="0rem"
+                    data-gapBetweenSlides="1rem"
                     data-focus="left" 
                     data-enableonmobile="{{ section.settings.enable_splider}}"
                     {% if section.settings.enable_carousel_looping %}
@@ -51,19 +51,21 @@
                     <div class="splide__track">
                         <ul class="splide__list">
                             {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-                                {%- for article in section.settings.blog.articles -%}
-                                    <li class="splide__slide">
-                                        {% render 'article-card',
-                                            blog: section.settings.blog,
-                                            article: article,
-                                            media_aspect_ratio: 1.66,
-                                            show_image: section.settings.show_image,
-                                            show_date: section.settings.show_date,
-                                            show_author: section.settings.show_author,
-                                            show_excerpt: section.settings.show_excerpt,
-                                            show_read_more: section.settings.show_read_more
-                                        %}
-                                    </li>
+                                {%- for article in section.settings.blog.articles limit:5 -%}
+                                    {% if article.image %}
+                                        <li class="splide__slide">
+                                            {% render 'article-card',
+                                                blog: section.settings.blog,
+                                                article: article,
+                                                media_aspect_ratio: 1.66,
+                                                show_image: section.settings.show_image,
+                                                show_date: section.settings.show_date,
+                                                show_author: section.settings.show_author,
+                                                show_excerpt: section.settings.show_excerpt,
+                                                show_read_more: section.settings.show_read_more
+                                            %}
+                                        </li>
+                                    {% endif %}
                                 {% endfor %}
                             {%- endif -%}
                         </ul>

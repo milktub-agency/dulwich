@@ -11,7 +11,7 @@
   .newsletter-form {
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 37rem;
+    max-width: 40rem;
   }
 }
 
@@ -21,7 +21,6 @@
 
 .newsletter-form__field-wrapper .field__input {
   padding: 1rem;
-  padding-right: 5rem;
   padding-top: 1.8rem;
   text-align: center;
 }
