@@ -29,8 +29,8 @@
     {% if section.blocks != blank %}
       <div class="custom-collection-slider tw-flex md:tw-flex-nowrap tw-justify-start lg:tw-justify-center tw-overflow-auto md:tw-pt-[20px] md:tw-pb-[10px] {% if section.settings.flex_wrap %} tw-flex-wrap tw-justify-center {% endif %}">
         {% for block in section.blocks %}
-          <div class="collection_slider-inner">
-            <a href="{{ block.settings.collection.url }}">
+          <a href="{{ block.settings.collection.url }}" class="collection_slider-inner">
+            <div>
               <div class="collection_slider-inner-image">
                 {%- assign image_fetch = false -%}
                 {%- if block.settings.image_fetch == true -%}
@@ -45,8 +45,8 @@
               {% else %}
                 <div class="collection_slider-inner-text tw-text-[9px] md:tw-text-[14px] tw-font-mediumc tw-text-[rgb(var(--color-foreground))]">{{ block.settings.collection.title }}</div>
               {% endif %}
-            </a>
-          </div>
+            </div>
+          </a>
         {% endfor %}    
       </div>
     {% endif %}
