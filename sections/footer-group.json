@@ -43,7 +43,7 @@
         "color_scheme": "scheme-44ee17d3-4fb2-40b3-a846-c914bc76a73a",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
+        "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,

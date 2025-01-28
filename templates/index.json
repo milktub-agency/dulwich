@@ -524,9 +524,9 @@
       "settings": {
         "blog_heading": "Latest Articles",
         "Section_heading_alignment": "center",
-        "blog": "news",
+        "blog": "blog",
         "color_scheme": "scheme-c795ab92-27c2-4ac3-a433-58cb978f2fb1",
-        "show_image": false,
+        "show_image": true,
         "show_date": false,
         "show_author": false,
         "show_excerpt": false,

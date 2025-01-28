@@ -9,11 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
       couponForm.classList.add('visible');
       toggleLink.addEventListener('click', () => {
         couponForm.classList.toggle('visible');
-        if (couponForm.classList.contains('visible')) {
-          toggleLink.textContent = 'Click Here';
-        } else {
-          toggleLink.textContent = 'Hide';
-        }
       });
       toggleLink.setAttribute('data-listener-attached', 'true');
     }

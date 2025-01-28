@@ -52,10 +52,12 @@
             {% when 'blog' %}
 
                 {% if current_tags %}
-                <li class="tw-inline-block">{{ blog.title | link_to: blog.url }}</li>
+                <li class="tw-inline-block">
+                    <a href="{{ blog.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-medium tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ blog.title }}</a>
+                </li>
                 <li class="tw-inline-block">
                     {% capture tag_url %}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{% endcapture %}
-                    <a href="{{ tag_url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + " }}</a>
+                    <a href="{{ tag_url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-normal tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ current_tags | join: " + " }}</a>
                 </li>
                 {% else %}
                 <li class="tw-inline-block">
@@ -65,7 +67,9 @@
 
             {% when 'article' %}
 
-                <li class="tw-inline-block">{{ blog.title | link_to: blog.url }}</li>
+                <li class="tw-inline-block">
+                    <a href="{{ blog.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary tw-font-[400] md:tw-font-normal tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ blog.title }}</a>
+                </li>
                 <li class="tw-inline-block">
                     <a href="{{ article.url }}" class="tw-text-[#848484] md:tw-text-[#282828B2] tw-text-[10px] md:tw-text-[15px] tw-uppercase tw-font-primary md:tw-font-medium tw-font-[400] tw-no-underline hover:tw-underline focus:tw-underline" aria-current="page" >{{ article.title }}</a>
                 </li>
