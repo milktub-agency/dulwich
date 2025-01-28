@@ -26,6 +26,7 @@
 }
 .collection-filter-newsletter .newsletter-form__field-wrapper .field__input {
   text-align: left;
+  padding-left: 20px;
 }
 .newsletter-form__field-wrapper .field {
   z-index: 0;
