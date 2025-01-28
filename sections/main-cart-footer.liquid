@@ -29,7 +29,7 @@
 
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
-<div class="tw-flex bmd:tw-gap-y-[12px] tw-px-[25px] md:tw-px-[147px] cart-section cart-section-lg {% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
+<div class="tw-flex bmd:tw-gap-y-[12px] tw-px-[25px] md:tw-px-[147px] page-width cart-section cart-section-lg {% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="tw-flex tw-flex-col cart-section__cart-items-upsell">
     <cart-items class="cart-section__cart-items{% if cart == empty %} is-empty{% endif %}">
       <div class="title-wrapper-with-link hidden">
