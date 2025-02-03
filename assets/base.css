@@ -3759,7 +3759,8 @@ article .article-template__content ol {
 .upgrade-subscription-cart {
   display: none;
 }
-.article-template h3 {
+.article-template h3,
+.article-template h4 {
   font-weight: 700;
   font-style: normal;
   font-size: 1.25em;
