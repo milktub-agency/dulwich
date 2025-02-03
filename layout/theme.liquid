@@ -422,6 +422,22 @@ window.location = '/account/login?checkout_url='+returnUrl;
       {%- section 'cart-drawer-notification' -%}
     {%- endif -%}
 
+    <script src="https://widget.reviews.io/rating-snippet/dist.js"></script>
+    <link rel="stylesheet" href="https://widget.reviews.io/rating-snippet/dist.css"/>
+    <script>
+      ratingSnippet("ruk_rating_snippet", {
+        store: "dulwichhealth.co.uk",
+        mode: "default",
+        color: "#0E1311",
+        linebreak: false,
+        text: "Reviews",
+        singularText: "Review",
+        lang: "en",
+        usePolaris: false,
+        showEmptyStars: false,
+      });
+    </script>
+
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
