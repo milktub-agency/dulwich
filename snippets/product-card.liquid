@@ -102,11 +102,14 @@
       >
     {% endif %}
 
-    {% if settings.mm_show_vendor %}
-      <div class="product-vendor tw-font-primary tw-text-[7.5px] md:tw-text-[10.7px] tw-font-semibold tw-leading-[6px] md:tw-leading-[13px] tw-uppercase tw-pt-[9px] md:tw-pt-[18px]">
-        {{ product.vendor }}
-      </div>
-    {% endif %}
+    <div class="tw-flex tw-justify-between tw-items-center">
+      {% if settings.mm_show_vendor %}
+        <div class="product-vendor tw-font-primary tw-text-[7.5px] md:tw-text-[10.7px] tw-font-semibold tw-leading-[6px] md:tw-leading-[13px] tw-uppercase tw-pt-[9px] md:tw-pt-[18px]">
+          {{ product.vendor }}
+        </div>
+      {% endif %}
+      <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
+    </div>
 
     <div class="tw-flex bmd:tw-flex-col bmd:tw-gap-[10px] tw-justify-between tw-items-start tw-gap-[22px] tw-pt-[6px] md:tw-pt-[13px] tw-pb-[8px] md:tw-pb-[16px]">
       <a href="{{ product.url }}" class="product-card__title truncate-product-title tw-font-primary tw-text-[12px] md:tw-text-[14.3px] tw-font-normal md:tw-font-semibold tw-leading-[16px] md:tw-leading-[19px]">
