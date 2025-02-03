@@ -281,13 +281,13 @@
           "star": "#000000",
           "text_color": "#333333",
           "snippet_mode": "default",
-          "text": "Reviews",
+          "text": "",
           "line_break": false,
           "listen_for_changes": false,
-          "rating_without_brackets": false,
+          "rating_without_brackets": true,
           "format_review_count": false,
           "show_popup": true,
-          "anchor_to_reviews_widget": false,
+          "anchor_to_reviews_widget": true,
           "show_empty_stars": true
         }
       }
