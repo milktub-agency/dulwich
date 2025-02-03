@@ -3756,7 +3756,7 @@ article .article-template__content ol {
 .sticky-atc-button.sticky-atc .recurpay__group_header,
 .sticky-atc-button.sticky-atc .recurpay__offer_wrapper,
 .sticky-atc-button.sticky-atc .recurpay__group_content {
-  display: none;
+  display: none !important;
 }
 .upgrade-subscription-cart {
   display: none;
