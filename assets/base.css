@@ -3744,3 +3744,15 @@ article .article-template__content ol {
   list-style: decimal;
   list-style-position: inherit;
 }
+
+.sticky-atc-button:has(.recurpay-pdp-widget) .sticky-add-to-cart-button {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sticky-atc-button.sticky-atc:has(.recurpay-pdp-widget) .sticky-add-to-cart-button {
+  flex-direction: row;
+  align-items: center;
+}
+.sticky-atc-button.sticky-atc .recurpay-pdp-widget {
+  display: none;
+}
