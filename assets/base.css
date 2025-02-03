@@ -3745,7 +3745,7 @@ article .article-template__content ol {
   list-style-position: inherit;
 }
 
-.sticky-atc-button:has(.recurpay-pdp-widget:has(.recurpay__widget)) .sticky-add-to-cart-button {
+.sticky-atc-button:has(.recurpay-pdp-widget) .sticky-add-to-cart-button {
   flex-direction: column;
   align-items: flex-start;
 }
