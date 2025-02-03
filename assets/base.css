@@ -3759,3 +3759,7 @@ article .article-template__content ol {
 .upgrade-subscription-cart {
   display: none;
 }
+
+#stickyAddToCartWrapper button.recurpay-hide{
+      display: block !important;
+}
