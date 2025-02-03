@@ -51,6 +51,10 @@
     padding: 0 20px 14px 20px;
     transition: .3s;
 }
+.custom-accordian .questions__content h3,
+.custom-accordian .questions__content h4 {
+    padding: 0 20px 14px 20px;
+}
 .custom-accordian .icon-plus, .icon-minus {
     display: flex;
     align-items: center;

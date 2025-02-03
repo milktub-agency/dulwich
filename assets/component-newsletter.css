@@ -51,12 +51,12 @@
 
 .newsletter-form__button:focus-visible {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
-  background-color: rgb(var(--color-background));
+  background-color: rgb(var(--color-button));
 }
 
 .newsletter-form__button:focus {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.4rem rgba(var(--color-foreground));
-  background-color: rgb(var(--color-background));
+  background-color: rgb(var(--color-button));
 }
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
