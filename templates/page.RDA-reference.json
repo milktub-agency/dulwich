@@ -31,6 +31,48 @@
       "settings": {
         "page_title": "",
         "color_1": "#306776",
+        "color_2": "#b3b383",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "about_us_section_dKHP8h": {
+      "type": "about-us-section",
+      "blocks": {
+        "about_brand_wLBtqB": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "<h3><strong>Ingredient - RDA<\/strong><\/h3><h3><\/h3>",
+            "content_1": "<p><\/p><p><em><strong>Vitamins<\/strong><\/em><\/p><p><\/p><p>Vitamin A - 800mcg<\/p><p>Vitamin D - 5mcg<\/p><p>Vitamin E - 12mg<\/p><p>Vitamin K - 75mcg<\/p><p>Vitamin C - 80mg<\/p><p>Thiamin - 1.1mg<\/p><p>Riboflavin - 1.4mg<\/p><p>Niacin - 16mg<\/p><p>Vitamin B - 61.4mg<\/p><p>Folic Acid - 200mcg<\/p><p>Vitamin B - 122.5mcg<\/p><p>Biotin - 50mcg<\/p><p>Pantothenic Acid - 6mg<\/p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        },
+        "about_brand_bXgtUT": {
+          "type": "about_brand",
+          "settings": {
+            "brand_heading": "",
+            "brand_sub_heading": "<h3><strong>Ingredient - RDA<\/strong><\/h3>",
+            "content_1": "<p><\/p><h4><em><strong>Minerals<\/strong><\/em><\/h4><p><\/p><p>Potassium - 2000mg<\/p><p>Chloride - 800mg<\/p><p>Calcium - 800mg<\/p><p>Phosphorus - 700mg<\/p><p>Magnesium - 375mg<\/p><p>Iron - 14mg<\/p><p>Zinc - 10mg<\/p><p>Copper - 1mg<\/p><p>Manganese - 2mg<\/p><p>Flouride - 3.5mg<\/p><p>Selenium - 55mcg<\/p><p>Chromium - 40mcg<\/p><p>Molybdenum - 50mcg<\/p><p>Iodine - 150mcg<\/p>",
+            "image_conetnt_block_content_1": "",
+            "content_2": "",
+            "image_conetnt_block_content_2": "",
+            "content_3": "",
+            "image_conetnt_block_content_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "about_brand_wLBtqB",
+        "about_brand_bXgtUT"
+      ],
+      "settings": {
+        "page_title": "",
+        "color_1": "#306776",
         "color_2": "#B3B383",
         "padding_top": 36,
         "padding_bottom": 36
@@ -39,6 +81,7 @@
   },
   "order": [
     "main",
-    "about_us_section_FDKmKr"
+    "about_us_section_FDKmKr",
+    "about_us_section_dKHP8h"
   ]
 }

@@ -714,7 +714,7 @@ summary::-webkit-details-marker {
 }
 
 .title--primary {
-  margin: 4rem 0;
+  margin: 1rem 0;
 }
 
 .title-wrapper--self-padded-tablet-down,
@@ -3716,7 +3716,7 @@ checkout-login .login-box {
 .header__search .search-modal .search-modal__content:focus-visible {
   box-shadow: none;
 }
-.newsletter .newsletter-form__button.field__button {
+.newsletter-form__button.field__button {
   background: rgb(var(--color-button));
 }
 @media screen and (min-width: 990px) {
@@ -3734,4 +3734,13 @@ checkout-login .login-box {
   .tabs-buttons .tabs-button:not(.active):nth-of-type(1) {
     margin-left: -2px;
   }
+}
+
+article .article-template__content ul {
+  list-style: disc;
+  list-style-position: inherit;
+}
+article .article-template__content ol {
+  list-style: decimal;
+  list-style-position: inherit;
 }

@@ -16,7 +16,7 @@
           "settings": {
             "brand_heading": "",
             "brand_sub_heading": "<h2><strong>A-Z of Ailments:<br\/>Case Histories using AlliTech Liquid, Spray, Capsules & Gel<\/strong><\/h2><h2><\/h2>",
-            "content_1": "<h3><\/h3><p>At Dulwich Health, we are committed to providing you with the most valuable and up-to-date information on the benefits of our products. Our “Case Studies” section is a growing resource where you can explore how customers have used <a href=\"https:\/\/www.dulwichhealth.co.uk\/product-category\/allitech\/?v=79cba1185463\"><strong>AlliTech<\/strong><\/a> to address various health concerns.<\/p><p><\/p><p><strong>Continuously Updated Information:<\/strong> Please be aware that this section is regularly updated to include new case studies and testimonials. If you don’t find information on a specific ailment you’re interested in, rest assured that it will be available in the near future as we expand our collection of real-life experiences.<\/p>",
+            "content_1": "<h3><\/h3><p>At Dulwich Health, we are committed to providing you with the most valuable and up-to-date information on the benefits of our products. Our “Case Studies” section is a growing resource where you can explore how customers have used <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech<\/strong><\/a> to address various health concerns.<\/p><p><\/p><p><strong>Continuously Updated Information:<\/strong> Please be aware that this section is regularly updated to include new case studies and testimonials. If you don’t find information on a specific ailment you’re interested in, rest assured that it will be available in the near future as we expand our collection of real-life experiences.<\/p>",
             "image_conetnt_block_content_1": "",
             "content_2": "",
             "image_conetnt_block_content_2": "",
@@ -28,7 +28,7 @@
           "type": "about_brand",
           "settings": {
             "brand_heading": "",
-            "brand_sub_heading": "",
+            "brand_sub_heading": "<p><\/p><p><\/p>",
             "content_1": "<p><strong>Share Your Testimonial:<\/strong> Have you experienced positive results with Allitech that you’d like to share? We welcome your testimonials. Your unique stories can inspire and assist others on their wellness journey. Please send your testimonials to <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a>, and we’ll be delighted to consider including them in our “Case Studies.”<\/p><p><\/p><p>Thank you for being a part of our health-conscious community. Together, we can continue to support one another in achieving optimal well-being.<\/p>",
             "image_conetnt_block_content_1": "",
             "content_2": "",
@@ -49,10 +49,1066 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_accordian_cPm8yC": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_XYm8wM": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Acne",
+            "faq_message": "<p>Naomi from London says<em>“I have suffered from severe acne most of my adult life. I started applying <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid <\/strong><\/em><\/a><em>to each pimple as well as adding a small amount onto my cleanser daily. I also took 4 <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg capsules <\/strong><\/em><\/a><em>a day orally.  After 2 weeks my skin had significantly improved. I now take only one capsule a day to prevent any further bacterial growth and have been mostly acne free for the last 6 months since starting AlliTech”.<\/em><\/p>"
+          }
+        },
+        "faq_item_bbCmHd": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "AIDS",
+            "faq_message": "<p>David has been HIV+ for 10 years and has had full-blown AIDs for 2 years. He picked up a serious infection and used a large dose of <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg capsules<\/strong><\/a> to get rid of it.<\/p><p><em>“As someone who has suffered from AIDS for two years, I can attest to the strength and promise of AlliTech capsules. For a quick example, I was experiencing diarrhoea every few days, since I started taking the capsules I haven’t had diarrhoea since, not ONCE!. I have been using AlliTech capsules for about two month’s. More dramatically, I had a viral infection when I first got AlliTech, and had been feeling worse and worse each day. On the third day, I started taking AlliTech and towards the end of that day, I was sitting up, eating pizza and enjoying TV. I was surprised I felt so much better in such a short period of time. By the end of the day, I felt that the bug had nearly been killed and was back to my full vigour within a week. <\/em><\/p><p><em>Based on my personal experience, the potential for improved health with AlliTech is enormous. I am astounded by the healing powers of allicin and I fell that it will in time provide itself to be an essential immune system in pill form!”<\/em><\/p><p>A few weeks later, David sent another testimonial<em> : “More good news! After years of borderline high blood pressure, my last doctors visit concluded that my BP is great! I couldn’t understand why, but since reading about allicin I am positive that it is <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> that is lowering my BP to a normal level!”. <\/em><\/p>"
+          }
+        },
+        "faq_item_kargAL": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Animal Bites",
+            "faq_message": "<p><em>“I have used <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid  <\/strong><\/em><\/a><em>for treating a bite from a small dog by washing the wound with 50\/50 solution of distilled water and AlliTech liquid. It worked very quickly and the pain was reduced within hours. I have continued to take the <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules <\/strong><\/em><em> <\/em><\/a><em>and the wound has now healed fully with no infections.”<\/em><\/p><p>Mr DS from Bexhill<\/p>"
+          }
+        },
+        "faq_item_Bz4Lit": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Arthritus",
+            "faq_message": "<p>Sheila takes <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>with raw ginger up to 3 times daily in addition to her current medications. She claims her mobility has been improved with daily use. This is a treatemnt that needs to be continued long term. <\/p>"
+          }
+        },
+        "faq_item_LYkT3L": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Asthma",
+            "faq_message": "<p>Asthma is exacerbated by environmental toxins and airborne bacteria. Allicin can prevent and treat a variety of infections that can trigger classic asthma symptoms. <\/p>"
+          }
+        },
+        "faq_item_dhVbKi": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Athlete's Foot",
+            "faq_message": "<p>Mr KL from Birmingham started using <a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><strong>AlliTech 250ml Liquid <\/strong><\/a>topically to treat Athlete’s foot back in 2002 and continues to take <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>to this day. He states<em>“the results from AlliTech are different to those other treatments, in that it does not dry out and crack my skin but does kill the infected tissue. Interestingly, the infection has not returned in over 9 months, which is very unusual as I often get reoccurring infections”. <\/em><\/p><p><strong>Treatment<\/strong>: A few drops of Liquid to the affected area twice daily as well as 4 capsules orally per day for 6 weeks.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_XYm8wM",
+        "faq_item_bbCmHd",
+        "faq_item_kargAL",
+        "faq_item_Bz4Lit",
+        "faq_item_LYkT3L",
+        "faq_item_dhVbKi"
+      ],
+      "settings": {
+        "section_heading": "<p>A<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_86XCVz": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_fFLMtc": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Bacilus Subtilis",
+            "faq_message": "<p><em>“I was experiencing persistent digestive discomfort due to Bacillus subtilis. No matter what I tried, it seemed like I couldn’t find relief. That’s when I stumbled upon <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>Allitech 450mg Capsules<\/strong><\/em><\/a><em>. I decided to give it a try, and the results were nothing short of incredible. Within just a few weeks of using Allitech, my symptoms started to fade away. The bloating, cramps, and irregularity that had plagued me for months were no longer a daily struggle. Allitech, with its powerful allicin content, seemed to help balance my gut in a way I hadn’t experienced with other remedies. I couldn’t be happier with the transformation in my digestive health. Allitech has been a game-changer, and I’m now enjoying a life free from the discomfort of Bacillus subtilis”<\/em>.<br\/>Ruth  L<\/p>"
+          }
+        },
+        "faq_item_g4f8W9": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Bacterial Infections",
+            "faq_message": "<p>See <strong>specific ailment<\/strong> for Client Testimonials. <\/p>"
+          }
+        },
+        "faq_item_iQa7ge": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Bed Sores",
+            "faq_message": "<p>Laura used AlliTech to prevent gangrene after becoming bed bound. She applies <a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><strong>AlliTech 50ml Gel <\/strong><\/a>to the pressure gauge and changes her dressing frequently, as well as spraying the <a href=\"\/products\/allitech-spray-30-ml\" title=\"AlliTech Spray 30 ml\"><strong>AlliTech 30ml Spray <\/strong><\/a>directly onto the wound. Laura’s sores have stayed infection free. <\/p>"
+          }
+        },
+        "faq_item_JKqz7H": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Bladder Infections",
+            "faq_message": "<p>Cystitis is caused by Escherichia coli. Demi often suffers from UTI’s and experiencing severe pain and burning when passing urine, which usually leads to a kidney infection within a few days resulting in the need for antibiotics. Demi began taking 3x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>per day during the beginning of a UTI, and continued to do so for the next 4 weeks. Miraculously, her UTI never reared its ugly head, and Demi has continued to be Cystitis free. <\/p>"
+          }
+        },
+        "faq_item_AALcP9": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Blood Circulation",
+            "faq_message": "<p>There is evidence that allicin helps improve circulation in several ways. By making your blood less likely to clot, allicin can reduce blood platelet aggregation. This means that you r blood will become slightly more mobile and less likely to form a clot as the platelets are prevented from binding together. It has also been reported that allicin can reduce blood thickening. In on study, looking at capillary blood flow in the nail folds of the hand, allicin was shown to increase blood flow by 55%. These effects typically last 3 hours after ingestion once the active metabolites that allicin breaks down are removed and excreted. <\/p>"
+          }
+        },
+        "faq_item_Rtmapk": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Blood Pressure",
+            "faq_message": "<p>Allicin has been shown to significantly reduce both systolic and diastolic blood pressure. Recent studies show that a yield of 0.6% can reduce systolic blood pressure by 10% and diastolic blood pressure by 6%. This study went on to report that the potential blood-pressure-lowering effect of Allicin was such a significance that “strokes may be reduced by 30-40% and coronary heart disease by 20-25%.<\/p><p>Whilst research is still in progress, testimonial statements from people have experienced these benefits suggest  you should take between 1-6 <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>(depending on your current BP level). AlliTech can be taken with any conventional blood pressure medication, which may allow you to reduce your drug intake, under supervision of your healthcare provider. <\/p><p>Mr Steve B writes <em>“I have been able to stop taking the beta-blocker drug I have been on that was causing me so many issues. I started taking 4x <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450ml Capsules<\/strong><\/em><\/a><em> a day and monitoring my BP readings. After 6 weeks I persuaded my GP to take me of the beta’s and two weeks later, my BP was basically normal. I have kept on taking the capsules at a reduced dose of 2 per day and my last BP was still normal. Thank you so very much for your help”. <\/em><\/p>"
+          }
+        },
+        "faq_item_7tUe3p": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Boils",
+            "faq_message": "<p>Dominic had a very painful and nasty looking boil on his right buttock. The discomfort experienced when carrying out daily activities was excruciating. After common over the counter medications did not work, Dominic began using <a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><strong>AlliTech 250ml Liquid <\/strong><\/a>and <a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><strong>AlliTech 50ml Gel <\/strong><\/a>to treat the issue.<em>“I put a few drops of liquid into a carrier oil, olive oil, and used this over my lint dressing. The liquid is good enough to impregnate the dressing and treat the boil topically. I was advised that the liquid is best as it penetrates deeper into the epidermis, however I also found the gel to be very beneficial as it provides a protective barrier over the wound”. <\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_fFLMtc",
+        "faq_item_g4f8W9",
+        "faq_item_iQa7ge",
+        "faq_item_JKqz7H",
+        "faq_item_AALcP9",
+        "faq_item_Rtmapk",
+        "faq_item_7tUe3p"
+      ],
+      "settings": {
+        "section_heading": "<p>B<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_DiCM4L": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_QrixF7": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Cancer",
+            "faq_message": "<p><strong>Disclaimer: Dulwich Health does not endorse or claim that AlliTech, or any of our products, is a cure for any medical condition or Cancer. We do not offer medical advice or treatment recommendations. Our products are intended for general health support, and any specific health concerns should be discussed with qualified healthcare professionals.<\/strong><\/p><p><strong>The testimonials shared by individuals who have experienced positive health outcomes with AlliTech are personal accounts and experiences of the individuals themselves. We neither endorse nor encourage the use of our products as a primary or sole treatment for cancer.<\/strong><\/p><p>Deena states<em> “I was diagnosed with Stage 3-4 Breast Cancer in January 2016. I refused chemotherapy and opted for alternative treatments, including AlliTech. After taking <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> and <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> along with other supplements, my recovery has been remarkable. My oncologist has been impressed with my progress, and I no longer need to see him for another year. I plan to continue with the supplements and maintain a dairy-free diet. I feel terrific”.<\/em><\/p><p>Miss S.B writes “<em>Having been diagnosed with stage 4 follicular lymphoma (incurable at present), I decided to carry out extensive research to see if I could alter the course of my disease. Although garlic has been known for centuries to have anti-cancer properties, as a pharmacist I was aware of the problems associated with active constituents in most products being inactive in the stomach. Quite by chance, I found AlliTech’ s stabilised allicin. I began to take <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> along with other anti-cancer strategies such as drinking vegetable juices and taking curcumin. In July I found that my tumour had grown to 10x5cm in my abdomen and a biopsy indicated that it had transformed it to a high grade aggressive type. I was advised chemo, but I put this off in favour of <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> (against the advise of my consultant). I increased my dose to 25ml per day and started feeling better generally. Within a matter of weeks, my ESR had decreased from 25 to 1, and my tumour was decreasing in size. My consultant was surprised by this but I then decided not to have any conventional treatment at all. After a few more weeks, I reduced my intake to 10ml <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> per day. Now 18 months on, I continue this regime and am not planning on any treatment in the near future. I am convinced that AlliTech has played a substantial part in keeping my immune system strong and\/ or containing the cancer. I have no hesitation whatsoever recommending this to others.”<br\/><\/em>Miss S.B<\/p>"
+          }
+        },
+        "faq_item_HnHMHR": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Candida",
+            "faq_message": "<p>Jane Jones from Kent has struggled to manage her Candida infections since her teens. After many trials and tribulations, she managed to relieve a lot of her symptoms through her diet, however after a course of antibiotics, she began to get thrush frequently again.<em>“I started on 6 <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450ml Capsules <\/strong><\/em><\/a><em>per day for about 4 weeks. It has now been 12 months since I started on AlliTech and now only take 1 per day, this seems to prevent any reinfection. My life is mow much more settled and I feel fit and healthy for the first time in years”. <\/em><\/p>"
+          }
+        },
+        "faq_item_yzTfU4": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Canker Sores",
+            "faq_message": "<p><em>“I suffer from mouth ulcers regularly. After a lot of investigation, my doctor stated he though it was caused by the streptococcus bacteria and gave me antibiotics to treat same. This didn’t seem to rid the body of the bacteria and I continued to get ulcers at least once a year. After gargling <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em>AlliTech 250ml Liquid <\/em><\/a><em>per day, which I initially repeated every 3 hours,  the ulcer cleared almost immediately. I reduced my dose to 1x5ml a day before moving onto the<\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em> AlliTech 450mg Capsules <\/em><\/a><em>as a maintenance dose. I have been ulcer free since”<\/em><\/p><p>Gordon M<\/p>"
+          }
+        },
+        "faq_item_L8gdL3": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Cellulitis",
+            "faq_message": "<p><em>“My healthcare provider initially put me onto AlliTech to treat an on-going skin infection that was not touched by typical antibiotics. I started on a high ‘double dose’ of 8 AlliTech 450mg Capsules per day for 12 weeks to treat the infection internally. At the same time, I applied a few drops of AlliTech Gel to the area twice daily to treat the topical infection. After 3 months, my Cellulitis had cleared and I now only take 2 capsules daily for maintenance – a staple for my health”<\/em>.<\/p><p>Ceila<\/p>"
+          }
+        },
+        "faq_item_aM7gtA": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Cholesterol",
+            "faq_message": "<p>Western medicine dictates that we should have a cholesterol level of 100-300mg\/dl. Elevated levels of cholesterol are associated with atheroma and need to be controlled. It has been proven through studies that allicin can help reduce cholesterol levels. Entirely natural extracts like AlliTech will take longer than pharmaceutical drugs because they offer a cascade of benefits throughout the body. These are suitable for everyone, including vegans, diabetics, lactose-free, gluten-free and pregnant or breastfeeding women. Sandy takes 3 <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>per day plus a beta sitosterol, <a href=\"\/products\/losterol-capsules\" title=\"AlliTech Losterol 90 Capsules\"><strong>Losterol Capsules<\/strong><\/a>, to manage her cholesterol levels. <\/p>"
+          }
+        },
+        "faq_item_c9Lexa": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Chlamydia",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_kagrTW": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Clostridium Difficle",
+            "faq_message": "<p><em>“My friend was hospitalised with pneumonia and was given antibiotics that killed off the good bacteria in her colon, at which time she began to experiencing severe diarrhoea and went into grand mal seizures (due to a pre-existing disorder) which resulted in an emergency  hospitalisation. She remained in hospital for three days, and was again given an antibiotic which again lead to diarrhoea and more seizures, meaning another trip to hospital and another round of antibiotics, with a repeat of the above! <\/em><\/p><p><em>At this time, I got my first shipment of <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em><strong> <\/strong><\/em><em>and used it to treat Jill along with other herbal medicines. We used them alongside her antibiotic treatment for the remainder of the next two months. Over the two months, Jill gradually reduced the intake of the antibiotic until she was only taking AlliTech. She was tested at the hospital and the lab found she was still positive with C-diff. At this point, we continued with 15x <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> 5 times a day for two weeks along with the herbs and probiotics. After the next specimen stool, she got her first negative C-diff test back. At this point, we cut back to 9x <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> a day and this is what Jill currently maintains. All stool tests since have been negative and she has regained her strength and is feeling great. This has been a long journey and Jill continues to take a maintenance dose of 2x <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules <\/strong><\/em><\/a><em>each day to rebuild her immune system”.<br\/><\/em>Jane D. <\/p>"
+          }
+        },
+        "faq_item_gXHwKa": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Cold Sores",
+            "faq_message": "<p><em>“I have not had any cold sore’s on my lip since I started AlliTech. This is the longest time I have experienced without sore lips, so thank you so much for your help”<br\/><\/em>Shena P. <\/p><p><em>“I can always tell when a cold sore is coming and I know if I don’t take immediate action, I will have a terrible cold sore within days. I was given some of your <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech Gel<\/strong><\/em><\/a><em><strong> <\/strong><\/em><em>to try and I first applied just a couple of drops when I felt a tingle. To my amazement the cold sore never arrived. I continued to apply the gel for a few days and have since been cold sore free. Thank you very much for a simple natural and effective treatment for my sores!”<br\/><\/em>Anges B, Sussex<\/p>"
+          }
+        },
+        "faq_item_6UTybQ": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Cold & Flu",
+            "faq_message": "<p>Mr CP from rye writes <em>“When I initially got a heavy cold I took 4 <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> a day for the duration. The first thing that struck me was that the runny nose cleared within days. I continued with 4 a day until the worst of it was over. I also note that the usual aftermath of mucus was not as severe and cleared more quickly.  Since, I reduce the intake to one a day until I ran out last week. Coincidentally, I came down with another cold shortly after stopping which persisted for a week until I was able to get some more capsules. I immediately took 4 capsules until the end of the next week. My cold hasn’t cleared 100% yet, but is definitely much better. I can breath clearly and I am not as congested. This time I also only felt run down for two days, which is unusual as normally I can barely get out bed for a week, but this time I am up and around with a lot of energy. There can be little doubt as to the effectiveness of allicin, I am a firm believer that the treatment from within that AlliTech provides is the best way to combat ailments”.<\/em> <\/p><p><em>“I am taking AlliTech capsules for the first time and have experienced many positive effects. My airways appear to be much clearer and I feel I can breathe properly for the first time in a long time. My wife also reports I have been snoring less! I take 1-2 <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> every other day and in the last 6 months I have not had a cold and have maintained good health despite being in the company of others who had colds. I stopped taking AlliTech for about 6 weeks and came down with a really severe cold. Within 2 days of taking Alli again, there is a significant improvement and I recovered much quicker than my colleagues. I note this time I double dosed the quantity and this was enough to kill off the second infection. I can categorically state there is a correlation between taking AlliTech and cold symptoms, because every time I run out, the upturn in the cold symptoms seems almost symbiotic. A cold like this would normally spread to my chest and result in a chest infection, this time it hasn’t. This is very unusual for me. This product dose something that is difficult to explain, but very clear to see! “<br\/><\/em>Mr Colin F<\/p><p><strong>Treatment:<\/strong> Colin took 1-2 capsules twice a day for three days, then 1-2 capsules every other day as maintenance. As a cold cure, he take 2 capsules twice daily.<\/p>"
+          }
+        },
+        "faq_item_gH6beM": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Coughs & Upper Respitory Tract Infections",
+            "faq_message": "<p>Allicin is good for chest complaints, especially persistent coughs, since it has a major antitussive effect. Unlike most over-the-counter treatments, Allicin can destroy both bacterial and viral organisms with ease.  <\/p><p>Sarah puts 10ml of <a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><strong>AlliTech 250ml Liquid<\/strong><\/a> into a small cup of warm milk and gargles for a few minutes every night during a cough. She also takes 6x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>daily until the cough begins to break up, then reduces to 4, then 2 after a week. <\/p><p>Zoe suffers from chest infections frequently. When she feels one coming, she dilutes <a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><strong>AlliTech 250ml Liquid<\/strong><\/a> in a 50\/50 solution with distilled water and nebulizes this directly into her lungs (via a hot water bowl and a towel over her head).<em> “My go-to for any cough or cold. It does what it says on the tin, I havent had a chest infection for 3 years since starting AlliTech!” <\/em>Zoe also takes 2x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>450mg AlliTech Capsules<\/strong><\/a> per day as maintenance. <\/p>"
+          }
+        },
+        "faq_item_VFwbr3": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Cryptosporidium",
+            "faq_message": "<p><em>“Treatment should be aggressive and prolonged to have a chance of destroying the parasite. A large dose of 1800ml<\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong> AlliTech 250ml Liquid <\/strong><\/em><\/a><em>a day should be taken all at once. It would also be sensible to take 4-8 <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules <\/strong><\/em><\/a><em>a day for the entire treatment period. Results will depend on each individual – but don’t be afraid to persevere as allicin can only do good”<\/em>Dr Peter Gosling <\/p>"
+          }
+        },
+        "faq_item_H9Qpa7": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Cuts & Wounds",
+            "faq_message": "<p><em>“Before trying AlliTech, I had a persistent wound that just wouldn’t heal. But after using AlliTech for a few days, it was like magic! My wound closed up, and I felt better in no time. AlliTech is my go-to for speedy wound recovery!”<\/em><\/p><p>Daniel <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_QrixF7",
+        "faq_item_HnHMHR",
+        "faq_item_yzTfU4",
+        "faq_item_L8gdL3",
+        "faq_item_aM7gtA",
+        "faq_item_c9Lexa",
+        "faq_item_kagrTW",
+        "faq_item_gXHwKa",
+        "faq_item_6UTybQ",
+        "faq_item_gH6beM",
+        "faq_item_VFwbr3",
+        "faq_item_H9Qpa7"
+      ],
+      "settings": {
+        "section_heading": "<p>C<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_Ut8Arn": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_DEaiQY": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Dandruff",
+            "faq_message": "<p>Maria uses <a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><strong>AlliTech 30ml Gel <\/strong><\/a>to treat persistent dandruff. She adds 8 drops of <a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><strong>AlliTech 30ml Gel <\/strong><\/a>into her normal measure of shampoo daily and repeats this for one month. this has eliminated her dandruff. Maria now takes just 1x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsule <\/strong><\/a>per day to keep things at bay. <\/p>"
+          }
+        },
+        "faq_item_CdbPYE": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Diabetes",
+            "faq_message": "<p>Diabetics are three times more likely to suffer from cardiovascular disease, are less likely to fight off infections and have slower healing times than a non-diabetic. <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450ml Capsules<\/strong><\/a> can offer a cascade of benefits to people suffering from diabetes. Mr P Gosling suggests<em> “to keep your circulation fit and healthy, take 2x <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> every day. I am also diabetic and anything to reduce the risks is a win for me. I take Allicin to keep my blood pressure, cholesterol and circulation fit and healthy. It helps fight off cold and flu much more quickly, and also helps to heal cuts and grazes fast!. Allicin is great stuff for diabetics”.<\/em><\/p><p><em>“I am a bit clumsy and have to admit every time I am out in the garden, I do something to cause a minor injury! Now every time I get a nick, I apply a little <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel<\/strong><\/em><\/a><em> to the band aid before I stick it over the wound. A short while ago, I got a nasty wood splinter in the thumb. It immediately began to swell and was very painful. I got the splinter out, but my thumb continued to balloon! So I applied 2 drops of <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel<\/strong><\/em><\/a><em><strong> <\/strong><\/em><em>to the plaster, and repeated every two hours. After a few hours, the pain had gone and within a day the swelling was much better and I have healed perfectly since. This is also unusual for me as I am a diabetic so am very slow at healing. I don’t even have a scar!”<\/em><br\/>Petuna<\/p>"
+          }
+        },
+        "faq_item_qXRXkg": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Diarrhoea",
+            "faq_message": "<p><em>“I use <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules <\/strong><\/em><\/a><em>to treat an upset stomach, whether it be food poisoning, constipation or diarrhoea. I usually take a high dose of at least 4 capsules when I feel upset, and this usually resolves the issue almost immediately, if not I follow up every 6 hours until dissipated”.<\/em>Goldie L<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_DEaiQY",
+        "faq_item_CdbPYE",
+        "faq_item_qXRXkg"
+      ],
+      "settings": {
+        "section_heading": "<p>D<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_7NiqQ7": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_UkDEwq": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "E.Coli",
+            "faq_message": "<p>See <strong>Traveller’s tummy <\/strong>for Client Testimonials.<\/p>"
+          }
+        },
+        "faq_item_dH9biP": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Ear Infections",
+            "faq_message": "<p><em>“My daughter suffers ear infections frequently, which always leads to a cold and generally miserable toddler. I was concerned about the consistent treatment of antibiotics at such a young age. I then found Allicin, which claims to treat any microbial infection. As my daughter is under the recommended age, I only gave her half a <\/em><a href=\"\/products\/allitech-capsules-90-x-180-mg\" title=\"AlliTech Capsules 90 x 180 mg\"><em><strong>AlliTech180mg Capsules <\/strong><\/em><\/a><em>a day, which I would break up into her food. I also treat the infection itself by applying a drop of <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid <\/strong><\/em><\/a><em>into the ear. So far, so good. The infection cleared within 2 weeks and we have not had any since!”<\/em><\/p><p>Maeve H <\/p>"
+          }
+        },
+        "faq_item_nA9DTX": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Eczema",
+            "faq_message": "<p>Atopic eczema affects up to 20% of the population and is associated with hay fever and asthma. Most conventional treatments, such as steroid emollients, are frequently reported to become less effective the longer they are used. This is because none of them treat the cause, Staphylococcus aureus. A bacteria found all over the skin of eczema sufferer’s. Allicin can easily kill this bacteria. So far, 120 strains of this infections, drug-resistant bacteria have been tested against AlliTech <strong>Gel<\/strong>,<strong> Capsules <\/strong>and<strong> Liquid<\/strong>, which have all been blown away and eliminated!<\/p>"
+          }
+        },
+        "faq_item_UYgcV4": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Eye Infections",
+            "faq_message": "<p>Mrs C Francis writes<em>“In July I had a very bad eye infection. I was prescribed ‘Brolene’ followed by an antibiotic cream by my doctor with no improvement and was advised to have surgery. By this time, I was fed up and desperate so I tried <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>, taking two a day for two days. On the first day, the itchiness had stopped and the redness reduced. Then on the second day, my eyes were completely clear. I was so impressed that after just two days the difference is unbelievable. I recommend it to all my friends for various ailments, and I think they too have been very surprised by their results”. <\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_UkDEwq",
+        "faq_item_dH9biP",
+        "faq_item_nA9DTX",
+        "faq_item_UYgcV4"
+      ],
+      "settings": {
+        "section_heading": "<p>E<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_7eTiiy": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_Gaiq9g": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Food Poisoning",
+            "faq_message": "<p>See <strong>Diarrhoea <\/strong>and <strong>Travellers tummy <\/strong>for Client Testimonials. <\/p>"
+          }
+        },
+        "faq_item_bfwmFA": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Flesh Eating Bacteria",
+            "faq_message": "<p><em>“I had a harrowing encounter with a dreaded flesh-eating bacterium, MRSA (Methicillin-Resistant Staphylococcus Aureus). It all began with a seemingly harmless cut, which soon spiralled into a painful and terrifying ordeal. The infection was spreading rapidly, leaving me in constant agony and despair. Desperate for a solution, I discovered the power of Dulwich Health’s AlliTech products. I embarked on a three-pronged approach to treat the infection topically and orally. <\/em><br\/><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules:<\/strong><\/em><\/a><em> These were my daily armor against MRSA from the inside. The allicin inside these capsules fought this relentless bacterium head-on, weakening its grip on my body. <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid:<\/strong><\/em><\/a><em> I also incorporated AlliTech liquid into my treatment plan. I used it both topically on the affected area and as a disinfectant for my surroundings. Its antimicrobial properties provided an additional layer of defence. <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel:<\/strong><\/em><\/a><em> The AlliTech Gel was my go-to for wound care. It not only helped in the healing process but also kept further infections at bay.With consistent use, I started noticing a change. The infection was no longer advancing, and my wound began to heal. Day by day, MRSA’s grip loosened. The excruciating pain lessened, and my hope was restored.<\/em><\/p><p><em>Today, I am living proof that AlliTech can combat even the most relentless and terrifying bacterial infections. It’s a true lifesaver. Thank you, Dulwich Health, for these incredible products that brought me back from the brink.”<\/em><br\/>Christine <\/p>"
+          }
+        },
+        "faq_item_yEccJm": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Flu",
+            "faq_message": "<p>See <strong>Colds & Flu<\/strong> for Client Testimonials. <\/p>"
+          }
+        },
+        "faq_item_6yTwgc": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Fungal Infections",
+            "faq_message": "<p>Many holistic physicians are now adopting AlliTech as the treatment of choice for many reoccurring infections. Customer ‘D.S’ describes that he<em>“is amazed at these great results. I have tried all the prescribed topicals and spent time and great expense going to the doctor’s office, leaving with no results. I am telling everyone about this product! “. <\/em>Treatment: 2x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>per day, then reduced to 1x<strong>450mg<\/strong>, then to 1x<strong>180mg <\/strong>per day. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_Gaiq9g",
+        "faq_item_bfwmFA",
+        "faq_item_yEccJm",
+        "faq_item_6yTwgc"
+      ],
+      "settings": {
+        "section_heading": "<p>F<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_WXDMfq": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_T3aM6D": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Genital Warts",
+            "faq_message": "<p>Steph from London writes<em>“I couldn’t believe my luck when I stumbled upon Dulwich Health’s AlliTech products. Dealing with genital warts was a constant battle that left me feeling frustrated and self-conscious. It was time to find a solution that worked. I started using <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid <\/strong><\/em><\/a><em>and <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel <\/strong><\/em><\/a><em>as part of my daily routine. The results were remarkable. Within a few weeks, I noticed a significant reduction in the size and appearance of the warts. The soothing effect of the gel relieved the discomfort I had been experiencing. I continued using both products as recommended, and it wasn’t long before the warts were completely gone . I’m so grateful for the natural, effective power of AlliTech. It gave me back my confidence and allowed me to live without the burden of genital warts. If you’re going through a similar struggle, don’t hesitate to try AlliTech. It worked wonders for me, and I’m sure it can for you too”.<\/em><\/p>"
+          }
+        },
+        "faq_item_pUhNGk": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Giardia lamblia",
+            "faq_message": "<p><em>“I can’t express my gratitude enough for discovering AlliTech’s incredible products. I had an unfortunate encounter with Giardia lamblia, which left me suffering from persistent diarrhea and other unpleasant side effects. Desperate to find a natural remedy, I turned to AlliTech for help.<\/em><\/p><p><em>After some research and consulting with the knowledgeable team at Dulwich Health, I decided to go for the <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>. I started with these capsules, taking 4 a day, and they work perfect for maintaining my health in the long run. Within just a few weeks, I began to experience relief from the persistent symptoms caused by Giardia lamblia. AlliTech’s products seemed to tackle the root of the issue, supporting my digestive system and overall well-being.<\/em><\/p><p><em>I’m so grateful for this natural solution, which helped me regain my health without the need for harsh chemicals or antibiotics. AlliTech truly made a difference in my life, and I can’t recommend it enough!”<br\/><\/em>Deborah D<\/p>"
+          }
+        },
+        "faq_item_fcG4wi": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Gingivitis",
+            "faq_message": "<p>Unfortunately once the gums begin to degenerate, this forms pockets for bacteria to cling to and grow which leads to Gingivitis. Lorna suffers from Gingivitis and frequently uses holistic practises to combat same. Her normal routine involves pulling with Coconut Oil twice daily to keep bacteria at bay. Lorna began AlliTech treatment by breaking open 1x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsule <\/strong><\/a>and adding this into her Coconut Oil before rinsing her mouth out. She continued this twice daily as well as taking an oral dose of 2x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules<\/strong><\/a> per day. After several weeks, Lorna reports that her gums have stopped bleeding when brushing, she has noticed her ‘morning breath’ reside and her gums appear much healthier in complexion. <\/p>"
+          }
+        },
+        "faq_item_Dp4dNt": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Gum disease",
+            "faq_message": "<p>See <strong>Gingivitis<\/strong> for Client Testimonials.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_T3aM6D",
+        "faq_item_pUhNGk",
+        "faq_item_fcG4wi",
+        "faq_item_Dp4dNt"
+      ],
+      "settings": {
+        "section_heading": "<p>G<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_rLwJ7g": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_ecCxCa": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Hayfever",
+            "faq_message": "<p><em>“This is really quite amazing. for the first time ever I have been able to go about my normal routine without sneezing and constantly feeling blocked up. This AlliTech product is definitely the best thing I have ever used to treat hay fever. Thanks ever so much”<\/em><br\/>Zoe M<\/p><p>Hay fever is an allergic reaction to airborne pollen characterised by inflammation of the membrane lining the nose and sometimes the conjunctiva. A survey conducted with <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules<\/strong><\/a> on over 100 hay fever sufferers was conducted to test the effectiveness of allicin on combating hay fever symptoms. The survey was conducted with a simple 5 point scoring system to grade the severity of any hay fever attacks. Our findings showed that an overall average of 3.95 severity score amongst our participants was reduced significantly in 80% of participants. Only two volunteers needed to resort to rescue medication for an attack. <\/p>"
+          }
+        },
+        "faq_item_TGnYmi": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Head Lice",
+            "faq_message": "<p><em>“My kids get headlice every year from school. I have tried most of the lice creams and whilst the do work, it often requires several applications and I am aware the chemicals in same may be harmful to my child. I was recommended AlliTech by a friend for a cold, but after research it seemed the solution for the lice too! I added 20ml of <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid <\/strong><\/em><\/a><em>to our normal shampoo routine and left on for 20 minutes. I continued to do this for two weeks until the bottle had finished. Each time I nit-combed their hair, I only found dead eggs and lice. I now use this regime at home on both my children with great success every time we get a new infestation!”<\/em>Finella G<\/p>"
+          }
+        },
+        "faq_item_zNfcf8": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Helicobacter pylori",
+            "faq_message": "<p><em>“I had been suffering from severe stomach discomfort, bloating, and relentless indigestion for months on end. Conventional treatments provided no lasting relief, so I decided to try a more natural approach.<\/em><\/p><p><em>After researching extensively, I chose AlliTech’s products and embarked on a regimen with the <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><em>.<\/em><\/a><em> I started taking two capsules daily, and within a few weeks, I began to experience a noticeable improvement.<\/em><\/p><p><em>The consistent use of AlliTech products over several months has made a world of difference in my life. My stomach issues, which had plagued me for what felt like an eternity, have significantly subsided. The persistent discomfort and indigestion have become a distant memory, thanks to AlliTech.<\/em><\/p><p><em>I’m amazed by the results and thankful to have found this natural remedy. AlliTech has genuinely transformed my life, giving me the freedom to enjoy meals without worry and live with comfort I thought I’d lost forever.”<\/em><br\/>Stephanie from Redhill<\/p>"
+          }
+        },
+        "faq_item_Wt6mHE": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Hepatitis",
+            "faq_message": "<p>Louise’s battle with hepatitis had been a prolonged and exhausting journey. She suffered from extreme fatigue, nausea, jaundice, and an overall feeling of helplessness. It seemed like there was no end in sight to this debilitating condition.<\/p><p>After consulting with her healthcare provider, she was introduced to AlliTech’s products. Desperate for a solution, she decided to give them a try. Louise started with the <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules<\/strong><\/a> and <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech Liquid Drops<\/strong><\/a>, taking them regularly as part of her daily routine.<\/p><p>To Louise’s amazement, my condition began to improve significantly. Over the course of several months, she gradually regained my energy, and the jaundice started to fade. The nausea became less frequent and less severe.<em> “AlliTech seemed to bolster my immune system, allowing my body to fight the hepatitis virus more effectively”.<\/em><\/p>"
+          }
+        },
+        "faq_item_QKeHqw": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Herpes",
+            "faq_message": "<p>See <strong>Cold Sores<\/strong> for Client Testimonials. <\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_ecCxCa",
+        "faq_item_TGnYmi",
+        "faq_item_zNfcf8",
+        "faq_item_Wt6mHE",
+        "faq_item_QKeHqw"
+      ],
+      "settings": {
+        "section_heading": "<p>H<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_6WUYeN": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_RfA7Tm": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Immune Disorders",
+            "faq_message": "<p><em>“I battled with an autoimmune condition called Rheumatoid Arthritis for over a decade. The excruciating joint pain, fatigue, and inflammation seemed never-ending. Despite numerous treatments, my symptoms persisted, and I was desperate for a solution. Then, I stumbled upon AlliTech, and it’s no exaggeration to say it changed my life. I started taking 10ml <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid <\/strong><\/em><\/a><em>per day, which I have now reduced to only 2x <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> a day. After about six weeks of daily use, I noticed a significant improvement in my symptoms. The joint pain had notably subsided, and the inflammation was much more manageable. I was regaining mobility and finally feeling like myself again. With consistent use and guidance from the helpful folks at Dulwich Health, I’ve now been symptom-free for over a year. It’s an absolute game-changer.<\/em><\/p><p><em>AlliTech has given me back a quality of life I thought I’d lost forever. I can’t recommend it highly enough for anyone struggling with immune disorders like Rheumatoid Arthritis”.<br\/><\/em>Joan D<\/p>"
+          }
+        },
+        "faq_item_b8z7hi": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Impetigo",
+            "faq_message": "<p><em>“My son Eirc developed a nasty bout of impetigo. I was really worried as I couldn’t get hold of any antibiotics that day and we had a family event planned. I really wanted something to help immediately and a friend advised she had been using <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules <\/strong><\/em><\/a><em>and a small supply of <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel <\/strong><\/em><\/a><em>herself. We used the<\/em><a href=\"https:\/\/www.dulwichhealth.co.uk\/product\/allitech-gel-50-g\/?v=79cba1185463\"><em><strong>Gel<\/strong><\/em><\/a><em>straight away and within a few hours, the attack had subsided and his plaques began to clear. We were naturally delighted and would recommend this to anyone who suffers from this debilitating condition”<\/em>.<br\/>Eric’s Mother. <\/p>"
+          }
+        },
+        "faq_item_Ckmw6j": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Irritable Bowel Syndrome",
+            "faq_message": "<p>Jenny B has never been able to digest certain foods, particularly bread. Already a covert to AlliTech, she added in a probiotic and follows a regimen detailed below. Within a matter of days she was able to digest meals more easily and even bread stopped giving her stomach issues. <\/p><p><strong>Treatment:<\/strong> Jenny adds 2-4 <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules<\/strong><\/a><strong> <\/strong>to her multi-strain probiotic to every meal. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_RfA7Tm",
+        "faq_item_b8z7hi",
+        "faq_item_Ckmw6j"
+      ],
+      "settings": {
+        "section_heading": "<p>I<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_ibNVTW": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_cEempQ": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Kidney Infection",
+            "faq_message": "<p><em>“Both the <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><span style=\"text-decoration:underline\"><em><strong>Liquid<\/strong><\/em><\/span><\/a><em> and <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>Gel<\/strong><\/em><\/a><em><strong> <\/strong><\/em><em>with daily prayer, has kept my beloved partner who has stage 4 kidney disease, stay balanced for the last 9 years”<\/em>. – Georgie F<\/p><p><em>“I have successfully used AlliTech for years helping me to overcome past serious issues and hospital admissions such as severe pnuemonia, kidney trauma, colitis, clostridium difficile and more and had and still have hospital consultants wanting to know what I take when I have refused their toxic antibiotics etc. My gut issues etc. were due to too many prescription drugs in childhood”.<br\/><\/em>Denise C<\/p><p><em>“I have been dealing with a kidney infection and a weakened immune system due to lupus for years. The constant pain, fatigue, and recurring infections made my life incredibly challenging. Conventional treatments provided only temporary relief and were often accompanied by unpleasant side effects. I discovered AlliTech. After consulting with their knowledgeable team at Dulwich Health, I began a regimen with <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> and <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em>. My journey with AlliTech has been transformative. Within just a few weeks of using their products, I started to notice significant improvements. The constant fatigue began to lift, and my kidney infections became less frequent and less severe. What truly amazed me was the lasting effect of AlliTech’s natural approach. Over several months, my immune system became more robust, and my kidney health improved significantly. The relentless pain and discomfort began to fade into the background of my life”<br\/><\/em>Francesca F<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_cEempQ"
+      ],
+      "settings": {
+        "section_heading": "<p>J-K<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_rkUEcc": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_GjNcie": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Lactobacillus",
+            "faq_message": "<p><em>“For years, I battled the uncomfortable symptoms of a Lactobacillus overgrowth in my gut. The constant bloating, unpredictable digestive issues, and frequent discomfort had taken a toll on my life. I tried numerous remedies without lasting success, leaving me feeling hopeless. Then, a friend shared their success story with AlliTech, and I decided it was time to give it a try. I reached out to Dulwich Health for guidance, and they recommended a regime to address the issue. I began with <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>, taking four daily in the morning. After just a few weeks, I started to notice a significant reduction in my bloating and digestive discomfort. It was a game-changer for my quality of life. Encouraged by these results, I continued with the same regimen. Over the course of three months, my symptoms progressively improved. I couldn’t believe it; my digestive system felt more balanced than it had in years. I was back to enjoying meals without the constant worry of discomfort and inconvenience. Today, thanks to AlliTech, I can confidently say that I’ve reclaimed my life from Lactobacillus overgrowth. I’m beyond grateful for this natural solution, which has given me a new lease on life. No more living in discomfort—just the freedom to enjoy every day to the fullest.”  <\/em>Barbara G<\/p>"
+          }
+        },
+        "faq_item_gUUz3e": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Lindane",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_y9qwXg": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Lung Infections",
+            "faq_message": "<p>John, an avid outdoor enthusiast, found himself struggling with a persistent lung infection after contracting a nasty <strong>mycoplasma<\/strong> infection during a camping trip gone wrong.<\/p><p><em>“I started a two-pronged approach with AlliTech. First, I nebulised <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> directly into my lungs as advised by the knowledgeable team at Dulwich Health. This method allowed the allicin to target the infection directly where it was causing the most trouble. Additionally, I began taking <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> orally to strengthen my overall immune system”.<\/em><\/p><p>Within a few weeks, John started noticing significant improvements. His coughing fits became less frequent, and his energy levels began to increase. Over the course of three months, he diligently followed this regimen. Gradually, he reclaimed his life and returned to the outdoor adventures he loves. John can confidently say that AlliTech played a pivotal role in his recovery.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_GjNcie",
+        "faq_item_gUUz3e",
+        "faq_item_y9qwXg"
+      ],
+      "settings": {
+        "section_heading": "<p>L<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_fmRmxX": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_pQNLAL": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Malaria",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_jfaHAL": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Mercury Poisoning",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_RXPXdR": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Mites",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a><strong> <\/strong>for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_ecFcjq": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Molluscum Contagiosum",
+            "faq_message": "<p><em>“Early this year I was told by my doctor that our daughter was suffering from Molluscum Contagiosum, a condition that causes wart-like spot, which over along period of time, turn into large and painful pustules. They were causing a great deal of distress and discomfort, and it was most distressing to hear from the doctor that there was absolutely no treatment due to it being a viral infection. Through the Garlic Information Centre we were given a bottle of <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel <\/strong><\/em><\/a><em>and told to apply it to the affected area twice daily. After only three days there was a noticeable improvement! and after a week, the spots had completely gone. We were absolutely thrilled and could hardly believe that allicin had worked so effectively. I would recommend this treatment to anyone. It can do no harm and may work for others as well as it has us!”<\/em>Claudia M. <\/p>"
+          }
+        },
+        "faq_item_cM7nAU": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Mosquitoes",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_zcDwBd": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "MRSA",
+            "faq_message": "<p>In May, an 82 year old female (allergic to penicillin) with cellulitis had contracted MRSA at home – confirmed by a GP swab. The disease affected both legs with about 6 wounds to each area. One of the wound sites measured 2inches x 1\/2 inch wide. Despite the use of Bactrian Cream, Epidermis and a course of Erythromycin, the infected sites did not respond. A recommendation by AIL\/UEL was made to take 3x <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules<\/strong><\/a> a day <a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><strong>AlliTech Liquid<\/strong><\/a> into the affected areas daily and apply some of the<a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><strong> AlliTech 30ml Gel<\/strong><\/a><strong> <\/strong>daily to her wounds.  Within 6 weeks, some wounds began to heal and there was a dramatic change in her condition. By August, further swabs showed no MRSA present. By November, all wounds had scabbed over and some had completely healed. No side effects were reported. <\/p><p>Henry, a 62 year old contracted MRSA in ICU after a bowel operation in June. This manifested as an abdominal wound the size of a saucer. He was isolated and spent 5 months in ICU. Despite specialist dressing and course of antibiotics, the wound did not heal. MRSA was still present in December of that year. By February, a further swab confirmed the presence of MRSA in the nose and wound. The same above AlliTech regime was followed and an improvement to the condition was noticed within 14 days. By the end of March, the wound has reduced to about 2.5 inch in diameter and was healing well. A further swab was taken in June and showed that MRSA was no longer present and, at this time, the patient also reported that the wound was still healing well and they had had no side effects. <\/p>"
+          }
+        },
+        "faq_item_3MVKh4": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Mycoplasma",
+            "faq_message": "<p>John, an avid outdoor enthusiast, found himself struggling with a persistent lung infection after contracting a nasty <strong>mycoplasma<\/strong> infection during a camping trip gone wrong. The symptoms were relentless – severe coughing, difficulty breathing, and debilitating fatigue. It got to the point where his daily life, including quality time with his family and outdoor adventures, became almost impossible.<\/p><p>After countless visits to doctors and several rounds of antibiotics that provided only temporary relief, John felt stuck in a never-ending cycle of illness. That’s when he discovered AlliTech and decided to give it a try.<\/p><p><em>“I started a two-pronged approach with AlliTech. First, I nebulised <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> directly into my lungs as advised by the knowledgeable team at Dulwich Health. This method allowed the allicin to target the infection directly where it was causing the most trouble. Additionally, I began taking <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> orally to strengthen my overall immune system”.<\/em><\/p><p>Within a few weeks, John started noticing significant improvements. His coughing fits became less frequent, and his energy levels began to increase. Over the course of three months, he diligently followed this regimen. Gradually, he reclaimed his life and returned to the outdoor adventures he loves. John can confidently say that AlliTech played a pivotal role in his recovery.<\/p><p>Today, John is living life to the fullest, and his battle with the mycoplasma infection is nothing but a distant memory. John thanks AlliTech for helping him regain his health, happiness, and passion for the great outdoors.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_pQNLAL",
+        "faq_item_jfaHAL",
+        "faq_item_RXPXdR",
+        "faq_item_ecFcjq",
+        "faq_item_cM7nAU",
+        "faq_item_zcDwBd",
+        "faq_item_3MVKh4"
+      ],
+      "settings": {
+        "section_heading": "<p>M<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_nMkR7z": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_mr4Fxq": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Nail Infections",
+            "faq_message": "<p>See <strong>Fungal Infections<\/strong> for Client Testimonials. <\/p>"
+          }
+        },
+        "faq_item_L9pyP7": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Nappy Rash",
+            "faq_message": "<p><em>“After giving birth to my first child, I wanted to ensure I was only giving her 100% natural products. At 5 days old, she got quite a bad nappy rash that Metanium didn’t seem to help. Eachchange I applied a thin covering of <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel <\/strong><\/em><\/a><em>all over the nappy area as well as leaving her nappy free as much as possible. The nappy rash was gone the next day!”<\/em>Demi D<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_mr4Fxq",
+        "faq_item_L9pyP7"
+      ],
+      "settings": {
+        "section_heading": "<p>N<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_8UaebK": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_wMxYFa": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Onychomycosis",
+            "faq_message": "<p><em>“Cured my onychomycosis! – I seem to suffer from fungal infections easier than most. I have suffered from different fungal infections and one day noticed that my toenail had become yellow and looked strange. I started spraying the toe with <\/em><a href=\"\/products\/allitech-spray-30-ml\" title=\"AlliTech Spray 30 ml\"><em><strong>AlliTech 30ml Spray <\/strong><\/em><\/a><em>and, it took some time, but the infection disappeared and the nail looked normal. Later on, the dentist told me that I had fungus in my mouth, so now I use the spray in the mouth too and I am sure that it has killed the fungus”<\/em>.Nigel <\/p>"
+          }
+        },
+        "faq_item_9iTgi8": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Parasites",
+            "faq_message": "<p>See <strong>Giardia lamblia<\/strong>  for Client Testimonials. <\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_kWRhFN": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Paronchyia",
+            "faq_message": "<p><em>“I had been silently suffering from paronychia, a painful and persistent nail infection, for over a year. The throbbing pain, swelling, and occasional discharge from my nails made daily activities, such as typing or even holding a cup of tea, a painful ordeal. This condition affected not only my work but also my personal life; I was unable to play my favourite musical instrument, the piano, which brought me immense joy. After consulting with my dermatologist, who was equally concerned about the prolonged use of antibiotics and its side effects, I decided to try a more natural approach. That’s when I discovered AlliTech. I started with the <\/em><a href=\"\/products\/allitech-capsules-90-x-180-mg\" title=\"AlliTech Capsules 90 x 180 mg\"><em><strong>AlliTech 180mg Capsules<\/strong><\/em><\/a><em>, taking two capsules daily. The incredible thing is that I started noticing a difference in just a few weeks. The inflammation reduced, and the pain became less intense. I continued the regimen for about four months, increasing the dose slightly during severe flare-ups to three capsules a day. Gradually, I regained the use of my hands, and the infection no longer controlled my life. Today, I’m back to playing my beloved piano, typing without pain, and, most importantly, enjoying life without the constant worry of a paronychia outbreak”<\/em>.<br\/>Chelsea F<\/p>"
+          }
+        },
+        "faq_item_UmmeMD": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Peptic Ulcer",
+            "faq_message": "<p><em>“AlliTech saved me from the torment of a peptic ulcer caused by Helicobacter pylori. After a year of relentless pain, I turned to AlliTech, following my doctor’s advice. I took two <\/em><em><strong>AlliTech 450mg Capsules <\/strong><\/em><em>with meals, twice a day. Within weeks, my pain diminished. Now, I can enjoy life again, thanks to AlliTech. If you have a peptic ulcer, consult your doctor and consider AlliTech”.<\/em>Lucy W<\/p>"
+          }
+        },
+        "faq_item_TbFC3A": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Pneumonia",
+            "faq_message": "<p><em>“Brilliant product and as previously <\/em><a href=\"https:\/\/www.dulwichhealth.co.uk\/product\/allitech-liquid-250-ml\/?v=79cba1185463\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> helped me survive severe pneumonia in hospital and 2 years later severe kidney trauma and gut infections in hospital again I have some on standby knowing it will help protect me if I catch the dreaded Covid. Dulwich Health service is always brilliant and have dealt with them for almost 20 years, I am so glad I found them don’t think I would still be here without their help advice over the years and products!!”<br\/><\/em>Denise C<\/p><p><strong>Treatment:<\/strong> 20ml <a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><strong>AlliTech 250ml Liquid<\/strong><\/a> daily. <\/p>"
+          }
+        },
+        "faq_item_zKkCYN": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Plaque",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_fCnx3N": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Pre-Eclampsia",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_nK3HVE": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Psoriasis",
+            "faq_message": "<p>Sarah, a vibrant woman who has experienced the life-altering benefits of AlliTech. She battled with psoriasis for over a decade, a skin condition that made her life challenging. Her psoriasis was primarily due to an underlying fungal infection, which caused intense itching, unsightly rashes, and lowered her self-esteem. For ten long years, Sarah searched for an effective remedy. Doctors prescribed various creams and medications that provided only temporary relief. Her social life took a hit, as she often avoided gatherings due to embarrassment. One day, she stumbled upon AlliTech. She decided to give it a try, and what a life-changing decision it was! Sarah started taking <a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><strong>AlliTech 450mg Capsules <\/strong><\/a>as per the recommended dosage – one capsule twice daily. The results were astonishing! Within just a few weeks, Sarah began to notice a significant improvement in her skin. The itching subsided, and the rashes gradually faded. Her friends couldn’t believe their eyes. Finally, she felt confident enough to go out without feeling self-conscious. Fast forward a few months, and her skin was nearly flawless. Her psoriasis had transformed from an agonizing burden to a distant memory. Today, Sarah swears by AlliTech and recommends it to anyone suffering from similar issues.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_wMxYFa",
+        "faq_item_9iTgi8",
+        "faq_item_kWRhFN",
+        "faq_item_UmmeMD",
+        "faq_item_TbFC3A",
+        "faq_item_zKkCYN",
+        "faq_item_fCnx3N",
+        "faq_item_nK3HVE"
+      ],
+      "settings": {
+        "section_heading": "<p>O-P<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_EmLrNF": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_qnTwEe": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Rhinitis",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_nUMyUM": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Ringworm",
+            "faq_message": "<p><em>“I went through a tough time dealing with a stubborn ringworm infection. The itching and unsightly rash had plagued me for three long months, and I couldn’t bear it any longer. That’s when I decided to give AlliTech a try.<\/em><\/p><p><em>I started taking <\/em><a href=\"\/products\/allitech-capsules-90-x-180-mg\" title=\"AlliTech Capsules 90 x 180 mg\"><em><strong>AlliTech 180mg Capsules<\/strong><\/em><\/a><em>, two capsules three times a day, and applied <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> directly to the affected areas. With time, I began to notice the itching fading away, and the rash slowly disappearing.<\/em><\/p><p><em>After six weeks of consistent use, my ringworm infection was completely gone. It was like a miracle! I could finally get back to doing the things I loved without the fear of embarrassment. I’m incredibly grateful for AlliTech and how it transformed my life”<\/em>.<br\/>Dhalia p<\/p>"
+          }
+        },
+        "faq_item_xzMadC": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Rosacea",
+            "faq_message": "<p>Sarah has battled Rosacea for nearly a decade. Her journey was filled with frustration and despair as her skin condition kept her from fully enjoying life’s simple pleasures. Sarah had tried countless remedies, visited numerous dermatologists, and even considered covering her face with makeup daily to hide the redness and bumps caused by Rosacea. She was caught in a seemingly never-ending cycle of temporary relief and recurring symptoms.<\/p><p>Then, one day, Sarah’s close friend shared her own personal experience with AlliTech’s products. Inspired and curious, Sarah decided to give it a try. She started taking <a href=\"\/products\/allitech-capsules-90-x-180-mg\" title=\"AlliTech Capsules 90 x 180 mg\"><strong>AlliTech 180mg Capsules<\/strong><\/a> daily, one in the morning and one at night. Within a few weeks, Sarah began to notice a significant change. The persistent redness gradually subsided, and the painful pustules became less frequent.<\/p><p>The daily torment she had endured for years was finally showing signs of retreat, allowing Sarah to rediscover her lost self-confidence and peace of mind<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_qnTwEe",
+        "faq_item_nUMyUM",
+        "faq_item_xzMadC"
+      ],
+      "settings": {
+        "section_heading": "<p>Q-R<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_HDEVXe": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_AtLXrm": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "SARS",
+            "faq_message": "<p><em>“In a dark time, I was struck down by a relentless adversary – SARS. The year was 2003, and this sinister infection brought my life to a standstill. I endured weeks of high fever, debilitating coughs, and unrelenting fatigue, while my family watched helplessly as I fought for my life. The medical treatment I received was essential, but the long-term recovery was a battle I had to fight myself. During my battle against SARS, I discovered AlliTech. In consultation with my healthcare provider, I embarked on a supplement regimen. I took two <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> daily, combined with a careful balance of other nutrients to support my immune system. Over several months, I meticulously followed this regimen. The dosages provided my body with the essential support it needed to heal. Gradually, my strength returned. The fever subsided, the coughs grew less frequent, and I could finally imagine a life free from this relentless illness.<\/em><\/p><p><em>AlliTech played a pivotal role in my recovery. It wasn’t a magical overnight solution, but rather a partner in my journey to regaining a sense of normalcy. Eventually, I returned to my career and my passion for travel, forever grateful to AlliTech for helping me reclaim my life.”.<br\/><\/em>Brian C<\/p>"
+          }
+        },
+        "faq_item_rfMywm": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Salmonella",
+            "faq_message": "<p><em>“I had the unfortunate experience of contracting a Salmonella infection, which wreaked havoc on my life. It began with a tainted meal that led to excruciating abdominal pain, nausea, and severe diarrhoea. This nightmare lasted for nearly two weeks. Desperate for relief, I turned to AlliTech and started taking <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>. The recommended dosage was 4 capsules per day. To my surprise, after just one week of this regimen, I began to notice a significant improvement. My symptoms lessened, and I could finally start enjoying life again. I continued taking AlliTech for a total of four weeks to ensure the infection was completely eradicated. I’m beyond thankful for this natural solution, as it allowed me to recover without resorting to antibiotics, which I had experienced negative side effects from in the past”.<\/em>Gerald C<\/p>"
+          }
+        },
+        "faq_item_gNGAtH": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Scabies",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_eJYM9F": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Shingles",
+            "faq_message": "<p><em>“After suffering from shingles for three long weeks, I turned to AlliTech when conventional treatments failed. <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsule<\/strong><\/em><em>s <\/em><\/a><em>and <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel <\/strong><\/em><\/a><em>provided relief from the relentless pain and itching. Following a regimen of two capsules daily and applying the cream three times a day, I was finally free from shingles after two months. Conventional antibiotics work if caught early, but for me, it was AlliTech that gave me my health back. I cant recommend it enough”<\/em>.<br\/>Sheila B<\/p>"
+          }
+        },
+        "faq_item_3BCixM": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Sinus Infections",
+            "faq_message": "<p>Mr J H Bexhill, Mrs Jah and Mr P D Prescott all had recurrent and persistent sinusitis. All three had an operation to unblock the sinus cavities but still had common symptoms including sneezing, runny nose and a constant feeling of being bunged up. They all began a course of AlliTech, taking 1-4 of the <a href=\"\/products\/allitech-capsules-90-x-180-mg\" title=\"AlliTech Capsules 90 x 180 mg\"><strong>AlliTech 180mg Capsules <\/strong><\/a>per day for two weeks, followed by a maintenance doe of just 1x 180mg capsule a day. All three customers have reported a significant reduction in symptoms. For severe cases, you can also inhale via a nebulizer a solution of 50\/50<a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><strong> AlliTech 250ml Liquid <\/strong><\/a>and distilled water. <\/p>"
+          }
+        },
+        "faq_item_kxn66g": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Sore Throat",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_gignt6": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Staphylococcus",
+            "faq_message": "<p><em>“I had been battling a persistent Staphylococcus aureus (Staph) bacterial infection for quite some time. The antibiotics prescribed by my doctor were effective at first, but my body eventually became resistant to them, leaving me with no sustainable solution. Frustrated and desperate for relief, I came across Dulwich Health’s <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>. I was skeptical at first, but I decided to give it a try. To my amazement, within a few weeks of incorporating AlliTech into my daily routine, I started feeling better. The Staph infection, which had caused me persistent discomfort and skin issues, began to retreat. Symptoms like painful skin lesions and recurring infections were significantly reduced. I continued taking AlliTech as directed, and it helped me regain control over my health. It’s been several months now, and my Staph bacterial infection is no longer a daily battle. I can’t thank Dulwich Health enough for providing a natural and effective solution that has transformed my life”.<\/em>Sarah G<\/p>"
+          }
+        },
+        "faq_item_PMjWWw": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Stomach Ache",
+            "faq_message": "<p>See <strong>Diarrhoea <\/strong>and <strong>Travellers tummy <\/strong>for Client Testimonials. <\/p>"
+          }
+        },
+        "faq_item_AiknQF": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Streptococcus",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_AtLXrm",
+        "faq_item_rfMywm",
+        "faq_item_gNGAtH",
+        "faq_item_eJYM9F",
+        "faq_item_3BCixM",
+        "faq_item_kxn66g",
+        "faq_item_gignt6",
+        "faq_item_PMjWWw",
+        "faq_item_AiknQF"
+      ],
+      "settings": {
+        "section_heading": "<p>S<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_CEpEVL": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_X6V9ny": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Thrush",
+            "faq_message": "<p><em>“I’m here to share a remarkable journey with AlliTech, a true saviour in my battle against recurring thrush that tormented me for a relentless year. I had tried it all – conventional treatments, even resorting to unconventional remedies like yogurt insertions – all in vain. The symptoms were unbearable – severe itching, soreness, and a constant discharge. This wasn’t just a physical battle; it took a toll on my emotional well-being and impacted my personal life profoundly.<\/em><\/p><p><em>Feeling like I’d reached a dead-end, I stumbled upon AlliTech through a close friend who had experienced its miraculous benefits. With nothing to lose and everything to gain, I embarked on this new path to relief. My regimen included both <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>, taken orally, and the <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel<\/strong><\/em><\/a><em>, used internally. The capsules were administered twice a day, morning and night, while I applied the gel as directed.<\/em><\/p><p><em>The transformation was nothing short of astonishing. In just a few days, I felt a significant reduction in symptoms. The intense itching subsided, and the discomfort gradually faded away. As I continued the treatment, my life began to return to normal. Today, I am free from the relentless grip of thrush. AlliTech not only provided relief but also hope, where even unconventional methods had failed. My journey taught me that sometimes, the most effective solutions can be found in the most unexpected places”.<\/em><br\/>Charlotte M<\/p>"
+          }
+        },
+        "faq_item_HgPkGz": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Ticks",
+            "faq_message": "<p><em>“For years, I struggled with the torment of Lyme disease. The symptoms were unbearable. I tried everything conventional medicine had to offer. Countless doctors’ visits, an array of antibiotics, and yet, the Lyme bacteria seemed resilient.<\/em><\/p><p><em>Frustration doesn’t even begin to cover how I felt. It wasn’t just the physical symptoms; Lyme had started to take a toll on my personal life too. I missed out on cherished moments with my family, unable to hike the trails I once loved or play with my children without pain. Then, one day, I came across AlliTech. Their team was empathetic and knowledgeable, guiding me through my options. I decided to try <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>.<\/em><\/p><p><em>The regime was simple but effective. I took three capsules a day, and the results were astonishing. Over the course of a few months, the relentless symptoms began to fade away. I could once again enjoy the outdoors with my family, free from the fear of ticks and Lyme disease. AlliTech’s natural approach provided me with something I had longed for: a life free from Lyme’s torment. If you’re suffering from Lyme disease and have exhausted conventional treatments, I can’t recommend AlliTech enough. Their products were a game-changer for me, and they might be for you too”.<\/em><br\/>Luke S<\/p>"
+          }
+        },
+        "faq_item_H4GaPf": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Toothache",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        },
+        "faq_item_aFXAy8": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Traveller's tummy",
+            "faq_message": "<p><em>“During a recent backpacking trip, I was hit hard by a stomach bug caused by E. coli. Without AlliTech, specifically <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>, I think i would have become very ill. Taking two capsules twice a day for the next two weeks, I saw a remarkable improvement: less diarrhoea, reduced cramps, and a return to normal life. AlliTech turned my travel nightmare into memorable adventures”<\/em>.<br\/>India R<\/p>"
+          }
+        },
+        "faq_item_rP3kgi": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Tuberculosis",
+            "faq_message": "<p><em>“I’m Sara, and my life took an unexpected turn when I was diagnosed with tuberculosis. For two long years, I battled this relentless infection, trying various conventional treatments, but nothing seemed to work. I suffered from a persistent cough, debilitating fevers, and crushing fatigue. Every day was a struggle, and it seemed like my life was slipping away. Conventional treatments came with their own set of problems – side effects that were often as debilitating as the disease itself. It felt like I was stuck in an endless loop of suffering. Then, my life changed when I discovered AlliTech. I started taking 6x <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em>  daily, and within a few weeks, I began to notice a difference. The coughing eased, the fevers became less intense, and I started to regain my energy. It was a ray of hope in my darkest days. I stuck with the AlliTech regime for six months, and the results were nothing short of miraculous. My symptoms receded, and with every passing day, my strength and vitality returned. Today, I’m back to chasing my toddler around the park and living the life I thought I had lost forever.”<\/em>Sarah Q<\/p>"
+          }
+        },
+        "faq_item_txGdhY": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Typhus",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_X6V9ny",
+        "faq_item_HgPkGz",
+        "faq_item_H4GaPf",
+        "faq_item_aFXAy8",
+        "faq_item_rP3kgi",
+        "faq_item_txGdhY"
+      ],
+      "settings": {
+        "section_heading": "<p>T<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_zErix3": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_4C4YjN": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Urinary Tract Infections",
+            "faq_message": "<p><em>“I’d like to share how AlliTech came to my rescue when I was caught in the grip of a relentless urinary tract infection (UTI). The infection was specifically E. coli, and it had me suffering for more than a month. I went through several rounds of antibiotics, but the infection kept returning with a vengeance. I was beyond frustrated.<\/em><\/p><p><em>The symptoms were excruciating – constant burning and a frequent, urgent need to urinate. My work and personal life were severely affected. I was often too unwell to attend important meetings, and my social life was practically non-existent. UTIs made even the simplest activities an ordeal.<\/em><\/p><p><em>I stumbled upon AlliTech while desperately searching for an alternative solution. I decided to give it a try, and the results were astounding. I started with <\/em><a href=\"\/products\/allitech-capsules-90-x-180-mg\" title=\"AlliTech Capsules 90 x 180 mg\"><em><strong>AlliTech 180mg Capsules<\/strong><\/em><\/a><em>, taking one in the morning and one at night. I also used <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><\/a><em> – just a few drops in water daily. I followed this regime for about two weeks.<\/em><\/p><p><em>Slowly but surely, my symptoms began to ease. The urgency and burning gradually diminished, and my life started to return to normal. The infection finally loosened its grip on me.<\/em><\/p><p><em>I can’t express how grateful I am for AlliTech. It provided the relief that antibiotics failed to deliver, and it gave me back the life I had been missing. I only wish I had discovered it sooner”.<\/em><br\/>Gabriella P<\/p>"
+          }
+        },
+        "faq_item_GwMKmN": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Vaginal Infection",
+            "faq_message": "<p>See <strong>Thrush <\/strong>and <strong>Candida <\/strong>for Client Testimonials.<\/p>"
+          }
+        },
+        "faq_item_bHfMKA": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Verrucae",
+            "faq_message": "<p><em>“I have had a stubborn verruca for years on my foot. I tried various conventional treatments, from topical creams to freezing, but nothing seemed to work. It was both a physical and emotional struggle as I felt self-conscious and uncomfortable. Then, I opted for a combination of <\/em><a href=\"\/products\/allitech-capsules-60-x-450-mg\" title=\"AlliTech Capsules 60 x 450 mg\"><em><strong>AlliTech 450mg Capsules<\/strong><\/em><\/a><em> and <\/em><a href=\"\/products\/allitech-liquid-250-ml\" title=\"AlliTech Liquid 250 ml\"><em><strong>AlliTech 250ml Liquid<\/strong><\/em><em>.<\/em><\/a><em> It was my last hope, and it paid off.<\/em><\/p><p><em>I started with the capsules, taking one in the morning and one in the evening, with or after food. Additionally, I applied the Allicin Liquid directly to the verrucae using a cotton swab and then covered them with <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel<\/strong><\/em><em> <\/em><\/a><em>and a plaster. I did this twice daily, allowing it to air dry in between treatment.<\/em><\/p><p><em>Within just a few weeks, I started to notice significant changes. The warts slowly began to shrink, and the discomfort I had lived with for so long finally started to fade away. I couldn’t believe it. This natural approach was working when conventional methods had failed me.<\/em><\/p><p><em>The verrucae were gone completely within a couple of months, and I felt like a weight had been lifted from my shoulders. I could finally enjoy life without the constant worry and embarrassment that had plagued me for so long”<\/em>.<br\/>Lorna D<\/p>"
+          }
+        },
+        "faq_item_N8FqQ4": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Viral Infections",
+            "faq_message": "<p>No current testimonial available.<\/p><p>If you have any personal experience you wish to share, please contact <a href=\"mailto:shop@dulwichhealth.co.uk\"><strong>shop@dulwichhealth.co.uk<\/strong><\/a> for your testimonial to be included. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_4C4YjN",
+        "faq_item_GwMKmN",
+        "faq_item_bHfMKA",
+        "faq_item_N8FqQ4"
+      ],
+      "settings": {
+        "section_heading": "<p>U-V<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_accordian_jkDQcB": {
+      "type": "custom-accordian",
+      "blocks": {
+        "faq_item_nttRdk": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Warts",
+            "faq_message": "<p>David suffers from warts on the hands due to stress. He applies <a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><strong>AlliTech 30ml Gel<\/strong><\/a><strong> <\/strong>twice a day by massaging a small amount into the surface of the wart. David reports that after 4 weeks, the warts have completely disappeared. <\/p><p><em>“I use <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel<\/strong><\/em><\/a><em><strong> <\/strong><\/em><em> on a wart I had, re-applying every day for 7 days. The wart has already gone!”<\/em><br\/>Leo M<\/p>"
+          }
+        },
+        "faq_item_4LwXtz": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Wounds",
+            "faq_message": "<p><em>“I am a bit clumsy and have to admit every time I am out in the garden, I do something to cause a minor injury! Now every time I get a nick, I apply a little <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel<\/strong><\/em><\/a><em> to the band aid before I stick it over the wound. A short while ago, I got a nasty wood splinter in the thumb. It immediately began to swell and was very painful. I got the splinter out, but my thumb continued to balloon! So I applied 2 drops of <\/em><a href=\"\/products\/allitech-gel-50-g\" title=\"AlliTech Gel 50 ml\"><em><strong>AlliTech 30ml Gel <\/strong><\/em><\/a><em>to the plaster, and repeated every two hours. After a few hours, the pain had gone and within a day the swelling was much better and I have healed perfectly since. This is also unusual for me as I am a diabetic so am very slow at healing. I don’t even have a scar!”<\/em>Petuna<\/p>"
+          }
+        },
+        "faq_item_btcHzw": {
+          "type": "faq_item",
+          "settings": {
+            "faq_header": "Yeast Infections",
+            "faq_message": "<p>See <strong>Candida <\/strong>for Client Testimonials.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_nttRdk",
+        "faq_item_4LwXtz",
+        "faq_item_btcHzw"
+      ],
+      "settings": {
+        "section_heading": "<p>W-Z<\/p>",
+        "section_subheading": "",
+        "heading_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "about_us_section_cGVNDM"
+    "about_us_section_cGVNDM",
+    "custom_accordian_cPm8yC",
+    "custom_accordian_86XCVz",
+    "custom_accordian_DiCM4L",
+    "custom_accordian_Ut8Arn",
+    "custom_accordian_7NiqQ7",
+    "custom_accordian_7eTiiy",
+    "custom_accordian_WXDMfq",
+    "custom_accordian_rLwJ7g",
+    "custom_accordian_6WUYeN",
+    "custom_accordian_ibNVTW",
+    "custom_accordian_rkUEcc",
+    "custom_accordian_fmRmxX",
+    "custom_accordian_nMkR7z",
+    "custom_accordian_8UaebK",
+    "custom_accordian_EmLrNF",
+    "custom_accordian_HDEVXe",
+    "custom_accordian_CEpEVL",
+    "custom_accordian_zErix3",
+    "custom_accordian_jkDQcB"
   ]
 }

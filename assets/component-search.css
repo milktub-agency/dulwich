@@ -76,10 +76,13 @@ input::-webkit-search-decoration {
   .search__input.field__input {
     padding-right: 3.2rem;
     padding: 0px;
-    font-size: 10px;
+    font-size: 8px;
   }
   .field__input:focus~.field__label, .field__input:not(:placeholder-shown)~.field__label {
     font-size: 7px;
     top: calc(var(--inputs-border-width) + 0.2rem);
+  }
+  .search-modal__form .field__input:focus~.field__label, .search-modal__form .field__input:not(:placeholder-shown)~.field__label {
+    font-size: 6px;
   }
 }
