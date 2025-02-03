@@ -164,7 +164,6 @@
                   </h2>
                 </a>
               </div>
-              <div class="ruk_rating_snippet" data-sku="[Multiple SKUs Seperated by Semi-Colons e.g "sku1;sku2;" ]"></div>
               <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
             {%- when 'price' -%}
               <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
