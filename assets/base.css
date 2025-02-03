@@ -3774,3 +3774,6 @@ article .article-template__content ol {
 .article-template ol {
   margin-bottom: 1.3em;
 }
+.recent-blogs__section .article-card-wrapper .card__inner {
+  --ratio-percent: 52.240964%;
+}
