@@ -3749,7 +3749,7 @@ article .article-template__content ol {
   flex-direction: column;
   align-items: flex-start;
 }
-.sticky-atc-button.sticky-atc:has(.recurpay-pdp-widget) .sticky-add-to-cart-button {
+.sticky-atc-button.sticky-atc:has(.recurpay-pdp-widget:empty) .sticky-add-to-cart-button {
   flex-direction: row;
   align-items: center;
 }
