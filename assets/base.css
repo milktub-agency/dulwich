@@ -3753,13 +3753,11 @@ article .article-template__content ol {
   flex-direction: row;
   align-items: center;
 }
-.sticky-atc-button.sticky-atc .recurpay__widget {
+.sticky-atc-button.sticky-atc .recurpay__group_header,
+.sticky-atc-button.sticky-atc .recurpay__offer_wrapper,
+.sticky-atc-button.sticky-atc .recurpay__group_content {
   display: none;
 }
 .upgrade-subscription-cart {
   display: none;
-}
-
-#stickyAddToCartWrapper button.recurpay-hide{
-      display: block !important;
 }
