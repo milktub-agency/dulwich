@@ -3769,6 +3769,8 @@ article .article-template__content ol {
   text-rendering: optimizeSpeed;
   width: 100%;
 }
-.article-template p {
+.article-template p,
+.article-template ul,
+.article-template ol {
   margin-bottom: 1.3em;
 }
