@@ -3753,10 +3753,8 @@ article .article-template__content ol {
   flex-direction: row;
   align-items: center;
 }
-.sticky-atc-button.sticky-atc .recurpay__group_header,
-.sticky-atc-button.sticky-atc .recurpay__offer_wrapper,
-.sticky-atc-button.sticky-atc .recurpay__group_content {
-  display: none !important;
+.sticky-atc-button.sticky-atc .recurpay__widget {
+  display: none;
 }
 .upgrade-subscription-cart {
   display: none;
