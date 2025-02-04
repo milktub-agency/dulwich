@@ -279,7 +279,7 @@
         "disabled": false,
         "settings": {
           "star": "#c2c67a",
-          "text_color": "#333333",
+          "text_color": "#c2c67a",
           "snippet_mode": "default",
           "text": "",
           "line_break": false,
