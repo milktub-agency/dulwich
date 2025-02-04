@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -12,12 +21,41 @@
       "type": "apps",
       "blocks": {
         "advanced_registration_advanced_registration_3E6kcr": {
-          "type": "shopify:\/\/apps\/advanced-registration\/blocks\/advanced-registration\/a64c4b10-b618-4bd2-915b-dbb6662c9253",
+          "type": "shopify://apps/advanced-registration/blocks/advanced-registration/a64c4b10-b618-4bd2-915b-dbb6662c9253",
           "settings": {}
         }
       },
       "block_order": [
         "advanced_registration_advanced_registration_3E6kcr"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17386737200d477f3d": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_LeJVGx": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "333956",
+            "text_color": "#202020",
+            "button_background_color": "#60919f",
+            "button_label_color": "#FFFFFF",
+            "links_color": "#1878B9",
+            "errors_color": "#E02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 30,
+            "padding_bottom": 30,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_LeJVGx"
       ],
       "settings": {
         "include_margins": true
@@ -26,6 +64,7 @@
   },
   "order": [
     "main",
-    "1735563144c8e709de"
+    "1735563144c8e709de",
+    "17386737200d477f3d"
   ]
 }
