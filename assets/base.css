@@ -3780,3 +3780,14 @@ article .article-template__content ol {
 .recent-blogs__section .article-card-wrapper .card__inner {
   --ratio-percent: 52.240964% !important;
 }
+.product-card .ruk_rating_snippet i {
+  font-size: 11px;
+}
+.login a.practitioner-link {
+  margin: 0 6px;
+}
+@media screen and (max-width: 749px) {
+  .product-card .ruk_rating_snippet i {
+    font-size: 8px;
+  }
+}
