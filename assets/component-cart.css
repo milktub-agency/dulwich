@@ -1,3 +1,7 @@
+ruk_rating_snippet {
+  display: flex; 
+}
+
 .cart {
   position: relative;
   display: block;
