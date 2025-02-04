@@ -3759,7 +3759,7 @@ article .article-template__content ol {
 .upgrade-subscription-cart,
 .recurpay-manage-subscription-link-footer,
 .recurpay-manage-subscription-link,
-.ruk-rating-snippet-count{
+.product-card .ruk-rating-snippet-count{
   display: none;
 }
 .article-template h3,
