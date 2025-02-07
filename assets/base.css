@@ -387,7 +387,7 @@ table:not([class]) th {
 a:empty,
 ul:empty,
 dl:empty,
-div:empty,
+div:empty:not(.ruk_rating_snippet),
 section:empty,
 article:empty,
 p:empty,
@@ -396,7 +396,7 @@ h2:empty,
 h3:empty,
 h4:empty,
 h5:empty,
-h6:empty :not(.ruk_rating_snippet) {
+h6:empty {
   display: none;
 }
 
