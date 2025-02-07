@@ -274,6 +274,11 @@
         "disabled": true,
         "settings": {}
       },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
       "15316669992541710076": {
         "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
@@ -283,18 +288,13 @@
           "snippet_mode": "default",
           "text": "",
           "line_break": false,
-          "listen_for_changes": false,
+          "listen_for_changes": true,
           "rating_without_brackets": false,
           "format_review_count": false,
           "show_popup": true,
           "anchor_to_reviews_widget": true,
           "show_empty_stars": true
         }
-      },
-      "13768625480086291342": {
-        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
