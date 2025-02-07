@@ -73,11 +73,11 @@
     <div class="product-card__badges tw-absolute tw-top-4 tw-left-4">
       <a href="{{ product.url }}">
         {%- if current_variant.available == false -%}
-          <span class="badge badge--soldout" aria-hidden="true">
+          <span class="badge badge--soldout tw-bg-[#c2c67a]" aria-hidden="true">
             Sold Out
           </span>
         {%- elsif current_variant.compare_at_price > current_variant.price and current_variant.available -%}
-          <span class="badge badge--onsale" aria-hidden="true">
+          <span class="badge badge--onsale tw-bg-[#c2c67a]" aria-hidden="true">
             On Sale
           </span>
         {%- endif -%}

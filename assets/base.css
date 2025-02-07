@@ -3791,9 +3791,6 @@ article .article-template__content ol {
     font-size: 8px;
   }
 }
-.collection-hero__description.description-columns {
-  column-count: 2;
-}
 .custom-collection-slider .title-inside-disc {
   position: relative;
 }
@@ -3826,4 +3823,9 @@ article .article-template__content ol {
 }
 .product__info-container product-form.product-form {
   margin: 1rem 0;
+}
+@media screen and (min-width: 750px) {
+  .collection-hero__description.description-columns {
+    column-count: 2;
+  }
 }
