@@ -3753,9 +3753,9 @@ article .article-template__content ol {
   flex-direction: row;
   align-items: center;
 }
-.sticky-atc-button.sticky-atc .recurpay__widget {
+/* .sticky-atc-button.sticky-atc .recurpay__widget {
   display: none;
-}
+} */
 .upgrade-subscription-cart,
 .recurpay-manage-subscription-link-footer,
 .recurpay-manage-subscription-link,
@@ -3791,6 +3791,6 @@ article .article-template__content ol {
     font-size: 8px;
   }
 }
-/* .sticky-atc-button.sticky-atc .recurpay__widget:has(.recurpay__widget_container.recurpay__widget_container--selected) *:not(.recurpay__action, .recurpay__action *) {
-  display: none !important;
-} */
+.sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected .recurpay__group_header {
+    display: none;
+}
