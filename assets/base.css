@@ -3786,9 +3786,16 @@ article .article-template__content ol {
 .login a.practitioner-link {
   margin: 0 6px;
 }
+.recurpay__widget .recurpay__action button {
+  font-size: 20px;
+  font-weight: 700;
+}
 @media screen and (max-width: 749px) {
   .product-card .ruk_rating_snippet i {
     font-size: 8px;
+  }
+  .recurpay__widget .recurpay__action button {
+    font-size: 13px;
   }
 }
 .sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected+.recurpay__widget_container,
