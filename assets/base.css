@@ -3796,6 +3796,7 @@ article .article-template__content ol {
   }
   .product-form__buttons .recurpay__widget .recurpay__action button {
     font-size: 13px;
+    padding: 6px 12px;
   }
 }
 .sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected+.recurpay__widget_container,
