@@ -3792,5 +3792,5 @@ article .article-template__content ol {
   }
 }
 .sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected *:not(.recurpay__action, .recurpay__action *) {
-  display: none;
+  display: none !important;
 }
