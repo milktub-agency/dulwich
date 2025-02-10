@@ -3794,6 +3794,7 @@ article .article-template__content ol {
 .sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected+.recurpay__widget_container,
 .sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected .recurpay__group_header,
 .sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected .recurpay__group_content,
-.sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected .recurpay__offer_wrapper.recurpay__offer_subscription {
+.sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected .recurpay__offer_wrapper.recurpay__offer_subscription,
+.sticky-atc-button.sticky-atc .recurpay__widget_container:not(.recurpay__widget_container--selected) {
     display: none !important;
 }
