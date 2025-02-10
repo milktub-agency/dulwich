@@ -3803,6 +3803,7 @@ article .article-template__content ol {
   border: none;
   margin: 0;
 }
+.sticky-atc-button.sticky-atc .recurpay__widget,
 .sticky-atc-button.sticky-atc .recurpay__widget .recurpay__action {
     padding: 0px;
 }
