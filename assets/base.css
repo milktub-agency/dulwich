@@ -3791,6 +3791,7 @@ article .article-template__content ol {
     font-size: 8px;
   }
 }
-.sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected+.recurpay__widget_container {
+.sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected+.recurpay__widget_container,
+.sticky-atc-button.sticky-atc .recurpay__widget_container.recurpay__widget_container--selected .recurpay__group_header {
     display: none;
 }
