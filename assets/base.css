@@ -3786,7 +3786,7 @@ article .article-template__content ol {
 .login a.practitioner-link {
   margin: 0 6px;
 }
-.recurpay__widget .recurpay__action button {
+.product-form__buttons .recurpay__widget .recurpay__action button {
   font-size: 20px;
   font-weight: 700;
 }
@@ -3794,7 +3794,7 @@ article .article-template__content ol {
   .product-card .ruk_rating_snippet i {
     font-size: 8px;
   }
-  .recurpay__widget .recurpay__action button {
+  .product-form__buttons .recurpay__widget .recurpay__action button {
     font-size: 13px;
   }
 }
