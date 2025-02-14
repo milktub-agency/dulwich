@@ -143,7 +143,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 56px;
+    padding-left: 30px;
     padding-right: 37px;
   }
 
@@ -3217,6 +3217,9 @@ cart-upsell-recommendations.splide.is-initialized {
   .collection .splide__arrow {
     top: 35%;
   }
+  .header.page-width {
+    padding-left: 16px;
+  }
 }
 
 .scDiscount__container {
@@ -3378,7 +3381,7 @@ p.product__text:empty {
   .cart-section .cart-section__cart-footer .cart__footer .cart__checkout-button {
     margin-top: 5px;
     font-size: 13px;
-    max-width: 94%;
+    max-width: 100%;
     min-height: calc(3.3rem + var(--buttons-border-width)* 2);
   }
   .cart__footer .cart__ctas .payment-icons-cart {
@@ -3489,6 +3492,36 @@ footer .copyright__content a {
   .header-menus {
     width: 100%;
   }
+  .static-page .page-width,
+  .footer .page-width,
+  .accordion-wrapper.page-width,
+  .cart-section.page-width,
+  .main-blog.page-width,
+  .recent-blogs .page-width,
+  .collection-hero__inner.page-width,
+  .facets-sort-by-filter.page-width,
+  .facets-vertical.page-width {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .pdp-announcement-bar .pdp-container {
+    padding: 0;
+  }
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  .collection.page-width,
+  .related-products.page-width {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .related-products .splide__arrow--next,
+  .collection .splide__arrow--next {
+    right: -5%;
+  }
+  .related-products .splide__arrow--prev,
+  .collection .splide__arrow--prev {
+    left: -5%;
+  }
 }
 @media screen and (max-width: 990px) {
   .header-menus {
@@ -3555,8 +3588,8 @@ checkout-login .login-box {
     height: 22px;
   }
   .header__icon .icon {
-    height: 14px;
-    width: 14px;
+    height: 18px;
+    width: 18px;
   }
   .cart-count-bubble {
     left: 12px;
@@ -3817,4 +3850,13 @@ article .article-template__content ol {
 }
 .recurpay__action button {
   border-radius: 38px;
+}
+shopify-accelerated-checkout-cart {
+  --shopify-accelerated-checkout-button-block-size: 38px;
+  --shopify-accelerated-checkout-button-border-radius: 38px;
+}
+@media screen and (max-width: 750px) {
+  shopify-accelerated-checkout-cart {
+    --shopify-accelerated-checkout-button-block-size: 33px;
+  }
 }
